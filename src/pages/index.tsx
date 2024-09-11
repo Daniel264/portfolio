@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Menu from "@/components/Menu";
 import SEO from "@/components/SEO";
+import Stats from "@/components/Stats";
 import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
 
@@ -34,6 +35,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+                    <Stats />
                 </div>
             </main>
         </>
