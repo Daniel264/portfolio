@@ -10,6 +10,7 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@next/font": "^14.2.9",
         "@sentry/nextjs": "^7.105.0",
         "@tanstack/react-query": "^5.24.8",
         "@tanstack/react-query-devtools": "^5.24.8",
