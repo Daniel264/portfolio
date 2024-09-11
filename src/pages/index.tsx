@@ -5,8 +5,12 @@ import Stats from "@/components/Stats";
 import TopNavigation from "@/components/TopNavigation";
 import Typed from "@/components/Typed";
 import Image from "next/image";
+import { toast } from "react-toastify";
 
 export default function Home() {
+    const handleLoading = () => {
+        toast.loading("Downloading Resume!")
+    }
     return (
         <>
             <SEO title="Home" />
@@ -48,7 +52,7 @@ export default function Home() {
                             <button className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Lets Talk <i className="fa-solid fa-message"></i>
                             </button>
-                            <button className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
+                            <button onClick={handleLoading} className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Download CV <i className="fa-solid fa-download"></i>
                             </button>
                         </div>

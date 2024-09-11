@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 const TopNavigation = () => {
@@ -11,7 +12,7 @@ const TopNavigation = () => {
 
     return (
         <div>
-            <nav className="border-none bg-[#31363F] pt-3 lg:h-20 fixed top-0 z-50 w-full">
+            <nav className="fixed top-0 z-50 w-full border-none bg-[#31363F] pt-3 lg:h-20">
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
                     <a href="#" className="flex items-center space-x-3 text-white rtl:space-x-reverse">
                         Daniel O
@@ -40,13 +41,15 @@ const TopNavigation = () => {
                                 </a>
                             </li>
                             <li>
-                                <button
-                                    id="dropdownNavbarLink"
-                                    data-dropdown-toggle="dropdownNavbar"
-                                    className="flex w-full items-center justify-between px-3 py-2 text-gray-900 hover:bg-gray-100 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:focus:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-                                >
-                                    ABOUT
-                                </button>
+                                <Link href="/about">
+                                    <button
+                                        id="dropdownNavbarLink"
+                                        data-dropdown-toggle="dropdownNavbar"
+                                        className="flex w-full items-center justify-between px-3 py-2 text-gray-900 hover:bg-gray-100 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:focus:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                                    >
+                                        ABOUT
+                                    </button>
+                                </Link>
                             </li>
                             <li>
                                 <a href="#" className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
