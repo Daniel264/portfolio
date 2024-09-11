@@ -19,7 +19,7 @@ const TopNavigation = () => {
                     <button
                         onClick={toggleMenu} // Toggle menu on click
                         type="button"
-                        className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm  focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-white"
+                        className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm  focus:outline-none  md:hidden dark:text-white"
                         aria-controls="navbar-multi-level"
                         aria-expanded={isMenuOpen ? "true" : "false"}
                     >
@@ -31,9 +31,6 @@ const TopNavigation = () => {
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
                             </svg>
                         )}
-                        {/* <svg className="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-                        </svg> */}
                     </button>
                     <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-multi-level">
                         <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-none dark:bg-inherit ">
