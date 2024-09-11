@@ -9,7 +9,7 @@ export default function Home() {
             {/* <Header /> */}
             <TopNavigation />
 
-            <main className="flex min-h-screen flex-col items-center p-5">
+            <main className="flex min-h-screen flex-col items-center p-5 bg-[#31363F] ">
                 {/* <div className="m-auto w-full max-w-8xl"> */}
 
                 <div className="max-w-8xl m-auto">
