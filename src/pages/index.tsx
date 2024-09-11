@@ -17,7 +17,7 @@ export default function Home() {
 
                 <div className="max-w-8xl text-white md:m-auto flex">
                     <Menu />
-                    <div className="flex flex-col md:flex-row">
+                    <div className="flex flex-col sm:flex-row">
                         <div className="hero bg-inherit">
                             <div className="hero-content flex-col-reverse text-center lg:flex-row-reverse">
                                 <div className="flex w-full justify-center">
