@@ -15,7 +15,7 @@ export default function Home() {
             <main className="flex min-h-screen flex-col items-center bg-[#31363F] p-5 ">
                 {/* <div className="m-auto w-full max-w-8xl"> */}
 
-                <div className="max-w-8xl text-white md:m-auto flex">
+                <div className="max-w-8xl flex text-white md:m-auto">
                     <Menu />
                     <div className="flex flex-col sm:flex-row">
                         <div className="hero bg-inherit">
@@ -33,6 +33,7 @@ export default function Home() {
                                 <div className="w-full">
                                     <h3 className="my-5 text-5xl font-semibold">Hello, I&apos;m Daniel Olatinsu</h3>
                                     <p className="text-2xl font-light">I&apos;m a Fullstack Developer</p>
+                                    <button className="btn w-44 rounded bg-black text-white border-none shadow-2xl">Lets Talk</button>
                                 </div>
                             </div>
                         </div>
