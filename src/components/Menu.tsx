@@ -28,7 +28,7 @@ const Menu = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Daniel264" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right" data-tip="GitHub" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-github fa-2x"></i> {/* Use fa-2x to scale the icon */}
                     </a>
                 </li>
