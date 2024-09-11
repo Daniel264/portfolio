@@ -11,7 +11,7 @@ const TopNavigation = () => {
 
     return (
         <div>
-            <nav className="border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900">
+            <nav className="border-gray-200 bg-white dark:border-gray-700 dark:bg-[#4F75FF]">
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
                     <a href="#" className="flex items-center space-x-3 text-white rtl:space-x-reverse">
                         Daniel O
