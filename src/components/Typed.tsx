@@ -2,7 +2,7 @@ import { ReactTyped } from "react-typed";
 
 const Typed = () => (
     <div>
-        <ReactTyped strings={["FullStack Web Developer", "lover of Christ"]} typeSpeed={40} backSpeed={50} loop />
+        <ReactTyped strings={["FullStack Web Developer", "Devout Christian", "Tech Enthusiast"]} typeSpeed={80} backSpeed={60} loop />
         <br />
     </div>
 );
