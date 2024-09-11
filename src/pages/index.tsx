@@ -44,11 +44,11 @@ export default function Home() {
                             </div>
                             <Stats />
                         </div>
-                        <div className="mt-8 space-y-4 md:mr-44 md:space-x-5 ml-5 md:ml-0">
-                            <button className="btn hover:animate-bounce w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:bg-slate-500 md:w-44">
+                        <div className="ml-5 mt-8 space-y-4 md:ml-0 md:mr-44 md:space-x-5">
+                            <button className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Lets Talk <i className="fa-solid fa-message"></i>
                             </button>
-                            <button className="btn hover:animate-bounce w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:bg-slate-500 md:w-44">
+                            <button className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Download CV <i className="fa-solid fa-download"></i>
                             </button>
                         </div>

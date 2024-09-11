@@ -11,7 +11,7 @@ const TopNavigation = () => {
 
     return (
         <div>
-            <nav className="border-none bg-[#31363F] lg:h-20 pt-3 ">
+            <nav className="border-none bg-[#31363F] pt-3 lg:h-20 ">
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
                     <a href="#" className="flex items-center space-x-3 text-white rtl:space-x-reverse">
                         Daniel O
@@ -24,9 +24,16 @@ const TopNavigation = () => {
                         aria-expanded={isMenuOpen ? "true" : "false"}
                     >
                         <span className="sr-only">Open main menu</span>
-                        <svg className="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        {isMenuOpen ? (
+                            <i className="fa-solid fa-x"></i>
+                        ) : (
+                            <svg className="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        )}
+                        {/* <svg className="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
+                        </svg> */}
                     </button>
                     <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-multi-level">
                         <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-none dark:bg-inherit ">
