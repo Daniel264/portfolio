@@ -6,6 +6,7 @@
 /* Library CSS import */
 @import url("react-toastify/dist/ReactToastify.css");
 
+
 @layer base {
     /* Specify default font below */
     html {
