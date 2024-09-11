@@ -39,8 +39,8 @@ export default function Home() {
                             </div>
                             <Stats />
                         </div>
-                        <div className="mr-44">
-                            <button className="btn w-44 rounded border-none bg-black text-white shadow-2xl">Lets Talk</button>
+                        <div className="mr-44 animate-bounce">
+                            <button className="btn w-44 rounded border-none bg-slate-800 hover:bg-slate-800 text-white shadow-2xl">Lets Talk</button>
                         </div>
                     </div>
                 </div>
