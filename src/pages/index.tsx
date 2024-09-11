@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import SEO from "@/components/SEO";
 import TopNavigation from "@/components/TopNavigation";
-import Me from '../pub'
+import Me from "../pub";
 import Image from "next/image";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
                     <div className="hero min-h-screen bg-inherit">
                         <div className="hero-content flex-col lg:flex-row-reverse">
                             <div>
-                                <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={500} height={50} className="max-w-sm rounded-lg shadow-2xl" />
+                                <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[29rem] rounded-full shadow-2xl" />
                             </div>
                             <div>
                                 <h3 className="my-5 text-5xl font-semibold">Hello, I&apos;m Daniel Olatinsu</h3>
