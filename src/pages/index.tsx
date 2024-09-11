@@ -17,25 +17,27 @@ export default function Home() {
 
                 <div className="max-w-8xl text-white md:m-auto flex">
                     <Menu />
-                    <div className="hero bg-inherit md:min-h-screen">
-                        <div className="hero-content flex-col-reverse text-center lg:flex-row-reverse">
-                            <div className="flex w-full justify-center">
-                                <Image
-                                    src="/assets/images/me.jpg"
-                                    alt="my-profile-pic"
-                                    width={450}
-                                    height={40}
-                                    className="h-[22rem] rounded-full shadow-2xl
-                                sm:h-[29rem]"
-                                />
-                            </div>
-                            <div className="w-full">
-                                <h3 className="my-5 text-5xl font-semibold">Hello, I&apos;m Daniel Olatinsu</h3>
-                                <p className="text-2xl font-light">I&apos;m a Fullstack Developer</p>
+                    <div className="flex flex-col md:flex-row">
+                        <div className="hero bg-inherit md:min-h-screen">
+                            <div className="hero-content flex-col-reverse text-center lg:flex-row-reverse">
+                                <div className="flex w-full justify-center">
+                                    <Image
+                                        src="/assets/images/me.jpg"
+                                        alt="my-profile-pic"
+                                        width={450}
+                                        height={40}
+                                        className="h-[22rem] rounded-full shadow-2xl
+                                    sm:h-[29rem]"
+                                    />
+                                </div>
+                                <div className="w-full">
+                                    <h3 className="my-5 text-5xl font-semibold">Hello, I&apos;m Daniel Olatinsu</h3>
+                                    <p className="text-2xl font-light">I&apos;m a Fullstack Developer</p>
+                                </div>
                             </div>
                         </div>
+                        <Stats />
                     </div>
-                    <Stats />
                 </div>
             </main>
         </>
