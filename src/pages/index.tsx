@@ -33,8 +33,12 @@ export default function Home() {
                                         />
                                     </div>
                                     <div className="w-full">
-                                        <h3 className="my-5 text-5xl font-semibold">Hello, I&apos;m Daniel Olatinsu</h3>
-                                        <p className="text-2xl font-light"><Typed /></p>
+                                        <h3 className="my-5 text-5xl font-semibold">
+                                            Hello, I&apos;m <span className="text-slate-500">Daniel</span> Olatinsu
+                                        </h3>
+                                        <p className="text-2xl font-light">
+                                            <span className="text-slate-500">I&apos;m a</span> <Typed />
+                                        </p>
                                     </div>
                                 </div>
                             </div>
