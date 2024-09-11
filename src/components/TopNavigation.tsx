@@ -11,7 +11,7 @@ const TopNavigation = () => {
 
     return (
         <div>
-            <nav className="border-none bg-[#31363F] lg:h-20 pt-3">
+            <nav className="border-none bg-[#31363F] lg:h-20 pt-3 ">
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
                     <a href="#" className="flex items-center space-x-3 text-white rtl:space-x-reverse">
                         Daniel O
