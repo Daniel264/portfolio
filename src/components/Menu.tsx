@@ -1,9 +1,10 @@
 import React from "react";
 
+
 const Menu = () => {
     return (
         <div>
-            <ul className="menu rounded-box bg-base-200">
+            <ul className="menu rounded-box bg-inherit hidden sm:flex">
                 <li>
                     <a className="tooltip tooltip-right" data-tip="Home">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

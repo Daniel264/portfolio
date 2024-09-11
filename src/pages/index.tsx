@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Menu from "@/components/Menu";
 import SEO from "@/components/SEO";
 import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
@@ -13,7 +14,8 @@ export default function Home() {
             <main className="flex min-h-screen flex-col items-center bg-[#31363F] p-5 ">
                 {/* <div className="m-auto w-full max-w-8xl"> */}
 
-                <div className="max-w-8xl text-white md:m-auto">
+                <div className="max-w-8xl text-white md:m-auto flex">
+                    <Menu />
                     <div className="hero bg-inherit md:min-h-screen">
                         <div className="hero-content flex-col-reverse text-center lg:flex-row-reverse">
                             <div className="flex w-full justify-center">
