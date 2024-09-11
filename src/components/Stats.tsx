@@ -3,7 +3,7 @@ import React from "react";
 const Stats = () => {
     return (
         <div>
-            <div className=" stats stats-horizontal shadow sm:stats-vertical bg-inherit text-base-200 w-[400px] sm:w-auto">
+            <div className=" stats stats-horizontal shadow sm:stats-vertical bg-[#181C14] text-base-200 w-[400px] sm:w-max ">
                 <div className="stat">
                     <div className="stat-title text-base-200">Downloads</div>
                     <div className="stat-value">31K</div>
