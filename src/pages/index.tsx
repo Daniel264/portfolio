@@ -3,6 +3,7 @@ import Menu from "@/components/Menu";
 import SEO from "@/components/SEO";
 import Stats from "@/components/Stats";
 import TopNavigation from "@/components/TopNavigation";
+import Typed from "@/components/Typed";
 import Image from "next/image";
 
 export default function Home() {
@@ -33,14 +34,14 @@ export default function Home() {
                                     </div>
                                     <div className="w-full">
                                         <h3 className="my-5 text-5xl font-semibold">Hello, I&apos;m Daniel Olatinsu</h3>
-                                        <p className="text-2xl font-light">I&apos;m a Fullstack Developer</p>
+                                        <p className="text-2xl font-light"><Typed /></p>
                                     </div>
                                 </div>
                             </div>
                             <Stats />
                         </div>
                         <div className="mt-8 animate-bounce md:mr-44">
-                            <button className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:bg-slate-800 md:w-44">Lets Talk</button>
+                            <button className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:bg-slate-500 md:w-44">Lets Talk</button>
                         </div>
                     </div>
                 </div>
