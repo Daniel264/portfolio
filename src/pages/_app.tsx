@@ -12,6 +12,7 @@ import { handleHTTPResponse } from "@/utilities/handle-http-error-response";
 const sora = Sora({
     subsets: ["latin"],
     weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+    style: "normal",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
