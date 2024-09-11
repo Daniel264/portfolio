@@ -44,7 +44,8 @@ export default function Home() {
                             </div>
                             <Stats />
                         </div>
-                        <div className="mt-8 animate-bounce md:mr-44">
+                        <div className="mt-8 animate-bounce md:mr-44 space-x-5">
+                            <button className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:bg-slate-500 md:w-44">Lets Talk <i className="fa-solid fa-message"></i></button>
                             <button className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:bg-slate-500 md:w-44">Lets Talk <i className="fa-solid fa-message"></i></button>
                         </div>
                     </div>
