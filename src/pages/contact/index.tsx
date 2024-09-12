@@ -21,7 +21,7 @@ const Contact = () => {
                         </div>
                         <div className="card max-h-96 w-full max-w-sm shrink-0 shadow-2xl md:max-w-2xl">
                             <form className="card-body">
-                                <div className="lg:space-x-5 lg:flex">
+                                <div className="lg:flex lg:space-x-5">
                                     <div className="form-control w-full">
                                         <label className="label">
                                             <span className="label-text text-white">Full Name</span>
@@ -46,7 +46,7 @@ const Contact = () => {
                                 <div>
                                     <label className="label">
                                         {" "}
-                                        <span className="label-text">Text area</span>
+                                        <span className="label-text text-white">Text area</span>
                                     </label>
                                     <textarea placeholder="Message ..." className="textarea textarea-bordered textarea-md w-full max-w-full"></textarea>
                                 </div>
