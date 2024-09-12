@@ -12,7 +12,7 @@ const TopNavigation = () => {
 
     return (
         <div>
-            <nav className="fixed top-0 z-50 w-full border-none bg-transparent pt-3 lg:h-20 px-9">
+            <nav className="fixed top-0 z-50 w-full border-none bg-[#101010] pt-3 lg:h-20 px-9">
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
                     <a href="#" className="flex items-center space-x-3 text-2xl text-white rtl:space-x-reverse">
                         Daniel O
