@@ -1,5 +1,6 @@
 import Menu from "@/components/Menu";
 import TopNavigation from "@/components/TopNavigation";
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -8,6 +9,9 @@ const About = () => {
             <TopNavigation />
             <main className="flex h-[100vh] w-full items-center justify-center bg-[#31363F] px-[2rem] text-center text-base-200 lg:px-[5rem]">
                 <Menu />
+                <div>
+                    <Image src="/assets/images/avatar.jpg" width={500} height={500} alt={""}></Image>
+                </div>
                 <div>
                     <h1 className="font text-5xl font-semibold">
                         About <span className="font-medium text-slate-400">Daniel</span>
