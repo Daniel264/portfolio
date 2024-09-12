@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+import TopNavigation from "@/components/TopNavigation";
 import React, { useState } from "react";
 
 const Contact = () => {
@@ -9,6 +11,7 @@ const Contact = () => {
     return (
         <>
             {loading && <div className="loading-animation"></div>}
+            <TopNavigation />
             <div className="contact-page h-[100vh] bg-[#31363F]">
                 <div className="hero min-h-screen text-white">
                     <div className="hero-content flex-col lg:flex-row">
