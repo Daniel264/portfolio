@@ -8,18 +8,18 @@ const About = () => {
     setTimeout(() => {
         // Simulate a slow network
         setLoading(false);
-    }, 2000);
+    }, 1000);
     return (
         <>
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
-            <main className="flex h-[100vh] w-full items-center justify-center bg-[#31363F] px-[2rem] text-center text-base-200">
+            <main className="flex h-[100vh] w-full items-center justify-center bg-[#101010] px-[2rem] text-center text-base-200">
                 <Menu />
 
                 <div className="flex flex-col md:flex-row">
                     <div className="w-full">
                         <h1 className="font text-5xl font-semibold">
-                            About <span className="font-medium text-slate-400">Daniel</span>
+                            About <span className="font-medium text-primary">Daniel</span>
                         </h1>
                         <div className="py-8">
                             <p className="pb-2 text-xl">

@@ -17,6 +17,9 @@ const Contact = () => {
                     <h1 className="mb-10 text-5xl font-bold">
                         Contact <span className="text-[#5D5CD6]">Me</span>
                     </h1>
+                    <p className="text-xl font-light">
+                        <span className="text-primary">get</span> in touch ...
+                    </p>
                     <div className="hero-content w-full flex-col lg:flex-row">
                         <div className="text-center lg:text-left">
                             <div className="py-6">
