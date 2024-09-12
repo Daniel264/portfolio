@@ -25,18 +25,24 @@ const Contact = () => {
                         </div>
                         <div className="card max-h-fit w-full shrink-0 bg-[#101010] shadow-2xl md:max-w-2xl">
                             <form className="card-body">
-                                <div className="lg:flex space-y-2 lg:space-y-0 lg:space-x-5">
+                                <div className="space-y-2 lg:flex lg:space-x-5 lg:space-y-0">
                                     <div className="form-control w-full">
                                         {/* <label className="label">
                                             <span className="label-text text-white">Full Name</span>
                                         </label> */}
-                                        <input type="text" placeholder="name..." className="input input-bordered bg-black placeholder:text-base-100" required />
+                                        <input
+                                            type="text"
+                                            placeholder="name..."
+                                            className="input input-bordered border-none 
+                                        bg-black placeholder:text-base-100"
+                                            required
+                                        />
                                     </div>
                                     <div className="form-control w-full">
                                         {/* <label className="label">
                                             <span className="label-text text-white">Email</span>
                                         </label> */}
-                                        <input type="email" placeholder="email..." className="input input-bordered bg-black placeholder:text-base-100" required />
+                                        <input type="email" placeholder="email..." className="input input-bordered border-none bg-black placeholder:text-base-100" required />
                                     </div>
                                 </div>
                                 <div>
@@ -44,7 +50,7 @@ const Contact = () => {
                                         {/* <label className="label">
                                             <span className="label-text text-white">Title</span>
                                         </label> */}
-                                        <input type="text" placeholder="Title..." className="input input-bordered bg-black placeholder:text-base-100" required />
+                                        <input type="text" placeholder="Title..." className="input input-bordered border-none bg-black placeholder:text-base-100" required />
                                     </div>
                                 </div>
                                 <div>
@@ -52,10 +58,10 @@ const Contact = () => {
                                         {" "}
                                         <span className="label-text text-white">Text area</span>
                                     </label> */}
-                                    <textarea placeholder="Enter Message ..." className="textarea textarea-bordered textarea-md w-full max-w-full bg-black placeholder:text-base-100"></textarea>
+                                    <textarea placeholder="Enter Message ..." className="textarea textarea-bordered textarea-md w-full max-w-full border-none bg-black placeholder:text-base-100"></textarea>
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn bg-slate-500">Login</button>
+                                    <button className="btn border-none bg-slate-500">Login</button>
                                 </div>
                             </form>
                         </div>
