@@ -12,7 +12,7 @@ const Contact = () => {
         <>
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
-            <div className="contact-page bg-[#31363F] px-2 py-20 md:px-10 lg:py-0">
+            <div className="contact-page bg-[#] px-2 py-20 md:px-10 lg:py-0">
                 <div className="hero min-h-screen text-white">
                     <h1 className="absolute top-28 text-5xl font-bold md:top-32">
                         Contact <span className="text-slate-400">Me</span>
@@ -55,7 +55,7 @@ const Contact = () => {
                                     <textarea placeholder="Message ..." className="textarea textarea-bordered textarea-md w-full max-w-full"></textarea>
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn btn-primary">Login</button>
+                                    <button className="btn bg-slate-500">Login</button>
                                 </div>
                             </form>
                         </div>
