@@ -1,9 +1,11 @@
+import Menu from "@/components/Menu";
 import React from "react";
 
 const About = () => {
     return (
         <>
-            <main className="h-[100vh] w-full bg-[#31363F] text-center text-base-200 flex justify-center items-center">
+            <main className="flex h-[100vh] w-full items-center justify-center bg-[#31363F] px-[2rem] text-center text-base-200 lg:px-[5rem]">
+                <Menu />
                 <div>
                     <h1 className="font text-5xl font-semibold">About Me</h1>
                     <div>
