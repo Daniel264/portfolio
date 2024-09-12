@@ -17,9 +17,17 @@ const Contact = () => {
                     <h1 className="mb-10 text-5xl font-bold">
                         Contact <span className="text-[#5D5CD6]">Me</span>
                     </h1>
-                    <p className="text-xl font-light">
+                    <p className="pb-7 text-3xl font-light">
                         <span className="text-primary">get</span> in touch ...
                     </p>
+                    <div className="flex h-fit w-full flex-col items-center justify-center gap-4 md:gap-7 lg:flex-row">
+                        <div className="flex h-[160px] w-[80%] items-center justify-center rounded-3xl bg-black shadow-xl lg:w-[50%] ">
+                            <p className="text-xl text-[#D1D5DB] md:text-2xl">danielolatinsu@gmail.com</p>
+                        </div>
+                        <div className="flex h-[160px] w-[80%] items-center justify-center rounded-3xl bg-black shadow-xl lg:w-[50%]">
+                            <p className="text-xl text-[#D1D5DB] md:text-2xl">Lagos, lagos Nigeria</p>
+                        </div>
+                    </div>
                     <div className="hero-content w-full flex-col lg:flex-row">
                         <div className="text-center lg:text-left">
                             <div className="py-6">
