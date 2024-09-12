@@ -12,8 +12,8 @@ const Contact = () => {
         <>
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
-            <div className="contact-page bg-[#101010] px-2 py-20 text-center md:px-10 lg:py-0">
-                <div className="hero flex min-h-screen flex-col items-center justify-center text-white">
+            <div className="contact-page bg-[#101010] px-2 py-20 text-center md:px-10 lg:py-0 ">
+                <div className="hero flex min-h-screen flex-col items-center justify-center text-white pt-20 md:pt-24 lg:pt-32">
                     <h1 className="mb-10 text-5xl font-bold">
                         Contact <span className="text-[#5D5CD6]">Me</span>
                     </h1>
@@ -21,11 +21,12 @@ const Contact = () => {
                         <span className="text-primary">get</span> in touch ...
                     </p>
                     <div className="flex h-fit w-full flex-col items-center justify-center gap-4 md:gap-7 lg:flex-row">
-                        <div className="flex h-[160px] w-[80%] items-center justify-center rounded-3xl bg-black shadow-xl lg:w-[50%] ">
-                            <i className="fa-regular fa-envelope fa-2x "></i>
+                        <div className="flex flex-col h-[160px] w-[80%] items-center justify-center rounded-3xl bg-black shadow-xl lg:w-[50%] ">
+                            <i className="fa-regular fa-envelope fa-2x"></i>
+                        
                             <p className="text-xl text-[#D1D5DB] md:text-2xl">danielolatinsu@gmail.com</p>
                         </div>
-                        <div className="flex h-[160px] w-[80%] items-center justify-center rounded-3xl bg-black shadow-xl lg:w-[50%]">
+                        <div className="flex flex-col h-[160px] w-[80%] items-center justify-center rounded-3xl bg-black shadow-xl lg:w-[50%]">
                             <i className="fa-solid fa-location-dot fa-2x "></i>
                             <p className="text-xl text-[#D1D5DB] md:text-2xl">Lagos, lagos Nigeria</p>
                         </div>
