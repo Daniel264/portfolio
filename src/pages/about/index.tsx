@@ -6,6 +6,7 @@ const About = () => {
     const [loading, setLoading] = useState(true);
 
     setTimeout(() => {
+        // Simulate a slow network
         setLoading(false);
     }, 2000);
     return (
