@@ -27,11 +27,11 @@ const About = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="w-full ">
+                    {/* <div className="w-full ">
                         <div className="w-fit rounded-full bg-slate-500">
                             <Image src="/assets/images/avatar-bg.png" width={400} height={500} className="h-[400px] rounded-full" alt={""}></Image>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </main>
         </>
