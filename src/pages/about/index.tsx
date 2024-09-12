@@ -1,9 +1,11 @@
 import Menu from "@/components/Menu";
+import TopNavigation from "@/components/TopNavigation";
 import React from "react";
 
 const About = () => {
     return (
         <>
+            <TopNavigation />
             <main className="flex h-[100vh] w-full items-center justify-center bg-[#31363F] px-[2rem] text-center text-base-200 lg:px-[5rem]">
                 <Menu />
                 <div>
@@ -17,7 +19,7 @@ const About = () => {
                         <p>
                             <i className="fa-solid fa-location-dot mr-4"></i>Currently residing in Lagos, Nigeria
                         </p>
-                        <p>
+                        <p className="font-light">
                             Hi!!! I am a Full-stack developer with a passion for mobile technology and a <br /> love for continuous learning. Adept at creating innovative solutions and <br /> excited by emerging tech trends
                         </p>
                     </div>
