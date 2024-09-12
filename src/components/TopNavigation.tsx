@@ -12,9 +12,9 @@ const TopNavigation = () => {
 
     return (
         <div>
-            <nav className="fixed top-0 z-50 w-full border-none bg-[#31363F] pt-3 lg:h-20">
+            <nav className="fixed top-0 z-50 w-full border-none bg-transparent pt-3 lg:h-20">
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-                    <a href="#" className="flex items-center space-x-3 text-white rtl:space-x-reverse">
+                    <a href="#" className="flex items-center space-x-3 text-2xl text-white rtl:space-x-reverse">
                         Daniel O
                     </a>
                     <button
@@ -36,7 +36,7 @@ const TopNavigation = () => {
                     <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-multi-level">
                         <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-none dark:bg-inherit ">
                             <li>
-                                <Link href="/" className="block rounded px-3 py-2 text-white md:bg-transparent md:p-0 " aria-current="page">
+                                <Link href="/" className="block rounded px-3 py-2 text-xl text-white md:bg-transparent md:p-0" aria-current="page">
                                     Home
                                 </Link>
                             </li>
@@ -45,7 +45,7 @@ const TopNavigation = () => {
                                     <button
                                         id="dropdownNavbarLink"
                                         data-dropdown-toggle="dropdownNavbar"
-                                        className="flex w-full items-center justify-between px-3 py-2 text-gray-900 hover:bg-gray-100 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:focus:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                                        className="flex w-full items-center justify-between px-3 py-2 text-xl text-gray-900 hover:bg-gray-100 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:focus:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
                                     >
                                         About
                                     </button>
@@ -53,14 +53,14 @@ const TopNavigation = () => {
                             </li>
                             <li>
                                 <Link href="/portfolio">
-                                    <button className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
+                                    <button className="block rounded px-3 py-2 text-xl text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
                                         Portfolio
                                     </button>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/contact">
-                                    <button className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
+                                    <button className="block rounded px-3 py-2 text-xl text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
                                         Contact
                                     </button>
                                 </Link>
