@@ -2,17 +2,17 @@ import dynamic from "next/dynamic";
 import Menu from "@/components/Menu";
 import SEO from "@/components/SEO";
 import Stats from "@/components/Stats";
-import TopNavigation from "@/components/TopNavigation";
+import TopNavigation from "@/components/TopNavigation/TopNavigation";
 // import Typed from "@/components/Typed";
 import Image from "next/image";
 import { toast } from "react-toastify";
 
-const Typed = dynamic(() => import('@/components/Typed'), { ssr: false });
+const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
 export default function Home() {
     const handleLoading = () => {
-        toast.loading("successful!")
-    }
+        toast.loading("successful!");
+    };
     return (
         <>
             <SEO title="Home" />

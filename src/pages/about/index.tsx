@@ -1,5 +1,5 @@
 import Menu from "@/components/Menu";
-import TopNavigation from "@/components/TopNavigation";
+import TopNavigation from "@/components/TopNavigation/TopNavigation";
 import Image from "next/image";
 import React from "react";
 

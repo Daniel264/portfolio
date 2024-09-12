@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
+
 const TopNavigation = () => {
     // State to manage the visibility of the mobile menu
     const [isMenuOpen, setIsMenuOpen] = useState(false);
