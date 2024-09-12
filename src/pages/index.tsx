@@ -1,15 +1,17 @@
-import Header from "@/components/Header";
+import dynamic from "next/dynamic";
 import Menu from "@/components/Menu";
 import SEO from "@/components/SEO";
 import Stats from "@/components/Stats";
 import TopNavigation from "@/components/TopNavigation";
-import Typed from "@/components/Typed";
+// import Typed from "@/components/Typed";
 import Image from "next/image";
 import { toast } from "react-toastify";
 
+const Typed = dynamic(() => import('@/components/Typed'), { ssr: false });
+
 export default function Home() {
     const handleLoading = () => {
-        toast.loading("Downloading Resume!")
+        toast.loading("successful!")
     }
     return (
         <>

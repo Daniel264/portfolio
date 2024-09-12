@@ -1,3 +1,4 @@
+
 import { ReactTyped } from "react-typed";
 
 const Typed = () => (
