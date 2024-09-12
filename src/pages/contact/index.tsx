@@ -25,7 +25,7 @@ const Contact = () => {
                         </div>
                         <div className="card max-h-fit w-full shrink-0 bg-[#101010] shadow-2xl md:max-w-2xl">
                             <form className="card-body">
-                                <div className="lg:flex lg:space-x-5">
+                                <div className="lg:flex space-y-2 lg:space-y-0 lg:space-x-5">
                                     <div className="form-control w-full">
                                         {/* <label className="label">
                                             <span className="label-text text-white">Full Name</span>
