@@ -31,24 +31,24 @@ const Contact = () => {
                                             type="text"
                                             placeholder="name..."
                                             className="input input-bordered border-none 
-                                        bg-black placeholder:text-white"
+                                        bg-black placeholder:text-[#D1D5DB]"
                                             required
                                         />
                                     </div>
                                     <div className="form-control w-full">
-                                        <input type="email" placeholder="email..." className="input input-bordered border-none bg-black placeholder:text-base-100" required />
+                                        <input type="email" placeholder="email..." className="input input-bordered border-none bg-black placeholder:text-[#D1D5DB]" required />
                                     </div>
                                 </div>
                                 <div>
                                     <div className="form-control">
-                                        <input type="text" placeholder="Title..." className="input input-bordered border-none bg-black placeholder:text-base-100" required />
+                                        <input type="text" placeholder="Title..." className="input input-bordered border-none bg-black placeholder:text-[#D1D5DB]" required />
                                     </div>
                                 </div>
                                 <div>
-                                    <textarea placeholder="Enter Message ..." className="textarea textarea-bordered textarea-md w-full max-w-full border-none bg-black placeholder:text-base-100"></textarea>
+                                    <textarea placeholder="Enter Message ..." className="textarea textarea-bordered textarea-md w-full max-w-full border-none bg-black placeholder:text-[#D1D5DB]"></textarea>
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn border-none bg-primary text-base-100">Submit</button>
+                                    <button className="btn border-none bg-primary text-[#D1D5DB]">Submit</button>
                                 </div>
                             </form>
                         </div>
