@@ -31,7 +31,7 @@ const Contact = () => {
                                             type="text"
                                             placeholder="name..."
                                             className="input input-bordered border-none 
-                                        bg-black placeholder:text-base-100"
+                                        bg-black placeholder:text-white"
                                             required
                                         />
                                     </div>
