@@ -5,7 +5,7 @@ const Contact = () => {
     setTimeout(() => {
         // Simulate a slow network
         setLoading(false);
-    }, 3000);
+    }, 1000);
     return (
         <>
             {loading && <div className="loading-animation"></div>}
