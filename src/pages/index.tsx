@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import Menu from "@/components/Menu";
 import SEO from "@/components/SEO";
 import Stats from "@/components/Stats";
-import TopNavigation from "@/components/TopNavigation/TopNavigation";
+import TopNavigation from "@/components/TopNavigation";
 // import Typed from "@/components/Typed";
 import Image from "next/image";
 import { toast } from "react-toastify";
