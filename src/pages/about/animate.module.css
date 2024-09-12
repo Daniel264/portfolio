@@ -1,7 +1,7 @@
 .loading-animation {
     width: 100%;
     height: 300vh; /* Adjust the height as per your needs */
-    background-color: #33ccff; /* Customize color */
+    background-color: rgb(105, 119, 134); /* Customize color */
     opacity: 1;
     animation: loadingAnimation 1s linear;
     animation-iteration-count: infinite;
