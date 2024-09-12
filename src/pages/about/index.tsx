@@ -1,7 +1,5 @@
 import Menu from "@/components/Menu";
 import TopNavigation from "@/components/TopNavigation";
-import Image from "next/image";
-import styles from "./animate.module.css";
 import React, { useState } from "react";
 
 const About = () => {
@@ -12,7 +10,7 @@ const About = () => {
     }, 2000);
     return (
         <>
-            {loading && <div className={styles["loading-animation"]}></div>}
+            {loading && <div className="loading-animation"></div>}
             <TopNavigation />
             <main className="flex h-[100vh] w-full items-center justify-center bg-[#31363F] px-[2rem] text-center text-base-200">
                 <Menu />
