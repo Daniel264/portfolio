@@ -40,7 +40,13 @@ const Contact = () => {
                                         <input type="text" placeholder="Title..." className="input input-bordered" required />
                                     </div>
                                 </div>
-                                <textarea placeholder="Bio" className="textarea textarea-bordered textarea-md w-full max-w-xs"></textarea>
+                                <div>
+                                    <label className="label">
+                                        {" "}
+                                        <span className="label-text">Text area</span>
+                                    </label>
+                                    <textarea placeholder="Message ..." className="textarea textarea-bordered textarea-md w-full max-w-full"></textarea>
+                                </div>
                                 <div className="form-control mt-6">
                                     <button className="btn btn-primary">Login</button>
                                 </div>
