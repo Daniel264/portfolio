@@ -15,7 +15,7 @@ const Contact = () => {
             <div className="contact-page bg-[#101010] px-2 py-20 text-center md:px-10 lg:py-0">
                 <div className="hero flex min-h-screen flex-col items-center justify-center text-white">
                     <h1 className="mb-10 text-5xl font-bold">
-                        Contact <span className="text-slate-400">Me</span>
+                        Contact <span className="text-[#5D5CD6]">Me</span>
                     </h1>
                     <div className="hero-content w-full flex-col lg:flex-row">
                         <div className="text-center lg:text-left">
@@ -48,7 +48,7 @@ const Contact = () => {
                                     <textarea placeholder="Enter Message ..." className="textarea textarea-bordered textarea-md w-full max-w-full border-none bg-black placeholder:text-base-100"></textarea>
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn border-none bg-slate-500">Submit</button>
+                                    <button className="btn border-none bg-primary">Submit</button>
                                 </div>
                             </form>
                         </div>

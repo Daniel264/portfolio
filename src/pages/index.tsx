@@ -40,10 +40,10 @@ export default function Home() {
                                     </div>
                                     <div className="w-full">
                                         <h3 className="my-5 text-5xl font-semibold">
-                                            Hello, I&apos;m <span className="text-slate-500">Daniel</span> Olatinsu
+                                            Hello, I&apos;m <span className="text-primary">Daniel</span> Olatinsu
                                         </h3>
                                         <p className="text-2xl font-light">
-                                            <span className="text-slate-500">I&apos;m a</span> <Typed />
+                                            <span className="text-primary">I&apos;m a</span> <Typed />
                                         </p>
                                     </div>
                                 </div>
@@ -51,10 +51,10 @@ export default function Home() {
                             {/* <Stats /> */}
                         </div>
                         <div className="ml-5 mt-8 space-y-4 md:ml-0 md:mr-44 md:space-x-5">
-                            <button className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
+                            <button className="btn w-[22rem] rounded border-none bg-primary text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Lets Talk <i className="fa-solid fa-message"></i>
                             </button>
-                            <button onClick={handleLoading} className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
+                            <button onClick={handleLoading} className="btn w-[22rem] rounded border-none bg-primary text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Download CV <i className="fa-solid fa-download"></i>
                             </button>
                         </div>
