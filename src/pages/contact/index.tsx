@@ -12,12 +12,16 @@ const Contact = () => {
         <>
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
-            <div className="contact-page bg-[#31363F] px-2 md:px-10 py-20 lg:py-0">
+            <div className="contact-page bg-[#31363F] px-2 py-20 md:px-10 lg:py-0">
                 <div className="hero min-h-screen text-white">
-                    <div className="hero-content flex-col lg:flex-row">
+                    <h1 className="absolute top-28 text-5xl font-bold md:top-32">
+                        Contact <span className="text-slate-400">Me</span>
+                    </h1>
+                    <div className="hero-content w-full flex-col lg:flex-row">
                         <div className="text-center lg:text-left">
-                            <h1 className="text-5xl font-bold">Contact Me</h1>
-                            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <div className="py-6">
+                                <h2 className="text-2xl font-medium">Contact Info</h2>
+                            </div>
                         </div>
                         <div className="card max-h-fit w-full shrink-0 shadow-2xl md:max-w-2xl">
                             <form className="card-body">
