@@ -48,7 +48,7 @@ const Contact = () => {
                                     <textarea placeholder="Enter Message ..." className="textarea textarea-bordered textarea-md w-full max-w-full border-none bg-black placeholder:text-base-100"></textarea>
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn border-none bg-primary">Submit</button>
+                                    <button className="btn border-none bg-primary text-base-100">Submit</button>
                                 </div>
                             </form>
                         </div>
