@@ -19,7 +19,7 @@ export default function Home() {
             {/* <Header /> */}
             <TopNavigation />
 
-            <main className="flex min-h-screen flex-col items-center p-5 pt-28 ">
+            <main className="flex min-h-screen flex-col items-center p-5 pt-28 bg-[#101010]">
                 {/* <div className="m-auto w-full max-w-8xl"> */}
 
                 <div className="max-w-8xl flex text-white md:m-auto">
@@ -48,7 +48,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <Stats />
+                            {/* <Stats /> */}
                         </div>
                         <div className="ml-5 mt-8 space-y-4 md:ml-0 md:mr-44 md:space-x-5">
                             <button className="btn w-[22rem] rounded border-none bg-slate-800 text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">

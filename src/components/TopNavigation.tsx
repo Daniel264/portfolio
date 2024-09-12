@@ -1,7 +1,5 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import styles from "./TopNavigation.module.css";
-import ThemeController from "./ThemeController";
 
 const TopNavigation = () => {
     // State to manage the visibility of the mobile menu
