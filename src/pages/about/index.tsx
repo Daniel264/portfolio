@@ -13,7 +13,7 @@ const About = () => {
     }, 1000);
 
     return (
-        <div className="min-h-screen w-full bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] text-[#D1D5DB]">
+        <div className="min-h-screen w-full bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] text-[#D1D5DB] bg-fixed">
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
             <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-44 text-center">
