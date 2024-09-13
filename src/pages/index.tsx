@@ -49,10 +49,10 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="ml-0 mt-8 space-y-4 md:ml-0 md:mr-44 md:space-x-5">
-                            <button className="btn w-full rounded border-none bg-primary text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
+                            <button className="btn w-full rounded-3xl border-none bg-[rgba(174,174,174,1)] text-black shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Lets Talk <i className="fa-solid fa-message"></i>
                             </button>
-                            <button onClick={handleLoading} className="btn w-full rounded border-none bg-primary text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
+                            <button onClick={handleLoading} className="btn w-full rounded-3xl border-2 border-[rgba(174,174,174,1)] bg-black text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Download CV <i className="fa-solid fa-download"></i>
                             </button>
                         </div>
