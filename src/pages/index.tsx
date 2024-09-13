@@ -21,7 +21,7 @@ export default function Home() {
 
             <main className="flex min-h-screen flex-col items-center bg-[#101010] p-5 pt-28">
                 <div className="max-w-8xl flex w-full text-white md:m-auto">
-                    <div className="fixed left-0 top-44 hidden h-full md:flex">
+                    <div className="fixed left-10 lg:left-12 top-44 hidden h-full md:flex">
                         <Menu />
                     </div>
                     <div className="ml-0 flex h-full w-full flex-col items-center md:ml-20">
