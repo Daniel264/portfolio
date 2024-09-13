@@ -5,7 +5,9 @@ import Stats from "@/components/Stats";
 import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
 import { toast } from "react-toastify";
+import { Sora } from "@next/font/google";
 
+const sora = Sora({ subsets: ["latin"] });
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
 export default function Home() {
@@ -31,14 +33,14 @@ export default function Home() {
                                     </div> */}
                                     <div className="w-full">
                                         <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
-                                        <h3 className="text-[rgba(251, 251, 251,1)] my-5  text-left text-4xl font-semibold sm:text-5xl md:text-7xl">
+                                        <h3 className={`text-[rgba(251, 251, 251,1)] my-5  text-left text-4xl font-semibold sm:text-5xl md:text-7xl ${sora.className}`}>
                                             <span className="">Daniel</span> Olatinsu
                                         </h3>
                                         <p className="text-4xl text-[rgba(174,174,174,1)] lg:text-6xl">
                                             Crafting reality from lines
                                             <br className="block sm:hidden" /> of code.
                                         </p>
-                                        <p className="pt-8 text-base font-light text-[rgba(174,174,174,1)] md:text-lg font-poppins">As a software engineer, I weave magic through code, turning the impossible into reality, one algorithm at a time.</p>
+                                        <p className="pt-8 text-base font-light text-[rgba(174,174,174,1)] md:text-lg">As a software engineer, I weave magic through code, turning the impossible into reality, one algorithm at a time.</p>
                                         <p className="pt-10 text-2xl font-light">
                                             <span className="text-primary">I&apos;m a</span> <Typed />
                                         </p>

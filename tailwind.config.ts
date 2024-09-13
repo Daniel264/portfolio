@@ -13,8 +13,7 @@ const config: Config = {
                 // Add color schemes
             },
             fontFamily: {
-                lato: ['Lato', 'sans-serif'],
-                poppins: ['Poppins', 'sans-serif'],
+                lato: ["Lato", "sans-serif"],
             },
         },
     },
