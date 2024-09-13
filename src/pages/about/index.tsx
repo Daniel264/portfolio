@@ -2,6 +2,7 @@ import Menu from "@/components/Menu";
 import TopNavigation from "@/components/TopNavigation";
 import React, { useState } from "react";
 import Image from "next/image";
+import { Sora } from "@next/font/google";
 
 const About = () => {
     const [loading, setLoading] = useState(true);
@@ -44,13 +45,35 @@ const About = () => {
                     </div>
                 </div>
             </main>
-            <section>
-                <div className="flex w-1/2 ">
-                    <div className="badge badge-outline">HTML</div>
-                    <div className="badge badge-outline">CSS</div>
-                    <div className="badge badge-outline">default</div>
-                    <div className="badge badge-outline">default</div>
-                    <div className="badge badge-outline">default</div>
+            <section className="flex flex-col items-center justify-center w-full py-10">
+                <h1 className="text-center text-3xl font-bold mb-6">Skills</h1>
+                <div className="flex flex-wrap justify-center gap-4">
+                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
+                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>HTML
+                    </div>
+                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
+                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>CSS
+                    </div>
+                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
+                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>Tailwindcss
+                    </div>
+                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
+                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>ChakraUI
+                    </div>
+                </div>
+                <div className="flex flex-wrap justify-center gap-4 mt-4">
+                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
+                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>HTML
+                    </div>
+                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
+                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>CSS
+                    </div>
+                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
+                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>Tailwindcss
+                    </div>
+                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
+                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>ChakraUI
+                    </div>
                 </div>
             </section>
             {/* <section className="h-screen w-full bg-[#101010] px-10 text-center text-[#D1D5DB] md:px-20">
