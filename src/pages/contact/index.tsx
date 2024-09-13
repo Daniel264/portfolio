@@ -1,9 +1,15 @@
 import Header from "@/components/Header";
 import TopNavigation from "@/components/TopNavigation";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const Contact = () => {
     const [loading, setLoading] = useState(true);
+    
+    const handleSuccess = () => {
+        toast.success("successful!");
+    };
+
     setTimeout(() => {
         // Simulate a slow network
         setLoading(false);
@@ -56,7 +62,7 @@ const Contact = () => {
                         <textarea className="textarea textarea-bordered textarea-md w-full max-w-full border-none bg-black placeholder:text-[#D1D5DB]"></textarea>
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn border-none bg-primary text-[#D1D5DB]">Submit</button>
+                        <button className="btn border-none bg-primary text-[#D1D5DB]" onClick={handleSuccess}>Submit</button>
                     </div>
                     </form>
                 </div>
