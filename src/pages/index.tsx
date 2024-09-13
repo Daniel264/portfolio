@@ -40,7 +40,7 @@ export default function Home() {
                                     </div>
                                     <div className="w-full">
                                         <h3 className="my-5 text-5xl font-semibold">
-                                            Hello, I&apos;m <span className="text-primary">Daniel</span> Olatinsu
+                                            <span className="text-primary">Daniel</span> Olatinsu
                                         </h3>
                                         <p className="text-2xl font-light">
                                             <span className="text-primary">I&apos;m a</span> <Typed />
