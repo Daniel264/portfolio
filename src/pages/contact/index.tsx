@@ -62,7 +62,7 @@ const Contact = () => {
                         <textarea className="textarea textarea-bordered textarea-md w-full max-w-full border-none bg-black placeholder:text-[#D1D5DB]"></textarea>
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn border-none bg-primary text-[#D1D5DB]" onClick={handleSuccess}>Submit</button>
+                        <button className="btn border-none bg-[rgba(174,174,174,1)]  text-black rounded-3xl" onClick={handleSuccess}>Submit</button>
                     </div>
                     </form>
                 </div>
