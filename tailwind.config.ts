@@ -14,6 +14,7 @@ const config: Config = {
             },
             fontFamily: {
                 lato: ['Lato', 'sans-serif'],
+                poppins: ['Poppins', 'sans-serif'],
             },
         },
     },
