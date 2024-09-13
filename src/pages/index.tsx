@@ -3,7 +3,6 @@ import Menu from "@/components/Menu";
 import SEO from "@/components/SEO";
 import Stats from "@/components/Stats";
 import TopNavigation from "@/components/TopNavigation";
-// import Typed from "@/components/Typed";
 import Image from "next/image";
 import { toast } from "react-toastify";
 
@@ -16,10 +15,9 @@ export default function Home() {
     return (
         <>
             <SEO title="Home" />
-            {/* <Header /> */}
             <TopNavigation />
 
-            <main className="flex min-h-screen flex-col items-center bg-[#101010] p-5 pt-28">
+            <main className="flex min-h-screen flex-col items-center bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] p-5 pt-28">
                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                     <div className="fixed left-10 top-44 hidden h-full md:flex lg:left-12">
                         <Menu />
@@ -41,7 +39,6 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            {/* <Stats /> */}
                         </div>
                         <div className="ml-0 mt-8 space-y-4 md:ml-0 md:mr-44 md:space-x-5">
                             <button className="btn w-full rounded border-none bg-primary text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
