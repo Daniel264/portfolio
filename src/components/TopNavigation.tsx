@@ -13,7 +13,7 @@ const TopNavigation = () => {
 
     return (
         <div>
-            <nav className="fixed top-0 z-50 w-full border-none bg-[#101010] px-0 lg:px-9  lg:h-20">
+            <nav className="fixed top-0 z-50 w-full border-none px-0 lg:px-9 lg:h-20 backdrop-blur bg-opacity-30">
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
                     <a href="#" className="flex items-center space-x-3 text-primary rtl:space-x-reverse hover:animate-spin">
                         <Image src="/assets/logo/logo.png" width={80} height={50} className="mt-5" alt="my website's logo" />
@@ -21,7 +21,7 @@ const TopNavigation = () => {
                     <button
                         onClick={toggleMenu} // Toggle menu on click
                         type="button"
-                        className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm  focus:outline-none  md:hidden dark:text-white"
+                        className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm focus:outline-none md:hidden dark:text-white"
                         aria-controls="navbar-multi-level"
                         aria-expanded={isMenuOpen ? "true" : "false"}
                     >
@@ -35,7 +35,7 @@ const TopNavigation = () => {
                         )}
                     </button>
                     <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-multi-level">
-                        <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-none dark:bg-inherit ">
+                        <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-none dark:bg-inherit">
                             <li>
                                 <Link href="/" className="block rounded px-3 py-2 text-xl text-white md:bg-transparent md:p-0" aria-current="page">
                                     Home
