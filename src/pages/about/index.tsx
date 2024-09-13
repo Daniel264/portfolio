@@ -19,15 +19,15 @@ const About = () => {
                 <Menu />
             </div>
 
-            <div className="flex flex-col md:flex-row w-full h-full">
-                <div>
-                    <Image src="/assets/images/aboutpic.png" width={400} height={500} className="h-[400px] rounded-full" alt={""}></Image>
+            <div className="flex flex-col lg:flex-row w-full h-full items-center justify-center">
+                <div className="w-full flex justify-center lg:justify-end lg:pr-8">
+                <Image src="/assets/images/aboutpic.png" width={400} height={500} className="h-[400px] rounded-full" alt={""}></Image>
                 </div>
-                <div className="w-full">
-                <h1 className="font text-5xl font-semibold">
+                <div className="w-full flex flex-col items-center lg:items-start lg:pl-8">
+                <h1 className="text-5xl font-semibold">
                     About <span className="font-medium text-primary">Daniel</span>
                 </h1>
-                <div className="py-8">
+                <div className="py-8 text-center lg:text-left">
                     <p className="pb-2 text-xl">
                     <i className="fa-solid fa-code mr-3"></i>Fullstack Developer & Mobile Enthusiast
                     </p>
@@ -39,11 +39,6 @@ const About = () => {
                     </p>
                 </div>
                 </div>
-                {/* <div className="w-full ">
-                <div className="w-fit rounded-full bg-slate-500">
-                <Image src="/assets/images/avatar-bg.png" width={400} height={500} className="h-[400px] rounded-full" alt={""}></Image>
-                </div>
-                </div> */}
             </div>
             </main>
         </>
