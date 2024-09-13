@@ -10,19 +10,18 @@ const About = () => {
         // Simulate a slow network
         setLoading(false);
     }, 1000);
+
     return (
-        <>
+        <div className="min-h-screen w-full bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] text-[#D1D5DB]">
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
-            <main className="flex min-h-screen w-full items-center justify-center bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] px-[2rem] pt-44 text-center text-[#D1D5DB]">
+            <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-44 text-center">
+                <h1 className="text-4xl font-bold mb-8">About Me</h1>
                 <div className="absolute left-10 top-64 h-full lg:left-16">
                     <Menu />
                 </div>
 
-                <div className="flex h-full w-full flex-col items-center justify-center lg:flex-row">
-                    <h1 className="text-5xl font-bold">
-                        About <span className="font-semibold text-primary">Daniel</span>
-                    </h1>
+                <div className="flex h-full w-full flex-col items-center justify-center lg:flex-row-reverse">
                     <div className="flex w-full justify-center lg:justify-end lg:pb-24 lg:pr-8">
                         <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[22rem]  rounded-full shadow-2xl sm:h-[29rem]" />
                     </div>
@@ -45,6 +44,15 @@ const About = () => {
                     </div>
                 </div>
             </main>
+            <section>
+                <div className="flex w-1/2 ">
+                    <div className="badge badge-outline">HTML</div>
+                    <div className="badge badge-outline">CSS</div>
+                    <div className="badge badge-outline">default</div>
+                    <div className="badge badge-outline">default</div>
+                    <div className="badge badge-outline">default</div>
+                </div>
+            </section>
             {/* <section className="h-screen w-full bg-[#101010] px-10 text-center text-[#D1D5DB] md:px-20">
                 <h1 className="text-4xl font-medium">
                     <span className="text-primary">My</span> Skills
@@ -82,7 +90,7 @@ const About = () => {
                     </div>
                 </div>
             </section> */}
-        </>
+        </div>
     );
 };
 

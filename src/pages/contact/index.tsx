@@ -21,7 +21,7 @@ const Contact = () => {
             <div className="contact-page bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] px-2 py-20 text-center md:px-10 lg:py-0">
             <div className="hero flex min-h-screen flex-col items-center justify-center pt-20 text-white md:pt-24 lg:pt-32">
                 <h1 className="mb-10 text-5xl font-bold">
-                Contact <span className="text-[#5D5CD6]">Me</span>
+                Contact <span className="text-[rgba(251, 251, 251,1)]]">Me</span>
                 </h1>
                 <p className="pb-7 text-3xl font-light">
                 <span className="text-primary">get</span> in touch ...
