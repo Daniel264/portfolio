@@ -14,7 +14,7 @@ const About = () => {
         <>
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
-            <main className="flex min-h-screen w-full items-center justify-center bg-[#101010] px-[2rem] pt-44 text-center text-[#D1D5DB]">
+            <main className="flex min-h-screen w-full items-center justify-center bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] px-[2rem] pt-44 text-center text-[#D1D5DB]">
                 <div className="absolute left-10 top-64 h-full lg:left-16">
                     <Menu />
                 </div>
