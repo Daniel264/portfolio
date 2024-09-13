@@ -13,7 +13,7 @@ const TopNavigation = () => {
 
     return (
         <div>
-            <nav className="fixed top-0 z-50 w-full border-none bg-[#101010] px-9  lg:h-20">
+            <nav className="fixed top-0 z-50 w-full border-none bg-[#101010] px-0 lg:px-9  lg:h-20">
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
                     <a href="#" className="flex items-center space-x-3 text-primary rtl:space-x-reverse hover:animate-spin">
                         <Image src="/assets/logo/logo.png" width={80} height={50} className="mt-5" alt="my website's logo" />
