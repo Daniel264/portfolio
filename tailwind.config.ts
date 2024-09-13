@@ -13,7 +13,7 @@ const config: Config = {
                 // Add color schemes
             },
             fontFamily: {
-                // Add custom fonts
+                lato: ['Lato', 'sans-serif'],
             },
         },
     },

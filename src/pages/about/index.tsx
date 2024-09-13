@@ -45,19 +45,19 @@ const About = () => {
                     </div>
                 </div>
             </main>
-            <section className="h-screen w-full bg-[#101010] text-center text-[#D1D5DB]">
+            {/* <section className="h-screen w-full bg-[#101010] px-10 text-center text-[#D1D5DB] md:px-20">
                 <h1 className="text-4xl font-medium">
                     <span className="text-primary">My</span> Skills
                 </h1>
                 <div className="grid w-full grid-cols-1 justify-center md:grid-cols-2">
                     <div className="flex">
-                        <div>HTML</div>
-                        <div className="radial-progress" style={{ "--value": 70 } as React.CSSProperties} role="progressbar">
-                            70%
+                        <div className="mt-7 mr-5">HTML</div>
+                        <div className="radial-progress" style={{ "--value": 100 } as React.CSSProperties} role="progressbar">
+                            100%
                         </div>
                     </div>
                     <div className="flex">
-                        <div>HTML</div>
+                        <div>CSS</div>
                         <div className="radial-progress" style={{ "--value": 70 } as React.CSSProperties} role="progressbar">
                             70%
                         </div>
@@ -81,7 +81,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     );
 };
