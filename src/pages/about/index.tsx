@@ -28,13 +28,10 @@ const About = () => {
                     About <span className="font-medium text-primary">Daniel</span>
                 </h1>
                 <div className="py-8 text-center lg:text-left">
-                    <p className="pb-2 text-xl">
+                    <p className="pb-2 text-2xl font-light">
                     <i className="fa-solid fa-code mr-3"></i>Fullstack Developer & Mobile Enthusiast
                     </p>
-                    <p>
-                    <i className="fa-solid fa-location-dot mr-4"></i>Currently residing in Lagos, Nigeria
-                    </p>
-                    <p className="font-light">
+                    <p className="font-light md:text-xl">
                     Hi!!! I am a Full-stack developer with a passion for mobile technology and a <br /> love for continuous learning. Adept at creating innovative solutions and <br /> excited by emerging tech trends
                     </p>
                 </div>
