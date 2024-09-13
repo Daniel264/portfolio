@@ -25,13 +25,13 @@ export default function Home() {
                     <div className="ml-0 flex h-full w-full flex-col items-center md:ml-20">
                         <div className="flex flex-col sm:flex-row">
                             <div className="hero bg-inherit">
-                                <div className="hero-content flex-col-reverse text-center lg:flex-row-reverse">
-                                    <div className="flex w-full justify-center">
+                                <div className="hero-content flex-col-reverse lg:flex-row-reverse">
+                                    {/* <div className="flex w-full justify-center">
                                         <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[22rem]  rounded-full shadow-2xl sm:h-[29rem]" />
-                                    </div>
+                                    </div> */}
                                     <div className="w-full">
                                         <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
-                                        <h3 className="my-5 text-4xl font-semibold  sm:text-5xl ">
+                                        <h3 className="my-5 text-4xl md:text-7xl font-semibold  sm:text-5xl text-left ">
                                             <span className="">Daniel</span> Olatinsu
                                         </h3>
                                         <p className="text-2xl font-light">
