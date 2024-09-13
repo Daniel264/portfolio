@@ -21,7 +21,7 @@ export default function Home() {
 
             <main className="flex min-h-screen flex-col items-center bg-[#101010] p-5 pt-28">
                 <div className="max-w-8xl flex w-full text-white md:m-auto">
-                    <div className="fixed left-10 lg:left-12 top-44 hidden h-full md:flex">
+                    <div className="fixed left-10 top-44 hidden h-full md:flex lg:left-12">
                         <Menu />
                     </div>
                     <div className="ml-0 flex h-full w-full flex-col items-center md:ml-20">
@@ -29,10 +29,10 @@ export default function Home() {
                             <div className="hero bg-inherit">
                                 <div className="hero-content flex-col-reverse text-center lg:flex-row-reverse">
                                     <div className="flex w-full justify-center">
-                                        <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[22rem] rounded-full shadow-2xl sm:h-[29rem]" />
+                                        <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[22rem]  rounded-full shadow-2xl sm:h-[29rem]" />
                                     </div>
                                     <div className="w-full">
-                                        <h3 className="my-5 text-5xl font-semibold ">
+                                        <h3 className="my-5 text-4xl font-semibold  sm:text-5xl">
                                             <span className="text-primary">Daniel</span> Olatinsu
                                         </h3>
                                         <p className="text-2xl font-light">
