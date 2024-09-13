@@ -23,10 +23,12 @@ const Contact = () => {
             <div className="flex h-fit w-full flex-col items-center justify-center gap-4 md:gap-7 lg:flex-row">
             <div className="flex flex-col h-[160px] w-[80%] items-center justify-center rounded-3xl bg-black shadow-xl lg:w-[50%]">
                 <i className="fa-regular fa-envelope fa-2x"></i>
+                <p className="text-xl text-primary py-1">email</p>
                 <p className="text-xl text-[#D1D5DB] md:text-2xl">danielolatinsu@gmail.com</p>
             </div>
             <div className="flex flex-col h-[160px] w-[80%] items-center justify-center rounded-3xl bg-black shadow-xl lg:w-[50%]">
                 <i className="fa-solid fa-location-dot fa-2x"></i>
+                <p className="text-xl text-primary py-1">location</p>
                 <p className="text-xl text-[#D1D5DB] md:text-2xl">Lagos, lagos Nigeria</p>
             </div>
             </div>
