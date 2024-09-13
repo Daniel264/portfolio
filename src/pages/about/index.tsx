@@ -28,11 +28,11 @@ const About = () => {
                     About <span className="font-medium text-primary">Daniel</span>
                 </h1>
                 <div className="py-8 text-center lg:text-left">
-                    <p className="pb-2 text-2xl font-light">
+                    <p className="pb-2 lg:pb-5 text-2xl font-light">
                     <i className="fa-solid fa-code mr-3"></i>Fullstack Developer & Mobile Enthusiast
                     </p>
-                    <p className="font-light md:text-xl">
-                    Hi!!! I am a Full-stack developer with a passion for mobile technology and a <br /> love for continuous learning. Adept at creating innovative solutions and <br /> excited by emerging tech trends
+                    <p className="font-light md:text-xl leading-relaxed tracking-wide">
+                    Hi!!! I am a Full-stack developer with a passion for mobile technology and a love for continuous learning. Adept at creating innovative solutions and excited by emerging tech trends
                     </p>
                 </div>
                 </div>
