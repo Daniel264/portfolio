@@ -30,8 +30,9 @@ export default function Home() {
                                         <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[22rem]  rounded-full shadow-2xl sm:h-[29rem]" />
                                     </div>
                                     <div className="w-full">
-                                        <h3 className="my-5 text-4xl font-semibold  sm:text-5xl">
-                                            <span className="text-primary">Daniel</span> Olatinsu
+                                        <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
+                                        <h3 className="my-5 text-4xl font-semibold  sm:text-5xl ">
+                                            <span className="">Daniel</span> Olatinsu
                                         </h3>
                                         <p className="text-2xl font-light">
                                             <span className="text-primary">I&apos;m a</span> <Typed />
