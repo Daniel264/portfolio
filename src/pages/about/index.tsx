@@ -20,7 +20,7 @@ const About = () => {
             </div>
 
             <div className="flex flex-col lg:flex-row w-full h-full items-center justify-center">
-                <div className="w-full flex justify-center lg:justify-end lg:pr-8">
+                <div className="w-full flex justify-center lg:justify-end lg:pr-8 lg:pb-24">
                 <Image src="/assets/images/aboutpic.png" width={400} height={500} className="h-[400px] rounded-full" alt={""}></Image>
                 </div>
                 <div className="w-full flex flex-col items-center lg:items-start lg:pl-8">
