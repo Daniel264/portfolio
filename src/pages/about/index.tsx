@@ -16,7 +16,7 @@ const About = () => {
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
             <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-44 text-center">
-                <h1 className="text-4xl font-bold mb-8">About Me</h1>
+                <h1 className="mb-8 text-4xl font-bold">About Me</h1>
                 <div className="absolute left-10 top-64 h-full lg:left-16">
                     <Menu />
                 </div>
@@ -26,7 +26,7 @@ const About = () => {
                         <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[22rem]  rounded-full shadow-2xl sm:h-[29rem]" />
                     </div>
                     <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
-                        <div className="py-8 text-center lg:text-left">
+                        <div className="py-8 text-center lg:pl-20 lg:text-left">
                             <p className="pb-2 text-2xl font-light lg:pb-5">
                                 <i className="fa-solid fa-code mr-3"></i>Fullstack Developer & Mobile Enthusiast
                             </p>
