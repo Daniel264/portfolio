@@ -45,74 +45,65 @@ const About = () => {
                     </div>
                 </div>
             </main>
-            <section className="flex flex-col items-center justify-center w-full py-10">
-                <h1 className="text-center text-3xl font-bold mb-6">Skills</h1>
-                <div className="flex flex-wrap justify-center gap-4">
-                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
-                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>HTML
+            <section className="flex w-full flex-col items-center justify-center py-10">
+                <h1 className="mb-6 text-center text-3xl font-bold">Skills</h1>
+                <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>Node.js
                     </div>
-                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
-                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>CSS
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>MongoDB
                     </div>
-                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
-                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>Tailwindcss
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>Tailwindcss
                     </div>
-                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
-                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>ChakraUI
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>ChakraUI
                     </div>
                 </div>
-                <div className="flex flex-wrap justify-center gap-4 mt-4">
-                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
-                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>HTML
+                <div className="mt-2 flex flex-wrap justify-center gap-2 sm:mt-4 sm:gap-4">
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>JavaScript
                     </div>
-                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
-                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>CSS
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>TypeScript
                     </div>
-                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
-                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>Tailwindcss
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>React.js
                     </div>
-                    <div className="badge badge-outline h-7 w-36 flex items-center justify-center">
-                        <i className="fa-regular fa-star text-blue-500 mr-2"></i>ChakraUI
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>Next.js
+                    </div>
+                </div>
+                <div className="mt-2 flex flex-wrap justify-center gap-2 sm:mt-4 sm:gap-4">
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>Express.js
+                    </div>
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>Git
+                    </div>
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>SASS
+                    </div>
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>Restful Apis
+                    </div>
+                </div>
+                <div className="mt-2 flex flex-wrap justify-center gap-2 sm:mt-4 sm:gap-4">
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>HTML
+                    </div>
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>CSS
+                    </div>
+                    <div className="badge badge-outline flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>Python
+                    </div>
+                    <div className="badge badge-outline flex h-6 w-36 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                        <i className="fa-regular fa-star mr-1 text-blue-500 sm:mr-2"></i>Documentation
                     </div>
                 </div>
             </section>
-            {/* <section className="h-screen w-full bg-[#101010] px-10 text-center text-[#D1D5DB] md:px-20">
-                <h1 className="text-4xl font-medium">
-                    <span className="text-primary">My</span> Skills
-                </h1>
-                <div className="grid w-full grid-cols-1 justify-center md:grid-cols-2">
-                    <div className="flex">
-                        <div className="mt-7 mr-5">HTML</div>
-                        <div className="radial-progress" style={{ "--value": 100 } as React.CSSProperties} role="progressbar">
-                            100%
-                        </div>
-                    </div>
-                    <div className="flex">
-                        <div>CSS</div>
-                        <div className="radial-progress" style={{ "--value": 70 } as React.CSSProperties} role="progressbar">
-                            70%
-                        </div>
-                    </div>
-                    <div className="flex">
-                        <div>HTML</div>
-                        <div className="radial-progress" style={{ "--value": 70 } as React.CSSProperties} role="progressbar">
-                            70%
-                        </div>
-                    </div>
-                    <div className="flex">
-                        <div>HTML</div>
-                        <div className="radial-progress" style={{ "--value": 70 } as React.CSSProperties} role="progressbar">
-                            70%
-                        </div>
-                    </div>
-                    <div className="flex">
-                        <div>HTML</div>
-                        <div className="radial-progress" style={{ "--value": 70 } as React.CSSProperties} role="progressbar">
-                            70%
-                        </div>
-                    </div>
-                </div>
-            </section> */}
         </div>
     );
 };
