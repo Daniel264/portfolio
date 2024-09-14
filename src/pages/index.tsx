@@ -58,7 +58,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="ml-0 mt-8 space-y-4 md:ml-0 md:mr-44 md:space-x-5">
+                        <div className="ml-0 mt-20 md:mt-16 space-y-4 md:ml-0 md:mr-44 md:space-x-5">
                             <button className="btn w-full rounded border-none bg-[#7043E3] text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Lets Talk <i className="fa-solid fa-message"></i>
                             </button>
