@@ -55,7 +55,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
 
             <QueryClientProvider client={queryClient}>
-                <main className={`${sora.className} ${poppins.className}`}>
+                <main className={` ${poppins.className}`}>
                     <Component {...pageProps} />
                 </main>
 
