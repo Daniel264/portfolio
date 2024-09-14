@@ -19,12 +19,12 @@ const About = () => {
             <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-44 text-center">
                 <h1 className="mb-8 text-4xl font-bold">About Me</h1>
                 <div className="absolute left-10 top-64 h-full lg:left-16">
-                    <Menu />
+                    {/* <Menu /> */}
                 </div>
 
                 <div className="flex h-full w-full flex-col items-center justify-center lg:flex-row-reverse">
                     <div className="flex w-full justify-center lg:justify-end lg:pb-24 lg:pr-8">
-                        <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[22rem]  rounded-full shadow-2xl sm:h-[29rem]" />
+                        <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[22rem]  rounded-badge shadow-2xl sm:h-[29rem]" />
                     </div>
                     <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                         <div className="py-8 text-center lg:pl-20 lg:text-left">

@@ -6,6 +6,7 @@ import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
 import { toast } from "react-toastify";
 import { Sora, Poppins } from "@next/font/google";
+import About from "./about";
 
 const sora = Sora({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -62,7 +63,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </main>   
+            </main>  
+            <About /> 
         </>
     );
 }
