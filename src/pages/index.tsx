@@ -8,6 +8,7 @@ import { toast } from "react-toastify";
 import { Sora, Poppins } from "@next/font/google";
 import About from "./about";
 import Portfolio from "./portfolio";
+import Contact from "./contact";
 
 const sora = Sora({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -67,6 +68,7 @@ export default function Home() {
             </main>
             <About />
             <Portfolio />
+            <Contact />
         </div>
     );
 }

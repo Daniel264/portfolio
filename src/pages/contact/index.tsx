@@ -18,23 +18,23 @@ const Contact = () => {
         <>
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
-            <div className="contact-page bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] px-2 py-20 text-center md:px-10 lg:py-0">
+            <div id="contact" className="contact-page px-2 py-20 text-center md:px-10 lg:py-0">
             <div className="hero flex min-h-screen flex-col items-center justify-center pt-20 text-white md:pt-24 lg:pt-32">
                 <h1 className="mb-10 text-5xl font-bold">
                 Contact <span className="text-[rgba(251, 251, 251,1)]]">Me</span>
                 </h1>
                 <p className="pb-7 text-3xl font-light">
-                <span className="text-blue-500">get</span> in touch ...
+                <span className="text-green-500">get</span> in touch ...
                 </p>
                 <div className="flex h-fit w-full flex-col items-center justify-center gap-4 md:gap-7 lg:flex-row">
-                <div className="flex h-[160px] w-[80%] flex-col items-center justify-center rounded-3xl shadow-xl border-2 border-[rgba(174,174,174,1)] lg:w-[50%]">
+                <div className="flex h-[160px] w-[80%] flex-col items-center justify-center rounded-3xl shadow-xl border-2 border-[rgba(174,174,174,1)] lg:w-[32%]">
                     <i className="fa-regular fa-envelope fa-2x"></i>
-                    <p className="py-1 text-xl text-blue-500">email</p>
+                    <p className="py-1 text-xl text-green-500">email</p>
                     <p className="text-xl text-[#D1D5DB] md:text-2xl">danielolatinsu@gmail.com</p>
                 </div>
-                <div className="flex h-[160px] w-[80%] flex-col items-center justify-center rounded-3xl border-2 border-[rgba(174,174,174,1)] shadow-xl lg:w-[50%]">
+                <div className="flex h-[160px] w-[80%] flex-col items-center justify-center rounded-3xl border-2 border-[rgba(174,174,174,1)] shadow-xl lg:w-[32%]">
                     <i className="fa-solid fa-location-dot fa-2x"></i>
-                    <p className="py-1 text-xl text-blue-500">location</p>
+                    <p className="py-1 text-xl text-green-500">location</p>
                     <p className="text-xl text-[#D1D5DB] md:text-2xl">Lagos, lagos Nigeria</p>
                 </div>
                 </div>
