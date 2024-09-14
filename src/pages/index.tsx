@@ -9,6 +9,14 @@ import { Sora, Poppins } from "@next/font/google";
 import About from "./about";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
+import {gsap} from "gsap";
+import { useEffect } from "react";
+
+// const Amination = () => {
+//     useEffect(() => {
+
+//     })
+// }
 
 const sora = Sora({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -22,7 +30,7 @@ export default function Home() {
         toast.loading("successful!");
     };
     return (
-        <div className="bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)]">
+        <div className="bg-gradient-to-r from-[#2c3e50] to-[#000000]">
             <SEO title="Home" />
             <TopNavigation />
 
