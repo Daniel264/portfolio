@@ -68,20 +68,25 @@ const Portfolio: React.FC = () => {
             <TopNavigation />
             <div className="flex min-h-screen w-full flex-col items-center">
                 {works.map((work, index) => (
-                    <div key={index} className="py-10">
-                        <Image
-                            src={work.imageUrl}
-                            width={work.width}
-                            height={work.height}
-                            alt={work.title}
-                            className="rounded lg:w-[650px] mb-4 lg:mb-8"
-                            quality={100} // Set image quality to maximum
-                            priority={index < 2} // Prioritize the first two images
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsive sizes
-                        />
-                        <div className="portfolio-text h-44 rounded bg-gradient-to-r from-[#0d0d0d] to-[#383838] pt-4 text-center text-white lg:h-56 lg:pt-8">
-                            <h2 className="text-2xl lg:text-3xl text-[#7043E3]">{work.title}</h2>
-                            <p className="text-lg lg:text-xl">{work.description}</p>
+                    <div key={index} className="card bg-base-100 w-96 shadow-xl my-4">
+                        <figure>
+                            <Image
+                                src={work.imageUrl}
+                                width={work.width}
+                                height={work.height}
+                                alt={work.title}
+                                className="rounded"
+                                quality={100} // Set image quality to maximum
+                                priority={index < 2} // Prioritize the first two images
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsive sizes
+                            />
+                        </figure>
+                        <div className="card-body">
+                            <h2 className="card-title">{work.title}</h2>
+                            <p>{work.description}</p>
+                            <div className="card-actions justify-end">
+                                <button className="btn btn-primary">View Project</button>
+                            </div>
                         </div>
                     </div>
                 ))}
