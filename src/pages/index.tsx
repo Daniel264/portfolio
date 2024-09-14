@@ -29,7 +29,8 @@ export default function Home() {
             <SEO title="Home" />
             <TopNavigation />
 
-            <main className={`flex min-h-screen flex-col items-center p-5 pt-28`}>
+            <main className={`flex h-full pb-32 sm:pb-52 flex-col items-center p-5 pt-28`}>
+
                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                     <div className="fixed left-10 top-44 hidden h-full md:flex lg:left-12">
                         <Menu />
