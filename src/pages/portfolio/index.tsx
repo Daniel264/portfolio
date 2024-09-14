@@ -5,22 +5,22 @@ import React from "react";
 const Portfolio: React.FC = () => {
     const works = [
         {
-            title: "My Portfolio Website",
-            description: "My Portfolio Website",
-            imageUrl: "/assets/images/portfolio.png",
+            title: "Foodland",
+            description: "A company website showcasing Foodland's food offerings and providing easy contact options for customers",
+            imageUrl: "/assets/images/foodland.png",
             width: 1080,
             height: 720,
         },
         {
             title: "SaveVest",
-            description: "description",
+            description: "A full-stack Next.js and Node.js platform designed to help users save money efficiently with various tools.",
             imageUrl: "/assets/images/save.png",
             width: 1893,
             height: 969,
         },
         {
-            title: "GaeHub",
-            description: "GameHub",
+            title: "GameHub",
+            description: "A platform offering game recommendations, search functionality, and more for gamers.",
             imageUrl: "/assets/images/gamehub.png",
             width: 1080,
             height: 720,
@@ -48,13 +48,13 @@ const Portfolio: React.FC = () => {
                                 />
                             </figure>
                             <div className="card-body relative">
-                                <h2 className="card-title">{work.title}</h2>
-                                <p>{work.description}</p>
+                                <h2 className="card-title text-white">{work.title}</h2>
+                                <p className="text-white">{work.description}</p>
                                 <div className="card-actions justify-end ">
                                     <button className="btn btn-primary">View Project</button>
                                 </div>
                                 <div className="absolute bottom-0 left-0 mb-8 ml-2">
-                                    <span className="badge indicator-item bg-green-950 py-3 text-white gap-2 border-none pl-5">
+                                    <span className="badge indicator-item gap-2 border-none bg-green-950 py-3 pl-5 text-white">
                                         live{" "}
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" className="text-green-400" height="8" width="8" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="8" cy="8" r="8"></circle>
