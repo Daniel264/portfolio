@@ -51,7 +51,7 @@ const Portfolio: React.FC = () => {
             width: 1080,
             height: 720,
             status: "Live",
-        }
+        },
         // Add more projects as needed
     ];
 
@@ -87,7 +87,7 @@ const Portfolio: React.FC = () => {
                                     </button>
                                 </div>
                                 <div className="absolute bottom-0 left-0 mb-8 ml-2">
-                                    <span className="badge indicator-item gap-2 border-none bg-green-950 py-3 pl-5 text-white">
+                                    <span className={`badge indicator-item gap-2 border-none ${work.status === "Live" ? "bg-green-950" : "bg-red-950"} py-3 pl-5 text-white`}>
                                         Live{" "}
                                         <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" className="text-green-400" height="8" width="8" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="8" cy="8" r="8"></circle>
