@@ -7,6 +7,7 @@ const poppins = Poppins({
     subsets: ["latin"],
     weight: ["200", "400", "700"],
 });
+
 const TopNavigation = () => {
     // State to manage the visibility of the mobile menu
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +15,12 @@ const TopNavigation = () => {
     // Toggle function to open/close the menu
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    // Smooth scroll function
+    const handleSmoothScroll = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, targetId: string) => {
+        e.preventDefault();
+        document.querySelector(targetId)?.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
@@ -43,31 +50,41 @@ const TopNavigation = () => {
                     <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-multi-level">
                         <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-none dark:bg-inherit">
                             <li>
-                                <Link href="/" className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] md:bg-transparent md:p-0" aria-current="page">
-                                    Home
+                                <Link href="/" scroll={false}>
+                                    <button
+                                        className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] md:bg-transparent md:p-0"
+                                        onClick={(e) => handleSmoothScroll(e, '#home')}
+                                    >
+                                        Home
+                                    </button>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/about">
+                                <Link href="/#about" scroll={false}>
                                     <button
-                                        id="dropdownNavbarLink"
-                                        data-dropdown-toggle="dropdownNavbar"
                                         className="flex w-full items-center justify-between px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:focus:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                                        onClick={(e) => handleSmoothScroll(e, '#about')}
                                     >
                                         About
                                     </button>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/portfolio">
-                                    <button className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
+                                <Link href="/portfolio" scroll={false}>
+                                    <button
+                                        className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                                        onClick={(e) => handleSmoothScroll(e, '#portfolio')}
+                                    >
                                         Portfolio
                                     </button>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact">
-                                    <button className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
+                                <Link href="/contact" scroll={false}>
+                                    <button
+                                        className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                                        onClick={(e) => handleSmoothScroll(e, '#contact')}
+                                    >
                                         Contact
                                     </button>
                                 </Link>
