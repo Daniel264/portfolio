@@ -29,10 +29,10 @@ const Portfolio: React.FC = () => {
     ];
 
     return (
-        <div id="portfolio" className="">
+        <div id="portfolio" className="w-full lg:px-32">
             <TopNavigation />
             <div className="flex min-h-screen w-full flex-col items-center">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full px-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full px-4">
                     {works.map((work, index) => (
                         <div key={index} className="card bg-base-100 w-full shadow-xl my-4">
                             <figure>
