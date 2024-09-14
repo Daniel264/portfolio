@@ -79,7 +79,7 @@ const Portfolio: React.FC = () => {
                             priority={index < 2} // Prioritize the first two images
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsive sizes
                         />
-                        <div className="portfolio-text h-44 rounded bg-black pt-4 text-center text-white lg:h-56 lg:pt-8">
+                        <div className="portfolio-text h-44 rounded bg-gradient-to-r from-[#0d0d0d] to-[#383838] pt-4 text-center text-white lg:h-56 lg:pt-8">
                             <h2 className="text-2xl lg:text-3xl text-blue-500">{work.title}</h2>
                             <p className="text-lg lg:text-xl">{work.description}</p>
                         </div>
