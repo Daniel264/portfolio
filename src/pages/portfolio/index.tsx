@@ -64,7 +64,7 @@ const Portfolio: React.FC = () => {
     ];
 
     return (
-        <div className="">
+        <div id="portfolio" className="">
             <TopNavigation />
             <div className="flex min-h-screen w-full flex-col items-center bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] pt-32 text-[rgba(174,174,174,1)]">
                 {works.map((work, index) => (

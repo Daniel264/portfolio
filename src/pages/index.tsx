@@ -7,11 +7,12 @@ import Image from "next/image";
 import { toast } from "react-toastify";
 import { Sora, Poppins } from "@next/font/google";
 import About from "./about";
+import Portfolio from "./portfolio";
 
 const sora = Sora({ subsets: ["latin"] });
 const poppins = Poppins({
     subsets: ["latin"],
-    weight: ["200","400", "700"],
+    weight: ["200", "400", "700"],
 });
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
@@ -47,14 +48,14 @@ export default function Home() {
                                         </p>
                                         <p className="pt-8 text-base font-light text-[rgba(174,174,174,1)] md:text-lg">As a software engineer, I weave magic through code, turning the impossible into reality, one algorithm at a time.</p>
                                         <p className="pt-10 text-2xl font-light">
-                                            <span className="text-green-400 font-semibold font-lato">I&apos;m a</span> <Typed />
+                                            <span className="font-lato font-semibold text-green-400">I&apos;m a</span> <Typed />
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="ml-0 mt-8 space-y-4 md:ml-0 md:mr-44 md:space-x-5">
-                            <button className="btn w-full rounded-3xl border-none bg-[rgba(251, 251, 251,1)] text-black shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
+                            <button className="bg-[rgba(251, 251, 251,1)] btn w-full rounded-3xl border-none text-black shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Lets Talk <i className="fa-solid fa-message"></i>
                             </button>
                             <button onClick={handleLoading} className="btn w-full rounded-3xl border-2 border-[rgba(174,174,174,1)] bg-black text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
@@ -63,8 +64,9 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </main>  
-            <About /> 
+            </main>
+            <About />
+            <Portfolio />
         </div>
     );
 }
