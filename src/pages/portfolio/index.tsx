@@ -18,7 +18,7 @@ const Portfolio: React.FC = () => {
             imageUrl: "/assets/images/save.png",
             width: 1893,
             height: 969,
-            status: "Live",
+            status: "inProgress",
         },
         {
             title: "GameHub",
