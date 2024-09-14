@@ -70,7 +70,7 @@ export default function Home() {
                 </div>
             </main>
             <About />
-            <Portfolio />
+            {/* <Portfolio /> */}
             <Contact />
         </div>
     );
