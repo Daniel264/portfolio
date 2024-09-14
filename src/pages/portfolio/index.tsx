@@ -53,8 +53,8 @@ const Portfolio: React.FC = () => {
                                 <p className="text-white">{work.description}</p>
                                 <div className="card-actions justify-end ">
                                     <button className="btn border-none bg-[#7043E3] text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                                         </svg>
                                         View Project
                                     </button>
@@ -62,7 +62,7 @@ const Portfolio: React.FC = () => {
                                 <div className="absolute bottom-0 left-0 mb-8 ml-2">
                                     <span className="badge indicator-item gap-2 border-none bg-green-950 py-3 pl-5 text-white">
                                         live{" "}
-                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" className="text-green-400" height="8" width="8" xmlns="http://www.w3.org/2000/svg">
+                                        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" className="text-green-400" height="8" width="8" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="8" cy="8" r="8"></circle>
                                         </svg>
                                     </span>
