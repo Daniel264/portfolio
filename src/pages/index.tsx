@@ -50,7 +50,7 @@ export default function Home() {
                                             Crafting reality from lines
                                             <br className="block sm:hidden" /> of code.
                                         </p>
-                                        <p className="pt-8 text-base font-light text-[rgba(174,174,174,1)] md:text-lg">As a software engineer, I weave magic through code, turning the impossible into reality, one algorithm at a time.</p>
+                                        {/* <p className="pt-8 text-base font-light text-[rgba(174,174,174,1)] md:text-lg">As a software engineer, I weave magic through code, turning the impossible into reality, one algorithm at a time.</p> */}
                                         <p className="pt-10 text-2xl font-light">
                                             <span className="font-lato font-semibold text-[#7043E3]">I&apos;m a</span> <Typed />
                                         </p>

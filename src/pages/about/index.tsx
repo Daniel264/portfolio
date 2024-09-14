@@ -13,16 +13,15 @@ const About = () => {
     }, 1000);
 
     return (
-        <div id="about" className="min-h-screen w-full text-[#D1D5DB] bg-fixed">
+        <div id="about" className="min-h-screen w-full bg-fixed text-[#D1D5DB]">
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
             <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-44 text-center">
-                <div className="">
-                    <h1 className="mb-8 text-4xl font-bold">About Me</h1>
+                {/* <div className="flex h-10 items-center border-2 border-[#7043E3]">
+                    <h1 className=" text-xl font-light text-[#7043E3]">About The creator</h1>
                 </div>
-                <div className="absolute left-10 top-64 h-full lg:left-16">
-                    {/* <Menu /> */}
-                </div>
+                <p className="pt-8 text-base font-light text-white md:text-lg">As a software engineer, I weave magic through code, turning the impossible into reality, one algorithm at a time.</p> */}
+                <div className="absolute left-10 top-64 h-full lg:left-16"></div>
 
                 <div className="flex h-full w-full flex-col items-center justify-center lg:flex-row-reverse">
                     <div className="flex w-full justify-center lg:justify-end lg:pb-24 lg:pr-8">
@@ -30,6 +29,11 @@ const About = () => {
                     </div>
                     <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                         <div className="py-8 text-center lg:pl-20 lg:text-left">
+                            <div className="flex h-10 w-fit items-center border-2 border-[#7043E3]">
+                                <h1 className=" text-lg font-light text-[#9377dc]">About The creator</h1>
+                            </div>
+
+                            <p className="pt-8 text-base font-light text-white md:text-lg">As a software engineer, I weave magic through code, turning the impossible into reality, one algorithm at a time.</p>
                             <p className="pb-2 text-2xl font-light lg:pb-5">
                                 <i className="fa-solid fa-code mr-3"></i>Fullstack Developer & Mobile Enthusiast
                             </p>
@@ -50,58 +54,58 @@ const About = () => {
             <section className="flex w-full flex-col items-center justify-center py-10">
                 <h1 className="mb-6 text-center text-3xl font-bold">Skills</h1>
                 <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>Node.js
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>MongoDB
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>Tailwindcss
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>ChakraUI
                     </div>
                 </div>
                 <div className="mt-2 flex flex-wrap justify-center gap-2 sm:mt-4 sm:gap-4">
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>JavaScript
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>TypeScript
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>React.js
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>Next.js
                     </div>
                 </div>
                 <div className="mt-2 flex flex-wrap justify-center gap-2 sm:mt-4 sm:gap-4">
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>Express.js
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>Git
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>SASS
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>Restful Apis
                     </div>
                 </div>
                 <div className="mt-2 flex flex-wrap justify-center gap-2 sm:mt-4 sm:gap-4">
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>HTML
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>CSS
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl  flex h-6 w-28 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-28 items-center  justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>Python
                     </div>
-                    <div className="badge bg-[#101010] text-white border-none shadow-xl flex h-6 w-36 items-center justify-center text-sm sm:h-7 sm:w-36 sm:text-base">
+                    <div className="badge flex h-6 w-36 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
                         <i className="fa-regular fa-star mr-1 text-green-500 sm:mr-2"></i>Documentation
                     </div>
                 </div>
