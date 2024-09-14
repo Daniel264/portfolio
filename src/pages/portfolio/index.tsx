@@ -5,57 +5,57 @@ import React from "react";
 const Portfolio: React.FC = () => {
     const works = [
         {
-            title: "Project 1",
-            description: "Description of project 1.",
+            title: "My Portfolio Website",
+            description: "My Portfolio Website",
             imageUrl: "/assets/images/portfolio.png",
             width: 1080,
             height: 720,
         },
         {
-            title: "Project 2",
-            description: "Description of project 2.",
+            title: "SaveVest",
+            description: "description",
             imageUrl: "/assets/images/save.png",
             width: 1893,
             height: 969,
         },
         {
-            title: "Project 3",
-            description: "Description of project 3.",
+            title: "GaeHub",
+            description: "GameHub",
             imageUrl: "/assets/images/gamehub.png",
             width: 1080,
             height: 720,
         },
         {
-            title: "Project 4",
-            description: "Description of project 4.",
+            title: "ChatGPT dry-jokes",
+            description: "description",
             imageUrl: "/assets/images/jokes.png",
             width: 1080,
             height: 720,
         },
         {
-            title: "Project 5",
-            description: "Description of project 5.",
+            title: "Foodland",
+            description: "description",
             imageUrl: "/assets/images/foodland.png",
             width: 1080,
             height: 720,
         },
         {
-            title: "Project 6",
-            description: "Description of project 6.",
+            title: "My Blog app",
+            description: "description",
             imageUrl: "/assets/images/blog.png",
             width: 1080,
             height: 720,
         },
         {
-            title: "Project 7",
-            description: "Description of project 7.",
+            title: "Todo List.",
+            description: "description",
             imageUrl: "/assets/images/todo.png",
             width: 1080,
             height: 720,
         },
         {
-            title: "Project 8",
-            description: "Description of project 8.",
+            title: "Password Generator.",
+            description: "Password.",
             imageUrl: "/assets/images/password.png",
             width: 1080,
             height: 720,
@@ -80,7 +80,7 @@ const Portfolio: React.FC = () => {
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsive sizes
                         />
                         <div className="portfolio-text h-44 rounded bg-black pt-4 text-center text-white lg:h-56 lg:pt-8">
-                            <h2 className="text-xl lg:text-3xl">{work.title}</h2>
+                            <h2 className="text-xl lg:text-3xl text-blue-500">{work.title}</h2>
                             <p className="text-lg lg:text-xl">{work.description}</p>
                         </div>
                     </div>
