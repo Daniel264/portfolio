@@ -29,9 +29,9 @@ const Portfolio: React.FC = () => {
     ];
 
     return (
-        <div id="portfolio" className="w-full lg:px-32 pt-14">
+        <div id="portfolio" className="w-full pt-14 lg:px-32">
             <TopNavigation />
-            <h1 className="text-white text-3xl font-medium text-center">Few of my Projects</h1>
+            <h1 className="text-center text-3xl font-medium text-white">Few of my Projects</h1>
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 sm:grid-cols-2 lg:grid-cols-2">
                     {works.map((work, index) => (
@@ -52,7 +52,12 @@ const Portfolio: React.FC = () => {
                                 <h2 className="card-title text-white">{work.title}</h2>
                                 <p className="text-white">{work.description}</p>
                                 <div className="card-actions justify-end ">
-                                    <button className="btn bg-[#7043E3] border-none text-white">View Project</button>
+                                    <button className="btn border-none bg-[#7043E3] text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        </svg>
+                                        View Project
+                                    </button>
                                 </div>
                                 <div className="absolute bottom-0 left-0 mb-8 ml-2">
                                     <span className="badge indicator-item gap-2 border-none bg-green-950 py-3 pl-5 text-white">
