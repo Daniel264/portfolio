@@ -6,6 +6,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { MutationCache, QueryCache, QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Sora } from "@next/font/google";
 import { Poppins } from "@next/font/google";
+import { Lato } from "@next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import type { AppProps } from "next/app";
@@ -20,6 +21,12 @@ const sora = Sora({
 const poppins = Poppins({
     subsets: ["latin"],
     weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+    style: "normal",
+});
+
+const lato = Lato({
+    subsets: ["latin"],
+    weight: ["100", "300", "400", "700", "900"],
     style: "normal",
 });
 
@@ -48,7 +55,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
 
             <QueryClientProvider client={queryClient}>
-                <main className={`${sora.className} ${poppins.className}`}>
+                <main className={`${sora.className} ${lato.className} ${poppins.className}`}>
                     <Component {...pageProps} />
                 </main>
 

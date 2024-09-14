@@ -36,7 +36,7 @@ export default function Home() {
                                         <h3 className={`text-[rgba(251, 251, 251,1)] my-5  text-left text-4xl font-semibold sm:text-5xl md:text-7xl ${sora.className}`}>
                                             <span className="">Daniel</span> Olatinsu
                                         </h3>
-                                        <p className="text-4xl text-[rgba(174,174,174,1)] lg:text-6xl">
+                                        <p className="text-2xl text-[rgba(174,174,174,1)] lg:text-6xl">
                                             Crafting reality from lines
                                             <br className="block sm:hidden" /> of code.
                                         </p>
