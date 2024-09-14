@@ -25,6 +25,20 @@ const Portfolio: React.FC = () => {
             width: 1080,
             height: 720,
         },
+        {
+            title: "GoDaddy clone",
+            description: "A platform offering game recommendations, search functionality, and more for gamers.",
+            imageUrl: "/assets/images/godaddy.png",
+            width: 1080,
+            height: 720,
+        },
+        {
+            title: "ChatGPT dry-jokes",
+            description: "A platform offering game recommendations, search functionality, and more for gamers.",
+            imageUrl: "/assets/images/jokes.png",
+            width: 1080,
+            height: 720,
+        }
         // Add more projects as needed
     ];
 
