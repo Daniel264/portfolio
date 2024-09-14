@@ -34,7 +34,7 @@ const Portfolio: React.FC = () => {
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 sm:grid-cols-2 lg:grid-cols-2">
                     {works.map((work, index) => (
-                        <div key={index} className="bg-base- card my-4 w-full rounded bg-base-100 shadow-xl">
+                        <div key={index} className=" card my-4 w-full rounded bg-transparent shadow-xl">
                             <figure>
                                 <Image
                                     src={work.imageUrl}
@@ -54,7 +54,7 @@ const Portfolio: React.FC = () => {
                                     <button className="btn btn-primary">View Project</button>
                                 </div>
                                 <div className="absolute bottom-0 left-0 mb-8 ml-2">
-                                    <span className="badge indicator-item bg-green-200 py-3 pl-5">
+                                    <span className="badge indicator-item bg-green-950 py-3 text-white gap-2 border-none pl-5">
                                         live{" "}
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" className="text-green-400" height="8" width="8" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="8" cy="8" r="8"></circle>
