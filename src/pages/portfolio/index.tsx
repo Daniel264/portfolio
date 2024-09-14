@@ -1,4 +1,5 @@
 import TopNavigation from "@/components/TopNavigation";
+import Image from "next/image";
 import React from "react";
 
 const Portfolio: React.FC = () => {
@@ -53,7 +54,7 @@ const Portfolio: React.FC = () => {
             <div className="flex  min-h-screen w-full flex-col items-center bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] pt-32 text-[rgba(174,174,174,1)]">
                 {works.map((work, index) => (
                     <div key={index} className="portfolio-item">
-                        <img src={work.imageUrl} alt={work.title} className="portfolio-image" />
+                        <Image src={work.imageUrl} width={400} height={100} alt={work.title} className="lg:w-[650px]" />
                         <div className="portfolio-text">
                             <h2>{work.title}</h2>
                             <p>{work.description}</p>
