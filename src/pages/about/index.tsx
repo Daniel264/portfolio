@@ -35,7 +35,7 @@ const About = () => {
                                 Hi!!! I am a Full-stack developer with a passion for mobile technology and a love for continuous learning. Adept at creating innovative solutions and excited by emerging tech trends.
                                 <p>
                                     Think we could create something together? Feel free to
-                                    <span className="text-primary">
+                                    <span className="text-blue-500">
                                         {" "}
                                         <br /> drop me an email
                                     </span>

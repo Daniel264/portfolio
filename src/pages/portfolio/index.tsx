@@ -80,7 +80,7 @@ const Portfolio: React.FC = () => {
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsive sizes
                         />
                         <div className="portfolio-text h-44 rounded bg-black pt-4 text-center text-white lg:h-56 lg:pt-8">
-                            <h2 className="text-xl lg:text-3xl text-blue-500">{work.title}</h2>
+                            <h2 className="text-2xl lg:text-3xl text-blue-500">{work.title}</h2>
                             <p className="text-lg lg:text-xl">{work.description}</p>
                         </div>
                     </div>

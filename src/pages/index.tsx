@@ -42,7 +42,7 @@ export default function Home() {
                                         </p>
                                         <p className="pt-8 text-base font-light text-[rgba(174,174,174,1)] md:text-lg">As a software engineer, I weave magic through code, turning the impossible into reality, one algorithm at a time.</p>
                                         <p className="pt-10 text-2xl font-light">
-                                            <span className="text-primary">I&apos;m a</span> <Typed />
+                                            <span className="text-blue-500">I&apos;m a</span> <Typed />
                                         </p>
                                     </div>
                                 </div>
