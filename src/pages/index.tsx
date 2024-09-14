@@ -20,11 +20,11 @@ export default function Home() {
         toast.loading("successful!");
     };
     return (
-        <>
+        <div className="bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)]">
             <SEO title="Home" />
             <TopNavigation />
 
-            <main className={`flex min-h-screen flex-col items-center bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] p-5 pt-28 ${poppins.className}`}>
+            <main className={`flex min-h-screen flex-col items-center p-5 pt-28 ${poppins.className}`}>
                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                     <div className="fixed left-10 top-44 hidden h-full md:flex lg:left-12">
                         <Menu />
@@ -65,6 +65,6 @@ export default function Home() {
                 </div>
             </main>  
             <About /> 
-        </>
+        </div>
     );
 }
