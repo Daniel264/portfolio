@@ -52,7 +52,7 @@ const Portfolio: React.FC = () => {
                                 <h2 className="card-title text-white">{work.title}</h2>
                                 <p className="text-white">{work.description}</p>
                                 <div className="card-actions justify-end ">
-                                    <button className="btn btn-primary">View Project</button>
+                                    <button className="btn bg-[#7043E3] border-none text-white">View Project</button>
                                 </div>
                                 <div className="absolute bottom-0 left-0 mb-8 ml-2">
                                     <span className="badge indicator-item gap-2 border-none bg-green-950 py-3 pl-5 text-white">
