@@ -44,7 +44,7 @@ const Portfolio: React.FC = () => {
             description: "Description of project 2.",
             imageUrl: "/assets/images/password.png",
         },
-        
+
         // Add more projects as needed
     ];
 
@@ -53,11 +53,11 @@ const Portfolio: React.FC = () => {
             <TopNavigation />
             <div className="flex  min-h-screen w-full flex-col items-center bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] pt-32 text-[rgba(174,174,174,1)]">
                 {works.map((work, index) => (
-                    <div key={index} className="">
-                        <Image src={work.imageUrl} width={400} height={100} alt={work.title} className="lg:w-[650px] rounded" />
-                        <div className="portfolio-text">
-                            <h2>{work.title}</h2>
-                            <p>{work.description}</p>
+                    <div key={index} className="py-10">
+                        <Image src={work.imageUrl} width={350} height={100} alt={work.title} className="rounded lg:w-[650px]" />
+                        <div className="portfolio-text bg-black h-44 lg:h-56">
+                            <h2 className="text-3xl">{work.title}</h2>
+                            <p className="text-xl">{work.description}</p>
                         </div>
                     </div>
                 ))}
