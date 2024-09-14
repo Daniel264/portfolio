@@ -74,7 +74,7 @@ const Portfolio: React.FC = () => {
                             width={work.width}
                             height={work.height}
                             alt={work.title}
-                            className="rounded lg:w-[650px]"
+                            className="rounded lg:w-[650px] mb-4 lg:mb-8"
                             quality={100} // Set image quality to maximum
                             priority={index < 2} // Prioritize the first two images
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsive sizes
