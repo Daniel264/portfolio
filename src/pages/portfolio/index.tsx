@@ -6,13 +6,44 @@ const Portfolio: React.FC = () => {
         {
             title: "Project 1",
             description: "Description of project 1.",
-            imageUrl: "path/to/image1.jpg",
+            imageUrl: "/assets/images/portfolio.png",
         },
         {
             title: "Project 2",
             description: "Description of project 2.",
-            imageUrl: "path/to/image2.jpg",
+            imageUrl: "/assets/images/save.png",
         },
+        {
+            title: "Project 3",
+            description: "Description of project 2.",
+            imageUrl: "/assets/images/gamehub.png",
+        },
+        {
+            title: "Project 4",
+            description: "Description of project 2.",
+            imageUrl: "/assets/images/jokes.png",
+        },
+        {
+            title: "Project 5",
+            description: "Description of project 2.",
+            imageUrl: "/assets/images/foodland.png",
+        },
+        {
+            title: "Project 6",
+            description: "Description of project 2.",
+            imageUrl: "/assets/images/blog.png",
+        },
+        {
+            title: "Project 7",
+            description: "Description of project 2.",
+            imageUrl: "/assets/images/todo.png",
+        },
+        {
+            title: "Project 8",
+            description: "Description of project 2.",
+            imageUrl: "/assets/images/password.png",
+        },
+        
         // Add more projects as needed
     ];
 
