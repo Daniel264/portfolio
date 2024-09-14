@@ -29,8 +29,9 @@ const Portfolio: React.FC = () => {
     ];
 
     return (
-        <div id="portfolio" className="w-full lg:px-32">
+        <div id="portfolio" className="w-full lg:px-32 pt-14">
             <TopNavigation />
+            <h1 className="text-white text-3xl font-medium text-center">Few of my Projects</h1>
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 sm:grid-cols-2 lg:grid-cols-2">
                     {works.map((work, index) => (
