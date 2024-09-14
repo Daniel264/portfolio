@@ -24,17 +24,17 @@ const Contact = () => {
                 Contact <span className="text-[rgba(251, 251, 251,1)]]">Me</span>
                 </h1>
                 <p className="pb-7 text-3xl font-light">
-                <span className="text-green-500">get</span> in touch ...
+                <span className="text-[#7043E3]">get</span> in touch ...
                 </p>
                 <div className="flex h-fit w-full flex-col items-center justify-center gap-4 md:gap-7 lg:flex-row">
-                <div className="flex h-[160px] w-[80%] flex-col items-center justify-center rounded-3xl shadow-xl border-2 border-[rgba(174,174,174,1)] lg:w-[32%]">
+                <div className="flex h-[160px] w-[80%] flex-col items-center justify-center rounded-3xl shadow-xl border-2 border-[#7043E3]  lg:w-[32%]">
                     <i className="fa-regular fa-envelope fa-2x"></i>
-                    <p className="py-1 text-xl text-green-500">email</p>
+                    <p className="py-1 text-xl text-[#7043E3]">email</p>
                     <p className="text-xl text-[#D1D5DB] md:text-2xl">danielolatinsu@gmail.com</p>
                 </div>
-                <div className="flex h-[160px] w-[80%] flex-col items-center justify-center rounded-3xl border-2 border-[rgba(174,174,174,1)] shadow-xl lg:w-[32%]">
+                <div className="flex h-[160px] w-[80%] flex-col items-center justify-center rounded-3xl border-2 border-[#7043E3] shadow-xl lg:w-[32%]">
                     <i className="fa-solid fa-location-dot fa-2x"></i>
-                    <p className="py-1 text-xl text-green-500">location</p>
+                    <p className="py-1 text-xl text-[#7043E3]">location</p>
                     <p className="text-xl text-[#D1D5DB] md:text-2xl">Lagos, lagos Nigeria</p>
                 </div>
                 </div>
@@ -44,22 +44,22 @@ const Contact = () => {
                     <div className="space-y-2 lg:flex lg:space-x-5 lg:space-y-0">
                         <div className="form-control w-full">
                         <label className="label text-[#D1D5DB]">Name</label>
-                        <input type="text" className="input bg-transparent border-2 border-[rgba(174,174,174,1)] placeholder:text-[#D1D5DB]" required />
+                        <input type="text" className="input bg-transparent border-2 border-[#7043E3]  placeholder:text-[#D1D5DB]" required />
                         </div>
                         <div className="form-control w-full">
                         <label className="label text-[#D1D5DB]">Email</label>
-                        <input type="email" className="input bg-transparent border-2 border-[rgba(174,174,174,1)] placeholder:text-[#D1D5DB]" required />
+                        <input type="email" className="input bg-transparent border-2 border-[#7043E3]  placeholder:text-[#D1D5DB]" required />
                         </div>
                     </div>
                     <div>
                         <div className="form-control">
                         <label className="label text-[#D1D5DB]">Title</label>
-                        <input type="text" className="input bg-transparent border-2 border-[rgba(174,174,174,1)] placeholder:text-[#D1D5DB]" required />
+                        <input type="text" className="input bg-transparent border-2 border-[#7043E3]  placeholder:text-[#D1D5DB]" required />
                         </div>
                     </div>
                     <div>
                         <label className="label text-[#D1D5DB]">Message</label>
-                        <textarea className="textarea textarea-md w-full max-w-full bg-transparent border-2 border-[rgba(174,174,174,1)] bg-black placeholder:text-[#D1D5DB]"></textarea>
+                        <textarea className="textarea textarea-md w-full max-w-full bg-transparent border-2 border-[#7043E3]  bg-black placeholder:text-[#D1D5DB]"></textarea>
                     </div>
                     <div className="form-control mt-6">
                         <button className="btn border-none bg-[rgba(174,174,174,1)]  text-black rounded-3xl" onClick={handleSuccess}>Submit</button>
