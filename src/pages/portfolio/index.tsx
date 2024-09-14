@@ -50,11 +50,16 @@ const Portfolio: React.FC = () => {
                             <div className="card-body relative">
                                 <h2 className="card-title">{work.title}</h2>
                                 <p>{work.description}</p>
-                                <div className="card-actions justify-end">
+                                <div className="card-actions justify-end ">
                                     <button className="btn btn-primary">View Project</button>
                                 </div>
-                                <div className="absolute bottom-0 left-0 mb-2 ml-2">
-                                    <span className="badge indicator-item badge-secondary px-5 py-3">live</span>
+                                <div className="absolute bottom-0 left-0 mb-8 ml-2">
+                                    <span className="badge indicator-item bg-green-200 py-3 pl-5">
+                                        live{" "}
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" className="text-green-400" height="8" width="8" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </span>
                                 </div>
                             </div>
                         </div>
