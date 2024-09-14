@@ -1,7 +1,12 @@
+import { Poppins } from "@next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
+const poppins = Poppins({
+    subsets: ["latin"],
+    weight: ["200", "400", "700"],
+});
 const TopNavigation = () => {
     // State to manage the visibility of the mobile menu
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,11 +18,11 @@ const TopNavigation = () => {
 
     return (
         <div>
-            <nav className="fixed top-0 z-50 w-full border-none px-0 lg:px-9 lg:h-20 backdrop-blur bg-opacity-30">
+            <nav className={`fixed top-0 z-50 w-full border-none bg-opacity-30 px-0 backdrop-blur lg:h-20 lg:px-9 ${poppins.className}`}>
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-                    <a href="#" className="flex items-center space-x-3 text-primary rtl:space-x-reverse hover:animate-spin">
+                    <a href="#" className="flex items-center space-x-3 text-primary hover:animate-spin rtl:space-x-reverse">
                         {/* <Image src="/assets/logo/logo.png" width={80} height={50} className="mt-5" alt="my website's logo" /> */}
-                        <p className="text-white text-xl">Daniel</p>
+                        <p className="text-xl text-white">Daniel</p>
                     </a>
                     <button
                         onClick={toggleMenu} // Toggle menu on click
@@ -55,7 +60,7 @@ const TopNavigation = () => {
                             </li>
                             <li>
                                 <Link href="/portfolio">
-                                    <button className="block rounded px-3 py-2 text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent text-sm md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
+                                    <button className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
                                         Portfolio
                                     </button>
                                 </Link>

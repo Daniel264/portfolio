@@ -2,7 +2,6 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
     content: [
-        // break line
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,6 +13,7 @@ const config: Config = {
             },
             fontFamily: {
                 lato: ["Lato", "sans-serif"],
+                poppins: ["Poppins", "sans-serif"], // Added Poppins font
             },
         },
     },
