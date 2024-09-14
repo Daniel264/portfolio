@@ -42,7 +42,7 @@ const Portfolio: React.FC = () => {
             imageUrl: "/assets/images/jokes.png",
             width: 1080,
             height: 720,
-            status: "notLive",
+            status: "Live",
         },
         {
             title: "Portfolio website",
