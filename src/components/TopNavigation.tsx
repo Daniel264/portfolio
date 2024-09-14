@@ -20,7 +20,7 @@ const TopNavigation = () => {
     // Smooth scroll function
     const handleSmoothScroll = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, targetId: string) => {
         e.preventDefault();
-        document.querySelector(targetId)?.scrollIntoView({ behavior: 'smooth' });
+        document.querySelector(targetId)?.scrollIntoView({ behavior: "smooth" });
     };
 
     return (
@@ -51,10 +51,7 @@ const TopNavigation = () => {
                         <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-none dark:bg-inherit">
                             <li>
                                 <Link href="/" scroll={false}>
-                                    <button
-                                        className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] md:bg-transparent md:p-0"
-                                        onClick={(e) => handleSmoothScroll(e, '#home')}
-                                    >
+                                    <button className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] md:bg-transparent md:p-0" onClick={(e) => handleSmoothScroll(e, "#home")}>
                                         Home
                                     </button>
                                 </Link>
@@ -63,7 +60,7 @@ const TopNavigation = () => {
                                 <Link href="/#about" scroll={false}>
                                     <button
                                         className="flex w-full items-center justify-between px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:focus:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-                                        onClick={(e) => handleSmoothScroll(e, '#about')}
+                                        onClick={(e) => handleSmoothScroll(e, "#about")}
                                     >
                                         About
                                     </button>
@@ -73,9 +70,9 @@ const TopNavigation = () => {
                                 <Link href="#portfolio" scroll={false}>
                                     <button
                                         className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-                                        onClick={(e) => handleSmoothScroll(e, '#portfolio')}
+                                        onClick={(e) => handleSmoothScroll(e, "#portfolio")}
                                     >
-                                        Portfolio
+                                        Projects
                                     </button>
                                 </Link>
                             </li>
@@ -83,7 +80,7 @@ const TopNavigation = () => {
                                 <Link href="#contact" scroll={false}>
                                     <button
                                         className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-                                        onClick={(e) => handleSmoothScroll(e, '#contact')}
+                                        onClick={(e) => handleSmoothScroll(e, "#contact")}
                                     >
                                         Contact
                                     </button>
