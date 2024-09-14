@@ -16,7 +16,7 @@ const About = () => {
         <div id="about" className="min-h-screen w-full bg-fixed text-[#D1D5DB]">
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
-            <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] lg:px-[8rem] pt-44 text-center">
+            <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] lg:px-[8rem] text-center">
                 <div className="flex h-10 items-center rounded-badge border-2 border-[#7043E3] px-3">
                     <h1 className=" text-xl font-light text-[#7043E3]">About The creator</h1>
                 </div>
