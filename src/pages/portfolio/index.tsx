@@ -34,8 +34,7 @@ const Portfolio: React.FC = () => {
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 sm:grid-cols-2 lg:grid-cols-2">
                     {works.map((work, index) => (
-                        <div key={index} className="bg-base- card my-4 w-full rounded bg-base-100 py-5 shadow-xl">
-                            <span className="badge indicator-item badge-secondary indicator-end indicator-top">top+end</span>
+                        <div key={index} className="bg-base- card my-4 w-full rounded bg-base-100 shadow-xl">
                             <figure>
                                 <Image
                                     src={work.imageUrl}
@@ -48,11 +47,14 @@ const Portfolio: React.FC = () => {
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsive sizes
                                 />
                             </figure>
-                            <div className="card-body">
+                            <div className="card-body relative">
                                 <h2 className="card-title">{work.title}</h2>
                                 <p>{work.description}</p>
                                 <div className="card-actions justify-end">
                                     <button className="btn btn-primary">View Project</button>
+                                </div>
+                                <div className="absolute bottom-0 left-0 mb-2 ml-2">
+                                    <span className="badge indicator-item badge-secondary px-5 py-3">live</span>
                                 </div>
                             </div>
                         </div>
