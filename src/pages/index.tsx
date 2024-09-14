@@ -9,7 +9,7 @@ import { Sora, Poppins } from "@next/font/google";
 import About from "./about";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
-import {gsap} from "gsap";
+import { gsap } from "gsap";
 import { useEffect } from "react";
 
 // const Amination = () => {
@@ -30,7 +30,6 @@ export default function Home() {
             <TopNavigation />
 
             <main className={`flex h-full min-h-screen flex-col items-center p-5 pt-28`}>
-
                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                     <div className="fixed left-10 top-44 hidden h-full md:flex lg:left-12">
                         <Menu />
@@ -44,7 +43,7 @@ export default function Home() {
                                     </div> */}
                                     <div className="w-full">
                                         <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
-                                        <h3 className={`text-[rgba(251, 251, 251,1)] my-5  text-left text-4xl font- sm:text-5xl md:text-7xl`}>
+                                        <h3 className={`text-[rgba(251, 251, 251,1)] font-  my-5 text-left text-4xl sm:text-5xl md:text-7xl`}>
                                             <span className="">Daniel</span> Olatinsu
                                         </h3>
                                         <p className="text-2xl font-light text-[rgba(174,174,174,1)] lg:text-5xl">
@@ -60,7 +59,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="ml-0 mt-8 space-y-4 md:ml-0 md:mr-44 md:space-x-5">
-                            <button className="bg-[#7043E3] btn w-full rounded border-none text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
+                            <button className="btn w-full rounded border-none bg-[#7043E3] text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Lets Talk <i className="fa-solid fa-message"></i>
                             </button>
                             <button onClick={handleLoading} className="btn w-full rounded border-2 border-[#7043E3] bg-transparent text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
@@ -71,6 +70,7 @@ export default function Home() {
                 </div>
             </main>
             <About />
+            <Portfolio />
             {/* <Portfolio /> */}
             <Contact />
         </div>

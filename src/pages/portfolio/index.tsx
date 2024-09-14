@@ -25,48 +25,48 @@ const Portfolio: React.FC = () => {
             width: 1080,
             height: 720,
         },
-        {
-            title: "ChatGPT dry-jokes",
-            description: "description",
-            imageUrl: "/assets/images/jokes.png",
-            width: 1080,
-            height: 720,
-        },
-        {
-            title: "Foodland",
-            description: "description",
-            imageUrl: "/assets/images/foodland.png",
-            width: 1080,
-            height: 720,
-        },
-        {
-            title: "My Blog app",
-            description: "description",
-            imageUrl: "/assets/images/blog.png",
-            width: 1080,
-            height: 720,
-        },
-        {
-            title: "Todo List.",
-            description: "description",
-            imageUrl: "/assets/images/todo.png",
-            width: 1080,
-            height: 720,
-        },
-        {
-            title: "Password Generator.",
-            description: "Password.",
-            imageUrl: "/assets/images/password.png",
-            width: 1080,
-            height: 720,
-        },
+        // {
+        //     title: "ChatGPT dry-jokes",
+        //     description: "description",
+        //     imageUrl: "/assets/images/jokes.png",
+        //     width: 1080,
+        //     height: 720,
+        // },
+        // {
+        //     title: "Foodland",
+        //     description: "description",
+        //     imageUrl: "/assets/images/foodland.png",
+        //     width: 1080,
+        //     height: 720,
+        // },
+        // {
+        //     title: "My Blog app",
+        //     description: "description",
+        //     imageUrl: "/assets/images/blog.png",
+        //     width: 1080,
+        //     height: 720,
+        // },
+        // {
+        //     title: "Todo List.",
+        //     description: "description",
+        //     imageUrl: "/assets/images/todo.png",
+        //     width: 1080,
+        //     height: 720,
+        // },
+        // {
+        //     title: "Password Generator.",
+        //     description: "Password.",
+        //     imageUrl: "/assets/images/password.png",
+        //     width: 1080,
+        //     height: 720,
+        // },
         // Add more projects as needed
     ];
 
     return (
         <div id="portfolio" className="">
             <TopNavigation />
-            <div className="flex min-h-screen w-full flex-col items-center bg-gradient-to-br from-[rgba(43,43,43)] via-[rgba(27,27,27)] to-[rgba(26,26,26)] pt-32 text-[rgba(174,174,174,1)]">
+            <div className="flex min-h-screen w-full flex-col items-center">
                 {works.map((work, index) => (
                     <div key={index} className="py-10">
                         <Image
@@ -80,7 +80,7 @@ const Portfolio: React.FC = () => {
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsive sizes
                         />
                         <div className="portfolio-text h-44 rounded bg-gradient-to-r from-[#0d0d0d] to-[#383838] pt-4 text-center text-white lg:h-56 lg:pt-8">
-                            <h2 className="text-2xl lg:text-3xl text-green-500">{work.title}</h2>
+                            <h2 className="text-2xl lg:text-3xl text-[#7043E3]">{work.title}</h2>
                             <p className="text-lg lg:text-xl">{work.description}</p>
                         </div>
                     </div>
