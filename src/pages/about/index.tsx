@@ -17,7 +17,9 @@ const About = () => {
             {loading && <div className="loading-animation"></div>}
             <TopNavigation />
             <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-44 text-center">
-                <h1 className="mb-8 text-4xl font-bold">About Me</h1>
+                <div className="">
+                    <h1 className="mb-8 text-4xl font-bold">About Me</h1>
+                </div>
                 <div className="absolute left-10 top-64 h-full lg:left-16">
                     {/* <Menu /> */}
                 </div>
