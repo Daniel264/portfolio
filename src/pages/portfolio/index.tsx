@@ -50,7 +50,7 @@ const Portfolio: React.FC = () => {
             imageUrl: "/assets/images/portfolioo.png",
             width: 1080,
             height: 720,
-            status: "Live",
+            status: "inProgress",
         },
         // Add more projects as needed
     ];
@@ -87,9 +87,9 @@ const Portfolio: React.FC = () => {
                                     </button>
                                 </div>
                                 <div className="absolute bottom-0 left-0 mb-8 ml-2">
-                                    <span className={`badge indicator-item gap-2 border-none ${work.status === "Live" ? "bg-green-950" : "bg-red-950"} py-3 pl-5 text-white`}>
-                                        {work.status === "Live" ? "Live" : "Not Live"}
-                                        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" className={`${work.status === "Live" ? "text-green-400" : "text-red-400"}`} height="8" width="8" xmlns="http://www.w3.org/2000/svg">
+                                    <span className={`badge indicator-item gap-2 border-none ${work.status === "Live" ? "bg-green-950" : work.status === "notLive" ? "bg-red-950" : "bg-yellow-900 opacity-80"} py-3 pl-5 text-white`}>
+                                        {work.status === "Live" ? "Live" : work.status === "notLive" ? "Not Live" : "In Progress"}
+                                        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" className={`${work.status === "Live" ? "text-green-400" : work.status === "notLive" ? "text-red-400" : "text-yellow-400"}`} height="8" width="8" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="8" cy="8" r="8"></circle>
                                         </svg>
                                     </span>
