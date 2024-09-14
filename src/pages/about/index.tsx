@@ -29,7 +29,7 @@ const About = () => {
                     </div>
                     <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                         <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left">
-                            <p className="font-light leading-relaxed tracking-wide md:text-xl">
+                            <p className="font-light leading-relaxed tracking-wide text-sm md:text-lg">
                                 Hi!!! I am a Full-stack developer with a passion for mobile technology and a love for continuous learning. Adept at creating innovative solutions and excited by emerging tech trends.
                                 <p>
                                     Think we could create something together? Feel free to
