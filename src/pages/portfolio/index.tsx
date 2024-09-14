@@ -10,6 +10,7 @@ const Portfolio: React.FC = () => {
             imageUrl: "/assets/images/foodland.png",
             width: 1080,
             height: 720,
+            status: "Live",
         },
         {
             title: "SaveVest",
@@ -17,6 +18,7 @@ const Portfolio: React.FC = () => {
             imageUrl: "/assets/images/save.png",
             width: 1893,
             height: 969,
+            status: "Live",
         },
         {
             title: "GameHub",
@@ -24,6 +26,7 @@ const Portfolio: React.FC = () => {
             imageUrl: "/assets/images/gamehub.png",
             width: 1080,
             height: 720,
+            status: "Live",
         },
         {
             title: "GoDaddy clone",
@@ -31,6 +34,7 @@ const Portfolio: React.FC = () => {
             imageUrl: "/assets/images/godaddy.png",
             width: 1080,
             height: 720,
+            status: "Live",
         },
         {
             title: "ChatGPT dry-jokes",
@@ -38,6 +42,15 @@ const Portfolio: React.FC = () => {
             imageUrl: "/assets/images/jokes.png",
             width: 1080,
             height: 720,
+            status: "notLive",
+        },
+        {
+            title: "Portfolio website",
+            description: "A platform offering game recommendations, search functionality, and more for gamers.",
+            imageUrl: "/assets/images/portfolioo.png",
+            width: 1080,
+            height: 720,
+            status: "Live",
         }
         // Add more projects as needed
     ];
@@ -75,7 +88,7 @@ const Portfolio: React.FC = () => {
                                 </div>
                                 <div className="absolute bottom-0 left-0 mb-8 ml-2">
                                     <span className="badge indicator-item gap-2 border-none bg-green-950 py-3 pl-5 text-white">
-                                        live{" "}
+                                        Live{" "}
                                         <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" className="text-green-400" height="8" width="8" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="8" cy="8" r="8"></circle>
                                         </svg>
