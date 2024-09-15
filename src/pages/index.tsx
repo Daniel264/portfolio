@@ -64,7 +64,7 @@ export default function Home() {
 
             <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
                 <div className="max-w-8xl flex w-full text-white md:m-auto">
-                    <div className="fixed md:left-10 md:top-44 h-full flex lg:left-12">
+                    <div className="fixed hidden md:left-10 md:top-44 h-full md:flex lg:left-12">
                         <Menu />
                     </div>
                     <div className="ml-0 flex h-full w-full flex-col items-center md:ml-20">
@@ -91,6 +91,10 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                        
+                            <div className="md:hidden pb-8">
+                                <Menu />
+                            </div>
                         <div className="ml-0 mt-20 space-y-4 md:ml-0 md:mr-44 md:mt-16 md:space-x-5">
                             <button className="btn w-full rounded border-none bg-[#212531] text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Lets Talk <i className="fa-solid fa-message"></i>
