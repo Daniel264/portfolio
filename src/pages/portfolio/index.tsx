@@ -1,8 +1,45 @@
 import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const Portfolio: React.FC = () => {
+    // const aboutRef = useRef(null);
+
+    // useEffect(() => {
+    //     // Trigger animation when "About" section is in view
+    //     let t1;
+    //     const observer = new IntersectionObserver(
+    //         (entries) => {
+    //             entries.forEach((entry) => {
+    //                 if (entry.isIntersecting) {
+    //                     // Animation without CSSRulePlugin
+    //                     t1 = gsap.timeline({
+    //                         defaults: { duration: 2, ease: "power4.inOut" },
+    //                     });
+    //                     t1.to(".card-card", {
+    //                         clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+    //                         y: 0,
+                        
+    //                         opacity: 1,
+    //                         duration: 2.5,
+    //                     });
+    //                 }
+    //             });
+    //         },
+    //         { threshold: 0.10 } // Trigger when 5% of the section is visible
+    //     );
+
+    //     if (aboutRef.current) {
+    //         observer.observe(aboutRef.current);
+    //     }
+
+    //     return () => {
+    //         if (aboutRef.current) {
+    //             observer.unobserve(aboutRef.current); // Clean up observer
+    //         }
+    //     };
+    // }, []);
     const works = [
         {
             title: "Foodland",
@@ -79,7 +116,7 @@ const Portfolio: React.FC = () => {
                                 <h2 className="card-title text-white">{work.title}</h2>
                                 <p className="text-white">{work.description}</p>
                                 <div className="card-actions justify-end ">
-                                    <i className="fa-brands mt-2 fa-github text-3xl md:text-4xl text-white"></i>
+                                    <i className="fa-brands fa-github mt-2 text-3xl text-white md:text-4xl"></i>
                                     <button className="btn border-none bg-[#212531] text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
