@@ -103,7 +103,7 @@ const Portfolio: React.FC = () => {
             <TopNavigation />
             <h1 className="text-center text-3xl font-medium text-white">Few of my Projects</h1>
             <div className="flex min-h-screen w-full flex-col items-center">
-                <div className="grid w-full grid-cols-1 gap-4 px-4 sm:grid-cols-2 lg:grid-cols-2">
+                <div className="grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-2">
                     {works.map((work, index) => (
                         <div key={index} className=" card my-4 w-full rounded bg-transparent shadow-xl">
                             <figure>
