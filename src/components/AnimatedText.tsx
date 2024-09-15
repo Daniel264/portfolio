@@ -1,57 +1,60 @@
-// components/AnimatedSection.js
+// components/AnimatedText.tsx
 import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { CSSRulePlugin } from "gsap/CSSRulePlugin";
+import { ReactNode } from "react";
 
-gsap.registerPlugin(CSSRulePlugin);
-
-interface AnimatedSectionProps {
-    children: React.ReactNode;
+interface AnimatedTextProps {
+    children: ReactNode;
     className?: string;
 }
 
-const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children, className }) => {
-    const sectionRef = useRef(null);
+const AnimatedText = ({ children, className }: AnimatedTextProps) => {
+    const textRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        import("gsap/CSSRulePlugin").then(({ CSSRulePlugin }) => {
+        const loadGsap = async () => {
+            const { default: gsap } = await import("gsap");
+            const { CSSRulePlugin } = await import("gsap/CSSRulePlugin");
+
+            gsap.registerPlugin(CSSRulePlugin);
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
                             const t1 = gsap.timeline({
                                 defaults: { duration: 2, ease: "power4.inOut" },
                             });
-                            const rule = CSSRulePlugin.getRule(".card-card:before");
-                            t1.to(".card-card", {
+                            t1.to(textRef.current, {
                                 clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
                                 y: 0,
                                 opacity: 1,
                                 duration: 2.5,
                             });
-                        });
-                    }
-                });
-            },
-            { threshold: 0.1 }
-        );
+                        }
+                    });
+                },
+                { threshold: 0.1 }
+            );
 
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
-        }
-
-        return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
+            if (textRef.current) {
+                observer.observe(textRef.current);
             }
+
+            return () => {
+                if (textRef.current) {
+                    observer.unobserve(textRef.current);
+                }
+            };
         };
+
+        loadGsap();
     }, []);
 
     return (
-        <div ref={sectionRef} className={className}>
+        <div ref={textRef} className={className}>
             {children}
         </div>
     );
 };
 
-export default AnimatedSection;
+export default AnimatedText;
