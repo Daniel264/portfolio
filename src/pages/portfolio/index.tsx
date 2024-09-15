@@ -123,7 +123,7 @@ const Portfolio: React.FC = () => {
                                 <p className="text-[#909298]">{work.description}</p>
                                 <p className="text-xl capitalize text-white md:text-2xl">
                                     {work.languages.map((language) => (
-                                        <span key={language} className="mx-4 ">
+                                        <span key={language} className="mx-2 md:mx-4 ">
                                             {language}
                                         </span>
                                     ))}
