@@ -5,7 +5,6 @@ import Stats from "@/components/Stats";
 import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
 import { toast } from "react-toastify";
-import { Syne } from "next/font/google";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
 import gsap from "gsap";
@@ -16,9 +15,27 @@ import About from "./about";
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
 export default function Home() {
+    // First animation for the .switch elements
     useEffect(() => {
-        const splitText = new SplitType("#text, #big");
-        gsap.to(".char", {
+        if (typeof window !== "undefined") {
+            const titles = gsap.utils.toArray(".switch"); // Get all elements with the class "switch"
+            const tl = gsap.timeline();
+
+            titles.forEach((title) => {
+                const splitTitle = new SplitType(title as HTMLElement); // Split the title into chars
+                tl.from(splitTitle.chars, { opacity: 0, y: 10, rotateX: -90 }) // Fade in with some vertical movement
+                    .to(splitTitle.chars, { opacity: 1, y: -10, rotateX: 90 }, "<"); // Reset position to normal
+            });
+        }
+    }, []);
+
+    // Second animation for #text and #big
+    useEffect(() => {
+        const splitText = new SplitType("#text"); // Split the text inside #text
+        const splitBig = new SplitType("#big"); // Split the text inside #big
+
+        // Animate chars inside #text
+        gsap.to("#text .char", {
             y: 0,
             opacity: 1,
             stagger: 0.05,
@@ -26,11 +43,12 @@ export default function Home() {
             duration: 0.1,
         });
 
-        gsap.to("big", {
+        // Animate chars inside #big
+        gsap.to("#big .char", {
             y: 0,
             opacity: 1,
-            stagger: 0.05,
-            delay: 0.2,
+            stagger: 0.1, // Stagger and delay can be different
+            delay: 0.4, // Add a longer delay for #big
             duration: 0.1,
         });
     }, []);
@@ -44,7 +62,7 @@ export default function Home() {
             <SEO title="Home" />
             <TopNavigation />
 
-            <main className={`flex h-full min-h-screen flex-col items-center p-5 pt-28`}>
+            <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                     <div className="fixed left-10 top-44 hidden h-full md:flex lg:left-12">
                         <Menu />
@@ -55,16 +73,17 @@ export default function Home() {
                                 <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                                     <div className="w-full">
                                         <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
-                                        <h3 className={`text-[rgba(251, 251, 251,1)] font-  font-scale my-5 text-left text-4xl sm:text-5xl md:text-7xl`} style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+                                        <h3 className="text-[rgba(251, 251, 251,1)] font-  font-scale my-5 text-left text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                             <span id="big" className=" font-monasans text-center text-5xl font-extrabold sm:text-7xl lg:text-9xl">
                                                 DANIEL <br />
                                                 OLATINSU
                                             </span>
                                         </h3>
-                                        <p className="text-2xl font-light text-[rgba(174,174,174,1)] lg:text-5xl">
-                                            Crafting reality from lines
-                                            <br className="block sm:hidden" /> of code.
-                                        </p>
+                                        <div className="pt-10 text-3xl">
+                                            <p className="switch">crafting reality from lines</p>
+                                            <p className="switch">creating complex designs</p>
+                                            <p className="switch">coding at all times</p>
+                                        </div>
                                         <p className="pt-10 text-2xl font-light">
                                             <span className="font-semibold">I&apos;m a</span> <Typed />
                                         </p>

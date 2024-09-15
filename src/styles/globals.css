@@ -83,6 +83,14 @@
     /* transition: all 0.5s ease; */
 }
 
+.switch {
+    line-height: 0;
+    text-align: center;
+
+    &:nth-of-type(3) {
+        color: yellow;
+    }
+}
 /* .text-scale {
     transform: scaleY(1.5)
 } */
