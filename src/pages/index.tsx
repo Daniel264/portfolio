@@ -15,13 +15,18 @@ import About from "./about";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
-
 export default function Home() {
-
-
     useEffect(() => {
-        const splitText = new SplitType("#text");
+        const splitText = new SplitType("#text, #big");
         gsap.to(".char", {
+            y: 0,
+            opacity: 1,
+            stagger: 0.05,
+            delay: 0.2,
+            duration: 0.1,
+        });
+
+        gsap.to("big", {
             y: 0,
             opacity: 1,
             stagger: 0.05,
@@ -50,10 +55,11 @@ export default function Home() {
                                 <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                                     <div className="w-full">
                                         <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
-                                        <h3 className={`text-[rgba(251, 251, 251,1)] font-  my-5 text-left text-4xl sm:text-5xl md:text-7xl`} style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
-                                            <span id="text" className="text-6xl font-extrabold font-monasans">
-                                                Daniel Olatinsu
-                                            </span>{" "}
+                                        <h3 className={`text-[rgba(251, 251, 251,1)] font-  font-scale my-5 text-left text-4xl sm:text-5xl md:text-7xl`} style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+                                            <span id="big" className=" font-monasans font-extrabold lg:text-9xl">
+                                                DANIEL <br />
+                                                OLATINSU
+                                            </span>
                                         </h3>
                                         <p className="text-2xl font-light text-[rgba(174,174,174,1)] lg:text-5xl">
                                             Crafting reality from lines

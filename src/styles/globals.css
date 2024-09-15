@@ -26,6 +26,7 @@
   .font-monasans {
     font-family: 'Mona Sans', sans-serif;
     font-weight: 900;
+
   }
 
 @layer base {
@@ -55,10 +56,29 @@
     /* =========================== */
 }
 
+ .font-scale {
+    transform: scaleY(1.25);
+
+} 
+
 .char {
     transform: translateY(115px);
     transition: transform 0.5s;
+
 }
+#big {
+    transform: translateY(115px);
+    transition: transform 0.5s;
+    text-transform: uppercase;
+}
+
+#big.word {
+    display: block;
+}
+
+/* .text-scale {
+    transform: scaleY(1.5)
+} */
 
 :root {
     --font-monasans: 'Mona Sans', sans-serif;
