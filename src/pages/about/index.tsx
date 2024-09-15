@@ -2,13 +2,45 @@ import Menu from "@/components/Menu";
 import TopNavigation from "@/components/TopNavigation";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import AnimatedSection from "@/components/AnimatedText";
 import gsap from "gsap";
 
 const About = () => {
     const [loading, setLoading] = useState(true);
     const aboutRef = useRef(null);
 
+    useEffect(() => {
+        // Trigger animation when "About" section is in view
+        let t1;
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // Animation without CSSRulePlugin
+                        t1 = gsap.timeline({
+                            defaults: { duration: 2, ease: "power4.inOut" },
+                        });
+                        t1.to(".card-card", {
+                            clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+                            y: 0,
+                            opacity: 1,
+                            duration: 1.5,
+                        });
+                    }
+                });
+            },
+            { threshold: 0.05 } // Trigger when 5% of the section is visible
+        );
+
+        if (aboutRef.current) {
+            observer.observe(aboutRef.current);
+        }
+
+        return () => {
+            if (aboutRef.current) {
+                observer.unobserve(aboutRef.current); // Clean up observer
+            }
+        };
+    }, []);
 
     useEffect(() => {
         setTimeout(() => {
@@ -39,7 +71,7 @@ const About = () => {
                             </div>
                             <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                                 <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left">
-                                    <AnimatedSection className="card-card text-sm font-light leading-relaxed tracking-wide md:text-lg">
+                                    <p className="card-card text-sm font-light leading-relaxed tracking-wide md:text-lg">
                                         Hi!!! I am a Full-stack developer with a passion for mobile technology and a love for continuous learning. Adept at creating innovative solutions and excited by emerging tech trends.
                                         <span>
                                             Think we could create something together? Feel free to
@@ -48,7 +80,7 @@ const About = () => {
                                                 <br /> drop me an email
                                             </span>
                                         </span>
-                                    </AnimatedSection>
+                                    </p>
                                 </div>
                             </div>
                         </div>
