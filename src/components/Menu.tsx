@@ -6,14 +6,20 @@ const Menu = () => {
     useEffect(() => {
         const splitIcons = new SplitType(".my-menu");
 
-        gsap.to(".my-menu", {
-            y: 100,
-            opacity: 1,
-            stagger: 0.3,
-            delay: 0.2,
-            duration: 2.5,
-        });
-    });
+        const tl = gsap.timeline();
+
+        tl.to(
+            ".my-menu",
+            {
+                y: 100,
+                opacity: 1,
+                stagger: 0.3,
+                delay: 0.2,
+                duration: 2.5,
+            },
+            "=1.6"
+        ); // You can use time offsets here in a timeline
+    }, []);
     return (
         <div>
             <ul className=" menu hidden rounded-box bg-inherit sm:flex">
