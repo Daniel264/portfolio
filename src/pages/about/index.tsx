@@ -24,7 +24,8 @@ const About = () => {
                             y: 0,
                             opacity: 1,
                             duration: 2.5,
-                        });
+                        }, "-=0.6"
+                    );
                     }
                 });
             },
