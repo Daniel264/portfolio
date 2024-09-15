@@ -9,18 +9,17 @@ import { Sora, Poppins } from "@next/font/google";
 import About from "./about";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
-import { gsap } from "gsap";
+import gsap from "gsap";
+import SplitType from "split-type";
 import { useEffect } from "react";
-
-// const Amination = () => {
-//     useEffect(() => {
-
-//     })
-// }
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
 export default function Home() {
+    useEffect(() => {
+        const splitText = new SplitType("#text");
+    }, []);
+
     const handleLoading = () => {
         toast.loading("successful!");
     };
@@ -44,7 +43,10 @@ export default function Home() {
                                     <div className="w-full">
                                         <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
                                         <h3 className={`text-[rgba(251, 251, 251,1)] font-  my-5 text-left text-4xl sm:text-5xl md:text-7xl`}>
-                                            <span className="">Daniel</span> Olatinsu
+                                            <span id="text" className="">
+                                                Daniel
+                                            </span>{" "}
+                                            Olatinsu
                                         </h3>
                                         <p className="text-2xl font-light text-[rgba(174,174,174,1)] lg:text-5xl">
                                             Crafting reality from lines
@@ -58,7 +60,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="ml-0 mt-20 md:mt-16 space-y-4 md:ml-0 md:mr-44 md:space-x-5">
+                        <div className="ml-0 mt-20 space-y-4 md:ml-0 md:mr-44 md:mt-16 md:space-x-5">
                             <button className="btn w-full rounded border-none bg-[#7043E3] text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Lets Talk <i className="fa-solid fa-message"></i>
                             </button>

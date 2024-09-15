@@ -28,6 +28,7 @@
         "react-dom": "^18.2.0",
         "react-toastify": "^10.0.4",
         "react-typed": "^2.0.12",
+        "split-type": "^0.3.4",
         "valtio": "^1.13.2"
     },
     "devDependencies": {

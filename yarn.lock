@@ -2818,6 +2818,11 @@ source-map-js@^1.0.2:
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
 
+split-type@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.npmjs.org/split-type/-/split-type-0.3.4.tgz"
+  integrity sha512-otEk9vnD8qwfLsk3Lx0gz+qRkNIJCx0mlyL47ImP/DjMuV39d75Lpfwjn9fHteDRz0aoOblSzQjSNT9+Sswxcg==
+
 stacktrace-parser@^0.1.10:
   version "0.1.10"
   resolved "https://registry.npmjs.org/stacktrace-parser/-/stacktrace-parser-0.1.10.tgz"
