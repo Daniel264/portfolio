@@ -18,12 +18,12 @@ const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 export default function Home() {
     useEffect(() => {
         const splitText = new SplitType("#text");
-        gsap.to(splitText.chars, {
-            duration: 1,
-            delay: 0.5,
+        gsap.to(".char", {
             y: 0,
             opacity: 1,
-            stagger: 0.1,
+            stagger: 0.05,
+            delay: 0.2,
+            duration: 0.1,
         });
     }, []);
 

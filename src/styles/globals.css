@@ -33,44 +33,8 @@
     }
     /* =========================== */
 }
-/* .loading-animation {
-    width: 100%;
-    height: 300vh; /* Adjust the height as per your needs */
-    /* background-color: rgb(79, 79, 205); /* Customize color */
-    /* opacity: 1;
-    animation: loadingAnimation 1s linear;
-    animation-iteration-count: infinite;
-    transition: all 0.4s ease;
-    z-index: 100;
-    position: fixed;
-    transform: translateY(-100%); */
-/* }  */
 
-/* @keyframes loadingAnimation {
-    0% {
-        transform: translateX(-150%) rotate(15deg) translateY(-50%);
-    }
-    50% {
-        transform: translateX(0%) rotate(15deg) translateY(-50%);
-    }
-    100% {
-        transform: translateX(150%) rotate(15deg) translateY(-50%);
-    }
-} */
-
-/* For Webkit compatibility */
-/* @-webkit-keyframes loadingAnimation {
-    0% {
-        transform: translateX(-150%) rotate(15deg) translateY(-50%);
-    }
-    50% {
-        transform: translateX(0%) rotate(15deg) translateY(-50%);
-    }
-    100% {
-        transform: translateX(150%) rotate(15deg) translateY(-50%);
-    }
-} */ 
 .char {
-    transform: translateY(115);
+    transform: translateY(115px);
     transition: transform 0.5s;
 }
