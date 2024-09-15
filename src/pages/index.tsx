@@ -15,11 +15,6 @@ import About from "./about";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
-const syne = Syne({
-    subsets: ["latin"],
-    weight: ["400", "500", "600", "700", "800"],
-    style: "normal",
-});
 
 export default function Home() {
     useEffect(() => {
@@ -67,12 +62,12 @@ export default function Home() {
                                                 OLATINSU
                                             </span>
                                         </h3>
-                                        <p className={`text-2xl font-light text-[rgba(174,174,174,1)] lg:text-5xl ${syne.className}`}>
+                                        <p className="text-2xl font-light text-[rgba(174,174,174,1)] lg:text-5xl">
                                             Crafting reality from lines
                                             <br className="block sm:hidden" /> of code.
                                         </p>
                                         <p className="pt-10 text-2xl font-light">
-                                            <span className="font-lato font-semibold text-[#7043E3]">I&apos;m a</span> <Typed />
+                                            <span className="font-semibold text-[#7043E3]">I&apos;m a</span> <Typed />
                                         </p>
                                     </div>
                                 </div>
