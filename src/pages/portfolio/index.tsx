@@ -79,6 +79,7 @@ const Portfolio: React.FC = () => {
                                 <h2 className="card-title text-white">{work.title}</h2>
                                 <p className="text-white">{work.description}</p>
                                 <div className="card-actions justify-end ">
+                                    <i className="fa-brands fa-github text-3xl md:text-4xl text-white"></i>
                                     <button className="btn border-none bg-[#7043E3] text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
@@ -89,7 +90,16 @@ const Portfolio: React.FC = () => {
                                 <div className="absolute bottom-0 left-0 mb-8 ml-2">
                                     <span className={`badge indicator-item gap-2 border-none ${work.status === "Live" ? "bg-green-950" : work.status === "notLive" ? "bg-red-950" : "bg-yellow-900 opacity-80"} py-3 pl-5 text-white`}>
                                         {work.status === "Live" ? "Live" : work.status === "notLive" ? "Not Live" : "In Progress"}
-                                        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" className={`${work.status === "Live" ? "text-green-400" : work.status === "notLive" ? "text-red-400" : "text-yellow-400"}`} height="8" width="8" xmlns="http://www.w3.org/2000/svg">
+                                        <svg
+                                            stroke="currentColor"
+                                            fill="currentColor"
+                                            strokeWidth="0"
+                                            viewBox="0 0 16 16"
+                                            className={`${work.status === "Live" ? "text-green-400" : work.status === "notLive" ? "text-red-400" : "text-yellow-400"}`}
+                                            height="8"
+                                            width="8"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
                                             <circle cx="8" cy="8" r="8"></circle>
                                         </svg>
                                     </span>
