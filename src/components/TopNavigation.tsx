@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-const poppins = Poppins({
-    subsets: ["latin"],
-    weight: ["200", "400", "700"],
-});
+// const poppins = Poppins({
+//     subsets: ["latin"],
+//     weight: ["200", "400", "700"],
+// });
 
 const TopNavigation = () => {
     // State to manage the visibility of the mobile menu
@@ -25,7 +25,7 @@ const TopNavigation = () => {
 
     return (
         <div>
-            <nav className={`fixed top-0 z-50 w-full border-none bg-opacity-30 px-0 backdrop-blur lg:h-20 lg:px-9 ${poppins.className}`}>
+            <nav className={`fixed top-0 z-50 w-full border-none bg-opacity-30 px-0 backdrop-blur lg:h-20 lg:px-9 `}>
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
                     <a href="#" className="flex items-center space-x-3 text-primary hover:animate-spin rtl:space-x-reverse">
                         {/* <Image src="/assets/logo/logo.png" width={80} height={50} className="mt-5" alt="my website's logo" /> */}
@@ -52,7 +52,7 @@ const TopNavigation = () => {
                             <li>
                                 <Link href="/" scroll={false}>
                                     <button className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] md:bg-transparent md:p-0" onClick={(e) => handleSmoothScroll(e, "#home")}>
-                                        Home
+                                        HOME
                                     </button>
                                 </Link>
                             </li>
@@ -62,7 +62,7 @@ const TopNavigation = () => {
                                         className="flex w-full items-center justify-between px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:focus:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
                                         onClick={(e) => handleSmoothScroll(e, "#about")}
                                     >
-                                        About
+                                        ABOUT
                                     </button>
                                 </Link>
                             </li>
@@ -72,7 +72,7 @@ const TopNavigation = () => {
                                         className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
                                         onClick={(e) => handleSmoothScroll(e, "#portfolio")}
                                     >
-                                        Projects
+                                        PROJECTS
                                     </button>
                                 </Link>
                             </li>
@@ -82,7 +82,7 @@ const TopNavigation = () => {
                                         className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
                                         onClick={(e) => handleSmoothScroll(e, "#contact")}
                                     >
-                                        Contact
+                                        CONTACT
                                     </button>
                                 </Link>
                             </li>
