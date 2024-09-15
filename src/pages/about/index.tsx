@@ -2,7 +2,7 @@ import Menu from "@/components/Menu";
 import TopNavigation from "@/components/TopNavigation";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { Sora } from "@next/font/google";
+import { Sora } from "next/font/google";
 
 const About = () => {
     const [loading, setLoading] = useState(true);

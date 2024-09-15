@@ -6,6 +6,17 @@
 /* Library CSS import */
 @import url("react-toastify/dist/ReactToastify.css");
 
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('/assets/fonts/Mona-Sans.woff2') format('woff2'),
+         url('/assets/fonts/Mona-Sans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .font-monasans {
+    font-family: 'Mona Sans', sans-serif;
+  }
 
 @layer base {
     /* Specify default font below */

@@ -5,7 +5,7 @@ import { NextRouter, useRouter } from "next/router";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { MutationCache, QueryCache, QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // @ts-ignore
-import { Poppins } from "@next/font/google";
+import { Poppins } from "next/font/google";
 // @ts-ignore
 import "@fortawesome/fontawesome-free/css/all.min.css";
 

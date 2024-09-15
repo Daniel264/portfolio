@@ -1,4 +1,4 @@
-import { Poppins } from "@next/font/google";
+import { Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";

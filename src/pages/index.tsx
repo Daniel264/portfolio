@@ -5,19 +5,15 @@ import Stats from "@/components/Stats";
 import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
 import { toast } from "react-toastify";
-import { Sora, Poppins } from "@next/font/google";
+import { Sora, Poppins } from "next/font/google";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
 import gsap from "gsap";
 import SplitType from "split-type";
 import { useEffect } from "react";
 import About from "./about";
-import localFont from 'next/font/local';
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
-const monaSans = localFont({
-    src: '/assets/fonts/Mona-Sans.ttf',
-})
 
 
 export default function Home() {
