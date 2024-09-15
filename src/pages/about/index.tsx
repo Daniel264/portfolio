@@ -23,12 +23,12 @@ const About = () => {
                             clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
                             y: 0,
                             opacity: 1,
-                            duration: 2.5,
+                            duration: 1.5,
                         });
                     }
                 });
             },
-            { threshold: 0.1 } // Trigger when 10% of the section is visible
+            { threshold: 0.05 } // Trigger when 5% of the section is visible
         );
 
         if (aboutRef.current) {
