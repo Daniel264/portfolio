@@ -5,17 +5,22 @@ import { NextRouter, useRouter } from "next/router";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { MutationCache, QueryCache, QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // @ts-ignore
-import { Poppins } from "next/font/google";
+import { Poppins, Syne } from "next/font/google";
 // @ts-ignore
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import type { AppProps } from "next/app";
 import { handleHTTPResponse } from "@/utilities/handle-http-error-response";
 
-
 const poppins = Poppins({
     subsets: ["latin"],
     weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+    style: "normal",
+});
+
+const syne = Syne({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700", "800"],
     style: "normal",
 });
 
@@ -55,7 +60,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
 
             <QueryClientProvider client={queryClient}>
-                <main className={poppins.className || ""}>
+                <main className={syne.className || ''}>
                     <Component {...pageProps} />
                 </main>
 

@@ -5,7 +5,7 @@ import Stats from "@/components/Stats";
 import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
 import { toast } from "react-toastify";
-import { Sora, Poppins } from "next/font/google";
+import { Syne } from "next/font/google";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
 import gsap from "gsap";
@@ -14,6 +14,12 @@ import { useEffect } from "react";
 import About from "./about";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
+
+const syne = Syne({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700", "800"],
+    style: "normal",
+});
 
 export default function Home() {
     useEffect(() => {
@@ -61,7 +67,7 @@ export default function Home() {
                                                 OLATINSU
                                             </span>
                                         </h3>
-                                        <p className="text-2xl font-light text-[rgba(174,174,174,1)] lg:text-5xl">
+                                        <p className={`text-2xl font-light text-[rgba(174,174,174,1)] lg:text-5xl ${syne.className}`}>
                                             Crafting reality from lines
                                             <br className="block sm:hidden" /> of code.
                                         </p>
