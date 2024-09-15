@@ -20,7 +20,7 @@ const Portfolio: React.FC = () => {
     //                     t1.to(".card-card", {
     //                         clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
     //                         y: 0,
-                        
+
     //                         opacity: 1,
     //                         duration: 2.5,
     //                     });
@@ -116,8 +116,13 @@ const Portfolio: React.FC = () => {
                                 <h2 className="card-title text-white">{work.title}</h2>
                                 <p className="text-white">{work.description}</p>
                                 <div className="card-actions justify-end ">
-                                    <i className="fa-brands fa-github mt-2 text-3xl text-white md:text-4xl"></i>
-                                    <i className="fa-solid fa-link text-white text-3xl mt-2 pl-3"></i>
+                                    <div className="rounded-full bg-white px-3 py-1 lg:px-4 lg:py-2">
+                                        <i className="fa-brands fa-github mt-2 text-3xl md:text-4xl"></i>
+                                    </div>
+                                    <div className="rounded-full bg-white px-1 py-2 lg:px-3 lg:py-4  pl-3 ">
+                                    <i className="fa-solid fa-link text-3xl text-black"></i>
+                                    </div>
+                                    
                                     {/* <button className="btn border-none bg-[#212531] text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
