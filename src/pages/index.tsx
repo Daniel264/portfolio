@@ -24,7 +24,7 @@ export default function Home() {
             titles.forEach((title) => {
                 const splitTitle = new SplitType(title as HTMLElement); // Split the title into chars
                 tl.from(splitTitle.chars, { opacity: 0, y: 5, rotateX: -90, delay: 1.1 }) // Fade in with some vertical movement
-                    .to(splitTitle.chars, { opacity: 1, y: -5, rotateX: 90,delay: 1.1 }, "<"); // Reset position to normal
+                    .to(splitTitle.chars, { opacity: 1, y: -5, rotateX: 90, delay: 1.1 }, "<"); // Reset position to normal
             });
         }
     }, []);
@@ -79,9 +79,9 @@ export default function Home() {
                                                 OLATINSU
                                             </span>
                                         </h3>
-                                        <div className="md:pt-10 text-3xl">
+                                        <div className="text-center text-xl md:pt-10 md:text-3xl">
                                             <p className="switch">crafting reality from lines</p>
-                                            <p className="switch">Transform ideas into user-friendly web experiences</p>
+                                            <p className="switch">Transform ideas into web experiences</p>
                                             <p className="switch">Optimize performance for seamless</p>
                                         </div>
                                         <p className="pt-10 text-2xl font-light">

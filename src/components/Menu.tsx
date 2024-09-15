@@ -1,26 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import SplitType from "split-type";
 
 const Menu = () => {
+    useEffect(() => {
+        const splitIcons = new SplitType(".my-menu");
+
+        gsap.to(".my-menu", {
+            y: 100,
+            opacity: 1,
+            stagger: 0.3,
+            delay: 0.2,
+            duration: 2.5,
+        });
+    });
     return (
         <div>
-            <ul className="menu hidden rounded-box bg-inherit sm:flex">
-                <li>
-                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right hover:scale-125 transition-transform" data-tip="Twitter" target="_blank" rel="noopener noreferrer ">
+            <ul className=" menu hidden rounded-box bg-inherit sm:flex">
+                <li className="my-menu">
+                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right transition-transform hover:scale-125" data-tip="Twitter" target="_blank" rel="noopener noreferrer ">
                         <i className="fab fa-twitter fa-2x"></i> {/* Use fa-2x to scale the icon */}
                     </a>
                 </li>
-                <li>
-                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right hover:scale-125 transition-transform" data-tip="Instagram" target="_blank" rel="noopener noreferrer">
+                <li className="my-menu">
+                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right transition-transform hover:scale-125" data-tip="Instagram" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-instagram fa-2x"></i> {/* Use fa-2x to scale the icon */}
                     </a>
                 </li>
-                <li>
-                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right hover:scale-125 transition-transform" data-tip="facebook" target="_blank" rel="noopener noreferrer">
+                <li className="my-menu">
+                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right transition-transform hover:scale-125" data-tip="facebook" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-facebook fa-2x"></i> {/* Use fa-2x to scale the icon */}
                     </a>
                 </li>
-                <li>
-                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right hover:scale-125 transition-transform" data-tip="GitHub" target="_blank" rel="noopener noreferrer">
+                <li className="my-menu">
+                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right transition-transform hover:scale-125" data-tip="GitHub" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-github fa-2x"></i> {/* Use fa-2x to scale the icon */}
                     </a>
                 </li>
