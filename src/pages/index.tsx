@@ -47,11 +47,10 @@ export default function Home() {
                                 <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                                     <div className="w-full">
                                         <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
-                                        <h3 className={`text-[rgba(251, 251, 251,1)] font-  my-5 text-left text-4xl sm:text-5xl md:text-7xl`}>
+                                        <h3 className={`text-[rgba(251, 251, 251,1)] font-  my-5 text-left text-4xl sm:text-5xl md:text-7xl`} style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                             <span id="text" className="">
-                                                Daniel
+                                                Daniel Olatinsu
                                             </span>{" "}
-                                            Olatinsu
                                         </h3>
                                         <p className="text-2xl font-light text-[rgba(174,174,174,1)] lg:text-5xl">
                                             Crafting reality from lines
