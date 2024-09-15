@@ -1,6 +1,5 @@
-import Header from "@/components/Header";
 import TopNavigation from "@/components/TopNavigation";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 
 const Contact = () => {
@@ -10,10 +9,14 @@ const Contact = () => {
         toast.success("successful!");
     };
 
-    setTimeout(() => {
-        // Simulate a slow network
-        setLoading(false);
-    }, 1000);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            // Simulate a slow network
+            setLoading(false);
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <>
             {loading && <div className="loading-animation"></div>}

@@ -6,23 +6,31 @@ import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
 import { toast } from "react-toastify";
 import { Sora, Poppins } from "@next/font/google";
-import About from "./about";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
 import gsap from "gsap";
 import SplitType from "split-type";
 import { useEffect } from "react";
+import About from "./about";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
 export default function Home() {
     useEffect(() => {
         const splitText = new SplitType("#text");
+        gsap.to(splitText.chars, {
+            duration: 1,
+            delay: 0.5,
+            y: 0,
+            opacity: 1,
+            stagger: 0.1,
+        });
     }, []);
 
     const handleLoading = () => {
         toast.loading("successful!");
     };
+
     return (
         <div className="bg-[#0E0A18]">
             <SEO title="Home" />
@@ -37,9 +45,6 @@ export default function Home() {
                         <div className="flex flex-col sm:flex-row">
                             <div className="hero bg-inherit">
                                 <div className="hero-content flex-col-reverse lg:flex-row-reverse">
-                                    {/* <div className="flex w-full justify-center">
-                                        <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[22rem]  rounded-full shadow-2xl sm:h-[29rem]" />
-                                    </div> */}
                                     <div className="w-full">
                                         <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
                                         <h3 className={`text-[rgba(251, 251, 251,1)] font-  my-5 text-left text-4xl sm:text-5xl md:text-7xl`}>
@@ -52,7 +57,6 @@ export default function Home() {
                                             Crafting reality from lines
                                             <br className="block sm:hidden" /> of code.
                                         </p>
-                                        {/* <p className="pt-8 text-base font-light text-[rgba(174,174,174,1)] md:text-lg">As a software engineer, I weave magic through code, turning the impossible into reality, one algorithm at a time.</p> */}
                                         <p className="pt-10 text-2xl font-light">
                                             <span className="font-lato font-semibold text-[#7043E3]">I&apos;m a</span> <Typed />
                                         </p>
@@ -73,7 +77,6 @@ export default function Home() {
             </main>
             <About />
             <Portfolio />
-            {/* <Portfolio /> */}
             <Contact />
         </div>
     );
