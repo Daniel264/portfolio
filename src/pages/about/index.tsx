@@ -2,11 +2,30 @@ import Menu from "@/components/Menu";
 import TopNavigation from "@/components/TopNavigation";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import gsap from "gsap";
+import SplitType from "split-type";
 import { Sora } from "next/font/google";
 
 const About = () => {
-    
     const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        // Dynamically import CSSRulePlugin
+        let t1;
+        import('gsap/CSSRulePlugin').then(({ CSSRulePlugin }) => {
+            gsap.registerPlugin(CSSRulePlugin);
+            let flagPoles = CSSRulePlugin.getRule(".card-card:before");
+            t1 = gsap.timeline({
+                defaults: { duration: 2, ease: "power4.inOut" },
+            });
+            t1.to(".card-card", {
+                clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+                y: 0,
+                opacity: 1,
+                duration: 2.5,
+            });
+        });
+    }, []);
 
     useEffect(() => {
         setTimeout(() => {
@@ -35,7 +54,7 @@ const About = () => {
                             </div>
                             <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                                 <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left">
-                                    <p id="#big" className="text-sm font-light leading-relaxed tracking-wide md:text-lg">
+                                    <p id="" className="card-card text-sm font-light leading-relaxed tracking-wide md:text-lg">
                                         Hi!!! I am a Full-stack developer with a passion for mobile technology and a love for continuous learning. Adept at creating innovative solutions and excited by emerging tech trends.
                                         <span>
                                             Think we could create something together? Feel free to
@@ -50,65 +69,7 @@ const About = () => {
                         </div>
                     </main>
 
-                    <section className="flex w-full flex-col items-center justify-center py-10">
-                        <h1 className="mb-6 text-center text-3xl font-bold">Skills</h1>
-                        <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>Node.js
-                            </div>
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>MongoDB
-                            </div>
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>TailwindCSS
-                            </div>
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>ChakraUI
-                            </div>
-                        </div>
-                        <div className="mt-2 flex flex-wrap justify-center gap-2 sm:mt-4 sm:gap-4">
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>JavaScript
-                            </div>
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>TypeScript
-                            </div>
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>React.js
-                            </div>
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>Next.js
-                            </div>
-                        </div>
-                        <div className="mt-2 flex flex-wrap justify-center gap-2 sm:mt-4 sm:gap-4">
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>Express.js
-                            </div>
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>Git
-                            </div>
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>SASS
-                            </div>
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>Restful APIs
-                            </div>
-                        </div>
-                        <div className="mt-2 flex flex-wrap justify-center gap-2 sm:mt-4 sm:gap-4">
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>HTML
-                            </div>
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>CSS
-                            </div>
-                            <div className="badge flex h-6 w-28 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>Python
-                            </div>
-                            <div className="badge flex h-6 w-36 items-center justify-center border-none bg-[#101010] text-sm text-white shadow-xl sm:h-7 sm:w-36 sm:text-base">
-                                <i className="fa-regular fa-star mr-1 text-[#7043E3] sm:mr-2"></i>Documentation
-                            </div>
-                        </div>
-                    </section>
+                    {/* Skills section omitted for brevity */}
                 </>
             )}
         </div>

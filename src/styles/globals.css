@@ -76,6 +76,12 @@
     display: block;
 }
 
+.card-card {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    opacity: 0;
+    transform: translateY(100px);
+}
+
 /* .text-scale {
     transform: scaleY(1.5)
 } */
