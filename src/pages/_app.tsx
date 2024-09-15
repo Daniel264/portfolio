@@ -6,18 +6,12 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { MutationCache, QueryCache, QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // @ts-ignore
 import { Poppins } from "@next/font/google";
-import localFont from 'next/font/local'
 // @ts-ignore
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import type { AppProps } from "next/app";
 import { handleHTTPResponse } from "@/utilities/handle-http-error-response";
 
-// const sora = Sora({
-//     subsets: ["latin"],
-//     weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-//     style: "normal",
-// });
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -25,9 +19,10 @@ const poppins = Poppins({
     style: "normal",
 });
 
-const monasans = localFont({
-    src: "../public/assets/fonts/Mona-Sans.ttf",
-})
+// const monaSans = localFont({
+//     src: '..public/assets/fonts/Mona-Sans.ttf',
+//     variable: '--font-monasans',
+//   });
 
 // const lato = Lato({
 //     subsets: ["latin"],

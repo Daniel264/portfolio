@@ -39,3 +39,12 @@
     transition: transform 0.5s;
 }
 
+:root {
+    --font-monasans: 'Mona Sans', sans-serif;
+}
+
+/* .font-monasans {
+    font-family: var(--font-monasans);
+}
+
+ */
