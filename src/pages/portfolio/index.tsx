@@ -117,12 +117,13 @@ const Portfolio: React.FC = () => {
                                 <p className="text-white">{work.description}</p>
                                 <div className="card-actions justify-end ">
                                     <i className="fa-brands fa-github mt-2 text-3xl text-white md:text-4xl"></i>
-                                    <button className="btn border-none bg-[#212531] text-white">
+                                    <i className="fa-solid fa-link text-white text-3xl mt-2 pl-3"></i>
+                                    {/* <button className="btn border-none bg-[#212531] text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                                         </svg>
                                         View Project
-                                    </button>
+                                    </button> */}
                                 </div>
                                 <div className="absolute bottom-0 left-0 mb-8 ml-2">
                                     <span className={`badge indicator-item gap-2 border-none ${work.status === "Live" ? "bg-green-950" : work.status === "notLive" ? "bg-red-950" : "bg-yellow-900 opacity-80"} py-3 pl-5 text-white`}>
