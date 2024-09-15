@@ -48,6 +48,7 @@ const Portfolio: React.FC = () => {
             width: 1080,
             height: 720,
             status: "Live",
+            languages: ["React", "Node.js", "Express", "MongoDB"],
         },
         {
             title: "SaveVest",
@@ -56,6 +57,7 @@ const Portfolio: React.FC = () => {
             width: 1893,
             height: 969,
             status: "inProgress",
+            languages: ["React", "Node.js", "Express", "MongoDB"],
         },
         {
             title: "GameHub",
@@ -64,6 +66,7 @@ const Portfolio: React.FC = () => {
             width: 1080,
             height: 720,
             status: "Live",
+            languages: ["React", "Node.js", "Express", "MongoDB"],
         },
         {
             title: "GoDaddy clone",
@@ -72,6 +75,7 @@ const Portfolio: React.FC = () => {
             width: 1080,
             height: 720,
             status: "Live",
+            languages: ["React", "Node.js", "Express", "MongoDB"],
         },
         {
             title: "ChatGPT dry-jokes",
@@ -80,6 +84,7 @@ const Portfolio: React.FC = () => {
             width: 1080,
             height: 720,
             status: "Live",
+            languages: ["React", "Node.js", "Express", "MongoDB"],
         },
         {
             title: "Portfolio website",
@@ -113,16 +118,16 @@ const Portfolio: React.FC = () => {
                                 />
                             </figure>
                             <div className="card-body relative">
-                                <h2 className="card-title text-white">{work.title}</h2>
-                                <p className="text-white">{work.description}</p>
+                                <h2 className="card-title text-3xl text-white">{work.title}</h2>
+                                <p className="text-[#909298]">{work.description}</p>
                                 <div className="card-actions justify-end ">
                                     <div className="rounded-full bg-white px-3 py-1 lg:px-4 lg:py-2">
                                         <i className="fa-brands fa-github mt-2 text-3xl md:text-4xl"></i>
                                     </div>
-                                    <div className="rounded-full bg-white px-1 py-2 lg:px-3 lg:py-4  pl-3 ">
-                                    <i className="fa-solid fa-link text-3xl text-black"></i>
+                                    <div className="rounded-full bg-white px-1 py-2 pl-3 lg:px-3  lg:py-4 ">
+                                        <i className="fa-solid fa-link text-3xl text-black"></i>
                                     </div>
-                                    
+
                                     {/* <button className="btn border-none bg-[#212531] text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
