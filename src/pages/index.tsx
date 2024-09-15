@@ -40,7 +40,7 @@ export default function Home() {
     };
 
     return (
-        <div className="bg-[#0E0A18]">
+        <div className="bg-[#0E1016]">
             <SEO title="Home" />
             <TopNavigation />
 
@@ -66,17 +66,17 @@ export default function Home() {
                                             <br className="block sm:hidden" /> of code.
                                         </p>
                                         <p className="pt-10 text-2xl font-light">
-                                            <span className="font-semibold text-[#7043E3]">I&apos;m a</span> <Typed />
+                                            <span className="font-semibold">I&apos;m a</span> <Typed />
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="ml-0 mt-20 space-y-4 md:ml-0 md:mr-44 md:mt-16 md:space-x-5">
-                            <button className="btn w-full rounded border-none bg-[#7043E3] text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
+                            <button className="btn w-full rounded border-none bg-[#212531] text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Lets Talk <i className="fa-solid fa-message"></i>
                             </button>
-                            <button onClick={handleLoading} className="btn w-full rounded border-2 border-[#7043E3] bg-transparent text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
+                            <button onClick={handleLoading} className="btn w-full rounded border-2 border-[#212531] bg-transparent text-white shadow-2xl hover:animate-bounce hover:bg-slate-500 md:w-44">
                                 Download CV <i className="fa-solid fa-download"></i>
                             </button>
                         </div>
