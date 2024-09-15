@@ -50,7 +50,7 @@ const Portfolio: React.FC = () => {
             imageUrl: "/assets/images/portfolioo.png",
             width: 1080,
             height: 720,
-            status: "inProgress",
+            status: "notLive",
         },
         // Add more projects as needed
     ];
