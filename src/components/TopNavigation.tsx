@@ -29,7 +29,14 @@ const TopNavigation = () => {
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
                     <a href="#" className="flex items-center space-x-3 text-primary hover:animate-spin rtl:space-x-reverse">
                         {/* <Image src="/assets/logo/logo.png" width={80} height={50} className="mt-5" alt="my website's logo" /> */}
-                        <p className="text-xl text-white">Daniel</p>
+                        <p className="text-xl text-white">
+                            <div className="avatar">
+                                <div className="w-9 rounded-full border-2 bg-white">
+                                    <i className="fa-solid fa-user text-black"></i>
+                                </div>
+                            </div>
+                            Daniel
+                        </p>
                     </a>
                     <button
                         onClick={toggleMenu} // Toggle menu on click
