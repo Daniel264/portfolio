@@ -22,7 +22,7 @@ const Menu = () => {
     }, []);
     return (
         <div>
-            <ul className=" menu rounded-box bg-inherit flex flex-row sm:flex sm:flex-col">
+            <ul className=" menu rounded-box bg-inherit flex flex-row md:flex md:flex-col">
                 <li className="my-menu">
                     <a href="https://github.com/Daniel264" className="tooltip tooltip-right transition-transform hover:scale-125" data-tip="Twitter" target="_blank" rel="noopener noreferrer ">
                         <i className="fab fa-twitter fa-2x"></i> {/* Use fa-2x to scale the icon */}

@@ -13,15 +13,18 @@ import { useEffect } from "react";
 import About from "./about";
 import Lenis from "@studio-freight/lenis";
 
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 export default function Home() {
     // First animation for the .switch elements
 
     useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
         const lenis = new Lenis();
 
         // Log scroll events
-        lenis.on("scroll", (e) => {
+        lenis.on("scroll", (e: any) => {
             console.log(e);
         });
 
