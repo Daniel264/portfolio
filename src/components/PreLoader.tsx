@@ -1,8 +1,7 @@
 import React from "react";
 
 const PreLoader = () => {
-    return <div className="h-full w-full text-white font-extrabold text-4xl">PreLoader</div>;
+    return <div className="min-h-screen flex justify-center items-center w-full text-4xl font-extrabold text-white">PreLoader</div>;
 };
 
 export default PreLoader;
- 

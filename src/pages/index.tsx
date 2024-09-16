@@ -101,7 +101,7 @@ export default function Home() {
     };
 
     return (
-        <div className="bg-[#0E1016] min-h-screen">
+        <div className="bg-[#0E1016] ">
             <SEO title="Home" />
             {/* <TopNavigation />
 
