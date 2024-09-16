@@ -5,8 +5,8 @@ const Skills = () => {
         <main className="flex h-full w-full flex-col items-center text-white">
             <h1 className="text-center text-6xl font-bold text-white lg:text-7xl">Skills</h1>
             <p>DEVELOPMENT ARSENAL</p>
-            <section>
-                <article className="">
+            <section className="grid grid-rows-3 grid-cols-3 gap-4">
+                <article className="row-start-1 col-start-1">
                     <h2 className="text-4xl font-semibold">Frontend</h2>
                     <ul>
                         <li>TypeScript</li>
@@ -16,7 +16,7 @@ const Skills = () => {
                         <li>Next.js</li>
                     </ul>
                 </article>
-                <article>
+                <article className="row-start-2 col-start-2">
                     <h2 className="text-4xl font-semibold">Backend</h2>
                     <ul>
                         <li>Node.js</li>
@@ -27,7 +27,7 @@ const Skills = () => {
                         <li>prisma</li>
                     </ul>
                 </article>
-                <article>
+                <article className="row-start-3 col-start-3">
                     <h2 className="text-4xl font-semibold">UI Libraries</h2>
                     <ul>
                         <li>GSAP</li>
