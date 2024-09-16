@@ -24,9 +24,9 @@ const Contact = () => {
             <div id="contact" className="contact-page px-2 py-20 text-center md:px-10 lg:py-0">
                 <div className="hero flex min-h-screen flex-col items-center justify-center pt-20 text-white md:pt-24 lg:pt-32 lg:flex-row lg:items-start lg:justify-between">
                     <div className="lg:w-1/2 lg:pr-10">
-                        <h1 id="#big" className="mb-10 text-5xl font-bold">Get In Touch</h1>
-                        <p className="reveal-text text-center">
-                            Currently, i&apos;m looking for new opportunities. if you have one, my inbox is always open. <br /> Whether you have a job proposal or question or you just want to say hi, I&apos;ll definitely get back to you.
+                        <h1 id="#big" className="mb-10 text-5xl md:text-7xl font-bold">Get In Touch</h1>
+                        <p className="reveal-text text-center text-lg">
+                            Currently, i&apos;m looking for new opportunities. <br /> If you have one, my inbox is always open. <br /> Whether you have a job proposal or question <br />or you just want to say hi, I&apos;ll definitely get back to you.
                         </p>
                     </div>
                     <div className="hero-content w-full flex-col lg:w-1/2 lg:flex-row">
