@@ -76,6 +76,11 @@
     display: block;
 }
 
+.preloader.char {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+}
+
 .card-card {
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     opacity: 0;
