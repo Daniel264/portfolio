@@ -61,8 +61,8 @@ const About = () => {
                 <>
                     <TopNavigation />
                     <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] text-center lg:px-[8rem]">
-                        <div className="flex h-10 items-center rounded border-2 border-[#212531] px-3">
-                            <h1 className="text-xl font-light">About The Creator</h1>
+                        <div className="flex h-10 items-center rounded px-3">
+                            <h1 className="text-6xl font-bold">About The Creator</h1>
                         </div>
                         <p className="pt-8 text-xl font-light text-white md:text-2xl">Fullstack Developer & Mobile Enthusiast</p>
                         <div className="absolute left-10 top-64 h-full lg:left-16"></div>
