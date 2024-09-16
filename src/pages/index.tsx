@@ -9,7 +9,7 @@ import Portfolio from "./portfolio";
 import Contact from "./contact";
 import gsap from "gsap";
 import SplitType from "split-type";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import About from "./about";
 import Lenis from "@studio-freight/lenis";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -18,11 +18,21 @@ import Skills from "@/components/Skills";
 import PreLoader from "@/components/PreLoader";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
+
 export default function Home() {
-    // First animation for the .switch elements
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        if (typeof window !== "undefined") {
+        // Set a timer for 5 seconds to show the preloader
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 5000);
+
+        return () => clearTimeout(timer); // Cleanup the timer on component unmount
+    }, []);
+
+    useEffect(() => {
+        if (!loading && typeof window !== "undefined") {
             gsap.registerPlugin(ScrollTrigger);
 
             const splitTypes = document.querySelectorAll(".reveal-text");
@@ -46,118 +56,116 @@ export default function Home() {
 
             const lenis = new Lenis();
 
-            // Log scroll events
             lenis.on("scroll", (e: any) => {
                 console.log(e);
             });
 
-            // Animation frame loop for updating scroll
             const raf = (time: DOMHighResTimeStamp) => {
                 lenis.raf(time);
                 requestAnimationFrame(raf);
             };
 
             requestAnimationFrame(raf);
-        }
 
-        if (typeof window !== "undefined") {
-            const titles = gsap.utils.toArray(".switch"); // Get all elements with the class "switch"
+            const titles = gsap.utils.toArray(".switch");
             const tl = gsap.timeline();
 
             titles.forEach((title) => {
-                const splitTitle = new SplitType(title as HTMLElement); // Split the title into chars
-                tl.from(splitTitle.chars, { opacity: 0, y: 5, rotateX: -90, delay: 1.1 }) // Fade in with some vertical movement
-                    .to(splitTitle.chars, { opacity: 1, y: -5, rotateX: 90, delay: 1.1 }, "<"); // Reset position to normal
+                const splitTitle = new SplitType(title as HTMLElement);
+                tl.from(splitTitle.chars, { opacity: 0, y: 5, rotateX: -90, delay: 1.1 })
+                    .to(splitTitle.chars, { opacity: 1, y: -5, rotateX: 90, delay: 1.1 }, "<");
             });
         }
-    }, []);
+    }, [loading]);
 
-    // Second animation for #text and #big
     useEffect(() => {
-        const splitText = new SplitType("#text"); // Split the text inside #text
-        const splitBig = new SplitType("#big"); // Split the text inside #big
+        if (!loading) {
+            const splitText = new SplitType("#text");
+            const splitBig = new SplitType("#big");
 
-        // Animate chars inside #text
-        gsap.to("#text .char", {
-            y: 0,
-            opacity: 1,
-            stagger: 0.05,
-            delay: 0.2,
-            duration: 0.1,
-        });
+            gsap.to("#text .char", {
+                y: 0,
+                opacity: 1,
+                stagger: 0.05,
+                delay: 0.2,
+                duration: 0.1,
+            });
 
-        // Animate chars inside #big
-        gsap.to("#big .char", {
-            y: 0,
-            opacity: 1,
-            stagger: 0.1, // Stagger and delay can be different
-            delay: 0.4, // Add a longer delay for #big
-            duration: 0.1,
-        });
-    }, []);
+            gsap.to("#big .char", {
+                y: 0,
+                opacity: 1,
+                stagger: 0.1,
+                delay: 0.4,
+                duration: 0.1,
+            });
+        }
+    }, [loading]);
 
     const handleLoading = () => {
         toast.loading("successful!");
     };
 
     return (
-        <div className="bg-[#0E1016] ">
+        <div className="bg-[#0E1016]">
             <SEO title="Home" />
-            {/* <TopNavigation />
+            {loading ? (
+                <PreLoader />
+            ) : (
+                <>
+                    <TopNavigation />
 
-            <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
-            <div className="max-w-8xl flex w-full text-white md:m-auto">
-                <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
-                <Menu />
-                </div>
-                <div className="ml-0 flex h-full w-full flex-col items-center md:ml-20">
-                <div className="flex flex-col sm:flex-row">
-                    <div className="hero bg-inherit">
-                    <div className="hero-content flex-col-reverse lg:flex-row-reverse">
-                        <div className="w-full">
-                        <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
-                        <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
-                            <span id="big" className=" font-monasans text-center text-5xl font-extrabold sm:text-7xl lg:text-9xl">
-                            DANIEL <br />
-                            OLATINSU
-                            </span>
-                        </h3>
-                        <p className="pt-10 text-2xl font-light">
-                            <span className="font-semibold">I&apos;m a</span> <Typed />
-                        </p>
+                    <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
+                        <div className="max-w-8xl flex w-full text-white md:m-auto">
+                            <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
+                                <Menu />
+                            </div>
+                            <div className="ml-0 flex h-full w-full flex-col items-center md:ml-20">
+                                <div className="flex flex-col sm:flex-row">
+                                    <div className="hero bg-inherit">
+                                        <div className="hero-content flex-col-reverse lg:flex-row-reverse">
+                                            <div className="w-full">
+                                                <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
+                                                <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+                                                    <span id="big" className="font-monasans text-center text-5xl font-extrabold sm:text-7xl lg:text-9xl">
+                                                        DANIEL <br />
+                                                        OLATINSU
+                                                    </span>
+                                                </h3>
+                                                <p className="pt-10 text-2xl font-light">
+                                                    <span className="font-semibold">I&apos;m a</span> <Typed />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="pb-8 md:hidden">
+                                    <Menu />
+                                </div>
+                                <div className="ml-0 mt-20 space-y-4 md:ml-0 md:mr-44 md:mt-16 md:space-x-5">
+                                    <button className="btn w-full rounded border-none bg-[#212531] text-white shadow-2xl hover:bg-slate-500 md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
+                                        Lets Talk <i className="fa-solid fa-message"></i>
+                                    </button>
+                                    <button onClick={handleLoading} className="btn w-full rounded border-2 border-[#212531] bg-transparent text-white shadow-2xl hover:bg-slate-500 md:w-44">
+                                        Download CV <i className="fa-solid fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                </div>
+                    </main>
 
-                <div className="pb-8 md:hidden">
-                    <Menu />
-                </div>
-                <div className="ml-0 mt-20 space-y-4 md:ml-0 md:mr-44 md:mt-16 md:space-x-5">
-                    <button 
-                        className="btn w-full rounded border-none bg-[#212531] text-white shadow-2xl hover:bg-slate-500 md:w-44"
-                        onClick={() => window.location.href = "mailto:danieloluwafolajimi@gmail.com"}
-                    >
-                        Lets Talk <i className="fa-solid fa-message"></i>
-                    </button>
-                    <button onClick={handleLoading} className="btn w-full rounded border-2 border-[#212531] bg-transparent text-white shadow-2xl hover:bg-slate-500 md:w-44">
-                        Download CV <i className="fa-solid fa-download"></i>
-                    </button>
-                </div>
-                </div>
-            </div>
-            </main>
-            <hr className="w-[80%] mx-auto" />
-            <About />
-            <hr className="w-[80%] mx-auto" />
-            <Portfolio />
-            <hr className="w-[80%] mx-auto pb-10" />
-            <Skills />
-            <hr className="w-[80%] mx-auto" />
-            <Contact />
-            <hr className="w-[80%] mx-auto" />
-            <Footer /> */}
-            <PreLoader />
+                    <hr className="mx-auto w-[80%]" />
+                    <About />
+                    <hr className="mx-auto w-[80%]" />
+                    <Portfolio />
+                    <hr className="mx-auto w-[80%] pb-10" />
+                    <Skills />
+                    <hr className="mx-auto w-[80%]" />
+                    <Contact />
+                    <hr className="mx-auto w-[80%]" />
+                    <Footer />
+                </>
+            )}
         </div>
     );
 }
