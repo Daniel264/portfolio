@@ -155,7 +155,7 @@ export default function Home() {
             <About />
             <hr className="w-[80%] mx-auto" />
             <Portfolio />
-            <hr className="w-[80%] mx-auto" />
+            <hr className="w-[80%] mx-auto pb-10" />
             <Skills />
             <hr className="w-[80%] mx-auto" />
             <Contact />
