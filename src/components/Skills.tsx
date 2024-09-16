@@ -8,7 +8,7 @@ const Skills = () => {
             <section className="grid grid-cols-1 gap-10 md:grid-cols-3 md:grid-rows-3">
                 <article className="col-start-1 row-start-1">
                     <h2 className="text-5xl font-semibold">Frontend</h2>
-                    <ul className="text-lg leading-relaxed">
+                    <ul className="text-lg leading-relaxed text-[#E4DED7]">
                         <li>TypeScript</li>
                         <li>JavaScript(ES6+)</li>
                         <li>ViteTest</li>
@@ -24,7 +24,7 @@ const Skills = () => {
                 </article>
                 <article className="col-start-1 row-start-2 md:col-start-2">
                     <h2 className="text-5xl font-semibold">Backend</h2>
-                    <ul className="text-lg leading-relaxed">
+                    <ul className="text-lg leading-relaxed text-[#E4DED7]">
                         <li>Node.js</li>
                         <li>Express.js</li>
                         <li>Typescript</li>
@@ -39,7 +39,7 @@ const Skills = () => {
                 </article>
                 <article className="col-start-1 row-start-3 md:col-start-3">
                     <h2 className="text-5xl font-semibold">UI Libraries</h2>
-                    <ul className="text-lg leading-relaxed">
+                    <ul className="text-lg leading-relaxed text-[#E4DED7]">
                         <li>GSAP</li>
                         <li>Tailiwind</li>
                         <li>BootStrap</li>
