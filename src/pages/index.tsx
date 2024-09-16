@@ -154,7 +154,7 @@ export default function Home() {
                         </div>
                     </main>
 
-                    <hr className="mx-auto w-[80%]" />
+                    <hr className="mx-auto w-[80%] pb-10" />
                     <About />
                     <hr className="mx-auto w-[80%]" />
                     <Portfolio />

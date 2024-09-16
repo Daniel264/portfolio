@@ -73,10 +73,9 @@ const About = () => {
                             </div>
                             <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                                 <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left">
-                                    <p className="card-card font-light leading-relaxed tracking-wide md:text-lg">
+                                    <p className="card-card font-light leading-loose tracking-wide md:text-lg">
                                         I’m a full-stack developer with a deep passion for mobile technology, driven by a love for continuous learning and personal growth. My expertise spans both front-end and back-end development, where I enjoy creating innovative and impactful solutions that solve
-                                        real-world problems. Beyond coding, I’m an avid supporter of Real Madrid, and I find joy in the game of chess, where strategy meets skill. I also love diving into books that expand my knowledge and perspective. Whether it&apos;s keeping up with the latest tech
-                                        trends, exploring new tools, or honing my craft, I’m always eager to learn and push the boundaries of what’s possible. There&apos;s so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
+                                        real-world problems. There&apos;s so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
                                         <span>
                                             Think we could create something together? Feel free to
                                             <span className="text-[#7043E3] hover:cursor-pointer" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
