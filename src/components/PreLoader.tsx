@@ -27,7 +27,13 @@ const PreLoader = () => {
             );
         });
     });
-    return <div className="preloader flex min-h-screen w-full items-center justify-center text-4xl font-extrabold text-white">PreLoader</div>;
+    return (
+        <div className="preloader flex min-h-screen w-full items-center justify-center text-4xl font-extrabold text-white ">
+            <span className="px-7">Loading</span>
+            <span className="px-7">Transforming</span>
+            <span className="px-7">Unveiling</span>
+        </div>
+    );
 };
 
 export default PreLoader;
