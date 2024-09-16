@@ -129,10 +129,10 @@ const Portfolio: React.FC = () => {
                                     ))}
                                 </p>
                                 <div className="card-actions justify-end ">
-                                    <div className="rounded-full bg-white px-3 py-1 lg:px-4 lg:py-2">
+                                    <div className="rounded-full bg-white px-3 py-1 hover:cursor-pointer lg:px-4 lg:py-2">
                                         <i className="fa-brands fa-github mt-2 text-3xl text-black md:text-4xl"></i>
                                     </div>
-                                    <div className="rounded-full bg-white px-2 py-2  lg:px-3  lg:py-4 flex h-fit justify-center items-center">
+                                    <div className="flex h-fit items-center justify-center  rounded-full  bg-white px-2 py-2 hover:cursor-pointer lg:px-3 lg:py-4">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 md:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                                         </svg>
