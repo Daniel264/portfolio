@@ -115,7 +115,7 @@ export default function Home() {
                     <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                         <div className="w-full">
                         <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
-                        <h3 className="text-[rgba(251, 251, 251,1)] font-  font-scale my-5 text-left text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+                        <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                             <span id="big" className=" font-monasans text-center text-5xl font-extrabold sm:text-7xl lg:text-9xl">
                             DANIEL <br />
                             OLATINSU

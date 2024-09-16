@@ -22,20 +22,20 @@ const Menu = () => {
     }, []);
     return (
         <div>
-            <ul className=" menu rounded-box bg-inherit flex flex-row md:flex md:flex-col">
+            <ul className=" menu flex flex-row rounded-box bg-inherit md:flex md:flex-col">
                 <li className="my-menu">
-                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right transition-transform hover:scale-125" data-tip="Twitter" target="_blank" rel="noopener noreferrer ">
+                    <a href="https://twitter.com/DanielOlatinsu" className="tooltip tooltip-right transition-transform hover:scale-125" data-tip="Twitter" target="_blank" rel="noopener noreferrer ">
                         <i className="fab fa-twitter fa-2x"></i> {/* Use fa-2x to scale the icon */}
                     </a>
                 </li>
                 <li className="my-menu">
-                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right transition-transform hover:scale-125" data-tip="Instagram" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/_.daniel._fo/" className="tooltip tooltip-right transition-transform hover:scale-125" data-tip="Instagram" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-instagram fa-2x"></i> {/* Use fa-2x to scale the icon */}
                     </a>
                 </li>
                 <li className="my-menu">
-                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right transition-transform hover:scale-125" data-tip="facebook" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-facebook fa-2x"></i> {/* Use fa-2x to scale the icon */}
+                    <a href="https://www.linkedin.com/in/daniel-olatinsu-09415a230/" className="tooltip tooltip-right transition-transform hover:scale-125" data-tip="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-linkedin fa-2x"></i> {/* Use fa-2x to scale the icon */}
                     </a>
                 </li>
                 <li className="my-menu">
