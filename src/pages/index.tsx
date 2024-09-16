@@ -103,51 +103,54 @@ export default function Home() {
             <TopNavigation />
 
             <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
-                <div className="max-w-8xl flex w-full text-white md:m-auto">
-                    <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
-                        <Menu />
+            <div className="max-w-8xl flex w-full text-white md:m-auto">
+                <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
+                <Menu />
+                </div>
+                <div className="ml-0 flex h-full w-full flex-col items-center md:ml-20">
+                <div className="flex flex-col sm:flex-row">
+                    <div className="hero bg-inherit">
+                    <div className="hero-content flex-col-reverse lg:flex-row-reverse">
+                        <div className="w-full">
+                        <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
+                        <h3 className="text-[rgba(251, 251, 251,1)] font-  font-scale my-5 text-left text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+                            <span id="big" className=" font-monasans text-center text-5xl font-extrabold sm:text-7xl lg:text-9xl">
+                            DANIEL <br />
+                            OLATINSU
+                            </span>
+                        </h3>
+                        {/* <div className="text-center text-xl md:pt-10 md:text-3xl">
+                            <p className="switch">crafting reality from lines</p>
+                            <p className="switch">Transform ideas into web experiences</p>
+                            <p className="switch">Optimize performance for seamless</p>
+                        </div> */}
+                        <p className="pt-10 text-2xl font-light">
+                            <span className="font-semibold">I&apos;m a</span> <Typed />
+                        </p>
+                        </div>
                     </div>
-                    <div className="ml-0 flex h-full w-full flex-col items-center md:ml-20">
-                        <div className="flex flex-col sm:flex-row">
-                            <div className="hero bg-inherit">
-                                <div className="hero-content flex-col-reverse lg:flex-row-reverse">
-                                    <div className="w-full">
-                                        <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
-                                        <h3 className="text-[rgba(251, 251, 251,1)] font-  font-scale my-5 text-left text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
-                                            <span id="big" className=" font-monasans text-center text-5xl font-extrabold sm:text-7xl lg:text-9xl">
-                                                DANIEL <br />
-                                                OLATINSU
-                                            </span>
-                                        </h3>
-                                        {/* <div className="text-center text-xl md:pt-10 md:text-3xl">
-                                            <p className="switch">crafting reality from lines</p>
-                                            <p className="switch">Transform ideas into web experiences</p>
-                                            <p className="switch">Optimize performance for seamless</p>
-                                        </div> */}
-                                        <p className="pt-10 text-2xl font-light">
-                                            <span className="font-semibold">I&apos;m a</span> <Typed />
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="pb-8 md:hidden">
-                            <Menu />
-                        </div>
-                        <div className="ml-0 mt-20 space-y-4 md:ml-0 md:mr-44 md:mt-16 md:space-x-5">
-                            <button className="btn w-full rounded border-none bg-[#212531] text-white shadow-2xl hover:bg-slate-500 md:w-44">
-                                Lets Talk <i className="fa-solid fa-message"></i>
-                            </button>
-                            <button onClick={handleLoading} className="btn w-full rounded border-2 border-[#212531] bg-transparent text-white shadow-2xl hover:bg-slate-500 md:w-44">
-                                Download CV <i className="fa-solid fa-download"></i>
-                            </button>
-                        </div>
                     </div>
                 </div>
+
+                <div className="pb-8 md:hidden">
+                    <Menu />
+                </div>
+                <div className="ml-0 mt-20 space-y-4 md:ml-0 md:mr-44 md:mt-16 md:space-x-5">
+                    <button className="btn w-full rounded border-none bg-[#212531] text-white shadow-2xl hover:bg-slate-500 md:w-44">
+                    Lets Talk <i className="fa-solid fa-message"></i>
+                    </button>
+                    <button onClick={handleLoading} className="btn w-full rounded border-2 border-[#212531] bg-transparent text-white shadow-2xl hover:bg-slate-500 md:w-44">
+                    Download CV <i className="fa-solid fa-download"></i>
+                    </button>
+                </div>
+                </div>
+            </div>
             </main>
+            <hr className="w-[80%] mx-auto" />
             <About />
+            <hr className="w-[80%] mx-auto" />
             <Portfolio />
+            <hr className="w-[80%] mx-auto" />
             <Contact />
         </div>
     );
