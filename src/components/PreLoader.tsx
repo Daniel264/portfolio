@@ -1,4 +1,4 @@
-import React, { use, useEffect } from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import SplitType from "split-type";
 
@@ -7,28 +7,29 @@ const PreLoader = () => {
         const splitTypes = document.querySelectorAll(".preloader");
 
         splitTypes.forEach((splitType) => {
-            const split = new SplitType(splitType as HTMLElement);
+            const split = new SplitType(splitType as HTMLElement, { types: 'words' });
+
             gsap.fromTo(
-                split.chars,
+                split.words,
                 {
                     clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)",
-                    duration: 2,
                     opacity: 0,
-                    y: 0,
-                    stagger: 0.2,
+                    y: 50,
                 },
                 {
                     clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-                    duration: 2,
                     opacity: 1,
                     y: 0,
-                    stagger: 0.2,
+                    duration: 0.7,
+                    delay: 0.5,
+                    stagger: 0.3, // Stagger each word's animation
                 }
             );
         });
-    });
+    }, []);
+
     return (
-        <div className="preloader flex min-h-screen w-full items-center text-center justify-center text-xl  md:text-4xl font-extrabold text-white ">
+        <div className="preloader flex min-h-screen w-full items-center text-center justify-center text-xl md:text-4xl font-extrabold text-white">
             <span className="px-7">Loading</span>
             <span className="px-7">Transforming</span>
             <span className="px-7">Unveiling</span>

@@ -26,7 +26,7 @@ export default function Home() {
         // Set a timer for 5 seconds to show the preloader
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 7000);
+        }, 5000);
 
         return () => clearTimeout(timer); // Cleanup the timer on component unmount
     }, []);
