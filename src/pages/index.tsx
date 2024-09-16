@@ -26,7 +26,7 @@ export default function Home() {
         // Set a timer for 5 seconds to show the preloader
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 5000);
+        }, 7000);
 
         return () => clearTimeout(timer); // Cleanup the timer on component unmount
     }, []);
@@ -72,8 +72,7 @@ export default function Home() {
 
             titles.forEach((title) => {
                 const splitTitle = new SplitType(title as HTMLElement);
-                tl.from(splitTitle.chars, { opacity: 0, y: 5, rotateX: -90, delay: 1.1 })
-                    .to(splitTitle.chars, { opacity: 1, y: -5, rotateX: 90, delay: 1.1 }, "<");
+                tl.from(splitTitle.chars, { opacity: 0, y: 5, rotateX: -90, delay: 1.1 }).to(splitTitle.chars, { opacity: 1, y: -5, rotateX: 90, delay: 1.1 }, "<");
             });
         }
     }, [loading]);
@@ -97,6 +96,7 @@ export default function Home() {
                 stagger: 0.1,
                 delay: 0.4,
                 duration: 0.1,
+                // ease: "power4.inOut",
             });
         }
     }, [loading]);
@@ -125,8 +125,8 @@ export default function Home() {
                                         <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                                             <div className="w-full">
                                                 <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
-                                                <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
-                                                    <span id="big" className="font-monasans text-center text-5xl font-extrabold sm:text-7xl lg:text-9xl">
+                                                <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+                                                    <span id="big" className="font-monasans text-5xl font-extrabold sm:text-7xl lg:text-9xl">
                                                         DANIEL <br />
                                                         OLATINSU
                                                     </span>

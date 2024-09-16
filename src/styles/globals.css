@@ -61,6 +61,11 @@
 
 } 
 
+/* .hidden-text {
+    opacity: 0;
+    visibility: hidden;
+} */
+
 .char {
     transform: translateY(115px);
     transition: transform 0.5s;
