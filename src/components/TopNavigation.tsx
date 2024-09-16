@@ -30,8 +30,8 @@ const TopNavigation = () => {
                     <a href="#" className="flex items-center space-x-3 text-primary  rtl:space-x-reverse">
                         {/* <Image src="/assets/logo/logo.png" width={80} height={50} className="mt-5" alt="my website's logo" /> */}
                         <p className="text-xl text-white">
-                            <div className="avatar">
-                                <div className="flex h-fit w-9 items-center justify-center rounded-full border-2 bg-white text-center">
+                            <div className="avatar mr-3">
+                                <div className="flex h-fit w-9 items-center justify-center rounded-full border-2 bg-white text-center pt-1">
                                     <i className="fa-solid fa-user text-black"></i>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@ const TopNavigation = () => {
                             <li>
                                 <Link href="/#about" scroll={false}>
                                     <button
-                                        className="flex w-full items-center justify-between px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:focus:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                                        className="flex w-full items-center justify-between px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:w-auto md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-[#4a4e59] dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:focus:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-[#4a4e59]"
                                         onClick={(e) => handleSmoothScroll(e, "#about")}
                                     >
                                         ABOUT
@@ -76,7 +76,7 @@ const TopNavigation = () => {
                             <li>
                                 <Link href="#portfolio" scroll={false}>
                                     <button
-                                        className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                                        className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-[#4a4e59] dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-[#4a4e59]"
                                         onClick={(e) => handleSmoothScroll(e, "#portfolio")}
                                     >
                                         PROJECTS
@@ -86,7 +86,7 @@ const TopNavigation = () => {
                             <li>
                                 <Link href="#contact" scroll={false}>
                                     <button
-                                        className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                                        className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-[#4a4e59] dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-[#4a4e59]"
                                         onClick={(e) => handleSmoothScroll(e, "#contact")}
                                     >
                                         CONTACT
