@@ -79,7 +79,7 @@ const About = () => {
                                         trends, exploring new tools, or honing my craft, I’m always eager to learn and push the boundaries of what’s possible. There&apos;s so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
                                         <span>
                                             Think we could create something together? Feel free to
-                                            <span className="text-[#7043E3]">
+                                            <span className="text-[#7043E3] hover:cursor-pointer" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
                                                 {" "}
                                                 <br /> drop me an email
                                             </span>
