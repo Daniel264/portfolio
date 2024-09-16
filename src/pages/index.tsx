@@ -15,6 +15,7 @@ import Lenis from "@studio-freight/lenis";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
+import PreLoader from "@/components/PreLoader";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 export default function Home() {
@@ -100,9 +101,9 @@ export default function Home() {
     };
 
     return (
-        <div className="bg-[#0E1016]">
+        <div className="bg-[#0E1016] min-h-screen">
             <SEO title="Home" />
-            <TopNavigation />
+            {/* <TopNavigation />
 
             <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
             <div className="max-w-8xl flex w-full text-white md:m-auto">
@@ -121,11 +122,6 @@ export default function Home() {
                             OLATINSU
                             </span>
                         </h3>
-                        {/* <div className="text-center text-xl md:pt-10 md:text-3xl">
-                            <p className="switch">crafting reality from lines</p>
-                            <p className="switch">Transform ideas into web experiences</p>
-                            <p className="switch">Optimize performance for seamless</p>
-                        </div> */}
                         <p className="pt-10 text-2xl font-light">
                             <span className="font-semibold">I&apos;m a</span> <Typed />
                         </p>
@@ -160,7 +156,8 @@ export default function Home() {
             <hr className="w-[80%] mx-auto" />
             <Contact />
             <hr className="w-[80%] mx-auto" />
-            <Footer />
+            <Footer /> */}
+            <PreLoader />
         </div>
     );
 }
