@@ -14,6 +14,7 @@ import About from "./about";
 import Lenis from "@studio-freight/lenis";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Footer from "@/components/Footer";
+import Skills from "@/components/Skills";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 export default function Home() {
@@ -151,6 +152,8 @@ export default function Home() {
             <About />
             <hr className="w-[80%] mx-auto" />
             <Portfolio />
+            <hr className="w-[80%] mx-auto" />
+            <Skills />
             <hr className="w-[80%] mx-auto" />
             <Contact />
             <hr className="w-[80%] mx-auto" />
