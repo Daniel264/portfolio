@@ -15,6 +15,8 @@ const Skills = () => {
                         <li>React</li>
                         <li>Next.js</li>
                     </ul>
+                </article>
+                <article>
                     <h2 className="text-4xl font-semibold">Backend</h2>
                     <ul>
                         <li>Node.js</li>
@@ -24,6 +26,8 @@ const Skills = () => {
                         <li>PostGreSQL</li>
                         <li>prisma</li>
                     </ul>
+                </article>
+                <article>
                     <h2 className="text-4xl font-semibold">UI Libraries</h2>
                     <ul>
                         <li>GSAP</li>
