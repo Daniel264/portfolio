@@ -5,9 +5,7 @@ const Skills = () => {
         <main className="flex h-full w-full flex-col items-center text-white">
             <h1 className="text-center text-6xl font-bold text-white lg:text-7xl">Skills</h1>
             <p>DEVELOPMENT ARSENAL</p>
-            <section className="grid grid-cols-3 grid-rows-3 space-x-10">
-                {" "}
-                {/* Increased gap from 4 to 8 */}
+            <section className="grid grid-cols-1 gap-10 md:grid-cols-3 md:grid-rows-3">
                 <article className="col-start-1 row-start-1">
                     <h2 className="text-4xl font-semibold">Frontend</h2>
                     <ul>
@@ -22,7 +20,7 @@ const Skills = () => {
                         <progress className="progress progress-primary w-56 bg-white" value="95" max="100"></progress>
                     </ul>
                 </article>
-                <article className="col-start-2 row-start-2">
+                <article className="col-start-1 md:col-start-2 row-start-2">
                     <h2 className="text-4xl font-semibold">Backend</h2>
                     <ul>
                         <li>Node.js</li>
@@ -37,7 +35,7 @@ const Skills = () => {
                         <progress className="progress progress-primary w-56 bg-white" value="80" max="100"></progress>
                     </ul>
                 </article>
-                <article className="col-start-3 row-start-3">
+                <article className="col-start-1 md:col-start-3 row-start-3">
                     <h2 className="text-4xl font-semibold">UI Libraries</h2>
                     <ul>
                         <li>GSAP</li>
