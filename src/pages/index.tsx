@@ -12,29 +12,51 @@ import SplitType from "split-type";
 import { useEffect } from "react";
 import About from "./about";
 import Lenis from "@studio-freight/lenis";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 export default function Home() {
     // First animation for the .switch elements
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-
-        const lenis = new Lenis();
-
-        // Log scroll events
-        lenis.on("scroll", (e: any) => {
-            console.log(e);
-        });
-
-        // Animation frame loop for updating scroll
-        function raf(time: DOMHighResTimeStamp) {
-            lenis.raf(time);
+        if (typeof window !== "undefined") {
+            gsap.registerPlugin(ScrollTrigger);
+    
+            const splitTypes = document.querySelectorAll(".reveal-text")
+    
+            splitTypes.forEach((splitType) => {
+                const split = new SplitType(splitType as HTMLElement);
+                gsap.from(split.chars, {
+                    duration: 1,
+                    opacity: 0,
+                    y: 100,
+                    stagger: 0.1,
+                    scrollTrigger: {
+                        trigger: splitType,
+                        start: "top 80%",
+                        end: "bottom 20%",
+                        scrub: 1,
+                        markers: true,
+                    },
+                });
+            });
+    
+            const lenis = new Lenis();
+    
+            // Log scroll events
+            lenis.on("scroll", (e: any) => {
+                console.log(e);
+            });
+    
+            // Animation frame loop for updating scroll
+            const raf = (time: DOMHighResTimeStamp) => {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            };
+    
             requestAnimationFrame(raf);
         }
-
-        requestAnimationFrame(raf);
 
         if (typeof window !== "undefined") {
             const titles = gsap.utils.toArray(".switch"); // Get all elements with the class "switch"
