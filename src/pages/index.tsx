@@ -153,6 +153,7 @@ export default function Home() {
             <Portfolio />
             <hr className="w-[80%] mx-auto" />
             <Contact />
+            <hr className="w-[80%] mx-auto" />
             <Footer />
         </div>
     );
