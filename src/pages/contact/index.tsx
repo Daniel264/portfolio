@@ -35,16 +35,16 @@ const Contact = () => {
                                 <div className="space-y-2 lg:flex lg:space-x-5 lg:space-y-0">
                                     <div className="form-control w-full">
                                         <label className="label text-[#D1D5DB]">Name</label>
-                                        <input type="text" className="input border-2 border-[#212531] bg-transparent  placeholder:text-[#D1D5DB]" required />
+                                        <input type="text" className="input border-2 border-[#212531] bg-transparent  placeholder:text-[#D1D5DB]" placeholder="Enter your name..." required />
                                     </div>
                                     <div className="form-control w-full">
                                         <label className="label text-[#D1D5DB]">Email</label>
-                                        <input type="email" className="input border-2 border-[#212531] bg-transparent  placeholder:text-[#D1D5DB]" required />
+                                        <input type="email" className="input border-2 border-[#212531] bg-transparent  placeholder:text-[#D1D5DB]" placeholder="enter your email address..." required />
                                     </div>
                                 </div>
                                 <div>
                                     <label className="label text-[#D1D5DB]">Message</label>
-                                    <textarea className="textarea textarea-md w-full max-w-full border-2 border-[#212531] bg-black  bg-transparent placeholder:text-[#D1D5DB]"></textarea>
+                                    <textarea className="textarea textarea-md w-full max-w-full border-2 border-[#212531] bg-black  bg-transparent placeholder:text-[#D1D5DB] placeholder:text-base" placeholder="hi! your services will be needed at our company X. How quickly can you hop on this?"></textarea>
                                 </div>
                                 <div className="form-control mt-6">
                                     <button className="btn rounded-3xl border-none   bg-[#212531] text-white" onClick={handleSuccess}>
