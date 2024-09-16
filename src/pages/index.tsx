@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import About from "./about";
 import Lenis from "@studio-freight/lenis";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Footer from "@/components/Footer";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 export default function Home() {
@@ -152,6 +153,7 @@ export default function Home() {
             <Portfolio />
             <hr className="w-[80%] mx-auto" />
             <Contact />
+            <Footer />
         </div>
     );
 }
