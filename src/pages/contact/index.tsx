@@ -26,6 +26,7 @@ const Contact = () => {
                 <h1 className="mb-10 text-5xl font-bold">
                 Get In Touch
                 </h1>
+                <p>Currently, i&apos;m looking for new opportunities. if you have one, my inbox is always open. <br /> Whether you have a job proposal or question or you just want to say hi, I&apos;ll definitely get back to you.</p>
 
                 <div className="flex h-fit w-full flex-col items-center justify-center gap-4 md:gap-7 lg:flex-row">
                 {/* <div className="flex h-[160px] w-[80%] flex-col items-center justify-center rounded-3xl shadow-xl border-2 border-[#7043E3]  lg:w-[32%]">
