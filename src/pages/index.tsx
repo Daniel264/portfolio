@@ -28,16 +28,16 @@ export default function Home() {
             splitTypes.forEach((splitType) => {
                 const split = new SplitType(splitType as HTMLElement);
                 gsap.from(split.chars, {
-                    duration: 1,
+                    duration: 0.3,
                     opacity: 0,
-                    y: 100,
-                    stagger: 0.1,
+                    y: 10,
+                    stagger: 0.02,
                     scrollTrigger: {
                         trigger: splitType,
                         start: "top 80%",
-                        end: "bottom 20%",
-                        scrub: 1,
-                        markers: true,
+                        end: "top 20%",
+                        scrub: false,
+                        markers: false,
                     },
                 });
             });
