@@ -48,7 +48,7 @@ const Portfolio: React.FC = () => {
             width: 1080,
             height: 720,
             status: "Live",
-            languages: ["React", "Node.js", "Express", "MongoDB"],
+            languages: ["React", "Tailwind", "TypeScript"],
         },
         {
             title: "SaveVest",
@@ -66,7 +66,7 @@ const Portfolio: React.FC = () => {
             width: 1080,
             height: 720,
             status: "Live",
-            languages: ["React", "Node.js", "Express", "MongoDB"],
+            languages: ["Next.js", "Node.js", "Express", "MongoDB"],
         },
         {
             title: "GoDaddy clone",
@@ -75,7 +75,7 @@ const Portfolio: React.FC = () => {
             width: 1080,
             height: 720,
             status: "Live",
-            languages: ["React", "Node.js", "Express", "MongoDB"],
+            languages: ["React", "API", "ChakraUI"],
         },
         {
             title: "ChatGPT dry-jokes",
@@ -84,7 +84,7 @@ const Portfolio: React.FC = () => {
             width: 1080,
             height: 720,
             status: "Live",
-            languages: ["React", "Node.js", "Express", "MongoDB"],
+            languages: ["React", "SCSS", "TypeScript"],
         },
         {
             title: "Portfolio website",
@@ -123,7 +123,7 @@ const Portfolio: React.FC = () => {
                                 <p className="reveal-text text-[#909298]">{work.description}</p>
                                 <p className="text-xl capitalize text-white md:text-2xl">
                                     {work.languages.map((language) => (
-                                        <span key={language} className="mx-2 md:mx-4 ">
+                                        <span key={language} className="mx-2 ml-0 md:mx-4 ">
                                             {language}
                                         </span>
                                     ))}
