@@ -14,7 +14,6 @@ import About from "./about";
 import Lenis from "@studio-freight/lenis";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 export default function Home() {
     // First animation for the .switch elements
@@ -22,13 +21,13 @@ export default function Home() {
     useEffect(() => {
         if (typeof window !== "undefined") {
             gsap.registerPlugin(ScrollTrigger);
-    
-            const splitTypes = document.querySelectorAll(".reveal-text")
-    
+
+            const splitTypes = document.querySelectorAll(".reveal-text");
+
             splitTypes.forEach((splitType) => {
                 const split = new SplitType(splitType as HTMLElement);
                 gsap.from(split.chars, {
-                    duration: 0.3,
+                    duration: 0.01,
                     opacity: 0,
                     y: 10,
                     stagger: 0.02,
@@ -41,20 +40,20 @@ export default function Home() {
                     },
                 });
             });
-    
+
             const lenis = new Lenis();
-    
+
             // Log scroll events
             lenis.on("scroll", (e: any) => {
                 console.log(e);
             });
-    
+
             // Animation frame loop for updating scroll
             const raf = (time: DOMHighResTimeStamp) => {
                 lenis.raf(time);
                 requestAnimationFrame(raf);
             };
-    
+
             requestAnimationFrame(raf);
         }
 
@@ -120,11 +119,11 @@ export default function Home() {
                                                 OLATINSU
                                             </span>
                                         </h3>
-                                        <div className="text-center text-xl md:pt-10 md:text-3xl">
+                                        {/* <div className="text-center text-xl md:pt-10 md:text-3xl">
                                             <p className="switch">crafting reality from lines</p>
                                             <p className="switch">Transform ideas into web experiences</p>
                                             <p className="switch">Optimize performance for seamless</p>
-                                        </div>
+                                        </div> */}
                                         <p className="pt-10 text-2xl font-light">
                                             <span className="font-semibold">I&apos;m a</span> <Typed />
                                         </p>
