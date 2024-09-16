@@ -16,7 +16,10 @@ const Skills = () => {
                         <li>ViteTest</li>
                         <li>React</li>
                         <li>Next.js</li>
-                        <progress className="progress w-56 progress-primary bg-white" value="95" max="100"></progress>
+                        <div className="ml-44 flex w-max">
+                            <p>95%</p>
+                        </div>
+                        <progress className="progress progress-primary w-56 bg-white" value="95" max="100"></progress>
                     </ul>
                 </article>
                 <article className="col-start-2 row-start-2">
@@ -28,7 +31,10 @@ const Skills = () => {
                         <li>MongoDB</li>
                         <li>PostGreSQL</li>
                         <li>prisma</li>
-                        <progress className="progress w-56 progress-primary bg-white" value="80" max="100"></progress>
+                        <div className="ml-44 flex w-max">
+                            <p>80%</p>
+                        </div>
+                        <progress className="progress progress-primary w-56 bg-white" value="80" max="100"></progress>
                     </ul>
                 </article>
                 <article className="col-start-3 row-start-3">
@@ -40,7 +46,10 @@ const Skills = () => {
                         <li>SCSS</li>
                         <li>CSS</li>
                         <li>ChakraUi</li>
-                        <progress className="progress w-56 progress-primary bg-white" value="100" max="100"></progress>
+                        <div className="ml-44 flex w-max">
+                            <p>100%</p>
+                        </div>
+                        <progress className="progress progress-primary w-56 bg-white" value="100" max="100"></progress>
                     </ul>
                 </article>
             </section>
