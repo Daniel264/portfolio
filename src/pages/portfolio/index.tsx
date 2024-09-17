@@ -72,7 +72,7 @@ const Portfolio: React.FC = () => {
                             </figure>
                             <div className="card-body relative">
                                 <h2 className="card-title text-3xl text-white">{work.title}</h2>
-                                <p className="reveal-text text-[#909298] text-lg leading-loose pb-5">{work.description}</p>
+                                <p className="reveal-text text-[#909298] text-lg leading-loose pb-5 clash-font">{work.description}</p>
                                 <p className="text-xl capitalize text-white md:text-2xl">
                                     {work.languages.map((language) => (
                                         <span key={language} className="mx-2 ml-0 md:mx-4">

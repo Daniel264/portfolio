@@ -21,6 +21,16 @@
     font-style: normal;
   }
 
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/assets/fonts/ClashGrotesk-Variable.ttf') format('woff2');
+    font-weight: 400;
+  }
+
+  .clash-font {
+    font-family: 'Clash Display', sans-serif !important;
+  }
+
 
 
   .font-monasans {
