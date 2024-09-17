@@ -79,15 +79,15 @@ const Portfolio: React.FC = () => {
                                         </span>
                                     ))}
                                 </p>
-                                <div className="card-actions justify-end ">
-                                    <div className="rounded-full bg-white px-3 py-1 hover:cursor-pointer lg:px-4 lg:py-2" onClick={() => work.gitHub && window.open(work.gitHub, "_blank")}>
-                                        <i className="fa-brands fa-github mt-2 text-3xl text-black md:text-4xl"></i>
+                                <div className="card-actions justify-end mt-3">
+                                    <div className="rounded-full px-3  py-1 hover:cursor-pointer lg:px-4 lg:py-2 border-2 border-[#282828]" onClick={() => work.gitHub && window.open(work.gitHub, "_blank")}>
+                                    <i className="fa-solid text-white fa-arrow-right "></i>
                                     </div>
-                                    <div className="flex h-fit items-center justify-center  rounded-full  bg-white px-2 py-2 hover:cursor-pointer lg:px-3 lg:py-4" onClick={() => work.link && window.open(work.link, "_blank")}>
+                                    {/* <div className="flex h-fit items-center justify-center  rounded-full  bg-white px-2 py-2 hover:cursor-pointer lg:px-3 lg:py-4" onClick={() => work.link && window.open(work.link, "_blank")}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 text-black md:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                                         </svg>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="absolute bottom-0 left-0 mb-8 ml-2">
                                     <span className={`badge indicator-item gap-2 border-none ${work.status === "Live" ? "bg-green-950" : work.status === "notLive" ? "bg-red-950" : "bg-yellow-900 opacity-80"} py-3 pl-5 text-white`}>
