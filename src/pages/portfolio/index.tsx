@@ -57,7 +57,7 @@ const Portfolio: React.FC = () => {
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-2">
                     {works.map((work, index) => (
-                        <div key={index} className=" card my-4 w-full rounded bg-transparent shadow-xl">
+                        <div key={index} className=" card my-4 w-full rounded bg-[#181818] shadow-xl">
                             <figure>
                                 <Image
                                     src={work.imageUrl}

@@ -106,7 +106,7 @@ export default function Home() {
     };
 
     return (
-        <div className="bg-[#0E1016]">
+        <div className="bg-[#0F0F0F]">
             <SEO title="Home" />
             {loading ? (
                 <PreLoader />
