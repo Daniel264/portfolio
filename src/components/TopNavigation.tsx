@@ -95,7 +95,15 @@ const TopNavigation = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="hidden md:block">
+                    <div className="hidden md:flex space-x-4">
+                        <Link href="#next" scroll={false}>
+                            <button
+                                className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-[#4a4e59] dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-[#4a4e59]"
+                                onClick={(e) => handleSmoothScroll(e, "#next")}
+                            >
+                                <i className="fa-solid fa-globe "></i>
+                            </button>
+                        </Link>
                         <Link href="#next" scroll={false}>
                             <button
                                 className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-[#4a4e59] dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-[#4a4e59]"
