@@ -3,8 +3,8 @@ import React from "react";
 const Skills = () => {
     return (
         <main className="flex h-full w-full flex-col items-center text-white pb-14">
-            <h1 className="pb-5 text-center text-6xl font-bold text-white lg:text-7xl">Skills</h1>
-            <p className="pb-5">DEVELOPMENT ARSENAL</p>
+            <h1 className="pb-5 text-center text-6xl font-bold text-white lg:text-7xl">Stack</h1>
+            <p className="pb-5">LANGUAGES I USE - DEV ARSENAL</p>
             <section className="grid grid-cols-1 gap-10 md:grid-cols-3 md:grid-rows-3">
                 <article className="col-start-1 row-start-1 p-4 rounded bg-[#171717]">
                     <h2 className="text-5xl font-semibold">Frontend</h2>

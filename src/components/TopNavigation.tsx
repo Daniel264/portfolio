@@ -27,7 +27,7 @@ const TopNavigation = () => {
         <div>
             <nav className={`fixed top-0 z-50 w-full border-none bg-opacity-30 px-0 backdrop-blur lg:h-20 lg:px-9 `}>
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-                    <a href="#" className="flex items-center space-x-3 text-primary  rtl:space-x-reverse">
+                    <a href="#" className="flex items-center space-x-3 text-primary rtl:space-x-reverse">
                         {/* <Image src="/assets/logo/logo.png" width={80} height={50} className="mt-5" alt="my website's logo" /> */}
                         <p className="text-xl text-white">
                             <div className="avatar mr-3">
@@ -54,7 +54,7 @@ const TopNavigation = () => {
                             </svg>
                         )}
                     </button>
-                    <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-multi-level">
+                    <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:flex md:items-center md:justify-center md:w-auto`} id="navbar-multi-level">
                         <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-none dark:bg-inherit">
                             <li>
                                 <Link href="/" scroll={false}>
@@ -94,6 +94,16 @@ const TopNavigation = () => {
                                 </Link>
                             </li>
                         </ul>
+                    </div>
+                    <div className="hidden md:block">
+                        <Link href="#next" scroll={false}>
+                            <button
+                                className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-[#4a4e59] dark:text-[rgba(174,174,174,1)] dark:hover:bg-gray-700 dark:hover:text-[rgba(174,174,174,1)] md:dark:hover:bg-transparent md:dark:hover:text-[#4a4e59]"
+                                onClick={(e) => handleSmoothScroll(e, "#next")}
+                            >
+                                NEXT
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </nav>
