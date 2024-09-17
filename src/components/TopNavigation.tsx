@@ -54,7 +54,7 @@ const TopNavigation = () => {
                             </svg>
                         )}
                     </button>
-                    <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:flex md:items-center md:justify-center md:w-auto border-[#1a1a1a] py-3 px-5 border-2`} id="navbar-multi-level">
+                    <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:flex md:items-center md:justify-center md:w-auto lg:border-[#1a1a1a] py-3 px-5 rounded lg:border-2`} id="navbar-multi-level">
                         <ul className="mt-4 flex flex-col rounded-lg border-white border-2 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-none dark:bg-inherit">
                             <li>
                                 <Link href="/" scroll={false}>
