@@ -24,7 +24,7 @@ const Portfolio: React.FC = () => {
             link: "",
             height: 969,
             status: "inProgress",
-            languages: ["React", "Node.js", "Express", "MongoDB"],
+            languages: [ "Node.js", "Express", "MongoDB"],
         },
         {
             title: "GameHub",
@@ -35,7 +35,7 @@ const Portfolio: React.FC = () => {
             link: "https://game-hub-eight-theta-95.vercel.app/",
             height: 720,
             status: "Live",
-            languages: ["Next.js", "Node.js", "Express", "MongoDB"],
+            languages: ["Next.js", "Node.js", "Express"],
         },
         {
             title: "GoDaddy clone",
