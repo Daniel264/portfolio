@@ -20,7 +20,6 @@ const Contact = () => {
     return (
         <>
             {loading && <div className="loading-animation"></div>}
-            <TopNavigation />
             <div id="contact" className="contact-page px-2 py-20 text-center md:px-10 lg:py-0 ">
                 <div className="hero flex h-full lg:pb-20 flex-col items-center justify-center pt-20 text-white md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pt-32">
                     <div className="lg:w-1/2 lg:pr-10">

@@ -59,7 +59,6 @@ const About = () => {
                 <div className="loading-animation"></div>
             ) : (
                 <>
-                    <TopNavigation />
                     <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-24 text-center md:pt-0 lg:px-[8rem]">
                         <div className="flex h-10 items-center rounded px-3 pb-10">
                             <h1 className="text-5xl font-bold md:text-6xl">About The Creator</h1>

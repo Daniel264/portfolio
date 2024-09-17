@@ -54,8 +54,8 @@ const TopNavigation = () => {
                             </svg>
                         )}
                     </button>
-                    <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:flex md:items-center md:justify-center md:w-auto`} id="navbar-multi-level">
-                        <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-none dark:bg-inherit">
+                    <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:flex md:items-center md:justify-center md:w-auto border-[#1a1a1a] py-3 px-5 border-2`} id="navbar-multi-level">
+                        <ul className="mt-4 flex flex-col rounded-lg border-white border-2 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-none dark:bg-inherit">
                             <li>
                                 <Link href="/" scroll={false}>
                                     <button className="block rounded px-3 py-2 text-sm text-[rgba(174,174,174,1)] md:bg-transparent md:p-0" onClick={(e) => handleSmoothScroll(e, "#home")}>
