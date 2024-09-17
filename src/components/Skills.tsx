@@ -16,10 +16,10 @@ const Skills = () => {
                         <li>Next.js</li>
                         <li>Git/GitHub</li>
                         <li>NextAuth</li>
-                        <div className="ml-44 flex w-max">
+                        {/* <div className="ml-44 flex w-max">
                             <p>95%</p>
-                        </div>
-                        <progress className="progress progress-primary w-56 bg-white" value="95" max="100"></progress>
+                        </div> */}
+                        {/* <progress className="progress progress-primary w-56 bg-white" value="95" max="100"></progress> */}
                     </ul>
                 </article>
                 <article className="col-start-1 row-start-2 md:col-start-2">
@@ -31,13 +31,13 @@ const Skills = () => {
                         <li>MongoDB</li>
                         <li>PostGreSQL</li>
                         <li>prisma</li>
-                        <div className="ml-44 flex w-max">
+                        {/* <div className="ml-44 flex w-max">
                             <p>80%</p>
-                        </div>
-                        <progress className="progress progress-primary w-56 bg-white" value="80" max="100"></progress>
+                        </div> */}
+                        {/* <progress className="progress progress-primary w-56 bg-white" value="80" max="100"></progress> */}
                     </ul>
                 </article>
-                <article className="col-start-1 row-start-3 md:col-start-3">
+                <article className="col-start-1 row-start-3 md:col-start-3 bg-[#171717]">
                     <h2 className="text-5xl font-semibold">UI Libraries</h2>
                     <ul className="text-lg leading-relaxed text-[#E4DED7]">
                         <li>GSAP</li>
@@ -46,10 +46,10 @@ const Skills = () => {
                         <li>SCSS</li>
                         <li>CSS</li>
                         <li>ChakraUi</li>
-                        <div className="ml-44 flex w-max">
+                        {/* <div className="ml-44 flex w-max">
                             <p>100%</p>
-                        </div>
-                        <progress className="progress progress-primary w-56 bg-white" value="100" max="100"></progress>
+                        </div> */}
+                        {/* <progress className="progress progress-primary w-56 bg-white" value="100" max="100"></progress> */}
                     </ul>
                 </article>
             </section>
