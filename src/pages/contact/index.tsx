@@ -21,19 +21,19 @@ const Contact = () => {
         <>
             {loading && <div className="loading-animation"></div>}
             <div id="contact" className="contact-page px-2 py-20 text-center md:px-10 lg:py-0 ">
-                <div className="hero flex h-full lg:pb-20 flex-col items-center justify-center pt-20 text-white md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pt-32">
+                <div className="hero flex h-full flex-col items-center justify-center pt-20 text-white md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pb-20 lg:pt-32">
                     <div className="lg:w-1/2 lg:pr-10">
                         <h1 id="#big" className="mb-10 text-5xl font-bold md:text-7xl">
                             Get In Touch
                         </h1>
-                        <p className="reveal-text text-center text-lg clash-font">
+                        <p className="reveal-text clash-font text-center text-lg">
                             Currently, i&apos;m looking for new opportunities. <br /> If you have one, my inbox is always open. <br /> Whether you have a job proposal or question <br />
                             or you just want to say hi, I&apos;ll definitely get back to you.
                         </p>
                     </div>
                     <div className="hero-content w-full flex-col lg:w-1/2 lg:flex-row">
                         <div className="card max-h-fit w-full shrink-0 bg-transparent shadow-2xl md:max-w-2xl">
-                            <form className="card-body clash-font">
+                            <form action="https://formspree.io/f/xyzgaavq" method="POST" className="clash-font card-body">
                                 <div className="space-y-2 lg:flex lg:space-x-5 lg:space-y-0">
                                     <div className="form-control w-full">
                                         <label className="label text-[#D1D5DB]">Name</label>
@@ -65,7 +65,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            
         </>
     );
 };
