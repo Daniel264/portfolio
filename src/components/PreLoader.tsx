@@ -29,7 +29,7 @@ const PreLoader = () => {
     }, []);
 
     return (
-        <div className="preloader flex min-h-screen w-full items-center justify-center text-center text-sm font-extrabold text-white md:text-4xl">
+        <div className="preloader flex min-h-screen w-full items-center justify-center text-center text-sm font-extrabold text-white md:text-4xl absolute">
             <span className="px-2 md:px-7">Loading</span>
             <span className="px-2 md:px-7">Transforming</span>
             <span className="px-2 md:px-7">Unveiling</span>
