@@ -71,25 +71,19 @@ const Portfolio: React.FC = () => {
                             </figure>
                             <div className="card-body relative">
                                 <h2 className="card-title text-3xl text-white">{work.title}</h2>
-                                <p className="reveal-text text-[#909298] text-lg leading-loose pb-5 clash-font">{work.description}</p>
+                                <p className="reveal-text clash-font pb-5 text-lg leading-loose text-[#909298]">{work.description}</p>
                                 <p className="text-xl capitalize text-white md:text-2xl">
                                     {work.languages.map((language) => (
-                                        <span key={language} className="mx-2 ml-0 md:mx-4">
+                                        <span key={language} className="clash-font mx-2 ml-0 rounded-lg border-2 border-[#282828] p-2 md:mx-4">
                                             {language}
                                         </span>
                                     ))}
                                 </p>
                                 <div className="card-actions justify-end ">
-                                    <div
-                                        className="rounded-full bg-white px-3 py-1 hover:cursor-pointer lg:px-4 lg:py-2"
-                                        onClick={() => work.gitHub && window.open(work.gitHub, "_blank")}
-                                    >
+                                    <div className="rounded-full bg-white px-3 py-1 hover:cursor-pointer lg:px-4 lg:py-2" onClick={() => work.gitHub && window.open(work.gitHub, "_blank")}>
                                         <i className="fa-brands fa-github mt-2 text-3xl text-black md:text-4xl"></i>
                                     </div>
-                                    <div
-                                        className="flex h-fit items-center justify-center  rounded-full  bg-white px-2 py-2 hover:cursor-pointer lg:px-3 lg:py-4"
-                                        onClick={() => work.link && window.open(work.link, "_blank")}
-                                    >
+                                    <div className="flex h-fit items-center justify-center  rounded-full  bg-white px-2 py-2 hover:cursor-pointer lg:px-3 lg:py-4" onClick={() => work.link && window.open(work.link, "_blank")}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 text-black md:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                                         </svg>
