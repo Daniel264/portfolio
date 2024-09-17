@@ -72,7 +72,7 @@ const About = () => {
                             </div>
                             <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                                 <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left">
-                                    <p className="clash-font card-card font-light tracking-wider md:text-xl md:leading-loose">
+                                    <p className="clash-font card-card font-light tracking-wider md:text-xl md:leading-relaxed">
                                         I’m a full-stack developer with a deep passion for mobile technology, driven by a love for continuous learning and personal growth. My expertise spans both front-end and back-end development, where I enjoy creating innovative and impactful solutions that solve
                                         real-world problems. There&apos;s so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
                                         <span>
