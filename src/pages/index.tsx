@@ -126,7 +126,7 @@ export default function Home() {
                                             <div className="w-full">
                                                 <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
                                                 <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
-                                                    <span id="big" className="font-monasans text-[#E4DED7] text-5xl font-extrabold sm:text-7xl lg:text-9xl">
+                                                    <span id="big" className="font-monasans text-[3.4rem] font-extrabold text-[#E4DED7] sm:text-8xl lg:text-9xl tracking-wider">
                                                         DANIEL <br />
                                                         OLATINSU
                                                     </span>
