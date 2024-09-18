@@ -6,7 +6,7 @@ const nextConfig = {
     env: {
         DEPLOYMENT_ENV: process.env.DEPLOYMENT_ENV,
     },
-    output: 'export',
+    // output: 'export',
 };
 
 export default withSentryConfig(

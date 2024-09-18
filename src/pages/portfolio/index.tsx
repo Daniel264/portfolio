@@ -35,7 +35,7 @@ const Portfolio: React.FC = () => {
             link: "https://game-hub-eight-theta-95.vercel.app/",
             height: 720,
             status: "Live",
-            languages: ["Next.js", "Node.js", "Express"],
+            languages: ["React.js", "Chakra UI", "API"],
         },
         {
             title: "GoDaddy clone",
@@ -46,7 +46,7 @@ const Portfolio: React.FC = () => {
             link: "https://godaddy20-daniel-olatinsus-projects.vercel.app/",
             height: 720,
             status: "Live",
-            languages: ["React", "API", "ChakraUI"],
+            languages: ["Next.js", "Tailwind", "TypeScript"],
         },
     ];
 
