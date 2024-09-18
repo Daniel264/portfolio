@@ -24,7 +24,7 @@ const Portfolio: React.FC = () => {
             link: "",
             height: 969,
             status: "inProgress",
-            languages: [ "Node.js", "Express", "MongoDB"],
+            languages: ["Node.js", "Express", "MongoDB"],
         },
         {
             title: "GameHub",
@@ -79,9 +79,9 @@ const Portfolio: React.FC = () => {
                                         </span>
                                     ))}
                                 </p>
-                                <div className="card-actions justify-end mt-3">
-                                    <div className="rounded-full px-3  py-1 hover:cursor-pointer lg:px-4 lg:py-2 border-2 border-[#282828]" onClick={() => work.gitHub && window.open(work.gitHub, "_blank")}>
-                                    <i className="fa-solid text-white fa-arrow-right "></i>
+                                <div className="card-actions mt-3 justify-end">
+                                    <div className="rounded-full border-2  border-[#282828] px-3 py-1 hover:cursor-pointer lg:px-4 lg:py-2" onClick={() => work.gitHub && window.open(work.gitHub, "_blank")}>
+                                        <i className="fa-solid fa-arrow-right text-white "></i>
                                     </div>
                                     {/* <div className="flex h-fit items-center justify-center  rounded-full  bg-white px-2 py-2 hover:cursor-pointer lg:px-3 lg:py-4" onClick={() => work.link && window.open(work.link, "_blank")}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 text-black md:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
