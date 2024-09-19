@@ -63,7 +63,7 @@ const Portfolio: React.FC = () => {
                                     width={work.width}
                                     height={work.height}
                                     alt={work.title}
-                                    className="rounded"
+                                    className="rounded hover:scale-105 hover:cursor-pointer hover:transition-transform hover:duration-700 hover:ease-in-out"
                                     quality={100} // Set image quality to maximum
                                     priority={index < 2} // Prioritize the first two images
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsive sizes

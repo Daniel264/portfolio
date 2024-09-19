@@ -7,37 +7,35 @@
 @import url("react-toastify/dist/ReactToastify.css");
 
 @font-face {
-    font-family: 'Mona Sans';
-    src: url('/assets/fonts/Mona-Sans.woff2') format('woff2'),
-         url('/assets/fonts/Mona-Sans.ttf') format('truetype');
+    font-family: "Mona Sans";
+    src:
+        url("/assets/fonts/Mona-Sans.woff2") format("woff2"),
+        url("/assets/fonts/Mona-Sans.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 @font-face {
-    font-family: 'Mona Sans';
-    src: url('/assets/fonts/MonaSans-ExtraBold.woff2') format('woff2');
+    font-family: "Mona Sans";
+    src: url("/assets/fonts/MonaSans-ExtraBold.woff2") format("woff2");
     font-weight: 900;
     font-style: normal;
-  }
+}
 
 @font-face {
-    font-family: 'Clash Display';
-    src: url('/assets/fonts/ClashGrotesk-Variable.ttf') format('woff2');
+    font-family: "Clash Display";
+    src: url("/assets/fonts/ClashGrotesk-Variable.ttf") format("woff2");
     font-weight: 400;
-  }
+}
 
-  .clash-font {
-    font-family: 'Clash Display', sans-serif !important;
-  }
+.clash-font {
+    font-family: "Clash Display", sans-serif !important;
+}
 
-
-
-  .font-monasans {
-    font-family: 'Mona Sans', sans-serif;
+.font-monasans {
+    font-family: "Mona Sans", sans-serif;
     font-weight: 900;
-
-  }
+}
 
 @layer base {
     /* Specify default font below */
@@ -66,10 +64,9 @@
     /* =========================== */
 }
 
- .font-scale {
+.font-scale {
     transform: scaleY(1.25);
-
-} 
+}
 
 /* .hidden-text {
     opacity: 0;
@@ -79,13 +76,17 @@
 .char {
     transform: translateY(115px);
     transition: transform 0.5s;
-
 }
 #big {
     transform: translateY(115px);
     transition: transform 0.5s;
     text-transform: uppercase;
 }
+
+/* .scale-images {
+    transform: scale(1.25);
+    transition: transform 0.5s;
+} */
 
 #big.word {
     display: block;
@@ -116,7 +117,7 @@
 } */
 
 :root {
-    --font-monasans: 'Mona Sans', sans-serif;
+    --font-monasans: "Mona Sans", sans-serif;
 }
 
 /* .font-monasans {
