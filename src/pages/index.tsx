@@ -178,7 +178,7 @@ export default function Home() {
                                         <button className="btn w-full rounded border-none bg-[#212531] text-white shadow-2xl hover:bg-slate-500 md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
                                             Lets Talk <i className="fa-solid fa-message"></i>
                                         </button>
-                                        <a href="/assets/DANIEL OLATINSU.PDF" download="Daniel_Olatinsu.pdf" className="btn w-full rounded border-2 border-[#212531] bg-transparent text-white shadow-2xl hover:bg-slate-500 md:w-44">
+                                        <a href="/assets/daniel-olatinsu.pdf" download="Daniel_Olatinsu.pdf" className="btn w-full rounded border-2 border-[#212531] bg-transparent text-white shadow-2xl hover:bg-slate-500 md:w-44">
                                             Download CV <i className="fa-solid fa-download"></i>
                                         </a>
                                     </div>
