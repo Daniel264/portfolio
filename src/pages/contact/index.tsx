@@ -65,7 +65,7 @@ const Contact = () => {
                             <h1 id="#big" className="mb-10 text-5xl font-bold md:text-7xl ">
                                 Get In Touch
                             </h1>
-                            <p className="reveal-text clash-font text-center text-lg text-[#83858A]">
+                            <p className="reveal-text sf-ui text-center text-base text-[#abadb1]">
                                 Currently, I&apos;m looking for new opportunities. <br />
                                 If you have one, my inbox is always open. <br />
                                 Whether you have a job proposal or question <br />
@@ -74,26 +74,26 @@ const Contact = () => {
                         </div>
                         <div className="hero-content w-full flex-col lg:w-1/2 lg:flex-row">
                             <div className="card max-h-fit w-full shrink-0 bg-transparent shadow-2xl md:max-w-2xl">
-                                <form onSubmit={handleSubmit} className="clash-font card-body">
+                                <form onSubmit={handleSubmit} className="sf-ui card-body">
                                     <div className="space-y-2 lg:flex lg:space-x-5 lg:space-y-0">
-                                        <div className="form-control w-full">
+                                        <div className="form-control w-full text-sm ">
                                             <label className="label text-[#D1D5DB]">Your Name</label>
                                             <input
                                                 type="text"
                                                 name="name"
-                                                className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-[#7B7E86]"
+                                                className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-[#7B7E86] placeholder:text-sm"
                                                 placeholder="Enter your name..."
                                                 value={formData.name}
                                                 onChange={handleChange}
                                                 required
                                             />
                                         </div>
-                                        <div className="form-control w-full">
+                                        <div className="form-control w-full text-sm">
                                             <label className="label text-[#D1D5DB]">Email Address</label>
                                             <input
                                                 type="email"
                                                 name="email"
-                                                className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-[#7B7E86]"
+                                                className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-[#7B7E86] placeholder:text-sm"
                                                 placeholder="Enter your email address..."
                                                 value={formData.email}
                                                 onChange={handleChange}
@@ -101,11 +101,11 @@ const Contact = () => {
                                             />
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="text-sm">
                                         <label className="label text-[#D1D5DB]">Your Message</label>
                                         <textarea
                                             name="message"
-                                            className="textarea textarea-md w-full max-w-full rounded-none border-x-0 border-b-[1px] border-t-0 border-solid border-[#212531] bg-black bg-transparent placeholder:text-base placeholder:text-[#7B7E86]"
+                                            className="textarea textarea-md w-full max-w-full rounded-none border-x-0 border-b-[1px] border-t-0 border-solid border-[#212531] bg-black bg-transparent placeholder:text-[#7B7E86] placeholder:text-sm"
                                             placeholder="Hi! Your services will be needed at our company X. How quickly can you hop on this?"
                                             value={formData.message}
                                             onChange={handleChange}
