@@ -68,10 +68,6 @@
     transform: scaleY(1.25);
 }
 
-/* .hidden-text {
-    opacity: 0;
-    visibility: hidden;
-} */
 
 .char {
     transform: translateY(115px);
@@ -83,10 +79,6 @@
     text-transform: uppercase;
 }
 
-/* .scale-images {
-    transform: scale(1.25);
-    transition: transform 0.5s;
-} */
 
 #big.word {
     display: block;
@@ -101,27 +93,12 @@
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     opacity: 0;
     transform: translateY(100px);
-    /* transition: all 0.5s ease; */
 }
 
 .my-menu {
     opacity: 0;
 }
 
-/* .switch {
-    line-height: 0;
-    text-align: left;
-} */
-/* .text-scale {
-    transform: scaleY(1.5)
-} */
-
 :root {
     --font-monasans: "Mona Sans", sans-serif;
 }
-
-/* .font-monasans {
-    font-family: var(--font-monasans);
-}
-
- */
