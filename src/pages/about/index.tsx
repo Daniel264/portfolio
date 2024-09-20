@@ -63,7 +63,7 @@ const About = () => {
                         <div className="flex h-10 items-center rounded px-3 pb-10">
                             <h1 className="text-5xl font-bold md:text-6xl">About The Creator</h1>
                         </div>
-                        <p className="pt-8 text-xl font-light text-white md:text-2xl">Fullstack Developer & Mobile Enthusiast</p>
+                        <p className="pt-8 text-xl font-light text-white md:text-2xl sf-ui pb-8">Fullstack Developer & Mobile Enthusiast</p>
                         <div className="absolute left-10 top-64 h-full lg:left-16"></div>
 
                         <div className="flex h-full w-full flex-col items-center justify-center lg:flex-row-reverse">
