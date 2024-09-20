@@ -29,7 +29,7 @@ const TopNavigation = () => {
                 <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
                     <a href="#" className="flex items-center space-x-3 text-primary rtl:space-x-reverse">
                         {/* <Image src="/assets/logo/logo.png" width={80} height={50} className="mt-5" alt="my website's logo" /> */}
-                        <p className="text-xl text-white">
+                        <p className="text-2xl font-bold sf-uibold text-white">
                             <div className="avatar mr-3">
                                 <div className="flex h-fit w-9 items-center justify-center rounded-full border-2 bg-white text-center pt-1">
                                     <i className="fa-solid fa-user text-black"></i>

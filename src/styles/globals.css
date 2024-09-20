@@ -33,9 +33,20 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: "SF UI";
+    src: url("/assets/fonts/SFUIText-Bold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+.sf-uibold {
+    font-family: "SF UI", sans-serif !important;
+    font-weight: 800;
+}
 
 .sf-ui {
     font-family: "SF Ui", sans-serif !important;
+    font-weight: 400;
 }
 
 .clash-font {
