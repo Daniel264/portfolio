@@ -27,6 +27,16 @@
     src: url("/assets/fonts/ClashGrotesk-Variable.ttf") format("woff2");
     font-weight: 400;
 }
+@font-face {
+    font-family: "SF UI";
+    src: url("/assets/fonts/SFUIText-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sf-ui {
+    font-family: "SF Ui", sans-serif !important;
+}
 
 .clash-font {
     font-family: "Clash Display", sans-serif !important;
@@ -68,7 +78,6 @@
     transform: scaleY(1.25);
 }
 
-
 .char {
     transform: translateY(115px);
     transition: transform 0.5s;
@@ -78,7 +87,6 @@
     transition: transform 0.5s;
     text-transform: uppercase;
 }
-
 
 #big.word {
     display: block;
