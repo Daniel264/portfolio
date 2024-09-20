@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
     return (
         <div>
-            <footer className="footer footer-center bg-inherit p-4 text-white">
+            <footer className="footer footer-center sf-ui bg-inherit p-4 text-white">
                 <aside>
                     <p className="text-lg">Copyright © {new Date().getFullYear()} - Daniel Olatinsu</p>
                 </aside>
