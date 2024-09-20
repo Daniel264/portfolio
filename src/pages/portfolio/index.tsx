@@ -71,10 +71,10 @@ const Portfolio: React.FC = () => {
                             </figure>
                             <div className="card-body relative">
                                 <h2 className="card-title text-3xl text-white">{work.title}</h2>
-                                <p className="reveal-text clash-font pb-5 text-lg leading-loose text-[#909298]">{work.description}</p>
+                                <p className="reveal-text sf-ui pb-5 text-lg leading-loose text-[#909298]">{work.description}</p>
                                 <p className="text-xl capitalize text-white md:text-2xl">
                                     {work.languages.map((language) => (
-                                        <span key={language} className="clash-font mx-2 ml-0 rounded-lg border-2 border-[#282828] p-2 md:mx-4">
+                                        <span key={language} className="sf-ui mx-2 ml-0 rounded-lg border-2 border-[#282828] p-2 md:mx-4">
                                             {language}
                                         </span>
                                     ))}
