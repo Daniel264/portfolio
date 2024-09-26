@@ -3,7 +3,6 @@ import Menu from "@/components/Menu";
 import SEO from "@/components/SEO";
 import Stats from "@/components/Stats";
 import TopNavigation from "@/components/TopNavigation";
-import Image from "next/image";
 import { toast } from "react-toastify";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
@@ -17,8 +16,6 @@ import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
 import PreLoader from "@/components/PreLoader";
 import Loader from "@/components/Loader";
-import { time } from "console";
-import { Reveal } from "@/components/Reveal";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
@@ -155,6 +152,7 @@ export default function Home() {
                                                 <div className="w-full">
                                                     <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
                                                     <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+                                                        
                                                         <span
                                                             id="big"
                                                             className="font-monasans text-[3.4rem] font-extrabold leading-tight text-[#E4DED7] sm:text-8xl md:tracking-wider
@@ -164,6 +162,7 @@ export default function Home() {
                                                             OLATINSU
                                                         </span>
                                                     </h3>
+                                             
                                                     <p className="pt-10 text-2xl font-light">
                                                         <span className="font-semibold">I&apos;m a</span> <Typed />
                                                     </p>
