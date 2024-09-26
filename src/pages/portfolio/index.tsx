@@ -1,16 +1,22 @@
 import { Reveal } from "@/components/Reveal";
 import TopNavigation from "@/components/TopNavigation";
+import { useMotionValue } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 const Portfolio: React.FC = () => {
+    const x = useMotionValue(0);
+    const y = useMotionValue(0);
     const handleMouseMove = (e: any) => {
         const rect = e.target.getBoundingClientRect();
         const width = rect.width;
         const height = rect.height;
         const mouseX = e.clientX - rect.left;
         const mouseY = e.clientY - rect.top;
-        const xPct = mouseX / width;
+        const xPct = mouseX / width - 0.5;
+        const yPct = mouseY / width - 0.5;
+        x.set(xPct);
+        y.set(yPct);
         console.log(xPct);
     };
     const works = [
