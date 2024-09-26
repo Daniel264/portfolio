@@ -1,3 +1,4 @@
+import { Reveal } from "@/components/Reveal";
 import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
 import React from "react";
@@ -58,16 +59,18 @@ const Portfolio: React.FC = () => {
                     {works.map((work, index) => (
                         <div key={index} className=" card my-4 w-full rounded bg-[#181818] shadow-xl">
                             <figure>
-                                <Image
-                                    src={work.imageUrl}
-                                    width={work.width}
-                                    height={work.height}
-                                    alt={work.title}
-                                    className="rounded hover:scale-105 hover:cursor-pointer hover:transition-transform hover:duration-700 hover:ease-in-out"
-                                    quality={100} // Set image quality to maximum
-                                    priority={index < 2} // Prioritize the first two images
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsive sizes
-                                />
+                                <Reveal>
+                                    <Image
+                                        src={work.imageUrl}
+                                        width={work.width}
+                                        height={work.height}
+                                        alt={work.title}
+                                        className="rounded hover:scale-105 hover:cursor-pointer hover:transition-transform hover:duration-700 hover:ease-in-out"
+                                        quality={100} // Set image quality to maximum
+                                        priority={index < 2} // Prioritize the first two images
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsive sizes
+                                    />
+                                </Reveal>
                             </figure>
                             <div className="card-body relative">
                                 <h2 className="card-title text-3xl text-white">{work.title}</h2>
