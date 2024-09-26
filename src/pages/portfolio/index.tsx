@@ -1,12 +1,18 @@
 import { Reveal } from "@/components/Reveal";
 import TopNavigation from "@/components/TopNavigation";
-import { useMotionValue } from "framer-motion";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 const Portfolio: React.FC = () => {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
+
+    const mouseXSpring = useSpring(x);
+    const mouseYSpring = useSpring(y);
+
+    const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["-17.5deg", "17.5deg"]);
+
     const handleMouseMove = (e: any) => {
         const rect = e.target.getBoundingClientRect();
         const width = rect.width;
@@ -72,7 +78,7 @@ const Portfolio: React.FC = () => {
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-2">
                     {works.map((work, index) => (
-                        <div key={index} style={{ transformStyle: "preserve-3d" }} onMouseMove={handleMouseMove} className=" card my-4 w-full rounded bg-[#181818] shadow-xl">
+                        <motion.div key={index} style={{ rotateX, transformStyle: "preserve-3d" }} onMouseMove={handleMouseMove} className=" card my-4 w-full rounded bg-[#181818] shadow-xl">
                             <figure style={{ transformStyle: "preserve-3d", transform: "translateZ(75px)" }}>
                                 <Reveal>
                                     <Image
@@ -125,7 +131,7 @@ const Portfolio: React.FC = () => {
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
