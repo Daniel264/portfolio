@@ -11,8 +11,8 @@ const useMouseMoveAnimation = () => {
     const mouseXSpring = useSpring(x);
     const mouseYSpring = useSpring(y);
 
-    const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["11.5deg", "-11.5deg"]);
-    const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-11.5deg", "11.5deg"]);
+    const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["14.5deg", "-14.5deg"]);
+    const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-14.5deg", "14.5deg"]);
 
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
         const rect = e.currentTarget.getBoundingClientRect();
