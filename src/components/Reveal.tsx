@@ -1,5 +1,5 @@
 import { motion, useInView, useAnimation } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 interface Props {
     children: JSX.Element;
@@ -7,6 +7,13 @@ interface Props {
 
 export const Reveal = ({ children }: Props) => {
     const ref = useRef(null);
+    const isInView = useInView(ref, {once: true});
+
+    useEffect(() => {
+        console.log(isInView);
+        
+    }, [isInView]);
+
     return (
         <div ref={ref} className="reveal">
             <motion.div
