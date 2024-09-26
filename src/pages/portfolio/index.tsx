@@ -4,6 +4,9 @@ import Image from "next/image";
 import React from "react";
 
 const Portfolio: React.FC = () => {
+    const handleMouseMove = (e: any) => {
+        console.log(e.target.getBoundingClientRect());
+    };
     const works = [
         {
             title: "Foodland",
@@ -57,8 +60,8 @@ const Portfolio: React.FC = () => {
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-2">
                     {works.map((work, index) => (
-                        <div key={index} className=" card my-4 w-full rounded bg-[#181818] shadow-xl">
-                            <figure>
+                        <div key={index} style={{ transformStyle: "preserve-3d" }} onMouseMove={handleMouseMove} className=" card my-4 w-full rounded bg-[#181818] shadow-xl">
+                            <figure style={{ transformStyle: "preserve-3d", transform: "translateZ(75px)" }}>
                                 <Reveal>
                                     <Image
                                         src={work.imageUrl}
@@ -74,7 +77,7 @@ const Portfolio: React.FC = () => {
                             </figure>
                             <div className="card-body relative">
                                 <h2 className="card-title text-3xl text-white">{work.title}</h2>
-                                <p className="reveal-text sf-ui pb-5 text-sm  md:text-base leading-loose text-[#909298]">{work.description}</p>
+                                <p className="reveal-text sf-ui pb-5 text-sm  leading-loose text-[#909298] md:text-base">{work.description}</p>
                                 <p className="text-xl capitalize text-white md:text-2xl">
                                     {work.languages.map((language) => (
                                         <span key={language} className="sf-ui mx-2 ml-0 rounded-lg border-2 border-[#282828] p-2 md:mx-4">
