@@ -5,7 +5,13 @@ import React from "react";
 
 const Portfolio: React.FC = () => {
     const handleMouseMove = (e: any) => {
-        console.log(e.target.getBoundingClientRect());
+        const rect = e.target.getBoundingClientRect();
+        const width = rect.width;
+        const height = rect.height;
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        const xPct = mouseX / width;
+        console.log(xPct);
     };
     const works = [
         {
