@@ -18,6 +18,7 @@ import Skills from "@/components/Skills";
 import PreLoader from "@/components/PreLoader";
 import Loader from "@/components/Loader";
 import { time } from "console";
+import { Reveal } from "@/components/Reveal";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 

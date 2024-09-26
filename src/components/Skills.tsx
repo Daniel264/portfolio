@@ -1,4 +1,5 @@
 import React from "react";
+import { Reveal } from "./Reveal";
 
 const Skills = () => {
     return (
@@ -7,20 +8,24 @@ const Skills = () => {
             <p className="pb-5">LANGUAGES I USE - DEV ARSENAL</p>
             <section className="grid grid-cols-1 gap-10 md:grid-cols-3">
                 <article className="col-start-1  rounded bg-[#171717] p-4">
-                    <h2 className="text-5xl font-semibold">Frontend</h2>
-                    <ul className="sf-ui text-sm leading-relaxed text-[#E4DED7] md:text-lg">
-                        <li>TypeScript</li>
-                        <li>JavaScript(ES6+)</li>
-                        <li>ViteTest</li>
-                        <li>React</li>
-                        <li>Next.js</li>
-                        <li>Git/GitHub</li>
-                        <li>NextAuth</li>
-                        {/* <div className="ml-44 flex w-max">
-                            <p>95%</p>
-                        </div> */}
-                        {/* <progress className="progress progress-primary w-56 bg-white" value="95" max="100"></progress> */}
-                    </ul>
+                    <Reveal>
+                        <div>
+                            <h2 className="text-5xl font-semibold">Frontend</h2>
+                            <ul className="sf-ui text-sm leading-relaxed text-[#E4DED7] md:text-lg">
+                                <li>TypeScript</li>
+                                <li>JavaScript(ES6+)</li>
+                                <li>ViteTest</li>
+                                <li>React</li>
+                                <li>Next.js</li>
+                                <li>Git/GitHub</li>
+                                <li>NextAuth</li>
+                                {/* <div className="ml-44 flex w-max">
+                                    <p>95%</p>
+                                </div> */}
+                                {/* <progress className="progress progress-primary w-56 bg-white" value="95" max="100"></progress> */}
+                            </ul>
+                        </div>
+                    </Reveal>
                 </article>
                 <article className="col-start-1  rounded bg-[#171717] p-4 md:col-start-2">
                     <h2 className="text-5xl font-semibold">Backend</h2>
