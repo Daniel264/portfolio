@@ -32,19 +32,19 @@ const Skills = () => {
                     </Reveal>
                 </article>
                 <Reveal>
-                    <article className="col-start-1  bg-[#171717] md:col-start-2 rounded-3xl shadow-2xl">
+                    <article className="col-start-1  rounded-3xl bg-[#171717] shadow-2xl md:col-start-2">
                         <div className=" bg-[#0E0F11] p-4">
                             <h2 className="text-xl font-semibold">Backend technologies i use</h2>
-                            <p>I have a deep passion for building robust and scalable backend systems. From designing databases to creating efficient APIs, I thrive on optimizing performance and ensuring seamless communication between the server and client.</p>
+                            <p className="text-[#888889]">I have a deep passion for building robust and scalable backend systems. From designing databases to creating efficient APIs, I thrive on ensuring seamless communication between the server and client.</p>
                         </div>
-                        <div className="bg-[#08090A] p-4">
-                            <ul className="sf-ui text-sm leading-relaxed text-[#E4DED7] md:text-lg">
-                                <li>Node.js</li>
-                                <li>Express.js</li>
-                                <li>Typescript</li>
-                                <li>MongoDB</li>
-                                <li>PostGreSQL</li>
-                                <li>prisma</li>
+                        <div className="whitespace-normal break-words bg-[#08090A] p-4">
+                            <ul className="sf-ui flex h-fit max-w-[470px] flex-wrap  gap-3 text-xs uppercase  leading-relaxed text-[#888889] md:text-sm">
+                                <li className="  w-fit rounded-badge border-[2px] border-[#888889] border-opacity-10  bg-[#0E0F11] px-2 opacity-100">Node.js</li>
+                                <li className="  w-fit rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100">Express.js</li>
+                                <li className="  rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100">Typescript</li>
+                                <li className="  rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100">MongoDB</li>
+                                <li className="  rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100">PostGreSQL</li>
+                                <li className="  rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100">prisma</li>
                             </ul>
                         </div>
                     </article>
