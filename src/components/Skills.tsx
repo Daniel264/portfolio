@@ -32,20 +32,21 @@ const Skills = () => {
                     </Reveal>
                 </article>
                 <Reveal>
-                    <article className="col-start-1  rounded bg-[#171717] p-4 md:col-start-2">
-                        <h2 className="text-5xl font-semibold">Backend</h2>
-                        <ul className="sf-ui text-sm leading-relaxed text-[#E4DED7] md:text-lg">
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>Typescript</li>
-                            <li>MongoDB</li>
-                            <li>PostGreSQL</li>
-                            <li>prisma</li>
-                            {/* <div className="ml-44 flex w-max">
-                                <p>80%</p>
-                            </div> */}
-                            {/* <progress className="progress progress-primary w-56 bg-white" value="80" max="100"></progress> */}
-                        </ul>
+                    <article className="col-start-1  bg-[#171717] md:col-start-2 rounded-3xl shadow-2xl">
+                        <div className=" bg-[#0E0F11] p-4">
+                            <h2 className="text-xl font-semibold">Backend technologies i use</h2>
+                            <p>I have a deep passion for building robust and scalable backend systems. From designing databases to creating efficient APIs, I thrive on optimizing performance and ensuring seamless communication between the server and client.</p>
+                        </div>
+                        <div className="bg-[#08090A] p-4">
+                            <ul className="sf-ui text-sm leading-relaxed text-[#E4DED7] md:text-lg">
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>Typescript</li>
+                                <li>MongoDB</li>
+                                <li>PostGreSQL</li>
+                                <li>prisma</li>
+                            </ul>
+                        </div>
                     </article>
                 </Reveal>
                 <Reveal>
