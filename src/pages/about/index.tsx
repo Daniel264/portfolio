@@ -1,5 +1,4 @@
-import Menu from "@/components/Menu";
-import TopNavigation from "@/components/TopNavigation";
+
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
@@ -82,6 +81,11 @@ const About = () => {
                                                 <br /> drop me an email
                                             </span>
                                         </span>
+                                    </p>
+                                </div>
+                                <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left mask">
+                                    <p className="sf-ui card-card font-light tracking-wider text-sm md:text-base md:leading-relaxed">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti omnis magnam et esse sapiente repellat hic quod architecto libero, aut deserunt, quibusdam nihil. Illo earum tempore, veritatis eligendi dignissimos ex, sapiente reprehenderit libero nulla molestias deleniti corporis quae aspernatur sint animi provident nisi ea officia. Omnis repellat, iste voluptatibus sit nostrum expedita? Modi, eveniet?
                                     </p>
                                 </div>
                             </div>

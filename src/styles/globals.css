@@ -118,6 +118,10 @@
     opacity: 0;
 }
 
+.mask{
+    position: absolute;
+}
+
 :root {
     --font-monasans: "Mona Sans", sans-serif;
 }
