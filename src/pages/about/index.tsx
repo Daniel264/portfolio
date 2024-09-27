@@ -1,17 +1,16 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { useMousePosition } from "@/utilities/useMousePosition";
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
 
 const About = () => {
     const [loading, setLoading] = useState(true);
     const aboutRef = useRef(null);
 
-    const [isHovered, setIsHovered] = useState(false)
+    const [isHovered, setIsHovered] = useState(false);
     const { x, y } = useMousePosition();
-    const size = isHovered? 400 : 40;
+    const size = isHovered ? 400 : 40;
 
     useEffect(() => {
         // Trigger animation when "About" section is in view
@@ -68,7 +67,7 @@ const About = () => {
                         <div className="flex h-10 items-center rounded px-3 pb-10">
                             <h1 className="text-5xl font-bold md:text-6xl">About The Creator</h1>
                         </div>
-                        <p className="pt-8 text-xl font-light text-white md:text-2xl sf-ui pb-8">Fullstack Developer & Mobile Enthusiast</p>
+                        <p className="sf-ui pb-8 pt-8 text-xl font-light text-white md:text-2xl">Fullstack Developer & Mobile Enthusiast</p>
                         <div className="absolute left-10 top-64 h-full lg:left-16"></div>
 
                         <div className="flex h-full w-full flex-col items-center justify-center lg:flex-row-reverse">
@@ -77,7 +76,7 @@ const About = () => {
                             </div>
                             <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                                 <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left">
-                                    <p className="sf-ui card-card font-light tracking-wider text-sm md:text-base md:leading-relaxed">
+                                    <p className="sf-ui card-card text-sm font-light tracking-wider md:text-base md:leading-relaxed">
                                         I’m a full-stack developer with a deep passion for mobile technology, driven by a love for continuous learning and personal growth. My expertise spans both front-end and back-end development, where I enjoy creating innovative and impactful solutions that solve
                                         real-world problems. There&apos;s so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
                                         <span>
@@ -89,15 +88,26 @@ const About = () => {
                                         </span>
                                     </p>
                                 </div>
-                                <motion.div animate={{
-                                            WebkitMaskPosition: `${x - size / 1.2}px ${y - size / 1.2}px`,
-                                    WebkitMaskSize: `${size}px`
-                                }}
-                                transition={{
-                                    type:"tween", ease: "backOut"
-                                }} className="py-8 text-center pb-72 lg:pl-20 lg:text-left mask lg:w-1/2 px-10 lg:pr-20">
-                                    <p onMouseEnter={()=> (setIsHovered(true))} onMouseLeave={()=> {setIsHovered(false)}} className="sf-ui card-card font-light tracking-wider text-sm md:text-base md:leading-relaxed">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti omnis magnam et esse sapiente repellat hic quod architecto libero, aut deserunt, quibusdam nihil. Illo earum tempore, veritatis eligendi dignissimos ex, sapiente reprehenderit libero nulla molestias deleniti corporis quae aspernatur sint animi provident nisi ea officia. Omnis repellat, iste voluptatibus sit nostrum expedita? Modi, eveniet?
+                                <motion.div
+                                    animate={{
+                                        WebkitMaskPosition: `${x - size / 1.2}px ${y - size / 1.2}px`,
+                                        WebkitMaskSize: `${size}px`,
+                                    }}
+                                    transition={{
+                                        type: "tween",
+                                        ease: "backOut",
+                                    }}
+                                    className="mask px-10 py-8 pb-72 text-center lg:w-1/2 lg:pl-20 lg:pr-20 lg:text-left"
+                                >
+                                    <p
+                                        onMouseEnter={() => setIsHovered(true)}
+                                        onMouseLeave={() => {
+                                            setIsHovered(false);
+                                        }}
+                                        className="sf-ui card-card text-sm font-light tracking-wider md:text-base md:leading-relaxed"
+                                    >
+                                        I am a passionate coder with nearly four years of experience, specializing in creating innovative solutions that make a difference. As a dedicated 300-level student at Mountain Top University, I strive for academic excellence while honing my skills. I enjoy
+                                        playing chess in my spare time, as it sharpens my strategic thinking. A proud Real Madrid supporter, I embody teamwork and dedication both on and off the field.
                                     </p>
                                 </motion.div>
                             </div>
