@@ -39,10 +39,10 @@ const Skills = () => {
                         </div>
                         <div className="whitespace-normal break-words bg-[#08090A]  px-10 py-12">
                             <ul className="sf-ui flex h-fit max-w-[470px] flex-wrap  gap-3 text-xs uppercase  leading-relaxed text-[#888889] md:text-sm">
-                                <li className="  w-fit rounded-badge border-[2px] border-[#888889] border-opacity-10  bg-[#0E0F11] px-2 opacity-100">Node.js</li>
+                                <li className="  w-fit rounded-badge border-[2px] border-[#888889] border-opacity-10  bg-[#0E0F11] px-2 opacity-100"><i className="fa-brands fa-node-js text-white"></i>Node.js</li>
                                 <li className="  w-fit rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100">Express.js</li>
-                                <li className="  rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100">Typescript</li>
-                                <li className="  rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100">MongoDB</li>
+                                <li className="  rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100"><i className="fa-brands fa-js text-white"></i>Typescript</li>
+                                <li className="  rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100"><i className="fa-solid fa-leaf text-white"></i>MongoDB</li>
                                 <li className="  rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100">PostGreSQL</li>
                                 <li className="  rounded-badge border-[2px] border-[#888889] border-opacity-10 bg-[#0E0F11]  px-2 opacity-100">prisma</li>
                             </ul>
