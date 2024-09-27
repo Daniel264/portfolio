@@ -83,8 +83,8 @@ const Portfolio: React.FC = () => {
     ];
 
     return (
-        <div id="portfolio" className="w-full pt-14 lg:px-32">
-            <h1 className="text-center text-6xl font-bold text-white">Few of my Projects</h1>
+        <div id="portfolio" className="w-full pt-14 lg:px-32 text-[#B7AB98]">
+            <h1 className="text-center text-6xl font-bold text-[#B7AB98]">Few of my Projects</h1>
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-2">
                     {works.map((work, index) => {
@@ -107,9 +107,9 @@ const Portfolio: React.FC = () => {
                                     </Reveal>
                                 </figure>
                                 <div className="card-body relative">
-                                    <h2 className="card-title text-3xl text-white">{work.title}</h2>
+                                    <h2 className="card-title text-3xl ">{work.title}</h2>
                                     <p className="reveal-text sf-ui pb-5 text-sm leading-loose text-[#909298] md:text-base">{work.description}</p>
-                                    <p className="text-xl capitalize text-white md:text-2xl">
+                                    <p className="text-xl capitalize  md:text-2xl">
                                         {work.languages.map((language) => (
                                             <span key={language} className="sf-ui w-full  text-lg lg:text-xl mx-2 ml-0 rounded-lg border-2 border-[#282828] p-2 md:mx-4">
                                                 {language}
