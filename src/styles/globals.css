@@ -120,6 +120,8 @@
 
 .mask{
     position: absolute;
+    mask-image: url('/assets/images/mask.svg');
+    background: red;
 }
 
 :root {
