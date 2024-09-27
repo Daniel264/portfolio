@@ -60,7 +60,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
 
             <QueryClientProvider client={queryClient}>
-                <main className={syne.className || ''}>
+                <main className={syne.className}>
                     <Component {...pageProps} />
                 </main>
 
