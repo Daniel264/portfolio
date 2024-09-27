@@ -122,6 +122,9 @@
     position: absolute;
     mask-image: url('/assets/images/mask.svg');
     background: red;
+    mask-position: 50%;
+    mask-size: 40px;
+    color: black;
 }
 
 :root {
