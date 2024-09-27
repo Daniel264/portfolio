@@ -107,7 +107,10 @@ const Portfolio: React.FC = () => {
                                     </Reveal>
                                 </figure>
                                 <div className="card-body relative">
-                                    <h2 className="card-title text-3xl ">{work.title}</h2>
+                                    <div className="flex justify-between">
+                                        <h2 className="card-title text-3xl ">{work.title}</h2>
+                                        <span className="border h-fit rounded-badge px-1 border-[#888888] border-opacity-30"><i className="fa-brands fa-github"></i>Public</span>
+                                    </div>
                                     <p className="reveal-text sf-ui pb-5 text-sm leading-loose text-[#909298] md:text-base">{work.description}</p>
                                     <p className="text-xl capitalize  md:text-2xl">
                                         {work.languages.map((language) => (
