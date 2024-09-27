@@ -73,16 +73,16 @@ const About = () => {
     }, []);
 
     return (
-        <div id="about" ref={aboutRef} className="min-h-screen w-full bg-fixed text-[#D1D5DB]">
+        <div id="about" ref={aboutRef} className="min-h-screen w-full bg-fixed text-[#B7AB98]">
             {loading ? (
                 <div className="loading-animation"></div>
             ) : (
                 <>
                     <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-24 text-center md:pt-0 lg:px-[8rem]">
                         <div className="flex h-10 items-center rounded px-3 pb-10">
-                            <h1 className="text-5xl font-bold md:text-6xl">About The Creator</h1>
+                            <h1 className="text-5xl font-bold md:text-6xl ">About The Creator</h1>
                         </div>
-                        <p className="sf-ui pb-8 pt-8 text-xl font-light text-white md:text-2xl">Fullstack Developer & Mobile Enthusiast</p>
+                        <p className="sf-ui pb-8 pt-8 text-xl font-light text-[#B7AB98] md:text-2xl">Fullstack Developer & Mobile Enthusiast</p>
 
                         <div className="flex h-full w-full flex-col items-center justify-center lg:flex-row-reverse">
                             {/* Normal Div */}

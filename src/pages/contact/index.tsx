@@ -60,7 +60,7 @@ const Contact = () => {
                 <p>Loading...</p>
             ) : (
                 <div id="contact" className="contact-page px-2 py-20 text-center md:px-10 lg:py-0">
-                    <div className="hero flex h-full flex-col items-center justify-center pt-20 text-white md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pb-20 lg:pt-32">
+                    <div className="hero flex h-full flex-col items-center justify-center pt-20 text-[#B7AB98] md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pb-20 lg:pt-32">
                         <div className="lg:w-1/2 lg:pr-10">
                             <h1 id="#big" className="mb-10 text-5xl font-bold md:text-7xl ">
                                 Get In Touch
