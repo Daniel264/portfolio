@@ -73,7 +73,7 @@ const About = () => {
 
                         <div className="flex h-full w-full flex-col items-center justify-center lg:flex-row-reverse">
                             <div className="flex w-full justify-center lg:justify-end lg:pb-24 lg:pr-8">
-                                <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[22rem] rounded-badge shadow-2xl sm:h-[29rem]" />
+                                <Image src="/assets/images/me.jpg" alt="my-profile-pic" width={450} height={40} className="h-[22rem]  rounded-badge shadow-2xl sm:h-[29rem]" />
                             </div>
                             <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                                 <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left">
@@ -90,12 +90,12 @@ const About = () => {
                                     </p>
                                 </div>
                                 <motion.div animate={{
-                                    WebkitMaskPosition: `${x - size/2}px ${y-size/2}px`,
+                                            WebkitMaskPosition: `${x - size / 1.2}px ${y - size / 1.2}px`,
                                     WebkitMaskSize: `${size}px`
                                 }}
                                 transition={{
                                     type:"tween", ease: "backOut"
-                                }} className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left mask">
+                                }} className="py-8 text-center pb-72 lg:pl-20 lg:text-left mask lg:w-1/2 px-10 lg:pr-20">
                                     <p onMouseEnter={()=> (setIsHovered(true))} onMouseLeave={()=> {setIsHovered(false)}} className="sf-ui card-card font-light tracking-wider text-sm md:text-base md:leading-relaxed">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti omnis magnam et esse sapiente repellat hic quod architecto libero, aut deserunt, quibusdam nihil. Illo earum tempore, veritatis eligendi dignissimos ex, sapiente reprehenderit libero nulla molestias deleniti corporis quae aspernatur sint animi provident nisi ea officia. Omnis repellat, iste voluptatibus sit nostrum expedita? Modi, eveniet?
                                     </p>
