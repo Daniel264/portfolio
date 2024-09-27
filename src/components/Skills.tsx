@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 
 const Skills = () => {
     return (
-        <main className="flex h-full w-full flex-col items-center pb-14 text-[#B7AB98]">
+        <main className="flex h-full w-full flex-col items-center pb-14 text-white">
             <Reveal>
                 <div>
                     <h1 className="pb-5 text-center text-6xl font-bold  lg:text-7xl">Stack</h1>
@@ -15,7 +15,7 @@ const Skills = () => {
                     <Reveal>
                         <div>
                             <h2 className="text-5xl font-semibold">Frontend</h2>
-                            <ul className="sf-ui text-sm leading-relaxed text-[#B7AB98] md:text-lg">
+                            <ul className="sf-ui text-sm leading-relaxed text-white md:text-lg">
                                 <li>TypeScript</li>
                                 <li>JavaScript(ES6+)</li>
                                 <li>ViteTest</li>

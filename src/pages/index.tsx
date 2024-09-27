@@ -155,7 +155,7 @@ export default function Home() {
                                                         
                                                         <span
                                                             id="big"
-                                                            className="font-monasans text-[3.4rem] font-extrabold leading-tight text-[#B7AB98] sm:text-8xl md:tracking-wider
+                                                            className="font-monasans text-[3.4rem] font-extrabold leading-tight text-white sm:text-8xl md:tracking-wider
                                                     lg:text-9xl"
                                                         >
                                                             DANIEL <br />
