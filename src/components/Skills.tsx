@@ -65,8 +65,8 @@ const Skills = () => {
                     <Reveal key={index}>
                         <article className="col-start-1 rounded-badge  border-[1px] border-[#888889] border-opacity-10 shadow-2xl md:col-start-2 ">
                             <div className=" bg-[#0E0F11] px-10 py-12">
-                                <h2 className="text-xl font-semibold"></h2>
-                                <p className="text-[#888889]">I have a deep passion for building robust and scalable backend systems. From designing databases to creating efficient APIs, I thrive on ensuring seamless communication between the server and client.</p>
+                                <h2 className="text-xl font-semibold">{item.Header}</h2>
+                                <p className="text-[#888889]">{item.Description}</p>
                             </div>
                             <div className="whitespace-normal break-words bg-[#08090A]  px-10 py-12">
                                 <ul className="sf-ui flex h-fit max-w-[470px] flex-wrap  gap-3 text-xs uppercase  leading-relaxed text-[#888889] md:text-sm">
