@@ -3,6 +3,24 @@ import { Reveal } from "./Reveal";
 import SVGIcon from "./SVGIcon";
 import MongoDBIcon from "./Icons";
 
+const SkillsObjects = [
+    {
+        Header: "Frontend",
+        Description: "I am passionate about crafting intuitive and visually appealing user interfaces. From responsive design to interactive features, I focus on creating seamless, user-friendly experiences that bring designs to life on the web.",
+        Skills: [{ Icon: "TS", Name: "TypeScript" }, { Icon: "JS", Name: "JavaScript(ES6+)" }, { Name: "ViteTest" }, { Icon: "React", Name: "React" }, { Icon: "Next", Name: "Next.js" }, { Name: "Git/GitHub" }, { Name: "NextAuth" }],
+    },
+    {
+        Header: "Backend",
+        Description: "I have a deep passion for building robust and scalable backend systems. From designing databases to creating efficient APIs, I thrive on ensuring seamless communication between the server and client.",
+        Skills: [
+            { Icon: "Node", Name: "Node.js" },
+            { Icon: "Express", Name: "Express.js" },
+            { Icon: "TS", Name: "Typescript" },
+            { Icon: "MongoDB", Name: "MongoDB" },
+        ],
+    },
+];
+
 const Skills = () => {
     return (
         <main className="flex h-full w-full flex-col items-center pb-14 text-white">
@@ -27,8 +45,14 @@ const Skills = () => {
                                     JavaScript(ES6+)
                                 </li>
                                 <li>ViteTest</li>
-                                <li>React</li>
-                                <li>Next.js</li>
+                                <li>
+                                    <SVGIcon type="React" />
+                                    React
+                                </li>
+                                <li>
+                                    <SVGIcon type="Next" />
+                                    Next.js
+                                </li>
                                 <li>Git/GitHub</li>
                                 <li>NextAuth</li>
                                 {/* <div className="ml-44 flex w-max">
