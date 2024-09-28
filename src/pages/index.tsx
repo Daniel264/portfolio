@@ -254,7 +254,7 @@ export default function Home() {
                                 </div>
                             </main>
                             <hr className="mx-auto w-[80%] pb-10" />
-                            <About background={"bg-black"} text={"text-white"} />
+                            <About background={"bg-inherit"} text={"text-white"} />
                             <hr className="mx-auto w-[80%]" />
                             <Portfolio />
                             <hr className="mx-auto w-[80%] pb-10" />
@@ -338,10 +338,7 @@ export default function Home() {
                             </main>
                             <hr className="mx-auto w-[80%] pb-10" />
                             <div
-                                onMouseEnter={() => setIsHovered(true)}
-                                onMouseLeave={() => {
-                                    setIsHovered(false);
-                                }}
+                                
                             >
                                 <About background={"bg-white"} text={"text-black"} />
                             </div>

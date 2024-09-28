@@ -7,9 +7,11 @@ import { motion } from "framer-motion";
 interface Props {
     background: string;
     text: string;
+    onMouseEnter: () => void;
+    onMouseLeave: () => void;
 }
 
-const About = ({ background, text }: Props) => {
+const About = ({ background, text, onMouseEnter, onMouseLeave }: Props) => {
     const [loading, setLoading] = useState(true);
     const aboutRef = useRef(null);
     const maskRef = useRef<HTMLDivElement>(null);
