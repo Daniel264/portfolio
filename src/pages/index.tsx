@@ -257,10 +257,9 @@ export default function Home() {
                             <About
                                 background={"bg-inherit"}
                                 text={"text-white"}
-                                onMouseEnter={() => setIsHovered(true)}
-                                onMouseLeave={() => {
-                                    setIsHovered(false);
-                                }}
+                                paragraph=" I’m a full-stack developer with a deep passion for mobile technology, driven by a love for continuous learning and personal growth. My expertise spans both front-end and back-end development, where I enjoy creating innovative and impactful solutions that solve
+                                        real-world problems. There's so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
+                                       "
                             />
                             <hr className="mx-auto w-[80%]" />
                             <Portfolio />
@@ -348,6 +347,8 @@ export default function Home() {
                                 <About
                                     background={"bg-white"}
                                     text={"text-black"}
+                                    paragraph="I am a passionate coder with nearly four years of experience, specializing in creating innovative solutions that make a difference. As a dedicated 300-level student at Mountain Top University, I strive for academic excellence while honing my skills. I enjoy
+                                        playing chess in my spare time, as it sharpens my strategic thinking. A proud Real Madrid supporter, I embody teamwork and dedication both on and off the field."
                                     onMouseEnter={() => setIsHovered(true)}
                                     onMouseLeave={() => {
                                         setIsHovered(false);
@@ -371,3 +372,13 @@ export default function Home() {
         </div>
     );
 }
+
+// I’m a full-stack developer with a deep passion for mobile technology, driven by a love for continuous learning and personal growth. My expertise spans both front-end and back-end development, where I enjoy creating innovative and impactful solutions that solve
+// real-world problems. There&apos;s so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
+// <span>
+//     Think we could create something together? Feel free to
+//     <span className="text-[#7043E3] hover:cursor-pointer" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
+//         {" "}
+//         <br /> drop me an email
+//     </span>
+// </span>

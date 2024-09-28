@@ -7,11 +7,12 @@ import { motion } from "framer-motion";
 interface Props {
     background: string;
     text: string;
-    onMouseEnter: () => void;
-    onMouseLeave: () => void;
+    paragraph: string;
+    onMouseEnter?: () => void;
+    onMouseLeave?: () => void;
 }
 
-const About = ({ background, text, onMouseEnter, onMouseLeave }: Props) => {
+const About = ({ background, text, onMouseEnter, onMouseLeave, paragraph }: Props) => {
     const [loading, setLoading] = useState(true);
     const aboutRef = useRef(null);
     const maskRef = useRef<HTMLDivElement>(null);
@@ -103,22 +104,14 @@ const About = ({ background, text, onMouseEnter, onMouseLeave }: Props) => {
                             <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                                 <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left">
                                     <p className="sf-ui card-card text-sm font-light tracking-wider md:text-base md:leading-relaxed">
-                                        I’m a full-stack developer with a deep passion for mobile technology, driven by a love for continuous learning and personal growth. My expertise spans both front-end and back-end development, where I enjoy creating innovative and impactful solutions that solve
-                                        real-world problems. There&apos;s so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
-                                        <span>
-                                            Think we could create something together? Feel free to
-                                            <span className="text-[#7043E3] hover:cursor-pointer" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
-                                                {" "}
-                                                <br /> drop me an email
-                                            </span>
-                                        </span>
+                                       {paragraph}
                                     </p>
                                 </div>
                             </div>
                         </div>
 
                         {/* Motion Div */}
-                        <motion.div
+                        {/* <motion.div
                             ref={maskRef}
                             animate={{
                                 WebkitMaskPosition: `${maskPosition.maskX}px ${maskPosition.maskY}px`,
@@ -141,7 +134,7 @@ const About = ({ background, text, onMouseEnter, onMouseLeave }: Props) => {
                                     </p>
                                 </div>
                             </div>
-                        </motion.div>
+                        </motion.div> */}
                     </main>
 
                     {/* Skills section omitted for brevity */}
