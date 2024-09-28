@@ -87,9 +87,13 @@ const About = ({ background, text, onMouseEnter, onMouseLeave }: Props) => {
                 <>
                     <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-24 text-center md:pt-0 lg:px-[8rem]">
                         <div className="flex h-10 items-center rounded px-3 pb-10">
-                            <h1 className="text-5xl font-bold md:text-6xl ">About The Creator</h1>
+                            <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="text-5xl font-bold md:text-6xl ">
+                                About The Creator
+                            </h1>
                         </div>
-                        <p className="sf-ui pb-8 pt-8 text-xl font-light  md:text-2xl">Fullstack Developer & Mobile Enthusiast</p>
+                        <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="sf-ui pb-8 pt-8 text-xl font-light  md:text-2xl">
+                            Fullstack Developer & Mobile Enthusiast
+                        </p>
 
                         <div className="flex h-full w-full flex-col items-center justify-center lg:flex-row-reverse">
                             {/* Normal Div */}
@@ -131,13 +135,7 @@ const About = ({ background, text, onMouseEnter, onMouseLeave }: Props) => {
                             </div>
                             <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                                 <div className="py-8 text-center  lg:pb-24 lg:pl-20 lg:text-left">
-                                    <p
-                                        onMouseEnter={() => setIsHovered(true)}
-                                        onMouseLeave={() => {
-                                            setIsHovered(false);
-                                        }}
-                                        className="sf-ui card-card text-sm font-light tracking-wider md:text-base md:leading-relaxed"
-                                    >
+                                    <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="sf-ui card-card text-sm font-light tracking-wider md:text-base md:leading-relaxed">
                                         I am a passionate coder with nearly four years of experience, specializing in creating innovative solutions that make a difference. As a dedicated 300-level student at Mountain Top University, I strive for academic excellence while honing my skills. I enjoy
                                         playing chess in my spare time, as it sharpens my strategic thinking. A proud Real Madrid supporter, I embody teamwork and dedication both on and off the field.
                                     </p>
@@ -154,3 +152,4 @@ const About = ({ background, text, onMouseEnter, onMouseLeave }: Props) => {
 };
 
 export default About;
+
