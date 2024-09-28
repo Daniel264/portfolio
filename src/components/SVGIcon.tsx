@@ -19,7 +19,7 @@ interface SVGIconProps {
 const SVGIcon: React.FC<SVGIconProps> = ({ type }) => {
     const IconComponent = type ? iconMap[type] : null; // Get the corresponding icon
 
-    return <div style={{ width: "24px", height: "24px" }}>{IconComponent ? <IconComponent /> : null}</div>;
+    return <div style={{ width: "15px", height: "15px" }}>{IconComponent ? <IconComponent /> : null}</div>;
 };
 
 export default SVGIcon;
