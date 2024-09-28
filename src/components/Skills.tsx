@@ -70,9 +70,9 @@ const Skills = () => {
                             </div>
                             <div className="whitespace-normal break-words bg-[#08090A]  px-10 py-12">
                                 <ul className="sf-ui flex h-fit max-w-[470px] flex-wrap  gap-3 text-xs uppercase  leading-relaxed text-[#888889] md:text-sm">
-                                    <li className="  w-fit rounded-badge border-[2px] border-[#888889] border-opacity-10  bg-[#0E0F11] px-2 opacity-100">
+                                    <li className="flex flex-wrap">
                                         {item.Skills.map((skill, index) => (
-                                            <span key={index}>
+                                            <span key={index} className="flex  w-fit rounded-badge border-[2px] border-[#888889] border-opacity-10  bg-[#0E0F11] px-2 opacity-100">
                                                 <SVGIcon type={skill.Icon} />
                                                 {skill.Name}
                                             </span>
