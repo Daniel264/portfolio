@@ -7,7 +7,7 @@ const SkillsObjects = [
     {
         Header: "Frontend i work with",
         Description: "I am passionate about crafting intuitive and visually appealing user interfaces. From responsive design to interactive features, I focus on creating seamless, user-friendly experiences that bring designs to life on the web.",
-        Skills: [{ Icon: "TS", Name: "TypeScript" }, { Icon: "JS", Name: "JavaScript(ES6+)" }, { Name: "ViteTest" }, { Icon: "React", Name: "React" }, { Icon: "Next", Name: "Next.js" }, { Name: "Git/GitHub" }, { Name: "NextAuth" }],
+        Skills: [{ Icon: "TS", Name: "TypeScript" }, { Icon: "JS", Name: "JavaScript(ES6+)" }, { Icon: "ViteTest", Name: "ViteTest" }, { Icon: "React", Name: "React" }, { Icon: "Next", Name: "Next.js" }, { Icon: "GitHub", Name: "Git/GitHub" }, { Icon: "Next", Name: "NextAuth" }],
     },
     {
         Header: "Backend technologies is use",

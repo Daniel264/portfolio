@@ -1,6 +1,6 @@
 import React from "react";
 import MongoDBIcon from "./sprited"; // Ensure correct path
-import { JavaScriptIcon, NextIcon, ReactIcon, TypeScriptIcon } from "./Icons";
+import { ExpressIcon, GitHubIcon, JavaScriptIcon, NextIcon, ReactIcon, TypeScriptIcon, ViteTestIcon } from "./Icons";
 // Import other icons as needed
 
 const iconMap: { [key: string]: React.FC } = {
@@ -9,6 +9,9 @@ const iconMap: { [key: string]: React.FC } = {
     TS: TypeScriptIcon,
     React: ReactIcon,
     Next: NextIcon,
+    ViteTest: ViteTestIcon,
+    GitHub: GitHubIcon,
+    Express: ExpressIcon, // Add other icons here
     // Add other icons here
 };
 
