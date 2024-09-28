@@ -103,7 +103,7 @@ const About = ({ background, text, onMouseEnter, onMouseLeave, paragraph }: Prop
                             </div>
                             <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                                 <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left">
-                                    <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="sf-ui card-card text-sm font-light tracking-wider md:text-base md:leading-relaxed">
+                                    <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className=" card-card text-sm font-light tracking-wider md:text-xl md:leading-relaxed">
                                        {paragraph}
                                     </p>
                                 </div>

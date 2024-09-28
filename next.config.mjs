@@ -3,6 +3,7 @@ import { withSentryConfig } from "@sentry/nextjs";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
+    transpilePackages: ["geist"],
     env: {
         DEPLOYMENT_ENV: process.env.DEPLOYMENT_ENV,
     },

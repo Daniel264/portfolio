@@ -6,6 +6,9 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { MutationCache, QueryCache, QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // @ts-ignore
 import { Poppins, Syne } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+
 // @ts-ignore
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -60,7 +63,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
 
             <QueryClientProvider client={queryClient}>
-                <main className={syne.className}>
+                <main className={GeistSans.className}>
                     <Component {...pageProps} />
                 </main>
 
