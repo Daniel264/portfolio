@@ -4,7 +4,12 @@ import gsap from "gsap";
 import { useMousePosition } from "@/utilities/useMousePosition";
 import { motion } from "framer-motion";
 
-const About = () => {
+interface Props {
+    background: string;
+    text: string;
+}
+
+const About = ({ background, text }: Props) => {
     const [loading, setLoading] = useState(true);
     const aboutRef = useRef(null);
     const maskRef = useRef<HTMLDivElement>(null);
@@ -73,14 +78,14 @@ const About = () => {
     }, []);
 
     return (
-        <div id="about" ref={aboutRef} className="min-h-screen w-full bg-fixed ">
+        <div id="about" ref={aboutRef} className={`min-h-screen ${text} ${background}  w-full bg-fixed `}>
             {loading ? (
                 <div className="loading-animation"></div>
             ) : (
                 <>
                     <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-24 text-center md:pt-0 lg:px-[8rem]">
                         <div className="flex h-10 items-center rounded px-3 pb-10">
-                            <h1 className="text-5xl text-black font-bold md:text-6xl ">About The Creator</h1>
+                            <h1 className="text-5xl font-bold text-black md:text-6xl ">About The Creator</h1>
                         </div>
                         <p className="sf-ui pb-8 pt-8 text-xl font-light  md:text-2xl">Fullstack Developer & Mobile Enthusiast</p>
 
