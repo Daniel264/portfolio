@@ -6,6 +6,10 @@
 /* Library CSS import */
 @import url("react-toastify/dist/ReactToastify.css");
 
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Mona Sans";
     src:
@@ -114,14 +118,19 @@
     transform: translateY(100px);
 }
 
+.overlay {
+    background: white;
+    color: black;
+}
+
 .my-menu {
     opacity: 0;
 }
 
-.mask{
+.mask {
     position: absolute;
-    mask-image: url('/assets/images/mask.svg');
-    background: #F4FAFF;
+    mask-image: url("/assets/images/mask.svg");
+    background: #f4faff;
     mask-position: 50%;
     mask-repeat: no-repeat;
     mask-size: 40px;
