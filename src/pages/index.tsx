@@ -254,7 +254,7 @@ export default function Home() {
                                 </div>
                             </main>
                             <hr className="mx-auto w-[80%] pb-10" />
-                            <About />
+                            <About background={"bg-black"} text={"text-white"} />
                             <hr className="mx-auto w-[80%]" />
                             <Portfolio />
                             <hr className="mx-auto w-[80%] pb-10" />
@@ -343,7 +343,7 @@ export default function Home() {
                                     setIsHovered(false);
                                 }}
                             >
-                                <About />
+                                <About background={"bg-white"} text={"text-black"} />
                             </div>
                             <hr className="mx-auto w-[80%]" />
                             <Portfolio />
