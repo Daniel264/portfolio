@@ -111,10 +111,10 @@ const Portfolio: React.FC = () => {
                                         <h2 className="card-title text-3xl ">{work.title}</h2>
                                         <span className="border h-fit rounded-badge px-1 border-[#888888] border-opacity-30 font-light"><i className="fa-brands fa-github pr-2"></i>Public</span>
                                     </div>
-                                    <p className="reveal-text sf-ui pb-5 text-sm leading-loose text-[#909298] md:text-base">{work.description}</p>
+                                    <p className="reveal-text  pb-5 text-sm leading-loose text-[#909298] md:text-base">{work.description}</p>
                                     <p className="text-xl capitalize  md:text-2xl">
                                         {work.languages.map((language) => (
-                                            <span key={language} className="sf-ui w-full  text-lg lg:text-xl mx-2 ml-0 rounded-lg border-2 border-[#282828] p-2 md:mx-4">
+                                            <span key={language} className=" w-full  text-lg lg:text-xl mx-2 ml-0 rounded-lg border-2 border-[#282828] p-2 md:mx-4">
                                                 {language}
                                             </span>
                                         ))}

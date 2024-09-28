@@ -88,11 +88,11 @@ const About = ({ background, text, onMouseEnter, onMouseLeave, paragraph }: Prop
                 <>
                     <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-24 text-center md:pt-0 lg:px-[8rem]">
                         <div className="flex h-10 items-center rounded px-3 pb-10">
-                            <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="text-5xl font-bold md:text-6xl ">
+                            <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="text-5xl font-semibold md:text-7xl ">
                                 About The Creator
                             </h1>
                         </div>
-                        <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="sf-ui pb-8 pt-8 text-xl font-light  md:text-2xl">
+                        <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="sf-ui pb-8 pt-5 text-2xl font-light  md:text-2xl">
                             Fullstack Developer & Mobile Enthusiast
                         </p>
 
@@ -103,7 +103,7 @@ const About = ({ background, text, onMouseEnter, onMouseLeave, paragraph }: Prop
                             </div>
                             <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                                 <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left">
-                                    <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className=" card-card text-sm font-light tracking-wider md:text-xl md:leading-relaxed">
+                                    <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className=" card-card text-lg font-light tracking-wider md:text-xl md:leading-relaxed">
                                        {paragraph}
                                     </p>
                                 </div>
