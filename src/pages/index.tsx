@@ -140,6 +140,12 @@ export default function Home() {
                     {!blinderFinished && <Loader />}
                     <TopNavigation />
                     <div>
+                        <span className="hover-btn">
+                            <svg width="184" height="186" viewBox="0 0 184 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="92" cy="93" rx="92" ry="93" fill="black" />
+                            </svg>
+                        </span>
+
                         <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
                             <div className="max-w-8xl flex w-full text-white md:m-auto">
                                 <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
@@ -152,7 +158,6 @@ export default function Home() {
                                                 <div className="w-full">
                                                     <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
                                                     <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
-                                                        
                                                         <span
                                                             id="big"
                                                             className="font-monasans text-[3.4rem] font-extrabold leading-tight text-[#E4DED7] sm:text-8xl md:tracking-wider
@@ -162,7 +167,73 @@ export default function Home() {
                                                             OLATINSU
                                                         </span>
                                                     </h3>
-                                             
+
+                                                    <p className="pt-10 text-2xl font-light">
+                                                        <span className="font-semibold">I&apos;m a</span> <Typed />
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="pb-8 md:hidden">
+                                        <Menu />
+                                    </div>
+                                    <div className="ml-0 mt-20 space-y-4 md:ml-0 md:mr-44 md:mt-16 md:space-x-5">
+                                        <button className="btn w-full rounded border-none bg-[#212531] text-white shadow-2xl hover:bg-slate-500 md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
+                                            Lets Talk <i className="fa-solid fa-message"></i>
+                                        </button>
+                                        <a href="/assets/daniel-olatinsu.pdf" download="Daniel_Olatinsu.pdf" className="btn w-full rounded border-2 border-[#212531] bg-transparent text-white shadow-2xl hover:bg-slate-500 md:w-44">
+                                            Download CV <i className="fa-solid fa-download"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+
+                        <hr className="mx-auto w-[80%] pb-10" />
+                        <About />
+                        <hr className="mx-auto w-[80%]" />
+                        <Portfolio />
+                        <hr className="mx-auto w-[80%] pb-10" />
+                        <Skills />
+                        <hr className="mx-auto w-[80%]" />
+                        <Contact />
+                        <hr className="mx-auto w-[80%]" />
+                        <Footer />
+                    </div>
+
+                    {!blinderFinished && <Loader />}
+                    <TopNavigation />
+                    <div>
+                        <span className="hover-btn2">
+                            <svg width="184" height="186" viewBox="0 0 184 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="92" cy="93" rx="92" ry="93" fill="black" />
+                            </svg>
+                        </span>
+
+                        <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
+                            <div className="max-w-8xl flex w-full text-white md:m-auto">
+                                <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
+                                    <Menu />
+                                </div>
+                                <div className="ml-0 flex h-full w-full flex-col items-center md:ml-20">
+                                    <div className="flex flex-col sm:flex-row">
+                                        <div className="hero bg-inherit">
+                                            <div className="hero-content flex-col-reverse lg:flex-row-reverse">
+                                                <div className="w-full">
+                                                    <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
+                                                    <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+                                                        <span
+                                                            id="big"
+                                                            className="font-monasans text-[3.4rem] font-extrabold leading-tight text-[#E4DED7] sm:text-8xl md:tracking-wider
+                                                    lg:text-9xl"
+                                                        >
+                                                            DANIEL <br />
+                                                            OLATINSU
+                                                        </span>
+                                                    </h3>
+
                                                     <p className="pt-10 text-2xl font-light">
                                                         <span className="font-semibold">I&apos;m a</span> <Typed />
                                                     </p>
