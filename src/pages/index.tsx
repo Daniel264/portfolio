@@ -266,7 +266,7 @@ export default function Home() {
                             <hr className="mx-auto w-[80%] pb-10" />
                             <Skills />
                             <hr className="mx-auto w-[80%]" />
-                            <Contact />
+                            <Contact text={"text-white"} background={"bg-inherit"} />
                             <hr className="mx-auto w-[80%]" />
                             <Footer />
                         </div>
@@ -364,7 +364,14 @@ export default function Home() {
                             <hr className="mx-auto w-[80%] pb-10" />
                             <Skills />
                             <hr className="mx-auto w-[80%]" />
-                            <Contact />
+                            <Contact
+                                text={"text-black"}
+                                background={"bg-white"}
+                                onMouseEnter={() => setIsHovered(true)}
+                                onMouseLeave={() => {
+                                    setIsHovered(false);
+                                }}
+                            />
                             <hr className="mx-auto w-[80%]" />
                             <div>
                                 <Footer />

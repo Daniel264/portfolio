@@ -4,9 +4,11 @@ import { toast } from "react-toastify";
 interface Props {
     text: string;
     background: string;
+    onMouseEnter?: () => void;
+    onMouseLeave?: () => void;
 }
 
-const Contact = ({ text, background }: Props) => {
+const Contact = ({ text, background, onMouseEnter, onMouseLeave }: Props) => {
     const [loading, setLoading] = useState(true);
     const [formData, setFormData] = useState({
         name: "",
@@ -67,10 +69,10 @@ const Contact = ({ text, background }: Props) => {
                 <div id="contact" className={`contact-page ${text} ${background} px-2 py-20 text-center  md:px-10 lg:py-0`}>
                     <div className="hero flex h-full flex-col items-center justify-center pt-20  md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pb-20 lg:pt-32">
                         <div className="lg:w-1/2 lg:pr-10">
-                            <h1 id="#big" className="mb-10 text-5xl font-bold md:text-7xl ">
+                            <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} id="#big" className="mb-10 text-5xl font-bold md:text-7xl ">
                                 Get In Touch
                             </h1>
-                            <p className="reveal-text sf-ui text-center text-base ">
+                            <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="reveal-text sf-ui text-center text-base ">
                                 Currently, I&apos;m looking for new opportunities. <br />
                                 If you have one, my inbox is always open. <br />
                                 Whether you have a job proposal or question <br />
