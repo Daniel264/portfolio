@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 
-const Contact = () => {
+interface Props {
+    text: string;
+    background: string;
+}
+
+const Contact = ({ text, background }: Props) => {
     const [loading, setLoading] = useState(true);
     const [formData, setFormData] = useState({
         name: "",
@@ -59,8 +64,8 @@ const Contact = () => {
             {loading ? (
                 <p>Loading...</p>
             ) : (
-                <div id="contact" className="contact-page px-2 py-20 text-center md:px-10 lg:py-0 text-black">
-                    <div className="hero flex h-full flex-col items-center justify-center pt-20 text-black md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pb-20 lg:pt-32">
+                <div id="contact" className={`contact-page ${text} ${background} px-2 py-20 text-center  md:px-10 lg:py-0`}>
+                    <div className="hero flex h-full flex-col items-center justify-center pt-20  md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pb-20 lg:pt-32">
                         <div className="lg:w-1/2 lg:pr-10">
                             <h1 id="#big" className="mb-10 text-5xl font-bold md:text-7xl ">
                                 Get In Touch
@@ -81,7 +86,7 @@ const Contact = () => {
                                             <input
                                                 type="text"
                                                 name="name"
-                                                className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-[#7B7E86] placeholder:text-sm"
+                                                className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
                                                 placeholder="Enter your name..."
                                                 value={formData.name}
                                                 onChange={handleChange}
@@ -93,7 +98,7 @@ const Contact = () => {
                                             <input
                                                 type="email"
                                                 name="email"
-                                                className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-[#7B7E86] placeholder:text-sm"
+                                                className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
                                                 placeholder="Enter your email address..."
                                                 value={formData.email}
                                                 onChange={handleChange}
@@ -105,7 +110,7 @@ const Contact = () => {
                                         <label className="label text-[#D1D5DB]">Your Message</label>
                                         <textarea
                                             name="message"
-                                            className="textarea textarea-md w-full max-w-full rounded-none border-x-0 border-b-[1px] border-t-0 border-solid border-[#212531] bg-black bg-transparent placeholder:text-[#7B7E86] placeholder:text-sm"
+                                            className="textarea textarea-md w-full max-w-full rounded-none border-x-0 border-b-[1px] border-t-0 border-solid border-[#212531] bg-black bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
                                             placeholder="Hi! Your services will be needed at our company X. How quickly can you hop on this?"
                                             value={formData.message}
                                             onChange={handleChange}
