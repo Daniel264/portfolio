@@ -1,10 +1,11 @@
 import React from "react";
 import MongoDBIcon from "./sprited"; // Ensure correct path
+import { JavaScriptIcon } from "./Icons";
 // Import other icons as needed
 
 const iconMap: { [key: string]: React.FC } = {
     MongoDB: MongoDBIcon,
-    JS: MongoDBIcon,
+    JS: JavaScriptIcon,
     // Add other icons here
 };
 
