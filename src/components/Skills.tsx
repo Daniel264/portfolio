@@ -7,7 +7,7 @@ const SkillsObjects = [
     {
         Header: "Frontend i work with",
         Description: "I am passionate about crafting intuitive and visually appealing user interfaces. From responsive design to interactive features, I focus on creating seamless, user-friendly experiences that bring designs to life on the web.",
-        Skills: [{ Icon: "TS", Name: "TypeScript" }, { Icon: "JS", Name: "JavaScript(ES6+)" }, { Icon: "ViteTest", Name: "ViteTest" }, { Icon: "React", Name: "React" }, { Icon: "Next", Name: "Next.js" }, { Icon: "GitHub", Name: "Git/GitHub" }, { Icon: "Next", Name: "NextAuth" }],
+    Skills: [{ Icon: "TS", Name: "TypeScript" }, { Icon: "JS", Name: "JavaScript(ES6+)" }, { Icon: "ViteTest", Name: "ViteTest" }, { Icon: "React", Name: "React" }, { Icon: "Next", Name: "Next.js" }, { Icon: "GitHub", Name: "Git/GitHub" }, { Icon: "Next", Name: "NextAuth" }, {Icon: "SASS", Name: "SASS"}, {Icon: "CSS", Name: "CSS"}, {Icon: "HTML", Name: "HTML"}],
     },
     {
         Header: "Backend technologies is use",
@@ -70,9 +70,9 @@ const Skills = () => {
                             </div>
                             <div className="whitespace-normal break-words bg-[#08090A]  px-10 py-12">
                                 <ul className="sf-ui flex h-fit max-w-[470px] flex-wrap  gap-3 text-xs uppercase  leading-relaxed text-[#888889] md:text-sm">
-                                    <li className="flex flex-wrap">
+                                    <li className="flex flex-wrap gap-2">
                                         {item.Skills.map((skill, index) => (
-                                            <span key={index} className="flex  w-fit rounded-badge border-[2px] border-[#888889] border-opacity-10  bg-[#0E0F11] px-2 opacity-100">
+                                            <span key={index} className="flex  w-fit rounded-badge border-[2px] border-[#888889] font-semibold border-opacity-10  bg-[#0E0F11] px-2 py-1 opacity-100 gap-2">
                                                 <SVGIcon type={skill.Icon} />
                                                 {skill.Name}
                                             </span>
