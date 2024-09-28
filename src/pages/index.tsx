@@ -16,6 +16,12 @@ import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
 import PreLoader from "@/components/PreLoader";
 import Loader from "@/components/Loader";
+import LocomotiveScroll from 'locomotive-scroll';
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
