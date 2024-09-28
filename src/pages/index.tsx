@@ -201,7 +201,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="overlay">
+                    <div className="overlay absolute top-0 left-0">
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
                         <div>

@@ -121,6 +121,7 @@
 .overlay {
     background: white;
     color: black;
+    position: absolute;
 }
 
 .my-menu {
