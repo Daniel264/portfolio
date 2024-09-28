@@ -1,6 +1,5 @@
-import React from "react";
-import MongoDBIcon from "./sprited"; // Ensure correct path
-import { CSSIcon, ExpressIcon, GitHubIcon, HtmlIcon, JavaScriptIcon, NextIcon, ReactIcon, SASSIcon, TypeScriptIcon, ViteTestIcon } from "./Icons";
+import React from "react"; // Ensure correct path
+import MongoDBIcon, { CSSIcon, ExpressIcon, GitHubIcon, HtmlIcon, JavaScriptIcon, NextIcon, NodeIcon, ReactIcon, SASSIcon, TypeScriptIcon, ViteTestIcon } from "./Icons";
 // Import other icons as needed
 
 const iconMap: { [key: string]: React.FC } = {
@@ -14,7 +13,8 @@ const iconMap: { [key: string]: React.FC } = {
     Express: ExpressIcon,
     SASS: SASSIcon,
     HTML: HtmlIcon,
-    CSS: CSSIcon, // Add other icons here
+    CSS: CSSIcon,
+    Node: NodeIcon, // Add other icons here
     // Add other icons here
 };
 
