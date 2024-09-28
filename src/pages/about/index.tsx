@@ -16,7 +16,7 @@ const About = () => {
     useEffect(() => {
         const handleMouseMove = () => {
             if (maskRef.current) {
-                const rect = maskRef.current.getBoundingClientRect();  // Get the bounding box of the mask div
+                const rect = maskRef.current.getBoundingClientRect(); // Get the bounding box of the mask div
                 const maskX = x - rect.left - size / 2;
                 const maskY = y - rect.top - size / 2;
 
@@ -24,7 +24,7 @@ const About = () => {
             }
         };
 
-        handleMouseMove(); 
+        handleMouseMove();
 
         window.addEventListener("mousemove", handleMouseMove);
         return () => window.removeEventListener("mousemove", handleMouseMove);
@@ -80,7 +80,7 @@ const About = () => {
                 <>
                     <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-24 text-center md:pt-0 lg:px-[8rem]">
                         <div className="flex h-10 items-center rounded px-3 pb-10">
-                            <h1 className="text-5xl font-bold md:text-6xl ">About The Creator</h1>
+                            <h1 className="text-5xl text-black font-bold md:text-6xl ">About The Creator</h1>
                         </div>
                         <p className="sf-ui pb-8 pt-8 text-xl font-light  md:text-2xl">Fullstack Developer & Mobile Enthusiast</p>
 
@@ -108,7 +108,7 @@ const About = () => {
 
                         {/* Motion Div */}
                         <motion.div
-                        ref={maskRef}
+                            ref={maskRef}
                             animate={{
                                 WebkitMaskPosition: `${maskPosition.maskX}px ${maskPosition.maskY}px`,
                                 WebkitMaskSize: `${size}px`,

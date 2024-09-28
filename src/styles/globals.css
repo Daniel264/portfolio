@@ -122,7 +122,19 @@
     background: white;
     color: black;
     position: absolute;
+    clip-path: circle(100px at var(--x, 50%) var(--y, 50%));
+    transition: clip-path 100ms;
+    pointer-events: none; /* Prevents interference with mouse events */
 }
+
+/* .hover-btn, .hover-btn2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    cursor: pointer;
+} */
 
 .my-menu {
     opacity: 0;

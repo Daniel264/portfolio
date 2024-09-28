@@ -8,7 +8,7 @@ import Portfolio from "./portfolio";
 import Contact from "./contact";
 import gsap from "gsap";
 import SplitType from "split-type";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import About from "./about";
 import Lenis from "@studio-freight/lenis";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -16,6 +16,8 @@ import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
 import PreLoader from "@/components/PreLoader";
 import Loader from "@/components/Loader";
+import { useMousePosition } from "@/utilities/useMousePosition";
+import { motion } from "framer-motion";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
@@ -31,6 +33,69 @@ export default function Home() {
 
         return () => clearTimeout(timer); // Cleanup the timer on component unmount
     }, []);
+
+    // useEffect(() => {
+    //     const overlay = document.querySelector(".overlay");
+
+    //     // Throttle function to reduce how often the event is triggered
+    //     const throttle = (func: Function, limit: number) => {
+    //         let inThrottle: boolean;
+    //         return function (this: any, ...args: any) {
+    //             if (!inThrottle) {
+    //                 func.apply(this, args);
+    //                 inThrottle = true;
+    //                 setTimeout(() => (inThrottle = false), limit);
+    //             }
+    //         };
+    //     };
+
+    //     const handleMouseMove = (e: MouseEvent) => {
+    //         const { clientX, clientY } = e;
+
+    //         // Calculate x and y percentages relative to viewport size
+    //         const x = Math.round((clientX / window.innerWidth) * 100);
+    //         const y = Math.round((clientY / window.innerHeight) * 100);
+
+    //         gsap.to(overlay, {
+    //             "--x": `${x}%`,
+    //             "--y": `${y}%`,
+    //             duration: 0.3, // Lower duration to reduce "bouncing" feeling
+    //             ease: "linear", // Use linear easing to eliminate bounce
+    //         });
+    //     };
+
+    //     // Throttle the mousemove event to trigger every 100ms
+    //     const throttledMouseMove = throttle(handleMouseMove, 100);
+
+    //     window.addEventListener("mousemove", throttledMouseMove);
+
+    //     return () => {
+    //         window.removeEventListener("mousemove", throttledMouseMove);
+    //     };
+    // }, []);
+    const aboutRef = useRef(null);
+    const maskRef = useRef<HTMLDivElement>(null);
+    const [isHovered, setIsHovered] = useState(false);
+    const { x, y } = useMousePosition();
+    const [maskPosition, setMaskPosition] = useState({ maskX: 0, maskY: 0 });
+    const size = isHovered ? 400 : 40;
+
+    useEffect(() => {
+        const handleMouseMove = () => {
+            if (maskRef.current) {
+                const rect = maskRef.current.getBoundingClientRect(); // Get the bounding box of the mask div
+                const maskX = x - rect.left - size / 2;
+                const maskY = y - rect.top - size / 2;
+
+                setMaskPosition({ maskX, maskY });
+            }
+        };
+
+        handleMouseMove();
+
+        window.addEventListener("mousemove", handleMouseMove);
+        return () => window.removeEventListener("mousemove", handleMouseMove);
+    }, [x, y, size]);
 
     useEffect(() => {
         if (!loading && typeof window !== "undefined") {
@@ -141,11 +206,11 @@ export default function Home() {
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
                         <div>
-                            <span className="hover-btn">
+                            {/* <span className="hover-btn">
                                 <svg width="184" height="186" viewBox="0 0 184 186" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <ellipse cx="92" cy="93" rx="92" ry="93" fill="black" />
                                 </svg>
-                            </span>
+                            </span> */}
                             <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                                     <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
@@ -201,15 +266,26 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="overlay absolute top-0 left-0">
+                    <motion.div
+                        ref={maskRef}
+                        animate={{
+                            WebkitMaskPosition: `${maskPosition.maskX}px ${maskPosition.maskY}px`,
+                            WebkitMaskSize: `${size}px`,
+                        }}
+                        transition={{
+                            type: "tween",
+                            ease: "backOut",
+                        }}
+                        className="mask absolute left-0 top-0"
+                    >
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
                         <div>
-                            <span className="hover-btn2">
+                            {/* <span className="hover-btn2">
                                 <svg width="184" height="186" viewBox="0 0 184 186" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <ellipse cx="92" cy="93" rx="92" ry="93" fill="black" />
                                 </svg>
-                            </span>
+                            </span> */}
                             <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                                     <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
@@ -220,7 +296,15 @@ export default function Home() {
                                             <div className="hero bg-inherit">
                                                 <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                                                     <div className="w-full">
-                                                        <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p>
+                                                        <p
+                                                            onMouseEnter={() => setIsHovered(true)}
+                                                            onMouseLeave={() => {
+                                                                setIsHovered(false);
+                                                            }}
+                                                            className="text-lg text-[rgba(174,174,174,1)]"
+                                                        >
+                                                            Hello, my name is{" "}
+                                                        </p>
                                                         <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                                             <span
                                                                 id="big"
@@ -231,7 +315,7 @@ export default function Home() {
                                                                 OLATINSU
                                                             </span>
                                                         </h3>
-                                                        <p className="pt-10 text-2xl text-black font-light">
+                                                        <p className="pt-10 text-2xl font-light text-black">
                                                             <span className="font-semibold">I&apos;m a</span> <Typed />
                                                         </p>
                                                     </div>
@@ -253,7 +337,14 @@ export default function Home() {
                                 </div>
                             </main>
                             <hr className="mx-auto w-[80%] pb-10" />
-                            <About />
+                            <div
+                                onMouseEnter={() => setIsHovered(true)}
+                                onMouseLeave={() => {
+                                    setIsHovered(false);
+                                }}
+                            >
+                                <About />
+                            </div>
                             <hr className="mx-auto w-[80%]" />
                             <Portfolio />
                             <hr className="mx-auto w-[80%] pb-10" />
@@ -261,9 +352,11 @@ export default function Home() {
                             <hr className="mx-auto w-[80%]" />
                             <Contact />
                             <hr className="mx-auto w-[80%]" />
-                            <Footer />
+                            <div>
+                                <Footer />
+                            </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </>
             )}
         </div>
