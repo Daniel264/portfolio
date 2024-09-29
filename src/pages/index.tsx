@@ -34,6 +34,16 @@ export default function Home() {
         return () => clearTimeout(timer); // Cleanup the timer on component unmount
     }, []);
 
+    const [maskActive, setMaskActive] = useState(false);
+
+    const handleMaskEnter = () => {
+        setMaskActive(true);
+    }
+
+    const handleMaskLeave = () => {
+        setMaskActive(false);
+    }
+
     // useEffect(() => {
     //     const overlay = document.querySelector(".overlay");
 

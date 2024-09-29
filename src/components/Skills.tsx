@@ -53,11 +53,11 @@ const Skills = () => {
                     <p className="pb-5">LANGUAGES I USE - DEV ARSENAL</p>
                 </div>
             </Reveal>
-            <section className="md:grid-cols- grid w-full grid-cols-1 justify-center gap-10 lg:w-1/2 z-10">
+            <section className="md:grid-cols- relative z-10 grid w-full grid-cols-1 justify-center gap-10 lg:w-1/2">
                 {SkillsObjects.map((item, index) => (
                     <Reveal key={index}>
-                        <article className="col-start-1 z-10 rounded-badge  border-[1px] border-[#888889] border-opacity-10 shadow-2xl">
-                            <div className=" bg-[#0E0F11] px-10 z-10 py-12">
+                        <article className="z-10 col-start-1 rounded-badge  border-[1px] border-[#888889] border-opacity-10 shadow-2xl">
+                            <div className=" z-10 bg-[#0E0F11] px-10 py-12">
                                 <h2 className="text-xl font-semibold">{item.Header}</h2>
                                 <p className="text-[#888889]">{item.Description}</p>
                             </div>
