@@ -262,8 +262,8 @@ export default function Home() {
                                                                 className="font-monasans text-[3.4rem] font-extrabold leading-tight text-black sm:text-8xl md:tracking-wider
                                                         lg:text-9xl"
                                                             >
-                                                                DANIEL <br />
-                                                                OLATINSU
+                                                                ダニエル <br />
+                                                                オラチンス
                                                             </span>
                                                         </h3>
                                                         <p className="pt-10 text-2xl font-light text-black">
