@@ -148,6 +148,7 @@
     mask-repeat: no-repeat;
     mask-size: cover;
     color: black;
+    cursor: default;
 }
 
 :root {
