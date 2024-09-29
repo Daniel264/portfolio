@@ -4,36 +4,6 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-// const useMouseMoveAnimation = () => {
-//     const x = useMotionValue(0);
-//     const y = useMotionValue(0);
-
-//     const mouseXSpring = useSpring(x);
-//     const mouseYSpring = useSpring(y);
-
-//     const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["14.5deg", "-14.5deg"]);
-//     const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-14.5deg", "14.5deg"]);
-
-//     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-//         const rect = e.currentTarget.getBoundingClientRect();
-//         const width = rect.width;
-//         const height = rect.height;
-//         const mouseX = e.clientX - rect.left;
-//         const mouseY = e.clientY - rect.top;
-//         const xPct = mouseX / width - 0.5;
-//         const yPct = mouseY / height - 0.5;
-//         x.set(xPct);
-//         y.set(yPct);
-//     };
-
-//     const handleMouseLeave = () => {
-//         x.set(0);
-//         y.set(0);
-//     };
-
-//     return { rotateX, rotateY, handleMouseMove, handleMouseLeave };
-// };
-
 const Portfolio: React.FC = () => {
     const works = [
         {
@@ -83,20 +53,14 @@ const Portfolio: React.FC = () => {
     ];
 
     return (
-        <div id="portfolio" className="w-full pt-14 lg:px-32 text-white">
+        <div id="portfolio" className="w-full pt-14 text-white lg:px-32">
             <h1 className="text-center text-6xl font-bold">Few of my Projects</h1>
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-2">
                     {works.map((work, index) => {
-                        // eslint-disable-next-line react-hooks/rules-of-hooks
-                        // const { rotateX, rotateY, handleMouseMove, handleMouseLeave } = useMouseMoveAnimation();
                         return (
-                            <div key={index} 
-                            // style={{ rotateX, rotateY, transformStyle: "preserve-3d" }} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} 
-                            className="card my-4 w-full rounded bg-[#181818] shadow-xl">
-                                <figure 
-                                // style={{ transformStyle: "preserve-3d", transform: "translateZ(75px)" }}
-                                >
+                            <div key={index} className="card my-4 w-full rounded bg-[#181818] shadow-xl">
+                                <figure>
                                     <Reveal>
                                         <Image
                                             src={work.imageUrl}
@@ -113,12 +77,14 @@ const Portfolio: React.FC = () => {
                                 <div className="card-body relative">
                                     <div className="flex justify-between">
                                         <h2 className="card-title text-3xl ">{work.title}</h2>
-                                        <span className="border h-fit rounded-badge px-1 border-[#888888] border-opacity-30 font-light"><i className="fa-brands fa-github pr-2"></i>Public</span>
+                                        <span className="h-fit rounded-badge border border-[#888888] border-opacity-30 px-1 font-light">
+                                            <i className="fa-brands fa-github pr-2"></i>Public
+                                        </span>
                                     </div>
                                     <p className="reveal-text  pb-5 text-sm leading-loose text-[#909298] md:text-base">{work.description}</p>
                                     <p className="text-xl capitalize  md:text-2xl">
                                         {work.languages.map((language) => (
-                                            <span key={language} className=" w-full  text-lg lg:text-xl mx-2 ml-0 rounded-lg border-2 border-[#282828] p-2 md:mx-4">
+                                            <span key={language} className=" mx-2  ml-0 w-full rounded-lg border-2 border-[#282828] p-2 text-lg md:mx-4 lg:text-xl">
                                                 {language}
                                             </span>
                                         ))}
