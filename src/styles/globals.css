@@ -148,21 +148,6 @@
     mask-repeat: no-repeat;
     mask-size: cover;
     color: black;
-    z-index: 100;
-
-
-}
-
-.special-mask {
-    position: absolute;
-    mask-image: url("/assets/images/mask.svg");
-    background: #f4faff;
-    mask-position: 50%;
-    mask-repeat: no-repeat;
-    mask-size: cover;
-    color: black;
-    z-index: 100;
-    pointer-events: none;
 }
 
 :root {

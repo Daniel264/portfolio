@@ -21,11 +21,7 @@ import { motion } from "framer-motion";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
-interface Special {
-    isSpecialComponent: boolean;
-}
-
-export default function Home({isSpecialComponent}: Special) {
+export default function Home() {
     const [loading, setLoading] = useState(true);
     const [blinderFinished, setBlinderFinished] = useState(false);
 
@@ -37,7 +33,6 @@ export default function Home({isSpecialComponent}: Special) {
 
         return () => clearTimeout(timer); // Cleanup the timer on component unmount
     }, []);
-
 
     const aboutRef = useRef(null);
     const maskRef = useRef<HTMLDivElement>(null);
@@ -172,11 +167,6 @@ export default function Home({isSpecialComponent}: Special) {
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
                         <div>
-                            {/* <span className="hover-btn">
-                                <svg width="184" height="186" viewBox="0 0 184 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <ellipse cx="92" cy="93" rx="92" ry="93" fill="black" />
-                                </svg>
-                            </span> */}
                             <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                                     <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
@@ -187,7 +177,7 @@ export default function Home({isSpecialComponent}: Special) {
                                             <div className="hero bg-inherit">
                                                 <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                                                     <div className="w-full">
-                                                        {/* <p className="text-lg text-[rgba(174,174,174,1)]">Hello, my name is </p> */}
+                                                       
                                                         <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                                             <span
                                                                 id="big"
@@ -248,7 +238,7 @@ export default function Home({isSpecialComponent}: Special) {
                             type: "tween",
                             ease: "backOut",
                         }}
-                        className="mask left-0 top-0"
+                        className="mask absolute left-0 top-0"
                     >
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
@@ -326,9 +316,7 @@ export default function Home({isSpecialComponent}: Special) {
                                 />
                             </div>
                             <hr className="mx-auto w-[80%]" />
-                            <Portfolio
-                                
-                            />
+                            <Portfolio />
                             <hr className="mx-auto w-[80%] pb-10" />
                             <Skills />
                             <hr className="mx-auto w-[80%]" />
