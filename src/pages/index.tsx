@@ -21,7 +21,11 @@ import { motion } from "framer-motion";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
-export default function Home() {
+interface Special {
+    isSpecialComponent: boolean;
+}
+
+export default function Home({isSpecialComponent}: Special) {
     const [loading, setLoading] = useState(true);
     const [blinderFinished, setBlinderFinished] = useState(false);
 
@@ -34,45 +38,7 @@ export default function Home() {
         return () => clearTimeout(timer); // Cleanup the timer on component unmount
     }, []);
 
-    // useEffect(() => {
-    //     const overlay = document.querySelector(".overlay");
 
-    //     // Throttle function to reduce how often the event is triggered
-    //     const throttle = (func: Function, limit: number) => {
-    //         let inThrottle: boolean;
-    //         return function (this: any, ...args: any) {
-    //             if (!inThrottle) {
-    //                 func.apply(this, args);
-    //                 inThrottle = true;
-    //                 setTimeout(() => (inThrottle = false), limit);
-    //             }
-    //         };
-    //     };
-
-    //     const handleMouseMove = (e: MouseEvent) => {
-    //         const { clientX, clientY } = e;
-
-    //         // Calculate x and y percentages relative to viewport size
-    //         const x = Math.round((clientX / window.innerWidth) * 100);
-    //         const y = Math.round((clientY / window.innerHeight) * 100);
-
-    //         gsap.to(overlay, {
-    //             "--x": `${x}%`,
-    //             "--y": `${y}%`,
-    //             duration: 0.3, // Lower duration to reduce "bouncing" feeling
-    //             ease: "linear", // Use linear easing to eliminate bounce
-    //         });
-    //     };
-
-    //     // Throttle the mousemove event to trigger every 100ms
-    //     const throttledMouseMove = throttle(handleMouseMove, 100);
-
-    //     window.addEventListener("mousemove", throttledMouseMove);
-
-    //     return () => {
-    //         window.removeEventListener("mousemove", throttledMouseMove);
-    //     };
-    // }, []);
     const aboutRef = useRef(null);
     const maskRef = useRef<HTMLDivElement>(null);
     const [isHovered, setIsHovered] = useState(false);
@@ -361,10 +327,7 @@ export default function Home() {
                             </div>
                             <hr className="mx-auto w-[80%]" />
                             <Portfolio
-                                onMouseEnter={() => setIsHovered(true)}
-                                onMouseLeave={() => {
-                                    setIsHovered(false);
-                                }}
+                                
                             />
                             <hr className="mx-auto w-[80%] pb-10" />
                             <Skills />
