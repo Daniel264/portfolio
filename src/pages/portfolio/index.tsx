@@ -4,6 +4,11 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
+interface Props {
+    onMouseEnter?: () => void;
+    onMouseLeave?: () => void;
+}
+
 const useMouseMoveAnimation = () => {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
@@ -34,7 +39,7 @@ const useMouseMoveAnimation = () => {
     return { rotateX, rotateY, handleMouseMove, handleMouseLeave };
 };
 
-const Portfolio: React.FC = () => {
+const Portfolio: React.FC<Props> = ({ onMouseEnter, onMouseLeave }: Props) => {
     const works = [
         {
             title: "Foodland",
@@ -83,7 +88,7 @@ const Portfolio: React.FC = () => {
     ];
 
     return (
-        <div id="portfolio" className="w-full pt-14 lg:px-32 text-white">
+        <div id="portfolio" className="w-full pt-14 text-white lg:px-32">
             <h1 className="text-center text-6xl font-bold">Few of my Projects</h1>
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-2">
@@ -108,13 +113,17 @@ const Portfolio: React.FC = () => {
                                 </figure>
                                 <div className="card-body relative">
                                     <div className="flex justify-between">
-                                        <h2 className="card-title text-3xl ">{work.title}</h2>
-                                        <span className="border h-fit rounded-badge px-1 border-[#888888] border-opacity-30 font-light"><i className="fa-brands fa-github pr-2"></i>Public</span>
+                                        <h2 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="card-title text-3xl ">
+                                            {work.title}
+                                        </h2>
+                                        <span className="h-fit rounded-badge border border-[#888888] border-opacity-30 px-1 font-light">
+                                            <i className="fa-brands fa-github pr-2"></i>Public
+                                        </span>
                                     </div>
                                     <p className="reveal-text  pb-5 text-sm leading-loose text-[#909298] md:text-base">{work.description}</p>
                                     <p className="text-xl capitalize  md:text-2xl">
                                         {work.languages.map((language) => (
-                                            <span key={language} className=" w-full  text-lg lg:text-xl mx-2 ml-0 rounded-lg border-2 border-[#282828] p-2 md:mx-4">
+                                            <span key={language} className=" mx-2  ml-0 w-full rounded-lg border-2 border-[#282828] p-2 text-lg md:mx-4 lg:text-xl">
                                                 {language}
                                             </span>
                                         ))}

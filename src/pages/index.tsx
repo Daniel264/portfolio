@@ -34,16 +34,6 @@ export default function Home() {
         return () => clearTimeout(timer); // Cleanup the timer on component unmount
     }, []);
 
-    const [maskActive, setMaskActive] = useState(false);
-
-    const handleMaskEnter = () => {
-        setMaskActive(true);
-    }
-
-    const handleMaskLeave = () => {
-        setMaskActive(false);
-    }
-
     // useEffect(() => {
     //     const overlay = document.querySelector(".overlay");
 
@@ -292,7 +282,7 @@ export default function Home() {
                             type: "tween",
                             ease: "backOut",
                         }}
-                        className="mask absolute left-0 top-0"
+                        className="mask left-0 top-0"
                     >
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
@@ -370,7 +360,12 @@ export default function Home() {
                                 />
                             </div>
                             <hr className="mx-auto w-[80%]" />
-                            <Portfolio />
+                            <Portfolio
+                                onMouseEnter={() => setIsHovered(true)}
+                                onMouseLeave={() => {
+                                    setIsHovered(false);
+                                }}
+                            />
                             <hr className="mx-auto w-[80%] pb-10" />
                             <Skills />
                             <hr className="mx-auto w-[80%]" />
