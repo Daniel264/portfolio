@@ -177,7 +177,6 @@ export default function Home() {
                                             <div className="hero bg-inherit">
                                                 <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                                                     <div className="w-full">
-                                                       
                                                         <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                                             <span
                                                                 id="big"
@@ -243,11 +242,6 @@ export default function Home() {
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
                         <div>
-                            {/* <span className="hover-btn2">
-                                <svg width="184" height="186" viewBox="0 0 184 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <ellipse cx="92" cy="93" rx="92" ry="93" fill="black" />
-                                </svg>
-                            </span> */}
                             <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                                     <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
@@ -258,15 +252,6 @@ export default function Home() {
                                             <div className="hero bg-inherit">
                                                 <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                                                     <div className="w-full">
-                                                        {/* <p
-                                                            onMouseEnter={() => setIsHovered(true)}
-                                                            onMouseLeave={() => {
-                                                                setIsHovered(false);
-                                                            }}
-                                                            className="text-lg text-[rgba(174,174,174,1)]"
-                                                        >
-                                                            Hello, my name is{" "}
-                                                        </p> */}
                                                         <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                                             <span
                                                                 onMouseEnter={() => setIsHovered(true)}
