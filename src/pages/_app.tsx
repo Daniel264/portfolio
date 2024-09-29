@@ -63,7 +63,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
 
             <QueryClientProvider client={queryClient}>
-                <main className={syne.className}>
+                <main className={GeistMono.className}>
                     <Component {...pageProps} />
                 </main>
 

@@ -208,7 +208,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </main>
-                            <hr className="mx-auto w-[80%] pb-10" />
+                            {/* <hr className="mx-auto w-[80%] pb-10" /> */}
                             <About
                                 background={"bg-inherit"}
                                 text={"text-white"}
@@ -287,7 +287,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </main>
-                            <hr className="mx-auto w-[80%] pb-10" />
+                            {/* <hr className="mx-auto w-[80%] pb-10" /> */}
                             <div>
                                 <About
                                     background={"bg-white"}
