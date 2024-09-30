@@ -62,79 +62,83 @@ const Contact = ({ text, background, onMouseEnter, onMouseLeave }: Props) => {
     }, []);
 
     return (
-        <>
+        <div className="h-[700px] relative "style={{
+            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+        }}>
             {loading ? (
                 <p>Loading...</p>
             ) : (
-                <div id="contact" className={`contact-page ${text} ${background} min-h-screen px-2 py-20 text-center  md:px-10 lg:py-0`}>
-                    <div className="hero flex h-full flex-col items-center justify-center pt-20  md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pb-20 lg:pt-32">
-                        <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="lg:w-1/2 lg:pr-10">
-                            <h1 id="#big" className="mb-3 text-7xl font-bold md:text-9xl formula_condensed">
-                                Get In Touch
-                            </h1>
-                            <p className="reveal-text  text-center text-base ">
-                                Currently, I&apos;m looking for new opportunities. <br />
-                                If you have one, my inbox is always open. <br />
-                                Whether you have a job proposal or question <br />
-                                or you just want to say hi, I&apos;ll definitely get back to you.
-                            </p>
-                        </div>
-                        <div className="hero-content w-full flex-col lg:w-1/2 lg:flex-row">
-                            <div className="card max-h-fit w-full shrink-0 bg-transparent shadow-2xl md:max-w-2xl">
-                                <form onSubmit={handleSubmit} className=" card-body">
-                                    <div className="space-y-2 lg:flex lg:space-x-5 lg:space-y-0">
-                                        <div className="form-control w-full text-sm ">
-                                            <label className="label text-[#D1D5DB]">Your Name</label>
-                                            <input
-                                                type="text"
-                                                name="name"
-                                                className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
-                                                placeholder="Enter your name..."
-                                                value={formData.name}
+                <div id="contact" className={`contact-page ${text} ${background}  px-2 relative h-[calc(100vh+700px)] -top-[100vh]  py-20 text-center   md:px-10 lg:py-0`}>
+                    <div className="hero h-[700px] sticky top-[calc(100vh-700px)]  flex flex-col items-center justify-center pt-44   md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pb-20 lg:pt-32">
+                        
+                            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="lg:w-1/2 lg:pr-10">
+                                <h1 id="#big" className="mb-3 text-7xl font-bold md:text-9xl formula_condensed">
+                                    Get In Touch
+                                </h1>
+                                <p className="reveal-text  text-center text-base ">
+                                    Currently, I&apos;m looking for new opportunities. <br />
+                                    If you have one, my inbox is always open. <br />
+                                    Whether you have a job proposal or question <br />
+                                    or you just want to say hi, I&apos;ll definitely get back to you.
+                                </p>
+                            </div>
+                            <div className="hero-content w-full flex-col lg:w-1/2 lg:flex-row">
+                                <div className="card max-h-fit w-full shrink-0 bg-transparent shadow-2xl md:max-w-2xl">
+                                    <form onSubmit={handleSubmit} className=" card-body">
+                                        <div className="space-y-2 lg:flex lg:space-x-5 lg:space-y-0">
+                                            <div className="form-control w-full text-sm ">
+                                                <label className="label text-[#D1D5DB]">Your Name</label>
+                                                <input
+                                                    type="text"
+                                                    name="name"
+                                                    className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
+                                                    placeholder="Enter your name..."
+                                                    value={formData.name}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
+                                            </div>
+                                            <div className="form-control w-full text-sm">
+                                                <label className="label text-[#D1D5DB]">Email Address</label>
+                                                <input
+                                                    type="email"
+                                                    name="email"
+                                                    className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
+                                                    placeholder="Enter your email address..."
+                                                    value={formData.email}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="text-sm">
+                                            <label className="label text-[#D1D5DB]">Your Message</label>
+                                            <textarea
+                                                name="message"
+                                                className="textarea textarea-md w-full max-w-full rounded-none border-x-0 border-b-[1px] border-t-0 border-solid border-[#212531] bg-black bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
+                                                placeholder="Hi! Your services will be needed at our company X. How quickly can you hop on this?"
+                                                value={formData.message}
                                                 onChange={handleChange}
                                                 required
-                                            />
+                                            ></textarea>
                                         </div>
-                                        <div className="form-control w-full text-sm">
-                                            <label className="label text-[#D1D5DB]">Email Address</label>
-                                            <input
-                                                type="email"
-                                                name="email"
-                                                className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
-                                                placeholder="Enter your email address..."
-                                                value={formData.email}
-                                                onChange={handleChange}
-                                                required
-                                            />
+                                        <div className="form-control mt-6">
+                                            <button type="submit" className="btn rounded-3xl border-none bg-[#212531] text-white">
+                                                Submit
+                                                <svg width="72" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" className="bow-arrow">
+                                                    <path fill="none" stroke="#FFFFFF" strokeWidth="2" strokeMiterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path>
+                                                </svg>
+                                            </button>
                                         </div>
-                                    </div>
-                                    <div className="text-sm">
-                                        <label className="label text-[#D1D5DB]">Your Message</label>
-                                        <textarea
-                                            name="message"
-                                            className="textarea textarea-md w-full max-w-full rounded-none border-x-0 border-b-[1px] border-t-0 border-solid border-[#212531] bg-black bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
-                                            placeholder="Hi! Your services will be needed at our company X. How quickly can you hop on this?"
-                                            value={formData.message}
-                                            onChange={handleChange}
-                                            required
-                                        ></textarea>
-                                    </div>
-                                    <div className="form-control mt-6">
-                                        <button type="submit" className="btn rounded-3xl border-none bg-[#212531] text-white">
-                                            Submit
-                                            <svg width="72" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" className="bow-arrow">
-                                                <path fill="none" stroke="#FFFFFF" strokeWidth="2" strokeMiterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                
             )}
             {error && <p>{error}</p>}
-        </>
+        </div>
     );
 };
 
