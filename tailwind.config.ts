@@ -7,10 +7,12 @@ const config: Config = {
             colors: {
                 // Add color schemes
             },
+            transform: {
+                preserve3d: "preserve-3d",
+            },
             fontFamily: {
                 lato: ["Lato", "sans-serif"],
                 poppins: ["Poppins", "sans-serif"], // Added Poppins font
-               
             },
         },
     },
