@@ -54,7 +54,7 @@ const Portfolio: React.FC = () => {
 
     return (
         <div id="portfolio" className="w-full pt-14 text-white lg:px-32">
-            <h1 className="text-center text-7xl formula_condensed font-bold">Few of my Projects</h1>
+            <h1 className="text-center text-7xl formula_condensed uppercase font-bold">Few of my Projects</h1>
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-2">
                     {works.map((work, index) => {
