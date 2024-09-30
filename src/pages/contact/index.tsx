@@ -72,7 +72,7 @@ const Contact = ({ text, background, onMouseEnter, onMouseLeave }: Props) => {
                             <h1 id="#big" className="mb-10 text-5xl font-bold md:text-7xl ">
                                 Get In Touch
                             </h1>
-                            <p className="reveal-text sf-ui text-center text-base ">
+                            <p className="reveal-text  text-center text-base ">
                                 Currently, I&apos;m looking for new opportunities. <br />
                                 If you have one, my inbox is always open. <br />
                                 Whether you have a job proposal or question <br />
@@ -81,7 +81,7 @@ const Contact = ({ text, background, onMouseEnter, onMouseLeave }: Props) => {
                         </div>
                         <div className="hero-content w-full flex-col lg:w-1/2 lg:flex-row">
                             <div className="card max-h-fit w-full shrink-0 bg-transparent shadow-2xl md:max-w-2xl">
-                                <form onSubmit={handleSubmit} className="sf-ui card-body">
+                                <form onSubmit={handleSubmit} className=" card-body">
                                     <div className="space-y-2 lg:flex lg:space-x-5 lg:space-y-0">
                                         <div className="form-control w-full text-sm ">
                                             <label className="label text-[#D1D5DB]">Your Name</label>

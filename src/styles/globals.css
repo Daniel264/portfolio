@@ -20,6 +20,13 @@
 }
 
 @font-face {
+    font-family: "Formula Condensed";
+    src: url("/assets/fonts/FormulaCondensed-Bold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Mona Sans";
     src: url("/assets/fonts/MonaSans-ExtraBold.woff2") format("woff2");
     font-weight: 900;
@@ -42,6 +49,11 @@
     src: url("/assets/fonts/SFUIText-Bold.ttf") format("truetype");
     font-weight: 800;
     font-style: normal;
+}
+
+.formula_condensed {
+    font-family: "Formula Condensed", sans-serif;
+
 }
 .sf-uibold {
     font-family: "SF UI", sans-serif !important;

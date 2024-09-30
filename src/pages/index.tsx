@@ -18,6 +18,7 @@ import PreLoader from "@/components/PreLoader";
 import Loader from "@/components/Loader";
 import { useMousePosition } from "@/utilities/useMousePosition";
 import { motion } from "framer-motion";
+import React from "react";
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
@@ -180,7 +181,7 @@ export default function Home() {
                                                         <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                                             <span
                                                                 id="big"
-                                                                className="font-monasans text-[3.4rem] font-extrabold leading-tight text-[#E4DED7] sm:text-8xl md:tracking-wider
+                                                                className="formula_condensed text-[3.4rem] font-extrabold leading-tight text-[#E4DED7] sm:text-8xl md:tracking-wider
                                                         lg:text-9xl"
                                                             >
                                                                 DANIEL <br />
@@ -259,7 +260,7 @@ export default function Home() {
                                                                     setIsHovered(false);
                                                                 }}
                                                                 id="big"
-                                                                className="font-monasans text-[3.4rem] font-extrabold leading-tight text-black sm:text-8xl md:tracking-wider
+                                                                className="formula_condensed text-[3.4rem] font-extrabold leading-tight text-black sm:text-8xl md:tracking-wider
                                                         lg:text-9xl"
                                                             >
                                                                 ダニエル <br />
