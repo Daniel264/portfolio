@@ -88,7 +88,7 @@ const About = ({ background, text, onMouseEnter, onMouseLeave, paragraph }: Prop
                 <>
                     <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-24 text-center md:pt-0 lg:px-[8rem]">
                         <div className="flex h-10 items-center rounded px-3 pb-10 w-full">
-                            <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className=" font-semibold text-7xl formula_condensed opacity-50 text-left uppercase ml-24">
+                            <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className=" font-semibold text-7xl formula_condensed text-left uppercase ml-24">
                                 About The Creator
                             </h1>
                         </div>

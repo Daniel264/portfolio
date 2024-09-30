@@ -66,7 +66,7 @@ const Contact = ({ text, background, onMouseEnter, onMouseLeave }: Props) => {
             {loading ? (
                 <p>Loading...</p>
             ) : (
-                <div id="contact" className={`contact-page ${text} ${background} px-2 py-20 text-center  md:px-10 lg:py-0`}>
+                <div id="contact" className={`contact-page ${text} ${background} min-h-screen px-2 py-20 text-center  md:px-10 lg:py-0`}>
                     <div className="hero flex h-full flex-col items-center justify-center pt-20  md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pb-20 lg:pt-32">
                         <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="lg:w-1/2 lg:pr-10">
                             <h1 id="#big" className="mb-3 text-7xl font-bold md:text-9xl formula_condensed">
