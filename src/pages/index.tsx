@@ -168,7 +168,7 @@ export default function Home() {
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
                         <div>
-                            <main className="flex pb-16 md:pb-0 min-h-[100vh] flex-col items-center p-5 pt-28">
+                            <main className="flex pb-16 md:pb-5 min-h-[100vh] flex-col items-center p-5 pt-28">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                                     <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
                                         <Menu />
