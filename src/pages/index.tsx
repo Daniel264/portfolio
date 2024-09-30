@@ -181,8 +181,8 @@ export default function Home() {
                                                         <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                                             <span
                                                                 id="big"
-                                                                className="formula_condensed text-[3.4rem] font-extrabold leading-tight  text-[#E4DED7] sm:text-9xl md:tracking-wider
-                                                        lg:text-9xl"
+                                                                className="formula_condensed text-[3.4rem] font-extrabold   text-[#E4DED7] sm:text-[12rem] md:tracking-wider
+                                                        "
                                                             >
                                                                 DANIEL <br />
                                                                 OLATINSU
@@ -211,8 +211,8 @@ export default function Home() {
                             </main>
                             {/* <hr className="mx-auto w-[80%] pb-10" /> */}
                             <About
-                                background={"bg-inherit"}
-                                text={"text-white"}
+                                background={"bg-white"}
+                                text={"text-black"}
                                 paragraph=" I’m a full-stack developer with a deep passion for mobile technology, driven by a love for continuous learning and personal growth. My expertise spans both front-end and back-end development, where I enjoy creating innovative and impactful solutions that solve
                                         real-world problems. There's so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
                                        "
@@ -260,8 +260,7 @@ export default function Home() {
                                                                     setIsHovered(false);
                                                                 }}
                                                                 id="big"
-                                                                className="formula_condensed text-[3.4rem] font-extrabold leading-tight text-[#000] sm:text-9xl
-                                                        lg:text-9xl"
+                                                                className="formula_condensed text-[3.4rem] sm:text-[8.7rem] font-extrabold   text-[#000] md:text-[12rem] md:tracking-wider"
                                                             >
                                                                 ダニエル <br />
                                                                 オラチンス
@@ -291,8 +290,8 @@ export default function Home() {
                             {/* <hr className="mx-auto w-[80%] pb-10" /> */}
                             <div>
                                 <About
-                                    background={"bg-white"}
-                                    text={"text-black"}
+                                    background={"bg-black"}
+                                    text={"text-white"}
                                     paragraph="I am a passionate coder with nearly four years of experience, specializing in creating innovative solutions that make a difference. As a dedicated 300-level student at Mountain Top University, I strive for academic excellence while honing my skills. I enjoy
                                         playing chess in my spare time, as it sharpens my strategic thinking. A proud Real Madrid supporter, I embody teamwork and dedication both on and off the field."
                                     onMouseEnter={() => setIsHovered(true)}

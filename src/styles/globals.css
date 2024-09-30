@@ -10,15 +10,12 @@
     box-sizing: border-box;
 }
 
-
 @font-face {
     font-family: "Formula Condensed";
-    src: url("/assets/fonts/FormulaCondensed-Bold.woff") format("woff");
+    src: url("/assets/fonts/PPFormula-CondensedBlack.otf");
     font-weight: 800;
     font-style: normal;
 }
-
-
 
 .formula_condensed {
     font-family: "Formula Condensed", sans-serif;
@@ -51,9 +48,6 @@
     /* =========================== */
 }
 
-.font-scale {
-    transform: scaleY(1.25);
-}
 
 .char {
     transform: translateY(115px);
