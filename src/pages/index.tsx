@@ -168,7 +168,7 @@ export default function Home() {
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
                         <div>
-                            <main className="flex min-h-[100vh] flex-col items-center p-5 pt-28">
+                            <main className="flex pb-16 md:pb-0 min-h-[100vh] flex-col items-center p-5 pt-28">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                                     <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
                                         <Menu />
@@ -212,7 +212,7 @@ export default function Home() {
                             {/* <hr className="mx-auto w-[80%] pb-10" /> */}
                             <About
                                 background={"bg-white"}
-                                text={"text-black"}
+                                text={"text-[#000]"}
                                 paragraph=" I’m a full-stack developer with a deep passion for mobile technology, driven by a love for continuous learning and personal growth. My expertise spans both front-end and back-end development, where I enjoy creating innovative and impactful solutions that solve
                                         real-world problems. There's so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
                                        "
