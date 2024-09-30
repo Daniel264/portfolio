@@ -24,7 +24,7 @@ const menu = {
 const SideMenu = () => {
     const [isActive, setIsActive] = useState(false);
     return (
-        <div className="fixed right-[50px] top-[50px]">
+        <div className="fixed right-[50px] top-[50px] z-50">
             <motion.div className="w-[480px] h-[650px] bg-[#c9fd74] rounded-3xl relative" variants={menu} animate={isActive ? "open" : "closed"} initial="open">
                 <Button isActive={isActive} toggleMenu={() => setIsActive(!isActive)} />
             </motion.div>

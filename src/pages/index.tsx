@@ -171,7 +171,7 @@ export default function Home() {
                     <div>
                         {!blinderFinished && <Loader />}
                         {/* <TopNavigation /> */}
-                        {/* <SideMenu /> */}
+                        <SideMenu />
                         <div>
                             <main className="flex min-h-[100vh] flex-col items-center p-5 pb-16 pt-28 md:pb-5">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
@@ -245,7 +245,8 @@ export default function Home() {
                         className="mask absolute left-0 top-0"
                     >
                         {!blinderFinished && <Loader />}
-                        <TopNavigation />
+                        {/* <TopNavigation /> */}
+                        <SideMenu />
                         <div>
                             <main className="flex  min-h-[100vh] flex-col items-center p-5 pt-28">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">

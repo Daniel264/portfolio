@@ -12,7 +12,7 @@ const Footer = ({ text, background }: Props) => {
             <footer className={`sf-ui footer footer-center bg-${background} p-4 text-${text}`}>
                 <aside>
                     <p className="text-lg">Copyright © {new Date().getFullYear()} - Daniel Olatinsu</p>
-                <SideMenu />
+               
                 </aside>
             </footer>
         </div>
