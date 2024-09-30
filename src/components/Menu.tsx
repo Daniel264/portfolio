@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import SplitType from "split-type";
+import FramerMagnetic from "./FramerMagnetic";
 
 const Menu = () => {
     useEffect(() => {
@@ -25,7 +26,11 @@ const Menu = () => {
             <ul className=" menu flex flex-row rounded-box bg-inherit md:flex md:flex-col">
                 <li className="my-menu">
                     <a href="https://twitter.com/DanielOlatinsu" className="tooltip tooltip-right scale-75 transition-transform hover:scale-125" data-tip="Twitter" target="_blank" rel="noopener noreferrer ">
-                        <i className="fab fa-twitter fa-2x"></i> {/* Use fa-2x to scale the icon */}
+                        <FramerMagnetic>
+                            <>
+                                <i className="fab fa-twitter fa-2x"></i> {/* Use fa-2x to scale the icon */}
+                            </>
+                        </FramerMagnetic>
                     </a>
                 </li>
                 <li className="my-menu">
@@ -34,12 +39,12 @@ const Menu = () => {
                     </a>
                 </li>
                 <li className="my-menu">
-                    <a href="https://www.linkedin.com/in/daniel-olatinsu-09415a230/" className="tooltip tooltip-right transition-transform scale-75 hover:scale-125" data-tip="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/daniel-olatinsu-09415a230/" className="tooltip tooltip-right scale-75 transition-transform hover:scale-125" data-tip="LinkedIn" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-linkedin fa-2x"></i> {/* Use fa-2x to scale the icon */}
                     </a>
                 </li>
                 <li className="my-menu">
-                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right transition-transform scale-75 hover:scale-125" data-tip="GitHub" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Daniel264" className="tooltip tooltip-right scale-75 transition-transform hover:scale-125" data-tip="GitHub" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-github fa-2x"></i> {/* Use fa-2x to scale the icon */}
                     </a>
                 </li>

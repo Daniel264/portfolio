@@ -19,10 +19,13 @@ import Loader from "@/components/Loader";
 import { useMousePosition } from "@/utilities/useMousePosition";
 import { motion } from "framer-motion";
 import React from "react";
+import FramerMagnetic from "@/components/FramerMagnetic";
+
 
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
 export default function Home() {
+
     const [loading, setLoading] = useState(true);
     const [blinderFinished, setBlinderFinished] = useState(false);
 
@@ -168,7 +171,7 @@ export default function Home() {
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
                         <div>
-                            <main className="flex pb-16 md:pb-5 min-h-[100vh] flex-col items-center p-5 pt-28">
+                            <main className="flex min-h-[100vh] flex-col items-center p-5 pb-16 pt-28 md:pb-5">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                                     <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
                                         <Menu />
@@ -181,7 +184,7 @@ export default function Home() {
                                                         <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                                             <span
                                                                 id="big"
-                                                                className="formula_condensed text-[5rem] font-extrabold   text-[#E4DED7] sm:text-[12rem] md:tracking-wider leading-tight
+                                                                className="formula_condensed text-[5rem] font-extrabold   leading-tight text-[#E4DED7] sm:text-[12rem] md:tracking-wider
                                                         "
                                                             >
                                                                 DANIEL <br />
@@ -217,9 +220,9 @@ export default function Home() {
                                         real-world problems. There's so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
                                        "
                             />
-                       
+
                             <Portfolio />
-                     
+
                             <Skills />
                             <Contact text={"text-white"} background={"bg-inherit"} />
                             <hr className="mx-auto w-[80%]" />
@@ -259,7 +262,7 @@ export default function Home() {
                                                                     setIsHovered(false);
                                                                 }}
                                                                 id="big"
-                                                                className="formula_condensed text-[5rem] font-extrabold text-[#000]   sm:text-[8.7rem] md:text-[12rem] md:tracking-wider leading-tight"
+                                                                className="formula_condensed text-[5rem] font-extrabold leading-tight   text-[#000] sm:text-[8.7rem] md:text-[12rem] md:tracking-wider"
                                                             >
                                                                 ダニエル <br />
                                                                 オラチンス
@@ -299,11 +302,11 @@ export default function Home() {
                                     }}
                                 />
                             </div>
-                   
+
                             <Portfolio />
                             {/* <hr className="mx-auto w-[80%] pb-10" /> */}
                             <Skills />
-                         
+
                             <Contact
                                 text={"text-black"}
                                 background={"bg-white"}
