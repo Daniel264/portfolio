@@ -1,9 +1,14 @@
 import React from "react";
 
-const Footer = () => {
+interface Props {
+    text: string;
+    background: string;
+}
+
+const Footer = ({ text, background }: Props) => {
     return (
         <div>
-            <footer className="footer footer-center sf-ui bg-inherit p-4 text-inherit">
+            <footer className={`sf-ui footer footer-center bg-${background} p-4 text-${text}`}>
                 <aside>
                     <p className="text-lg">Copyright © {new Date().getFullYear()} - Daniel Olatinsu</p>
                 </aside>
