@@ -9,7 +9,7 @@ export default function Document() {
 
                 {/* Get default font file from https://fonts.google.com  */}
 
-                <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet" />
+                <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap" rel="stylesheet" />
             </Head>
             <body>
                 <Main />
