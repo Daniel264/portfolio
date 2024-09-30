@@ -48,7 +48,6 @@
     /* =========================== */
 }
 
-
 .char {
     transform: translateY(115px);
     transition: transform 0.5s;
@@ -96,6 +95,30 @@
     mask-size: cover;
     color: black;
     cursor: default;
+}
+
+.el:nth-of-type(2) {
+    @apply bg-black;
+    @apply /*
+     Apply any Tailwind classes here */ text-[#c9fd74];
+}
+
+.perspectiveText:hover {
+    transform: rotateX(90deg);
+}
+.perspectiveText:hover p:nth-of-type(1) {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+.perspectiveText:hover p:nth-of-type(2) {
+    opacity: 1;
+}
+
+.perspectiveText p:nth-of-type(2) {
+    position: absolute;
+    transform-origin: bottom center;
+    transform: rotateX(-90deg) translateY(9px);
+    opacity: 0;
 }
 
 :root {
