@@ -34,10 +34,10 @@ const SkillsObjects = [
         Header: "Softwares i work with",
         Description: "I have a deep passion for building robust and scalable backend systems. From designing databases to creating efficient APIs, I thrive on ensuring seamless communication between the server and client.",
         Skills: [
-            { Icon: "Node", Name: "Postman" },
-            { Icon: "Express", Name: "Vscode" },
-            { Icon: "TS", Name: "Github" },
-            { Icon: "MongoDB", Name: "Visual Studio" },
+            { Icon: "Postman", Name: "Postman" },
+            { Icon: "VSCode", Name: "Vscode" },
+            { Icon: "GitHub", Name: "Github" },
+            { Icon: "VS", Name: "Visual Studio" },
             { Icon: "MongoDB", Name: "MongoDB compass" },
             { Icon: "MongoDB", Name: "clion" },
         ],
@@ -49,7 +49,7 @@ const Skills = () => {
         <main className="flex h-full w-full flex-col items-center pb-14 text-white">
             <Reveal>
                 <div>
-                    <h1 className="pb-5 text-center text-6xl font-bold  lg:text-7xl formula_condensed">Stack</h1>
+                    <h1 className="formula_condensed pb-5 text-center text-6xl  font-bold lg:text-7xl">Stack</h1>
                     <p className="pb-5">LANGUAGES I USE - DEV ARSENAL</p>
                 </div>
             </Reveal>
