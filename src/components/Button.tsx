@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ isActive, toggleMenu }) => {
     return (
-        <div className="width-[100px] height-[40px] absolute right-0 top-0 cursor-pointer overflow-hidden rounded-[25px]">
+        <div className="w-[100px] h-[40px] absolute right-0 top-0 cursor-pointer overflow-hidden rounded-[25px]">
             <motion.div className="relative h-full w-full" animate={{ top: isActive ? "-100%" : "0%" }} transition={{ duration: 0.5, type: "tween", ease: [0.76, 0, 0.24, 1] }}>
                 <div
                     className="el h-full w-full bg-[#c9fd74]"
