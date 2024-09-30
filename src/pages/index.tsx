@@ -217,11 +217,10 @@ export default function Home() {
                                         real-world problems. There's so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
                                        "
                             />
-                            <hr className="mx-auto w-[80%]" />
+                       
                             <Portfolio />
-                            <hr className="mx-auto w-[80%] pb-10" />
+                     
                             <Skills />
-                            <hr className="mx-auto w-[80%]" />
                             <Contact text={"text-white"} background={"bg-inherit"} />
                             <hr className="mx-auto w-[80%]" />
                             <Footer />
@@ -300,11 +299,11 @@ export default function Home() {
                                     }}
                                 />
                             </div>
-                            <hr className="mx-auto w-[80%]" />
+                   
                             <Portfolio />
-                            <hr className="mx-auto w-[80%] pb-10" />
+                            {/* <hr className="mx-auto w-[80%] pb-10" /> */}
                             <Skills />
-                            <hr className="mx-auto w-[80%]" />
+                         
                             <Contact
                                 text={"text-black"}
                                 background={"bg-white"}
