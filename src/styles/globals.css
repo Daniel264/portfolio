@@ -10,14 +10,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Mona Sans";
-    src:
-        url("/assets/fonts/Mona-Sans.woff2") format("woff2"),
-        url("/assets/fonts/Mona-Sans.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
 
 @font-face {
     font-family: "Formula Condensed";
@@ -26,51 +18,10 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Mona Sans";
-    src: url("/assets/fonts/MonaSans-ExtraBold.woff2") format("woff2");
-    font-weight: 900;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: "Clash Display";
-    src: url("/assets/fonts/ClashGrotesk-Variable.ttf") format("woff2");
-    font-weight: 400;
-}
-@font-face {
-    font-family: "SF UI";
-    src: url("/assets/fonts/SFUIText-Light.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: "SF UI";
-    src: url("/assets/fonts/SFUIText-Bold.ttf") format("truetype");
-    font-weight: 800;
-    font-style: normal;
-}
 
 .formula_condensed {
     font-family: "Formula Condensed", sans-serif;
-}
-.sf-uibold {
-    font-family: "SF UI", sans-serif !important;
-    font-weight: 800;
-}
-
-.sf-ui {
-    font-family: "SF Ui", sans-serif !important;
-    font-weight: 400;
-}
-
-.clash-font {
-    font-family: "Clash Display", sans-serif !important;
-}
-
-.font-monasans {
-    font-family: "Mona Sans", sans-serif;
-    font-weight: 900;
 }
 
 @layer base {
@@ -137,15 +88,6 @@
     transition: clip-path 100ms;
     pointer-events: none; /* Prevents interference with mouse events */
 }
-
-/* .hover-btn, .hover-btn2 {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: black;
-    display: flex;
-    cursor: pointer;
-} */
 
 .my-menu {
     opacity: 0;
