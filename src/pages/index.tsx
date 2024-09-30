@@ -223,7 +223,7 @@ export default function Home() {
                             <Skills />
                             <Contact text={"text-white"} background={"bg-inherit"} />
                             <hr className="mx-auto w-[80%]" />
-                            <Footer />
+                            <Footer text={"white"} background={"black"} />
                         </div>
                     </div>
 
@@ -314,7 +314,7 @@ export default function Home() {
                             />
                             <hr className="mx-auto w-[80%]" />
                             <div>
-                                <Footer />
+                                <Footer text={"black"} background={"white"} />
                             </div>
                         </div>
                     </motion.div>
