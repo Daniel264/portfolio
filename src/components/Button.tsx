@@ -8,10 +8,10 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ isActive, toggleMenu }) => {
     return (
-        <div className="absolute top-0 right-0 width-[100px] height-[40px] cursor-pointer rounded-[25px] overflow-hidden">
+        <div className="width-[100px] height-[40px] absolute right-0 top-0 cursor-pointer overflow-hidden rounded-[25px]">
             <motion.div className="relative h-full w-full" animate={{ top: isActive ? "-100%" : "0%" }} transition={{ duration: 0.5, type: "tween", ease: [0.76, 0, 0.24, 1] }}>
                 <div
-                    className="h-full w-full bg-[#c9fd74]"
+                    className="el h-full w-full bg-[#c9fd74]"
                     onClick={() => {
                         toggleMenu();
                     }}
@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({ isActive, toggleMenu }) => {
                     <PerspectiveText label="Menu" />
                 </div>
                 <div
-                    className="h-full w-full bg-[#c9fd74]"
+                    className="el h-full w-full bg-[#c9fd74]"
                     onClick={() => {
                         toggleMenu();
                     }}
@@ -39,7 +39,7 @@ interface PerspectiveTextProps {
 
 function PerspectiveText({ label }: PerspectiveTextProps) {
     return (
-        <div className="preserve-3d ease-custom-cubic flex h-full w-full flex-col items-center justify-center transition-transform duration-[750ms]">
+        <div className="preserve-3d ease-custom-cubic perspectiveText flex h-full w-full flex-col items-center justify-center transition-transform duration-[750ms]">
             <p className="ease-custom-cubic pointer-events-none uppercase transition-all duration-[750ms]">{label}</p>
             <p className="ease-custom-cubic pointer-events-none uppercase transition-all duration-[750ms]">{label}</p>
         </div>
