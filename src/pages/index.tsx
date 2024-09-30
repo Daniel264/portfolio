@@ -168,7 +168,7 @@ export default function Home() {
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
                         <div>
-                            <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
+                            <main className="flex min-h-[100vh] flex-col items-center p-5 pt-28">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                                     <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
                                         <Menu />
@@ -243,7 +243,7 @@ export default function Home() {
                         {!blinderFinished && <Loader />}
                         <TopNavigation />
                         <div>
-                            <main className="flex h-full min-h-screen flex-col items-center p-5 pt-28">
+                            <main className="flex  min-h-[100vh] flex-col items-center p-5 pt-28">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
                                     <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
                                         <Menu />
@@ -260,7 +260,7 @@ export default function Home() {
                                                                     setIsHovered(false);
                                                                 }}
                                                                 id="big"
-                                                                className="formula_condensed text-[3.4rem] sm:text-[8.7rem] font-extrabold   text-[#000] md:text-[12rem] md:tracking-wider"
+                                                                className="formula_condensed text-[3.4rem] font-extrabold text-[#000]   sm:text-[8.7rem] md:text-[12rem] md:tracking-wider"
                                                             >
                                                                 ダニエル <br />
                                                                 オラチンス
