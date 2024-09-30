@@ -1,5 +1,5 @@
 import React from "react"; // Ensure correct path
-import MongoDBIcon, { CSSIcon, ExpressIcon, GitHubIcon, HtmlIcon, JavaScriptIcon, NextIcon, NodeIcon, ReactIcon, SASSIcon, TypeScriptIcon, ViteTestIcon } from "./Icons";
+import MongoDBIcon, { CSSIcon, ExpressIcon, GitHubIcon, HtmlIcon, JavaScriptIcon, NextIcon, NodeIcon, PostmanIcon, ReactIcon, SASSIcon, TypeScriptIcon, VisualStudioCodeIcon, VisualStudioIcon, ViteTestIcon } from "./Icons";
 // Import other icons as needed
 
 const iconMap: { [key: string]: React.FC } = {
@@ -14,7 +14,10 @@ const iconMap: { [key: string]: React.FC } = {
     SASS: SASSIcon,
     HTML: HtmlIcon,
     CSS: CSSIcon,
-    Node: NodeIcon, // Add other icons here
+    Node: NodeIcon,
+    Postman: PostmanIcon,
+    VSCode: VisualStudioCodeIcon,
+    VS: VisualStudioIcon,
     // Add other icons here
 };
 
