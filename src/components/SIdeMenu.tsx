@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Button from "./Button";
 
 const SideMenu = () => {
     const [isActive, setIsActive] = useState(false);

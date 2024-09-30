@@ -1,7 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Button = ({ isActive, toggleMenu }) => {
+interface ButtonProps {
+    isActive: boolean;
+    toggleMenu: () => void;
+}
+
+const Button: React.FC<ButtonProps> = ({ isActive, toggleMenu }) => {
     return (
         <div>
             <motion.div className="relative h-full w-full" animate={{ top: isActive ? "-100%" : "0%" }} transition={{ duration: 0.5, type: "tween", ease: [0.76, 0, 0.24, 1] }}>
@@ -28,11 +33,15 @@ const Button = ({ isActive, toggleMenu }) => {
 
 export default Button;
 
-function PerspectiveText({ label }) {
+interface PerspectiveTextProps {
+    label: string;
+}
+
+function PerspectiveText({ label }: PerspectiveTextProps) {
     return (
-        <div className="flex flex-col justify-center items-center h-full h-full preserve-3d ">
-            <p className="text-2xl font-bold">{label}</p>
-            <p className="text-2xl font-bold">{label}</p>
+        <div className="preserve-3d ease-custom-cubic flex h-full w-full flex-col items-center justify-center transition-transform duration-[750ms]">
+            <p className="ease-custom-cubic pointer-events-none uppercase transition-all duration-[750ms]">{label}</p>
+            <p className="ease-custom-cubic pointer-events-none uppercase transition-all duration-[750ms]">{label}</p>
         </div>
     );
 }

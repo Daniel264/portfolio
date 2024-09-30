@@ -10,6 +10,9 @@ const config: Config = {
             transform: {
                 preserve3d: "preserve-3d",
             },
+            transitionTimingFunction: {
+                "custom-cubic": "cubic-bezier(0.76, 0, 0.24, 1)",
+            },
             fontFamily: {
                 lato: ["Lato", "sans-serif"],
                 poppins: ["Poppins", "sans-serif"], // Added Poppins font
