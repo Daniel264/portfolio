@@ -22,11 +22,9 @@ import React from "react";
 import FramerMagnetic from "@/components/FramerMagnetic";
 import SideMenu from "@/components/SIdeMenu";
 
-
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
 export default function Home() {
-
     const [loading, setLoading] = useState(true);
     const [blinderFinished, setBlinderFinished] = useState(false);
 
@@ -171,7 +169,8 @@ export default function Home() {
                     <div>
                         {!blinderFinished && <Loader />}
                         {/* <TopNavigation /> */}
-                        <SideMenu />
+                        <SideMenu />{" "}
+                        
                         <div>
                             <main className="flex min-h-[100vh] flex-col items-center p-5 pb-16 pt-28 md:pb-5">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
