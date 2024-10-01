@@ -222,8 +222,8 @@ export default function Home() {
                             </main>
                             {/* <hr className="mx-auto w-[80%] pb-10" /> */}
                             <About
-                                background={"bg-white"}
-                                text={"text-[#000]"}
+                                background={"bg-[#0F0F0F]"}
+                                text={"text-[#fff]"}
                                 paragraph=" I’m a full-stack developer with a deep passion for mobile technology, driven by a love for continuous learning and personal growth. My expertise spans both front-end and back-end development, where I enjoy creating innovative and impactful solutions that solve
                                         real-world problems. There's so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
                                        "
@@ -301,8 +301,8 @@ export default function Home() {
                             {/* <hr className="mx-auto w-[80%] pb-10" /> */}
                             <div>
                                 <About
-                                    background={"bg-black"}
-                                    text={"text-white"}
+                                    background={"bg-white"}
+                                    text={"text-black"}
                                     paragraph="I am a passionate coder with nearly four years of experience, specializing in creating innovative solutions that make a difference. As a dedicated 300-level student at Mountain Top University, I strive for academic excellence while honing my skills. I enjoy
                                         playing chess in my spare time, as it sharpens my strategic thinking. A proud Real Madrid supporter, I embody teamwork and dedication both on and off the field."
                                     onMouseEnter={() => setIsHovered(true)}
