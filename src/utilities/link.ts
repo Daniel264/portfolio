@@ -12,3 +12,22 @@ export const links = [
         href: "/",
     },
 ];
+
+export const footerLinks = [
+    {
+        title: "GitHub",
+        href: "/",
+    },
+    {
+        title: "LinkedIn",
+        href: "/",
+    },
+    {
+        title: "Instagram",
+        href: "/",
+    },
+    {
+        title: "Twitter",
+        href: "/",
+    },
+];
