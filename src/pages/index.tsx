@@ -170,8 +170,8 @@ export default function Home() {
                         {!blinderFinished && <Loader />}
                         {/* <TopNavigation /> */}
                         <div className="flex justify-between">
-                            <div className="z-50">
-                                <button className="btn w-full rounded border-none bg-[#212531] text-white shadow-2xl hover:bg-slate-500 md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
+                            <div className="z-50 pt-10 pl-8 fixed text-black">
+                                <button className="btn w-full rounded bg-inherit border-2 border-[#c9fd74] text-[#c9fd74]  shadow-2xl hover:bg-black md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
                                     Lets Talk <i className="fa-solid fa-message"></i>
                                 </button>
                             </div>
