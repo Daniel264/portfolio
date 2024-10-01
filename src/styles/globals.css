@@ -121,6 +121,11 @@
     opacity: 0;
 }
 
+.linkContainer {
+    perspective: 120px;
+    perspective-origin: bottom;
+}
+
 :root {
     --font-monasans: "Mona Sans", sans-serif;
 }
