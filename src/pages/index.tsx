@@ -248,7 +248,7 @@ export default function Home() {
                             type: "tween",
                             ease: "backOut",
                         }}
-                        className="mask absolute left-0 top-0"
+                        className="mask hidden lg:inline-block absolute left-0 top-0"
                     >
                         {!blinderFinished && <Loader />}
                         {/* <TopNavigation /> */}
