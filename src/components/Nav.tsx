@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/utilities/link";
+import { perspective } from "@/Animations/Nav";
 
 const Nav = () => {
     return (

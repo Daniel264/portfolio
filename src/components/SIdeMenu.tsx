@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import { motion } from "framer-motion";
+import Nav from "./Nav";
 
 const menu = {
     open: {
@@ -26,6 +27,7 @@ const SideMenu = () => {
     return (
         <div className="fixed right-[50px] top-[50px] z-50">
             <motion.div className="w-[480px] h-[650px] bg-[#c9fd74] rounded-3xl relative" variants={menu} animate={isActive ? "open" : "closed"} initial="open">
+                    { isActive && <Nav />}
                 <Button isActive={isActive} toggleMenu={() => setIsActive(!isActive)} />
             </motion.div>
         </div>
