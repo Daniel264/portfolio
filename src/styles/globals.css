@@ -48,6 +48,19 @@
     /* =========================== */
 }
 
+ body {
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+
 .char {
     transform: translateY(115px);
     transition: transform 0.5s;
