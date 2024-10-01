@@ -169,8 +169,15 @@ export default function Home() {
                     <div>
                         {!blinderFinished && <Loader />}
                         {/* <TopNavigation /> */}
-                        <SideMenu />{" "}
-                        
+                        <div className="flex justify-between">
+                            <div className="z-50">
+                                <button className="btn w-full rounded border-none bg-[#212531] text-white shadow-2xl hover:bg-slate-500 md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
+                                    Lets Talk <i className="fa-solid fa-message"></i>
+                                </button>
+                            </div>
+                            <SideMenu />
+                        </div>
+
                         <div>
                             <main className="flex min-h-[100vh] flex-col items-center p-5 pb-16 pt-28 md:pb-5">
                                 <div className="max-w-8xl flex w-full text-white md:m-auto">
