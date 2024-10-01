@@ -30,8 +30,8 @@ const Nav = () => {
                     const { title, href } = link;
                     return (
                         <div key={`b_${i}`} className="linkContainer">
-                            <motion.div href={href} custom={i} variants={perspective} initial="initial" animate="enter" exit="exit">
-                                <a className="text-5xl leading-relaxed text-black">{title}</a>
+                            <motion.div custom={i} variants={perspective} initial="initial" animate="enter" exit="exit">
+                                <a href={href} className="text-5xl leading-relaxed text-black">{title}</a>
                             </motion.div>
                         </div>
                     );
