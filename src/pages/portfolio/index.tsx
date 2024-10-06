@@ -40,12 +40,12 @@ const Portfolio: React.FC = () => {
             languages: ["React.js", "Chakra UI", "API"],
         },
         {
-            title: "GoDaddy clone",
-            description: "A platform offering game recommendations, search functionality, and more for gamers.",
-            imageUrl: "/assets/images/godaddy.png",
+            title: "Horizon",
+            description: "This is a website I built for Fintech Startups to showcase their innovative solutions tailored to meet the evolving needs of their clients.",
+            imageUrl: "/assets/images/horizon.png",
             width: 1080,
-            gitHub: "https://github.com/Daniel264/GoDaddy",
-            link: "https://godaddy20-daniel-olatinsus-projects.vercel.app/",
+            gitHub: "https://github.com/Daniel264/horizon",
+            link: "https://horizon-amber-zeta.vercel.app/",
             height: 720,
             status: "Live",
             languages: ["Next.js", "Tailwind", "TypeScript"],
@@ -54,7 +54,7 @@ const Portfolio: React.FC = () => {
 
     return (
         <div id="portfolio" className="w-full pt-14 text-white lg:px-32">
-            <h1 className="text-center text-7xl formula_condensed uppercase font-bold">Few of my Projects</h1>
+            <h1 className="formula_condensed text-center text-7xl font-bold uppercase">Few of my Projects</h1>
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-2">
                     {works.map((work, index) => {
