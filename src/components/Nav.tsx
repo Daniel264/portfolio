@@ -37,13 +37,13 @@ const Nav = () => {
                     );
                 })}
             </div>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-9">
                 {footerLinks.map((link, i) => {
                     const { title, href } = link;
                     return (
                         <div key={`b_${i}`}>
                             <div className="lin opacity-0">
-                                <a className="links text-lg">{title}</a>
+                                <a className="links text-xl">{title}</a>
                             </div>
                         </div>
                     );

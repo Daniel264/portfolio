@@ -15,19 +15,19 @@ export const links = [
 
 export const footerLinks = [
     {
-        title: "GitHub",
+        title: "GH",
         href: "/",
     },
     {
-        title: "LinkedIn",
+        title: "LN",
         href: "/",
     },
     {
-        title: "Instagram",
+        title: "IG",
         href: "/",
     },
     {
-        title: "Twitter",
+        title: "TW",
         href: "/",
     },
 ];
