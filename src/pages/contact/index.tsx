@@ -91,7 +91,7 @@ const Contact = ({ text, background, onMouseEnter, onMouseLeave }: Props) => {
                                                 <input
                                                     type="text"
                                                     name="name"
-                                                    className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
+                                                    className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-sm "
                                                     placeholder="Enter your name..."
                                                     value={formData.name}
                                                     onChange={handleChange}
@@ -103,7 +103,7 @@ const Contact = ({ text, background, onMouseEnter, onMouseLeave }: Props) => {
                                                 <input
                                                     type="email"
                                                     name="email"
-                                                    className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
+                                                    className="input rounded-none border-x-0 border-b-[1px] border-t-0 border-solid  border-[#212531] bg-transparent placeholder:text-sm "
                                                     placeholder="Enter your email address..."
                                                     value={formData.email}
                                                     onChange={handleChange}
@@ -115,7 +115,7 @@ const Contact = ({ text, background, onMouseEnter, onMouseLeave }: Props) => {
                                             <label className="label text-[#D1D5DB]">Your Message</label>
                                             <textarea
                                                 name="message"
-                                                className="textarea textarea-md w-full max-w-full rounded-none border-x-0 border-b-[1px] border-t-0 border-solid border-[#212531] bg-black bg-transparent placeholder:text-sm placeholder:text-[#7B7E86]"
+                                                className="textarea textarea-md w-full max-w-full rounded-none border-x-0 border-b-[1px] border-t-0 border-solid border-[#212531] bg-black bg-transparent placeholder:text-sm "
                                                 placeholder="Hi! Your services will be needed at our company X. How quickly can you hop on this?"
                                                 value={formData.message}
                                                 onChange={handleChange}
