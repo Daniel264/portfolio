@@ -88,7 +88,7 @@ const About = ({ background, text, onMouseEnter, onMouseLeave, paragraph }: Prop
                 <>
                     <main className="flex min-h-screen w-full flex-col items-center justify-center px-[2rem] pt-32 lg:pt-24 text-center md:pt-0 lg:px-[8rem]">
                         <div className="flex h-10 items-center rounded px-3 pb-10 w-full">
-                            <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className=" font-semibold text-7xl formula_condensed text-left uppercase pb-14  sm:pb-0 sm:ml-24">
+                            <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className=" font-semibold text-7xl formula_condensed text-left uppercase -mb-40  sm:pb-0 sm:ml-24">
                                 About The Creator
                             </h1>
                         </div>
@@ -103,7 +103,7 @@ const About = ({ background, text, onMouseEnter, onMouseLeave, paragraph }: Prop
                             </div>
                             <div className="flex w-full flex-col items-center lg:items-start lg:pl-8">
                                 <div className="py-8 text-center md:pb-44 lg:pl-20 lg:text-left">
-                                    <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className=" card-card text-lg font-light tracking-wider md:text-xl md:leading-relaxed ">
+                                    <p onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className=" card-card text-lg font-normal tracking-wider md:text-[1rem] md:leading-relaxed uppercase">
                                        {paragraph}
                                     </p>
                                 </div>

@@ -59,13 +59,13 @@ const Skills = () => {
                         <article className="z-10 col-start-1 rounded-badge  border-[1px] border-[#888889] border-opacity-10 shadow-2xl">
                             <div className=" z-10 bg-[#0E0F11] px-10 py-12">
                                 <h2 className="text-xl font-medium uppercase">{item.Header}</h2>
-                                <p className="text-[#888889]">{item.Description}</p>
+                                <p className="text-[#888889] leading-[1.65]">{item.Description}</p>
                             </div>
                             <div className="whitespace-normal break-words bg-[#08090A]  px-10 py-12">
                                 <ul className="sf-ui flex h-fit max-w-[470px] flex-wrap  gap-3 text-xs uppercase  leading-relaxed text-[#888889] md:text-sm">
                                     <li className="flex flex-wrap gap-2">
                                         {item.Skills.map((skill, index) => (
-                                            <span key={index} className="flex  w-fit gap-2 rounded-badge border-[2px] border-[#888889] border-opacity-10  bg-[#0E0F11] px-2 py-1 font-semibold opacity-100">
+                                            <span key={index} className="flex  w-fit gap-2 rounded-badge border-[2px] border-[#888889] border-opacity-10  bg-[#0E0F11] px-2 py-1 font-medium opacity-100">
                                                 <SVGIcon type={skill.Icon} />
                                                 {skill.Name}
                                             </span>
