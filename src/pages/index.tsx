@@ -171,7 +171,7 @@ export default function Home() {
                         {/* <TopNavigation /> */}
                         <div className="flex justify-between">
                             <div className="fixed z-50 hidden pl-8 pt-10 text-black lg:block">
-                                <button className="btn w-full rounded border-2 border-[#c9fd74] bg-inherit text-[#c9fd74]  shadow-2xl font-normal hover:bg-black md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
+                                <button className="btn w-full rounded border-2 border-[#c9fd74] bg-inherit font-normal  text-[#c9fd74] shadow-2xl hover:bg-black md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
                                     Lets Talk <i className="fa-solid fa-message"></i>
                                 </button>
                             </div>
@@ -192,7 +192,8 @@ export default function Home() {
                                                         <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                                             <span
                                                                 id="big"
-                                                                className="formula_condensed text-[5rem] font-extrabold   leading-tight text-[#E4DED7] sm:text-[12rem] md:tracking-wider
+                                                                className=" beni_bold font-extrabold text-[5rem] text-[#E4DED7]
+                                                                sm:text-[15rem]
                                                         "
                                                             >
                                                                 DANIEL <br />
@@ -210,10 +211,10 @@ export default function Home() {
                                             <Menu />
                                         </div>
                                         <div className="ml-0 mt-20 space-y-4 md:ml-0 md:mr-44 md:mt-16 md:space-x-5">
-                                            <button className="btn w-full rounded border-none bg-[#212531] text-white shadow-2xl  font-normal hover:bg-slate-500 md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
+                                            <button className="btn w-full rounded border-none bg-[#212531] font-normal text-white  shadow-2xl hover:bg-slate-500 md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
                                                 Lets Talk <i className="fa-solid fa-message"></i>
                                             </button>
-                                            <a href="/assets/daniel-olatinsu.pdf" download="Daniel_Olatinsu.pdf" className="btn w-full rounded border-2 border-[#212531] bg-transparent text-white font-normal shadow-2xl hover:bg-slate-500 md:w-44">
+                                            <a href="/assets/daniel-olatinsu.pdf" download="Daniel_Olatinsu.pdf" className="btn w-full rounded border-2 border-[#212531] bg-transparent font-normal text-white shadow-2xl hover:bg-slate-500 md:w-44">
                                                 Download CV <i className="fa-solid fa-download"></i>
                                             </a>
                                         </div>

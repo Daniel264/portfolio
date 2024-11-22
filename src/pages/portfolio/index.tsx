@@ -54,7 +54,7 @@ const Portfolio: React.FC = () => {
 
     return (
         <div id="portfolio" className="w-full pt-14 text-white lg:px-32">
-            <h1 className="formula_condensed text-center text-7xl font-bold uppercase">Few of my Projects</h1>
+            <h1 className="beni_regular text-center text-7xl uppercase">Few of my Projects</h1>
             <div className="flex min-h-screen w-full flex-col items-center">
                 <div className="grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-2">
                     {works.map((work, index) => {
@@ -76,7 +76,7 @@ const Portfolio: React.FC = () => {
                                 </figure>
                                 <div className="card-body relative">
                                     <div className="flex justify-between">
-                                        <h2 className="card-title text-3xl font-medium uppercase">{work.title}</h2>
+                                        <h2 className="card-title text-[1.5rem] font-medium uppercase">{work.title}</h2>
                                         <span className="h-fit rounded-badge border border-[#888888] border-opacity-30 px-1 font-light">
                                             <i className="fa-brands fa-github pr-2"></i>Public
                                         </span>
