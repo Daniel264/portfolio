@@ -5,26 +5,22 @@ import { NextRouter, useRouter } from "next/router";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { MutationCache, QueryCache, QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // @ts-ignore
-import { Poppins, Syne } from "next/font/google";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
-
+import { Syne } from "next/font/google";
+import localFont from "next/font/local";
 // @ts-ignore
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import type { AppProps } from "next/app";
 import { handleHTTPResponse } from "@/utilities/handle-http-error-response";
 
-const poppins = Poppins({
-    subsets: ["latin"],
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-    style: "normal",
-});
-
 const syne = Syne({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700", "800"],
     style: "normal",
+});
+
+const Neue_Montreal = localFont({
+    src: "../components/fonts/NeueMontreal-Regular.otf",
 });
 
 // const monaSans = localFont({
@@ -63,7 +59,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
 
             <QueryClientProvider client={queryClient}>
-                <main className={syne.className}>
+                <main className={Neue_Montreal.className}>
                     <Component {...pageProps} />
                 </main>
 
