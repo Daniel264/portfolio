@@ -70,9 +70,9 @@ const Contact = ({ text, background, onMouseEnter, onMouseLeave }: Props) => {
             ) : (
                 <div id="contact" className={`contact-page ${text} ${background}  px-2 relative h-[calc(100vh+700px)] -top-[100vh]  py-20 text-center   md:px-10 lg:py-0`}>
                     <div className="hero h-[700px] sticky top-[calc(100vh-700px)]  flex flex-col items-center justify-center pt-44   md:pt-24 lg:flex-row lg:items-start lg:justify-between lg:pb-20 lg:pt-32">
-                        
+
                             <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="lg:w-1/2 lg:pr-10">
-                                <h1 id="#big" className="mb-3 text-7xl font-bold md:text-9xl formula_condensed">
+                                <h1 id="#big" className="mb-3 text-7xl font-bold md:text-9xl formula_condensed uppercase">
                                     Get In Touch
                                 </h1>
                                 <p className="reveal-text  text-center text-base ">
@@ -135,7 +135,7 @@ const Contact = ({ text, background, onMouseEnter, onMouseLeave }: Props) => {
                             </div>
                         </div>
                     </div>
-                
+
             )}
             {error && <p>{error}</p>}
         </div>

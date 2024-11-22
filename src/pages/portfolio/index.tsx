@@ -76,7 +76,7 @@ const Portfolio: React.FC = () => {
                                 </figure>
                                 <div className="card-body relative">
                                     <div className="flex justify-between">
-                                        <h2 className="card-title text-3xl ">{work.title}</h2>
+                                        <h2 className="card-title text-3xl font-medium uppercase">{work.title}</h2>
                                         <span className="h-fit rounded-badge border border-[#888888] border-opacity-30 px-1 font-light">
                                             <i className="fa-brands fa-github pr-2"></i>Public
                                         </span>

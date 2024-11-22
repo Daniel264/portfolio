@@ -49,7 +49,7 @@ const Skills = () => {
         <main className="flex h-full w-full flex-col items-center pb-14 text-white">
             <Reveal>
                 <div>
-                    <h1 className="formula_condensed pb-5 text-center text-6xl  font-bold lg:text-7xl">Stack</h1>
+                    <h1 className="formula_condensed pb-5 text-center text-6xl font-bold lg:text-7xl">STACK</h1>
                     <p className="pb-5">LANGUAGES I USE - DEV ARSENAL</p>
                 </div>
             </Reveal>
@@ -58,7 +58,7 @@ const Skills = () => {
                     <Reveal key={index}>
                         <article className="z-10 col-start-1 rounded-badge  border-[1px] border-[#888889] border-opacity-10 shadow-2xl">
                             <div className=" z-10 bg-[#0E0F11] px-10 py-12">
-                                <h2 className="text-xl font-semibold">{item.Header}</h2>
+                                <h2 className="text-xl font-medium uppercase">{item.Header}</h2>
                                 <p className="text-[#888889]">{item.Description}</p>
                             </div>
                             <div className="whitespace-normal break-words bg-[#08090A]  px-10 py-12">
@@ -86,7 +86,7 @@ const Skills = () => {
                             <li>SCSS</li>
                             <li>CSS</li>
                             <li>ChakraUi</li>
-             
+
                         </ul>
                     </article>
                 </Reveal> */}

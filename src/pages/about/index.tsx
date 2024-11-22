@@ -145,4 +145,3 @@ const About = ({ background, text, onMouseEnter, onMouseLeave, paragraph }: Prop
 };
 
 export default About;
-
