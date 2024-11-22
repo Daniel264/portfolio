@@ -192,7 +192,7 @@ export default function Home() {
                                                         <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                                             <span
                                                                 id="big"
-                                                                className=" beni_bold font-extrabold text-[5rem] text-[#E4DED7]
+                                                                className=" beni_bold font-extrabold text-[5rem] text-white
                                                                 sm:text-[15rem]
                                                         "
                                                             >
