@@ -20,7 +20,28 @@ const syne = Syne({
 });
 
 const Neue_Montreal = localFont({
-    src: "../components/fonts/NeueMontreal-Regular.otf",
+    src: [
+        {
+            path: "../components/fonts/NeueMontreal-Light.otf",
+            weight: "300",
+            style: "normal",
+        },
+        {
+            path: "../components/fonts/NeueMontreal-Regular.otf",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "../components/fonts/NeueMontreal-Medium.otf",
+            weight: "500",
+            style: "normal",
+        },
+        {
+            path: "../components/fonts/NeueMontreal-Bold.otf",
+            weight: "700",
+            style: "normal",
+        },
+    ],
 });
 
 // const monaSans = localFont({
