@@ -227,19 +227,19 @@ export default function Home() {
                                 </div>
                             </main>
                             {/* <hr className="mx-auto w-[80%] pb-10" /> */}
-                            <About
+                            {/* <About
                                 background={"bg-[#0F0F0F]"}
                                 text={"text-[#fff]"}
                                 paragraph=" I’m a full-stack developer with a deep passion for mobile technology, driven by a love for continuous learning and personal growth. My expertise spans both front-end and back-end development, where I enjoy creating innovative and impactful solutions that solve
                                         real-world problems. There's so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
                                        "
-                            />
+                            /> */}
 
                             <Portfolio />
 
                             <Skills />
                             <Contact text={"text-white"} background={"bg-inherit"} />
-                            <hr className="mx-auto w-[80%]" />
+                            {/* <hr className="mx-auto w-[80%]" /> */}
                             <Footer text={"white"} background={"inherit"} />
                         </div>
                     </div>
