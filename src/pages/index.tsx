@@ -244,7 +244,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <motion.div
+                    {/* <motion.div
                         ref={maskRef}
                         animate={{
                             WebkitMaskPosition: `${maskPosition.maskX}px ${maskPosition.maskY}px`,
@@ -257,7 +257,7 @@ export default function Home() {
                         className="mask absolute left-0 top-0 hidden lg:inline-block"
                     >
                         {!blinderFinished && <Loader />}
-                        {/* <TopNavigation /> */}
+
                         <SideMenu />
                         <div>
                             <main className="flex  min-h-[100vh] flex-col items-center p-5 pt-28">
@@ -304,7 +304,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </main>
-                            {/* <hr className="mx-auto w-[80%] pb-10" /> */}
+
                             <div>
                                 <About
                                     background={"bg-white"}
@@ -319,7 +319,7 @@ export default function Home() {
                             </div>
 
                             <Portfolio />
-                            {/* <hr className="mx-auto w-[80%] pb-10" /> */}
+
                             <Skills />
 
                             <Contact
@@ -335,7 +335,7 @@ export default function Home() {
                                 <Footer text={"black"} background={"inherit"} />
                             </div>
                         </div>
-                    </motion.div>
+                    </motion.div> */}
                 </>
             )}
         </div>
