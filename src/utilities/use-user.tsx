@@ -2,7 +2,7 @@ import { getCookie } from "cookies-next";
 import { useQuery } from "@tanstack/react-query";
 import { jwtDecode, JwtPayload } from "jwt-decode";
 
-import { APIVersion1GetCurrentUser } from "@/http";
+import { APIVersion1GetCurrentUser } from "../http";
 
 export default function useUser() {
     const { data: userQuery, ...utils } = useQuery({

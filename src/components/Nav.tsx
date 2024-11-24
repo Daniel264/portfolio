@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { links } from "@/utilities/link";
-import { perspective } from "@/Animations/Nav";
-import { footerLinks } from "@/utilities/link";
+import { links } from "../utilities/link";
+import { perspective } from "../Animations/Nav";
+import { footerLinks } from "../utilities/link";
 import gsap from "gsap";
 
 const Nav = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import { ToastContainer } from "react-toastify";
 import { NextRouter, useRouter } from "next/router";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
@@ -10,8 +10,8 @@ import localFont from "next/font/local";
 // @ts-ignore
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import type { AppProps } from "next/app";
-import { handleHTTPResponse } from "@/utilities/handle-http-error-response";
+import { AppProps } from "next/app"; // Regular import statement
+import { handleHTTPResponse } from "../utilities/handle-http-error-response";
 
 const syne = Syne({
     subsets: ["latin"],
@@ -43,17 +43,6 @@ const Neue_Montreal = localFont({
         },
     ],
 });
-
-// const monaSans = localFont({
-//     src: '..public/assets/fonts/Mona-Sans.ttf',
-//     variable: '--font-monasans',
-//   });
-
-// const lato = Lato({
-//     subsets: ["latin"],
-//     weight: ["100", "300", "400", "700", "900"],
-//     style: "normal",
-// });
 
 export default function App({ Component, pageProps }: AppProps) {
     const router: NextRouter = useRouter();

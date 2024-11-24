@@ -1,10 +1,8 @@
 import dynamic from "next/dynamic";
-import Menu from "@/components/Menu";
-import SEO from "@/components/SEO";
-import Stats from "@/components/Stats";
-import TopNavigation from "@/components/TopNavigation";
+import Menu from "../components/Menu";
+import SEO from "../components/SEO";
 import { toast } from "react-toastify";
-import Portfolio from "./portfolio";
+// import Portfolio from "./portfolio";
 import Contact from "./contact";
 import gsap from "gsap";
 import SplitType from "split-type";
@@ -12,17 +10,17 @@ import { useEffect, useRef, useState } from "react";
 import About from "./about";
 import Lenis from "@studio-freight/lenis";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Footer from "@/components/Footer";
-import Skills from "@/components/Skills";
-import PreLoader from "@/components/PreLoader";
-import Loader from "@/components/Loader";
-import { useMousePosition } from "@/utilities/useMousePosition";
+import Footer from "../components/Footer";
+import Skills from "../components/Skills";
+import PreLoader from "../components/PreLoader";
+import Loader from "../components/Loader";
+import { useMousePosition } from "../utilities/useMousePosition";
 import { motion } from "framer-motion";
 import React from "react";
-import FramerMagnetic from "@/components/FramerMagnetic";
-import SideMenu from "@/components/SIdeMenu";
+import FramerMagnetic from "../components/FramerMagnetic";
+import SideMenu from "../components/SIdeMenu";
 
-const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
+const Typed = dynamic(() => import("../components/Typed"), { ssr: false });
 
 export default function Home() {
     useEffect(() => {
@@ -237,7 +235,7 @@ export default function Home() {
                                        "
                             />
 
-                            <Portfolio />
+                            {/* <Portfolio /> */}
 
                             <Skills />
                             <Contact text={"text-white"} background={"bg-inherit"} />
@@ -320,7 +318,7 @@ export default function Home() {
                                 />
                             </div>
 
-                            <Portfolio />
+                            {/* <Portfolio /> */}
                             {/* <hr className="mx-auto w-[80%] pb-10" /> */}
                             <Skills />
 

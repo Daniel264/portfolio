@@ -1,7 +1,7 @@
 import React, { use, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import { useMousePosition } from "@/utilities/useMousePosition";
+// import { useMousePosition } from "../";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -11,6 +11,22 @@ interface Props {
     onMouseEnter?: () => void;
     onMouseLeave?: () => void;
 }
+
+export const useMousePosition = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+      const setFromEvent = (e: MouseEvent) => setPosition({ x: e.clientX, y: e.clientY });
+
+      window.addEventListener("mousemove", setFromEvent);
+
+      return () => {
+          window.removeEventListener("mousemove", setFromEvent);
+      };
+  }, []);
+
+  return position;
+};
 
 const About = ({ background, text, onMouseEnter, onMouseLeave, paragraph }: Props) => {
     const [loading, setLoading] = useState(true);
@@ -63,13 +79,14 @@ const About = ({ background, text, onMouseEnter, onMouseLeave, paragraph }: Prop
             { threshold: 0.03 }
         );
 
-        if (aboutRef.current) {
-            observer.observe(aboutRef.current);
+        const currentAboutRef = aboutRef.current;
+        if (currentAboutRef) {
+            observer.observe(currentAboutRef);
         }
 
         return () => {
-            if (aboutRef.current) {
-                observer.unobserve(aboutRef.current);
+            if (currentAboutRef) {
+                observer.unobserve(currentAboutRef);
             }
         };
     }, []);
