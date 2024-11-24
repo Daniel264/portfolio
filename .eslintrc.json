@@ -1,6 +1,18 @@
 {
-    "extends": [
-        "next/core-web-vitals",
-        "plugin:@tanstack/eslint-plugin-query/recommended"
-    ]
+  "extends": [
+      "next/core-web-vitals",
+      "plugin:@tanstack/eslint-plugin-query/recommended"
+  ],
+  "rules": {
+      "import/no-extraneous-dependencies": "off",
+      "import/no-relative-packages": "off"
+  },
+  "settings": {
+      "import/resolver": {
+          "node": {
+              "paths": ["src", "../"],
+              "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+      }
+  }
 }

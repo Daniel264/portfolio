@@ -25,6 +25,13 @@ import SideMenu from "@/components/SIdeMenu";
 const Typed = dynamic(() => import("@/components/Typed"), { ssr: false });
 
 export default function Home() {
+    useEffect(() => {
+        (async () => {
+            const LocomotiveScroll = (await import("locomotive-scroll")).default;
+
+            const locomotiveScroll = new LocomotiveScroll();
+        })();
+    }, []);
     const [loading, setLoading] = useState(true);
     const [blinderFinished, setBlinderFinished] = useState(false);
 
@@ -192,7 +199,7 @@ export default function Home() {
                                                         <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
                                                             <span
                                                                 id="big"
-                                                                className=" beni_bold font-extrabold text-[5rem] text-white
+                                                                className=" beni_bold text-[5rem] font-extrabold text-white
                                                                 sm:text-[15rem]
                                                         "
                                                             >
