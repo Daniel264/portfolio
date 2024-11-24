@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import Menu from "../components/Menu";
 import SEO from "../components/SEO";
 import { toast } from "react-toastify";
-// import Portfolio from "./portfolio";
+import Portfolio from "./portfolio";
 import Contact from "./contact";
 import gsap from "gsap";
 import SplitType from "split-type";
@@ -235,7 +235,7 @@ export default function Home() {
                                        "
                             />
 
-                            {/* <Portfolio /> */}
+                            <Portfolio />
 
                             <Skills />
                             <Contact text={"text-white"} background={"bg-inherit"} />
@@ -318,7 +318,7 @@ export default function Home() {
                                 />
                             </div>
 
-                            {/* <Portfolio /> */}
+                            <Portfolio />
                             {/* <hr className="mx-auto w-[80%] pb-10" /> */}
                             <Skills />
 
