@@ -65,11 +65,14 @@ const Portfolio: React.FC = () => {
                     ScrollTrigger.create({
                       trigger: imageContainer.current,
                       pin: true,
-                      start: "top top",
-                      end: "+=800", // Adjust this value as needed
+                      start: "-100px top",
+                      end: "+=1000", // Adjust this value as needed
                       pinSpacing: false,
                       markers: true,
                       onEnter: () => {
+                        gsap.set(imageContainer.current, { y: 0 });
+                      },
+                      onLeave: () => {
                         gsap.set(imageContainer.current, { y: 0 });
                       },
                     });
@@ -86,13 +89,12 @@ const Portfolio: React.FC = () => {
                     <Image src={works[selectedProject].imageUrl} fill={true} alt="Project Image" priority={true} className="object-cover" />
                 </div>
                 <div className="flex h-[100%] w-[20%] text-[1.6vw]">
-                    <p>The flora is characterized by the presence of high elevation wetland, as well as yellow straw, broom sedge, tola de agua and tola amaia.</p>
+                    <p>Crafting seamless user experiences with a keen eye for design, I thrive in stylesheets, perfecting layouts and font sizes for modern, intuitive interfaces..</p>
                 </div>
 
                 <div className="flex h-[100%] w-[20%] items-end text-[1vw]">
                     <p>
-                        Some, like the southern viscacha, vicuña and Darwins rhea, are classified as endangered species. Others, such as Andean goose, horned coot, Andean gull, puna tinamou and the three flamingo species inhabiting in Chile (Andean flamingo, Chilean flamingo, and Jamess flamingo)
-                        are considered vulnerable.
+                    In developing JavaScript applications, I leverage the best tools and can work without them to deliver fast, robust solutions. Performance and scalability are always top priorities for me.
                     </p>
                 </div>
             </div>
