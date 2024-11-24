@@ -52,6 +52,7 @@ const Portfolio: React.FC = () => {
     const [selectedProject, setSelectedProject] = useState(0);
     const container = useRef(null);
     const imageContainer = useRef(null);
+    console.log("width", window.innerHeight - 50);
 
     useLayoutEffect(() => {
         if (typeof window !== "undefined") {
@@ -62,17 +63,15 @@ const Portfolio: React.FC = () => {
                     gsap.registerPlugin(ScrollTrigger);
 
                     ScrollTrigger.create({
-                        trigger: imageContainer.current,
-                        pin: true,
-                        // start: "top top",
-                        // top: "0px",
-                        // start: "top top",
-                        start: "+=50",
-                        // start: "top-=100px",
-                        // end: "document.body.offsetHeight - window.innerHeight - 50",
-                        end: "+=300",
-                        // end: "bottom top",
-                        pinSpacing: false,
+                      trigger: imageContainer.current,
+                      pin: true,
+                      start: "top top",
+                      end: "+=800", // Adjust this value as needed
+                      pinSpacing: false,
+                      markers: true,
+                      onEnter: () => {
+                        gsap.set(imageContainer.current, { y: 0 });
+                      },
                     });
                 });
             });
@@ -83,7 +82,7 @@ const Portfolio: React.FC = () => {
         <div ref={container} id="portfolio" className="relative mt-[25vh] w-full p-[10%] text-white">
             <h1 className="beni_regular text-center text-7xl uppercase">Selected Projects</h1>
             <div className="flex h-[700px] justify-between gap-[5%]">
-                <div ref={imageContainer} className="relative h-[100%] w-[40%]">
+                <div ref={imageContainer} data-scroll data-scroll-speed="1" className="relative h-[100%] w-[40%]">
                     <Image src={works[selectedProject].imageUrl} fill={true} alt="Project Image" priority={true} className="object-cover" />
                 </div>
                 <div className="flex h-[100%] w-[20%] text-[1.6vw]">
@@ -100,7 +99,9 @@ const Portfolio: React.FC = () => {
             <div className="relative mt-[200px] flex flex-col">
                 {works.map((project, index) => (
                     <div key={index} onMouseOver={() => setSelectedProject(index)} className="flex w-[100%] justify-end border-b-2 border-solid border-white text-[3vw] uppercase text-white">
-                        <h2 className="m-0 mb-[20px] mt-[40px] cursor-default font-bold">{project.title}</h2>
+                        <h2 data-scroll data-scroll-speed="2" className="m-0 mb-[20px] mt-[40px] cursor-default font-bold">
+                            {project.title}
+                        </h2>
                     </div>
                 ))}
             </div>

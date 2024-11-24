@@ -28,6 +28,7 @@ export default function Home() {
             const LocomotiveScroll = (await import("locomotive-scroll")).default;
 
             const locomotiveScroll = new LocomotiveScroll();
+            
         })();
     }, []);
     const [loading, setLoading] = useState(true);
