@@ -63,7 +63,6 @@ const Portfolio: React.FC = () => {
     const [selectedProject, setSelectedProject] = useState(0);
     const container = useRef(null);
     const imageContainer = useRef(null);
-    console.log("width", window.innerHeight - 50);
 
     useLayoutEffect(() => {
         if (typeof window !== "undefined") {
@@ -77,7 +76,7 @@ const Portfolio: React.FC = () => {
                         trigger: imageContainer.current,
                         pin: true,
                         start: "-100px top",
-                        end: "+=1000", // Adjust this value as needed
+                        end: "+=1400", // Adjust this value as needed
                         pinSpacing: false,
                         markers: true,
                         onEnter: () => {
@@ -98,7 +97,7 @@ const Portfolio: React.FC = () => {
             <div className="flex h-[700px] justify-between gap-[5%]">
                 <div ref={imageContainer} data-scroll data-scroll-speed="1" className="relative h-[50%] w-[50%]">
                     <div className="h-full w-full">
-                        <Image src={works[selectedProject].imageUrl} fill={true} alt="Project Image" priority={true} className="object-cover"/>
+                        <Image src={works[selectedProject].imageUrl} fill={true} alt="Project Image" priority={true} className="object-cover" />
                     </div>
                 </div>
                 <div className="flex h-[100%] w-[20%] text-[1.6vw]">
@@ -111,8 +110,8 @@ const Portfolio: React.FC = () => {
             </div>
             <div className="relative mt-[200px] flex flex-col">
                 {works.map((project, index) => (
-                    <div key={index} onMouseOver={() => setSelectedProject(index)} className="flex w-[100%] justify-end border-b-2 border-solid border-white text-[3vw] uppercase text-white">
-                        <h2 data-scroll data-scroll-speed="2" className="m-0 mb-[20px] mt-[40px] cursor-default font-bold">
+                    <div key={index} onMouseOver={() => setSelectedProject(index)} className="border-[#777] flex w-[100%] justify-end border-b-2 border-solid text-[3vw] uppercase text-white">
+                        <h2 data-scroll data-scroll-speed="2" className="m-0 mb-[20px] mt-[40px] cursor-default text-[3.8rem] font-medium">
                             {project.title}
                         </h2>
                     </div>

@@ -28,7 +28,7 @@ export default function Home() {
             const LocomotiveScroll = (await import("locomotive-scroll")).default;
 
             const locomotiveScroll = new LocomotiveScroll();
-            
+
         })();
     }, []);
     const [loading, setLoading] = useState(true);
@@ -166,11 +166,12 @@ export default function Home() {
     return (
         <div className="bg-[#0F0F0F]">
             <SEO title="Home" />
-            {loading ? (
+            {/* {
+            loading ? (
                 <>
                     <PreLoader />
                 </>
-            ) : (
+            ) : ( */}
                 <>
                     <div>
                         {!blinderFinished && <Loader />}
@@ -338,7 +339,7 @@ export default function Home() {
                         </div>
                     </motion.div> */}
                 </>
-            )}
+            {/* )} */}
         </div>
     );
 }
