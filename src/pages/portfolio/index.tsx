@@ -3,6 +3,17 @@ import Image from "next/image";
 
 const works = [
     {
+        title: "Slice",
+        description: "This is a website I built for Fintech Startups to showcase their innovative solutions tailored to meet the evolving needs of their clients.",
+        imageUrl: "/assets/images/slice.png",
+        width: 1080,
+        gitHub: "https://github.com/Daniel264/horizon",
+        link: "https://horizon-amber-zeta.vercel.app/",
+        height: 720,
+        status: "Live",
+        languages: ["Next.js", "Tailwind", "TypeScript"],
+    },
+    {
         title: "Foodland",
         description: "A company website showcasing Foodland's food offerings and providing easy contact options for customers",
         imageUrl: "/assets/images/foodland.png",
@@ -38,7 +49,7 @@ const works = [
     {
         title: "Horizon",
         description: "This is a website I built for Fintech Startups to showcase their innovative solutions tailored to meet the evolving needs of their clients.",
-        imageUrl: "/assets/images/horizon.png",
+        imageUrl: "/assets/images/horiz.png",
         width: 1080,
         gitHub: "https://github.com/Daniel264/horizon",
         link: "https://horizon-amber-zeta.vercel.app/",
@@ -63,18 +74,18 @@ const Portfolio: React.FC = () => {
                     gsap.registerPlugin(ScrollTrigger);
 
                     ScrollTrigger.create({
-                      trigger: imageContainer.current,
-                      pin: true,
-                      start: "-100px top",
-                      end: "+=1000", // Adjust this value as needed
-                      pinSpacing: false,
-                      markers: true,
-                      onEnter: () => {
-                        gsap.set(imageContainer.current, { y: 0 });
-                      },
-                      onLeave: () => {
-                        gsap.set(imageContainer.current, { y: 0 });
-                      },
+                        trigger: imageContainer.current,
+                        pin: true,
+                        start: "-100px top",
+                        end: "+=1000", // Adjust this value as needed
+                        pinSpacing: false,
+                        markers: true,
+                        onEnter: () => {
+                            gsap.set(imageContainer.current, { y: 0 });
+                        },
+                        onLeave: () => {
+                            gsap.set(imageContainer.current, { y: 0 });
+                        },
                     });
                 });
             });
@@ -85,17 +96,17 @@ const Portfolio: React.FC = () => {
         <div ref={container} id="portfolio" className="relative mt-[25vh] w-full p-[10%] text-white">
             <h1 className="beni_regular text-center text-7xl uppercase">Selected Projects</h1>
             <div className="flex h-[700px] justify-between gap-[5%]">
-                <div ref={imageContainer} data-scroll data-scroll-speed="1" className="relative h-[100%] w-[40%]">
-                    <Image src={works[selectedProject].imageUrl} fill={true} alt="Project Image" priority={true} className="object-cover" />
+                <div ref={imageContainer} data-scroll data-scroll-speed="1" className="relative h-[50%] w-[50%]">
+                    <div className="h-full w-full">
+                        <Image src={works[selectedProject].imageUrl} fill={true} alt="Project Image" priority={true} className="object-cover"/>
+                    </div>
                 </div>
                 <div className="flex h-[100%] w-[20%] text-[1.6vw]">
                     <p>Crafting seamless user experiences with a keen eye for design, I thrive in stylesheets, perfecting layouts and font sizes for modern, intuitive interfaces..</p>
                 </div>
 
                 <div className="flex h-[100%] w-[20%] items-end text-[1vw]">
-                    <p>
-                    In developing JavaScript applications, I leverage the best tools and can work without them to deliver fast, robust solutions. Performance and scalability are always top priorities for me.
-                    </p>
+                    <p>In developing JavaScript applications, I leverage the best tools and can work without them to deliver fast, robust solutions. Performance and scalability are always top priorities for me.</p>
                 </div>
             </div>
             <div className="relative mt-[200px] flex flex-col">
