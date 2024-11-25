@@ -98,7 +98,7 @@ const About = ({ background, text, onMouseEnter, onMouseLeave, paragraph }: Prop
     }, []);
 
     return (
-        <div id="about" ref={aboutRef} className={`min-h-screen ${text} ${background || "bg-[#c9fd74]"}  w-full bg-fixed `}>
+        <div id="about" ref={aboutRef} className={`min-h-screen text-white bg-black  w-full bg-fixed `}>
             {loading ? (
                 <div className="loading-animation"></div>
             ) : (

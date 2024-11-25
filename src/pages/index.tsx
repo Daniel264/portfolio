@@ -19,7 +19,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import FramerMagnetic from "../components/FramerMagnetic";
 import SideMenu from "../components/SIdeMenu";
-import Description from "@/components/Description/Description";
+import Description from "../components/Description/Description";
 
 const Typed = dynamic(() => import("../components/Typed"), { ssr: false });
 
