@@ -19,6 +19,7 @@
         "@studio-freight/lenis": "^1.0.42",
         "@tanstack/react-query": "^5.24.8",
         "@tanstack/react-query-devtools": "^5.24.8",
+        "@types/styled-components": "^5.1.34",
         "axios": "^1.6.7",
         "cookies-next": "^4.1.1",
         "framer-motion": "^11.8.0",
@@ -33,6 +34,7 @@
         "react-toastify": "^10.0.4",
         "react-typed": "^2.0.12",
         "split-type": "^0.3.4",
+        "styled-components": "^6.1.13",
         "valtio": "^1.13.2"
     },
     "devDependencies": {

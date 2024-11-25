@@ -19,6 +19,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import FramerMagnetic from "../components/FramerMagnetic";
 import SideMenu from "../components/SIdeMenu";
+import Description from "@/components/Description/Description";
 
 const Typed = dynamic(() => import("../components/Typed"), { ssr: false });
 
@@ -28,7 +29,6 @@ export default function Home() {
             const LocomotiveScroll = (await import("locomotive-scroll")).default;
 
             const locomotiveScroll = new LocomotiveScroll();
-
         })();
     }, []);
     const [loading, setLoading] = useState(true);
@@ -172,81 +172,81 @@ export default function Home() {
                     <PreLoader />
                 </>
             ) : ( */}
-                <>
-                    <div>
-                        {!blinderFinished && <Loader />}
-                        {/* <TopNavigation /> */}
-                        <div className="flex justify-between">
-                            <div className="fixed z-50 hidden pl-8 pt-10 text-black lg:block">
-                                <button className="btn w-full rounded border-2 border-[#c9fd74] bg-inherit font-normal  text-[#c9fd74] shadow-2xl hover:bg-black md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
-                                    Lets Talk <i className="fa-solid fa-message"></i>
-                                </button>
-                            </div>
-                            <SideMenu />
+            <>
+                <div>
+                    {!blinderFinished && <Loader />}
+                    {/* <TopNavigation /> */}
+                    <div className="flex justify-between">
+                        <div className="fixed z-50 hidden pl-8 pt-10 text-black lg:block">
+                            <button className="btn w-full rounded border-2 border-[#c9fd74] bg-inherit font-normal  text-[#c9fd74] shadow-2xl hover:bg-black md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
+                                Lets Talk <i className="fa-solid fa-message"></i>
+                            </button>
                         </div>
+                        <SideMenu />
+                    </div>
 
-                        <div>
-                            <main className="flex min-h-[100vh] flex-col items-center p-5 pb-16 pt-28 md:pb-5">
-                                <div className="max-w-8xl flex w-full text-white md:m-auto">
-                                    <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
-                                        <Menu />
-                                    </div>
-                                    <div className="ml-0 flex h-full w-full flex-col items-center md:ml-20">
-                                        <div className="flex flex-col sm:flex-row">
-                                            <div className="hero bg-inherit">
-                                                <div className="hero-content flex-col-reverse lg:flex-row-reverse">
-                                                    <div className="w-full">
-                                                        <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
-                                                            <span
-                                                                id="big"
-                                                                className=" beni_bold text-[5rem] font-extrabold text-white
+                    <div>
+                        <main className="flex min-h-[100vh] flex-col items-center p-5 pb-16 pt-28 md:pb-5">
+                            <div className="max-w-8xl flex w-full text-white md:m-auto">
+                                <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
+                                    <Menu />
+                                </div>
+                                <div className="ml-0 flex h-full w-full flex-col items-center md:ml-20">
+                                    <div className="flex flex-col sm:flex-row">
+                                        <div className="hero bg-inherit">
+                                            <div className="hero-content flex-col-reverse lg:flex-row-reverse">
+                                                <div className="w-full">
+                                                    <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+                                                        <span
+                                                            id="big"
+                                                            className=" beni_bold text-[5rem] font-extrabold text-white
                                                                 sm:text-[15rem]
                                                         "
-                                                            >
-                                                                DANIEL <br />
-                                                                OLATINSU
-                                                            </span>
-                                                        </h3>
-                                                        <p className="pt-10 text-2xl font-light">
-                                                            <span className="font-semibold">I&apos;m a</span> <Typed />
-                                                        </p>
-                                                    </div>
+                                                        >
+                                                            DANIEL <br />
+                                                            OLATINSU
+                                                        </span>
+                                                    </h3>
+                                                    <p className="pt-10 text-2xl font-light">
+                                                        <span className="font-semibold">I&apos;m a</span> <Typed />
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="pb-8 md:hidden">
-                                            <Menu />
-                                        </div>
-                                        <div className="ml-0 mt-20 space-y-4 md:ml-0 md:mr-44 md:mt-16 md:space-x-5">
+                                    </div>
+                                    <div className="pb-8 md:hidden">
+                                        <Menu />
+                                    </div>
+                                    {/* <div className="ml-0 mt-20 space-y-4 md:ml-0 md:mr-44 md:mt-16 md:space-x-5">
                                             <button className="btn w-full rounded border-none bg-[#212531] font-normal text-white  shadow-2xl hover:bg-slate-500 md:w-44" onClick={() => (window.location.href = "mailto:danieloluwafolajimi@gmail.com")}>
                                                 Lets Talk <i className="fa-solid fa-message"></i>
                                             </button>
                                             <a href="/assets/daniel-olatinsu.pdf" download="Daniel_Olatinsu.pdf" className="btn w-full rounded border-2 border-[#212531] bg-transparent font-normal text-white shadow-2xl hover:bg-slate-500 md:w-44">
                                                 Download CV <i className="fa-solid fa-download"></i>
                                             </a>
-                                        </div>
-                                    </div>
+                                        </div> */}
                                 </div>
-                            </main>
-                            {/* <hr className="mx-auto w-[80%] pb-10" /> */}
-                            {/* <About
+                            </div>
+                        </main>
+                        {/* <hr className="mx-auto w-[80%] pb-10" /> */}
+                        {/* <About
                                 background={"bg-[#0F0F0F]"}
                                 text={"text-[#fff]"}
                                 paragraph=" I’m a full-stack developer with a deep passion for mobile technology, driven by a love for continuous learning and personal growth. My expertise spans both front-end and back-end development, where I enjoy creating innovative and impactful solutions that solve
                                         real-world problems. There's so much more I look forward to in this dynamic field, and I’m excited about where the journey will take me next.
                                        "
                             /> */}
+                        <Description />
+                        <Portfolio />
 
-                            <Portfolio />
-
-                            <Skills />
-                            <Contact text={"text-white"} background={"bg-inherit"} />
-                            {/* <hr className="mx-auto w-[80%]" /> */}
-                            <Footer text={"white"} background={"inherit"} />
-                        </div>
+                        <Skills />
+                        <Contact text={"text-white"} background={"bg-inherit"} />
+                        {/* <hr className="mx-auto w-[80%]" /> */}
+                        <Footer text={"white"} background={"inherit"} />
                     </div>
+                </div>
 
-                    {/* <motion.div
+                {/* <motion.div
                         ref={maskRef}
                         animate={{
                             WebkitMaskPosition: `${maskPosition.maskX}px ${maskPosition.maskY}px`,
@@ -338,7 +338,7 @@ export default function Home() {
                             </div>
                         </div>
                     </motion.div> */}
-                </>
+            </>
             {/* )} */}
         </div>
     );

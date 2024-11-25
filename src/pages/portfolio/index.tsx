@@ -63,7 +63,6 @@ const Portfolio: React.FC = () => {
     const [selectedProject, setSelectedProject] = useState(0);
     const container = useRef(null);
     const imageContainer = useRef(null);
-
     useLayoutEffect(() => {
         if (typeof window !== "undefined") {
             import("gsap").then((module) => {
@@ -86,14 +85,15 @@ const Portfolio: React.FC = () => {
                             gsap.set(imageContainer.current, { y: 0 });
                         },
                     });
+
                 });
             });
         }
     }, []);
 
     return (
-        <div ref={container} id="portfolio" className="relative mt-[25vh] w-full p-[10%] text-white">
-            <h1 className="beni_regular text-center text-7xl uppercase">Selected Projects</h1>
+        <div ref={container} id="portfolio" className="relative w-full p-[10%] text-white">
+            {/* <h1 className="beni_regular text-center text-7xl uppercase">Selected Projects</h1> */}
             <div className="flex h-[700px] justify-between gap-[5%]">
                 <div ref={imageContainer} data-scroll data-scroll-speed="1" className="relative h-[50%] w-[50%]">
                     <div className="h-full w-full">
@@ -109,8 +109,11 @@ const Portfolio: React.FC = () => {
                 </div>
             </div>
             <div className="relative mt-[200px] flex flex-col">
+                <div className="flex w-[100%] justify-end">
+                    <h3 className="uppercase">Selected Projects</h3>
+                </div>
                 {works.map((project, index) => (
-                    <div key={index} onMouseOver={() => setSelectedProject(index)} className="border-[#777] flex w-[100%] justify-end border-b-2 border-solid text-[3vw] uppercase text-white">
+                    <div key={index} onMouseOver={() => setSelectedProject(index)} className="flex w-[100%] justify-end border-b-2 border-solid border-[#777] text-[3vw] uppercase text-white">
                         <h2 data-scroll data-scroll-speed="2" className="m-0 mb-[20px] mt-[40px] cursor-default text-[3.8rem] font-medium">
                             {project.title}
                         </h2>
