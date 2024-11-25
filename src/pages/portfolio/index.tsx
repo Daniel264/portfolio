@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 import Image from "next/image";
+import useIsomorphicLayoutEffect from "../Hooks/useIsomorphicLayoutEffect";
 
 const works = [
     {
@@ -63,7 +64,7 @@ const Portfolio: React.FC = () => {
     const [selectedProject, setSelectedProject] = useState(0);
     const container = useRef(null);
     const imageContainer = useRef(null);
-    useLayoutEffect(() => {
+    useIsomorphicLayoutEffect(() => {
         if (typeof window !== "undefined") {
             import("gsap").then((module) => {
                 const gsap = module.default;
@@ -85,7 +86,6 @@ const Portfolio: React.FC = () => {
                             gsap.set(imageContainer.current, { y: 0 });
                         },
                     });
-
                 });
             });
         }
