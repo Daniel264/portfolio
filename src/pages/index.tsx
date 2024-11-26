@@ -7,17 +7,12 @@ import Contact from "./contact";
 import gsap from "gsap";
 import SplitType from "split-type";
 import { useEffect, useRef, useState } from "react";
-import About from "./about";
 import Lenis from "@studio-freight/lenis";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Footer from "../components/Footer";
-import Skills from "../components/Skills";
-import PreLoader from "../components/PreLoader";
 import Loader from "../components/Loader";
 import { useMousePosition } from "../utilities/useMousePosition";
-import { motion } from "framer-motion";
 import React from "react";
-import FramerMagnetic from "../components/FramerMagnetic";
 import SideMenu from "../components/SIdeMenu";
 import Description from "../components/Description/Description";
 
@@ -148,13 +143,14 @@ export default function Home() {
                 duration: 0.1,
             });
 
+
             gsap.to("#big .char", {
                 y: 0,
                 opacity: 1,
                 stagger: 0.1,
                 delay: 0.4,
                 duration: 0.1,
-                // ease: "power4.inOut",
+                ease: "power4.inOut",
             });
         }
     }, [loading]);
@@ -186,7 +182,7 @@ export default function Home() {
                     </div>
 
                     <div>
-                        <main className="flex min-h-[100vh] flex-col items-center p-5 pb-16 pt-28 md:pb-5">
+                        <main className="flex min-h-[100vh] flex-col items-center p-5 pb-16 pt-28 md:pb-5 gradient-anim">
                             <div className="max-w-8xl flex w-full text-white md:m-auto">
                                 <div className="fixed hidden h-full md:left-10 md:top-44 md:flex lg:left-12">
                                     <Menu />
@@ -196,7 +192,7 @@ export default function Home() {
                                         <div className="hero bg-inherit">
                                             <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                                                 <div className="w-full">
-                                                    <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+                                                    <h3 className="text-[rgba(251, 251, 251,1)] font-scale my-5 text-center text-4xl sm:text-5xl md:text-7xl" >
                                                         <span
                                                             id="big"
                                                             className=" beni_bold text-[5rem] font-extrabold text-white
@@ -239,7 +235,7 @@ export default function Home() {
                         <Description />
                         <Portfolio />
 
-                        <Skills />
+                        {/* <Skills /> */}
                         <Contact text={"text-white"} background={"bg-inherit"} />
                         {/* <hr className="mx-auto w-[80%]" /> */}
                         <Footer text={"white"} background={"inherit"} />

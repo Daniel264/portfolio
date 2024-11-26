@@ -5,7 +5,6 @@
 
 /* Library CSS import */
 @import url("react-toastify/dist/ReactToastify.css");
-
 * {
     box-sizing: border-box;
 }
@@ -43,8 +42,8 @@
 }
 
 .beni_bold {
-  /* font-size: 14rem; */
-  font-family: "Beni Bold";
+    /* font-size: 14rem; */
+    font-family: "Beni Bold";
 }
 
 .formula_condensed {
@@ -101,6 +100,10 @@ body {
     text-transform: uppercase;
 }
 
+.word {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
 #big.word {
     display: block;
 }
@@ -129,6 +132,23 @@ body {
     opacity: 0;
 }
 
+.gradient-anim {
+    animation: gradient 10s ease infinite;
+    background: radial-gradient( #000000, grey, brown);
+    background-size: 400% 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .mask {
     position: absolute;
     mask-image: url("/assets/images/mask.svg");
