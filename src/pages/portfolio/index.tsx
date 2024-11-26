@@ -64,6 +64,7 @@ const Portfolio: React.FC = () => {
     const [selectedProject, setSelectedProject] = useState(0);
     const container = useRef(null);
     const imageContainer = useRef(null);
+
     useIsomorphicLayoutEffect(() => {
         if (typeof window !== "undefined") {
             import("gsap").then((module) => {
@@ -95,7 +96,7 @@ const Portfolio: React.FC = () => {
         <div ref={container} id="portfolio" className="relative w-full p-[10%] text-white">
             {/* <h1 className="beni_regular text-center text-7xl uppercase">Selected Projects</h1> */}
             <div className="flex h-[700px] justify-between gap-[5%]">
-                <div ref={imageContainer} data-scroll data-scroll-speed="1" className="relative h-[50%] w-[50%]">
+                <div ref={imageContainer} data-scroll data-scroll-speed="1" className="relative z-10 h-[50%] w-[50%]">
                     <div className="h-full w-full">
                         <Image src={works[selectedProject].imageUrl} fill={true} alt="Project Image" priority={true} className="object-cover" />
                     </div>
@@ -103,7 +104,6 @@ const Portfolio: React.FC = () => {
                 <div className="flex h-[100%] w-[20%] text-[1.6vw]">
                     <p>Crafting seamless user experiences with a keen eye for design, I thrive in stylesheets, perfecting layouts and font sizes for modern, intuitive interfaces..</p>
                 </div>
-
                 <div className="flex h-[100%] w-[20%] items-end text-[1vw]">
                     <p>In developing JavaScript applications, I leverage the best tools and can work without them to deliver fast, robust solutions. Performance and scalability are always top priorities for me.</p>
                 </div>
@@ -113,8 +113,8 @@ const Portfolio: React.FC = () => {
                     <h3 className="uppercase">Selected Projects</h3>
                 </div>
                 {works.map((project, index) => (
-                    <div key={index} onMouseOver={() => setSelectedProject(index)} className="flex w-[100%] justify-end border-b-2 border-solid border-[#777] text-[3vw] uppercase text-white">
-                        <h2 data-scroll data-scroll-speed="2" className="m-0 mb-[20px] mt-[40px] cursor-default text-[3.8rem] font-medium">
+                    <div key={index} onMouseOver={() => setSelectedProject(index)} className="flex w-[100%] cursor-pointer justify-end border-b-2 border-solid border-[#777] text-[3vw] uppercase text-white hover:bg-[#D3FD50] hover:text-[#000]">
+                        <h2 data-scroll data-scroll-speed="2" className="z-0 m-0 mb-[20px] mt-[40px] text-[3.8rem] font-medium">
                             {project.title}
                         </h2>
                     </div>
