@@ -134,7 +134,9 @@ body {
 
 .gradient-anim {
     animation: gradient 10s ease infinite;
-    background: radial-gradient( #000000, grey, brown);
+    /* background: radial-gradient( #000000, grey, brown); */
+    /* background: radial-gradient(#000000, #888, #666); */
+    background: radial-gradient(circle, #000000, #333, #0e1016);
     background-size: 400% 400%;
 }
 
