@@ -15,6 +15,7 @@ import { useMousePosition } from "../utilities/useMousePosition";
 import React from "react";
 import SideMenu from "../components/SIdeMenu";
 import Description from "../components/Description/Description";
+import FooterWrap from "@/components/FooterWrap/FooterWrap";
 
 const Typed = dynamic(() => import("../components/Typed"), { ssr: false });
 
@@ -239,6 +240,7 @@ export default function Home() {
                         <Contact text={"text-white"} background={"bg-inherit"} />
                         {/* <hr className="mx-auto w-[80%]" /> */}
                         <Footer text={"white"} background={"inherit"} />
+                        <FooterWrap />
                     </div>
                 </div>
 
