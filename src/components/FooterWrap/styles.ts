@@ -6,6 +6,7 @@ export const Footer = styled.footer`
   background-color: #1a1a1d;
   color: #ffffff;
   padding: 40px 0;
+  min-height: 100vh;
   text-align: center;
 `;
 
