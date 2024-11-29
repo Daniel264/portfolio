@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+import { gsap } from "gsap";
 import {
   Footer,
   FooterContainer,
@@ -10,7 +12,20 @@ import {
 } from "./styles";
 
 const FooterWrap = () => {
-  return (
+  useEffect(() => {
+    gsap.fromTo(
+      "footer",
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+    );
+    gsap.fromTo(
+      "footer section",
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1, ease: "power3.out", stagger: 0.2 }
+    );
+  }, []);
+
+    return (
     <Footer>
       <FooterContainer>
         <FooterSection>
