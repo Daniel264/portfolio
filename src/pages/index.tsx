@@ -1,3 +1,36 @@
+/**
+ * The main component for the Home page.
+ *
+ * This component handles the loading state, animations, and rendering of various sections of the portfolio website.
+ *
+ * @returns {JSX.Element} The rendered Home component.
+ *
+ * @component
+ *
+ * @example
+ * return (
+ *   <Home />
+ * )
+ *
+ * @remarks
+ * - Uses `useState` to manage loading and blinder states.
+ * - Uses `useEffect` to handle animations and mouse movement.
+ * - Utilizes `gsap` for animations and `SplitType` for text splitting.
+ * - Includes dynamic import for the `Typed` component.
+ * - Renders various sections like About, Portfolio, Skills, Contact, and Footer.
+ * - Handles mouse movement to update mask position for hover effects.
+ *
+ * @dependencies
+ * - `next/dynamic`
+ * - `react-toastify`
+ * - `gsap`
+ * - `split-type`
+ * - `@studio-freight/lenis`
+ * - `gsap/dist/ScrollTrigger`
+ * - `framer-motion`
+ * - Custom components: `Menu`, `SEO`, `Stats`, `TopNavigation`, `Footer`, `Skills`, `PreLoader`, `Loader`, `FramerMagnetic`, `SideMenu`
+ * - Custom hooks: `useMousePosition`
+ */
 import dynamic from "next/dynamic";
 import Menu from "@/components/Menu";
 import SEO from "@/components/SEO";
