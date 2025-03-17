@@ -159,7 +159,7 @@ export default function Home() {
 
     return (
         <div className="bg-[#0F0F0F]">
-            <SEO title="Home" />
+            <SEO title="Folajimi Olatinsu - Fullstack Engineer" />
             {loading ? (
                 <>
                     <PreLoader />
