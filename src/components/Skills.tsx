@@ -49,7 +49,7 @@ const Skills = () => {
         <main className="flex h-full w-full flex-col items-center pb-14 text-white">
             <Reveal>
                 <div>
-                    <h1 className="formula_condensed pb-5 text-center text-6xl  font-bold lg:text-7xl">Stack</h1>
+                    <h1 className="formula_condensed pb-5 text-center uppercase text-6xl  font-bold lg:text-7xl">Stack</h1>
                     <p className="pb-5">LANGUAGES I USE - DEV ARSENAL</p>
                 </div>
             </Reveal>
@@ -86,7 +86,7 @@ const Skills = () => {
                             <li>SCSS</li>
                             <li>CSS</li>
                             <li>ChakraUi</li>
-             
+
                         </ul>
                     </article>
                 </Reveal> */}

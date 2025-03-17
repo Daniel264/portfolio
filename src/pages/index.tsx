@@ -160,11 +160,12 @@ export default function Home() {
     return (
         <div className="bg-[#0F0F0F]">
             <SEO title="Folajimi Olatinsu - Fullstack Engineer" />
-            {loading ? (
+            {/* {loading ? (
                 <>
                     <PreLoader />
-                </>
-            ) : (
+                </> */}
+            {/* ) */}
+            {/* : ( */}
                 <>
                     <div>
                         {!blinderFinished && <Loader />}
@@ -331,7 +332,7 @@ export default function Home() {
                         </div>
                     </motion.div>
                 </>
-            )}
+            {/* )} */}
         </div>
     );
 }
